@@ -120,18 +120,27 @@ class XfpanelSwitch:
         values = model[treeiter][:]
         return (model, treeiter, values)
 
-    def get_save_dialog(self):
-        dialog = Gtk.Dialog.new()
-        dialog.set_title("Save configuration name as...")
-        dialog.set_size_request(300,100)
-        dialog.add_buttons("Cancel", Gtk.ResponseType.CANCEL,
-                           "Save", Gtk.ResponseType.OK)
-        content_area = dialog.get_content_area()
-        self.name_entry = Gtk.Entry.new()
-        content_area.add(self.name_entry)
-        content_area.show_all()
+    def get_save_dialog(self, default_name=None):
+        dialog = self.builder.get_object("save_dialog")
+        self.name_entry = self.builder.get_object("name_entry")
+        if default_name is None:
+            date = datetime.datetime.now().strftime("%x %X")
+            date = date.replace(":", "-").replace("/", "-").replace(" ", "_")
+            default_name = _("Backup_%s") % date
+        self.name_entry.set_text(default_name)
 
         return dialog
+
+    def copy_configuration(self, row, new_name):
+        model, treeiter, values = row
+        filename = values[0]
+        old_name = values[1]
+        created = values[2]
+        new_filename = new_name + ".tar.bz2"
+        new_filename = os.path.join(self.save_location, new_filename)
+        PanelConfig.from_file(filename).to_file(new_filename)
+        name = _("%s (Copy of %s)") % (new_name, old_name)
+        self.tree_model.append([new_filename, name, created])
 
     def save_configuration(self, name):
         filename = name + ".tar.bz2"
@@ -141,12 +150,17 @@ class XfpanelSwitch:
         self.tree_model.append([filename, name, created])
 
     def on_save_clicked(self, widget):
+        model, treeiter, values = self.get_selected()
+        filename = values[0]
         dialog = self.get_save_dialog()
         if dialog.run() == Gtk.ResponseType.OK:
             name = self.name_entry.get_text().strip()
             if len(name) > 0:
-                self.save_configuration(name)
-        dialog.destroy()
+                if filename == "":
+                    self.save_configuration(name)
+                else:
+                    self.copy_configuration(self.get_selected(), name)
+        dialog.hide()
 
     def load_configuration(self, filename):
         if os.path.isfile(filename):
@@ -158,11 +172,14 @@ class XfpanelSwitch:
         self.load_configuration(filename)
 
     def delete_configuration(self, filename):
-        os.remove(filename)
+        if os.path.isfile(filename):
+            os.remove(filename)
 
     def on_delete_clicked(self, widget):
         model, treeiter, values = self.get_selected()
         filename = values[0]
+        if filename == "":
+            return
         self.delete_configuration(filename)
         model.remove(treeiter)
 
