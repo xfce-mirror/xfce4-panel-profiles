@@ -1,0 +1,53 @@
+APPNAME=xfpanel-switch
+PREFIX=@prefix@
+PYTHON=`which @python@`
+LANGUAGE_FILES=$(patsubst po/%.po, locale/%/LC_MESSAGES/$(APPNAME).mo, $(wildcard po/*.po))
+DESTDIR=
+
+all: $(LANGUAGE_FILES)
+	intltool-merge -d po xfpanel-switch.desktop.in xfpanel-switch.desktop
+	chmod +x xfpanel-switch.desktop
+	sed -e s,%prefix%,$(PREFIX), bin/$(APPNAME).in.in > bin/$(APPNAME).in
+	sed -e s,%python%,$(PYTHON), bin/$(APPNAME).in > bin/$(APPNAME)
+	chmod +x bin/$(APPNAME)
+	
+locale/%/LC_MESSAGES/$(APPNAME).mo: po/%.po
+	mkdir -p $(dir $@)
+	msgfmt $< -o $@
+
+install: all
+	install -d $(DESTDIR)/$(PREFIX)/bin
+	install bin/$(APPNAME) $(DESTDIR)/$(PREFIX)/bin
+	
+	install -d $(DESTDIR)/$(PREFIX)/share/$(APPNAME)/xfpanel-switch
+	install xfpanel-switch/xfpanel-switch.py $(DESTDIR)/$(PREFIX)/share/$(APPNAME)/xfpanel-switch
+	install xfpanel-switch/xfpanel-switch.glade $(DESTDIR)/$(PREFIX)/share/$(APPNAME)/xfpanel-switch
+
+	install -d $(DESTDIR)/$(PREFIX)/share/doc/$(APPNAME)
+	install AUTHORS $(DESTDIR)/$(PREFIX)/share/doc/$(APPNAME)
+	install COPYING $(DESTDIR)/$(PREFIX)/share/doc/$(APPNAME)
+	install NEWS $(DESTDIR)/$(PREFIX)/share/doc/$(APPNAME)
+	install INSTALL $(DESTDIR)/$(PREFIX)/share/doc/$(APPNAME)
+	install README $(DESTDIR)/$(PREFIX)/share/doc/$(APPNAME)
+
+	install -d $(DESTDIR)/$(PREFIX)/share/applications
+	install --mode=644 $(APPNAME).desktop $(DESTDIR)/$(PREFIX)/share/applications
+	
+	cp -rf locale $(DESTDIR)/$(PREFIX)/share
+	ln -sf $(PREFIX)/share/locale $(DESTDIR)/$(PREFIX)/share/$(APPNAME)/locale
+
+uninstall:
+	rm -f $(DESTDIR)/$(PREFIX)/share/applications/$(APPNAME).desktop
+	rm -rf $(DESTDIR)/$(PREFIX)/share/$(APPNAME)
+	rm -rf $(DESTDIR)/$(PREFIX)/share/doc/$(APPNAME)
+	# FIXME: Uninstall locales
+	rm -f $(DESTDIR)/$(PREFIX)/bin/$(APPNAME)
+
+clean:
+	rm -Rf locale
+	rm -f xfpanel-switch/*.pyc
+	rm -f bin/$(APPNAME).in
+	rm -f bin/$(APPNAME)
+	rm -f xfpanel-switch.desktop
+	rm -f Makefile.in
+	rm -f Makefile

@@ -1,0 +1,8 @@
+1. Unpack the archive.
+
+2. To build xfpanel-switch run 
+      ./configure
+      make
+
+3. To install xfpanel-switch run
+      (sudo) make install

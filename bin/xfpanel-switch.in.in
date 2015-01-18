@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+%python% %prefix%/share/xfpanel-switch/xfpanel-switch/xfpanel-switch.py "$@"
