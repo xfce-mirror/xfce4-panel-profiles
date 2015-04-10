@@ -1,7 +1,7 @@
 [Desktop Entry]
 _Name=Xfce Panel Switch
 _Comment=Backup and restore your panel configuration
-Exec=/usr/bin/xfpanel-switch
+Exec=xfpanel-switch
 Terminal=false
 Type=Application
 StartupNotify=true
