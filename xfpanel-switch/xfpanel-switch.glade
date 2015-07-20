@@ -14,7 +14,9 @@
   </object>
   <object class="GtkWindow" id="xfpanel_switch_window">
     <property name="can_focus">False</property>
+    <property name="default_width">350</property>
     <property name="default_height">400</property>
+    <property name="icon_name">xfce4-panel</property>
     <signal name="delete-event" handler="on_window_destroy" swapped="no"/>
     <child>
       <object class="GtkBox" id="box1">
@@ -31,6 +33,7 @@
             <child>
               <object class="GtkEventBox" id="xfce_header">
                 <property name="name">xfce_header</property>
+                <property name="height_request">60</property>
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <child>
@@ -44,9 +47,8 @@
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="halign">start</property>
-                        <property name="xalign">1</property>
-                        <property name="xpad">6</property>
-                        <property name="ypad">6</property>
+                        <property name="margin_start">6</property>
+                        <property name="margin_top">6</property>
                         <property name="pixel_size">48</property>
                         <property name="icon_name">xfce4-panel</property>
                         <property name="icon_size">6</property>
@@ -61,12 +63,12 @@
                       <object class="GtkLabel" id="apptitle">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="xalign">0</property>
-                        <property name="xpad">6</property>
+                        <property name="margin_start">12</property>
                         <property name="label" translatable="yes">&lt;b&gt;&lt;big&gt;Xfce Panel Switch&lt;/big&gt;&lt;/b&gt;
 Backup and restore your panel configuration</property>
                         <property name="use_markup">True</property>
                         <property name="ellipsize">end</property>
+                        <property name="xalign">0</property>
                       </object>
                       <packing>
                         <property name="expand">True</property>
@@ -229,11 +231,10 @@ Backup and restore your panel configuration</property>
                     <property name="margin_top">12</property>
                     <child>
                       <object class="GtkButton" id="button1">
-                        <property name="label">gtk-help</property>
+                        <property name="label">Help</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
-                        <property name="use_stock">True</property>
                       </object>
                       <packing>
                         <property name="expand">True</property>
@@ -243,11 +244,10 @@ Backup and restore your panel configuration</property>
                     </child>
                     <child>
                       <object class="GtkButton" id="button2">
-                        <property name="label">gtk-close</property>
+                        <property name="label">Close</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
-                        <property name="use_stock">True</property>
                         <signal name="clicked" handler="on_close_clicked" swapped="no"/>
                       </object>
                       <packing>
@@ -280,7 +280,9 @@ Backup and restore your panel configuration</property>
     <property name="title" translatable="yes">Save panel configuration as...</property>
     <property name="resizable">False</property>
     <property name="default_height">200</property>
+    <property name="icon_name">document-save-as</property>
     <property name="type_hint">dialog</property>
+    <property name="transient_for">xfpanel_switch_window</property>
     <child internal-child="vbox">
       <object class="GtkBox" id="dialog-vbox1">
         <property name="can_focus">False</property>
