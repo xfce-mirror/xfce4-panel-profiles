@@ -20,6 +20,7 @@ install: all
 	install bin/$(APPNAME) $(DESTDIR)/$(PREFIX)/bin
 	
 	install -d $(DESTDIR)/$(PREFIX)/share/$(APPNAME)/xfpanel-switch
+	install xfpanel-switch/panelconfig.py $(DESTDIR)/$(PREFIX)/share/$(APPNAME)/xfpanel-switch
 	install xfpanel-switch/xfpanel-switch.py $(DESTDIR)/$(PREFIX)/share/$(APPNAME)/xfpanel-switch
 	install xfpanel-switch/xfpanel-switch.glade $(DESTDIR)/$(PREFIX)/share/$(APPNAME)/xfpanel-switch
 
@@ -33,8 +34,8 @@ install: all
 	install -d $(DESTDIR)/$(PREFIX)/share/applications
 	install --mode=644 $(APPNAME).desktop $(DESTDIR)/$(PREFIX)/share/applications
 	
-	cp -rf locale $(DESTDIR)/$(PREFIX)/share
-	ln -sf $(PREFIX)/share/locale $(DESTDIR)/$(PREFIX)/share/$(APPNAME)/locale
+	# cp -rf locale $(DESTDIR)/$(PREFIX)/share
+	# ln -sf $(PREFIX)/share/locale $(DESTDIR)/$(PREFIX)/share/$(APPNAME)/locale
 
 uninstall:
 	rm -f $(DESTDIR)/$(PREFIX)/share/applications/$(APPNAME).desktop
