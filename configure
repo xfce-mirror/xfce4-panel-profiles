@@ -3,7 +3,7 @@
 APPNAME=xfpanel-switch
 VERSION=1.0
 
-PYTHON=python
+PYTHON=python3
 
 help () {
     echo "Supported options are:"

@@ -53,6 +53,9 @@ class XfpanelSwitch:
         self.tree_model = self.treeview.get_model()
         for config in self.get_saved_configurations():
             self.tree_model.append(config)
+        
+        if not os.path.exists(self.save_location):
+            os.makedirs(self.save_location)
 
         self.window.show()
 
