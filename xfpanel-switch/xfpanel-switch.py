@@ -28,6 +28,7 @@ from panelconfig import PanelConfig
 
 
 class XfpanelSwitch:
+
     '''XfpanelSwitch application class.'''
 
     data_dir = "xfpanel-switch"
@@ -36,7 +37,7 @@ class XfpanelSwitch:
     def __init__(self):
         '''Initialize the Xfce Panel Switch application.'''
         self.builder = Gtk.Builder()
-        self.builder.set_translation_domain ('xfpanel-switch')
+        self.builder.set_translation_domain('xfpanel-switch')
 
         script_dir = os.path.dirname(os.path.abspath(__file__))
         glade_file = os.path.join(script_dir, "xfpanel-switch.glade")
@@ -53,15 +54,15 @@ class XfpanelSwitch:
         self.tree_model = self.treeview.get_model()
         for config in self.get_saved_configurations():
             self.tree_model.append(config)
-        
+
         if not os.path.exists(self.save_location):
             os.makedirs(self.save_location)
 
         self.window.show()
-        
+
     def _copy(self, src, dst):
         PanelConfig.from_file(src).to_file(dst)
-        
+
     def _filedlg(self, title, action, default=None):
         if action == Gtk.FileChooserAction.SAVE:
             button = _("Save")
@@ -88,13 +89,13 @@ class XfpanelSwitch:
         interface = destination
 
         self.xfconf = Gio.DBusProxy.new_sync(
-             connection,
-             proxy_property,
-             interface_properties_array,
-             destination,
-             path,
-             interface,
-             cancellable)
+            connection,
+            proxy_property,
+            interface_properties_array,
+            destination,
+            path,
+            interface,
+            cancellable)
 
     def fix_xfce_header(self):
         ''' Set background-color of frame to base-color to make it resemble the
@@ -139,7 +140,7 @@ class XfpanelSwitch:
         model, treeiter = self.treeview.get_selection().get_selected()
         values = model[treeiter][:]
         return (model, treeiter, values)
-        
+
     def get_selected_filename(self):
         model, treeiter, values = self.get_selected()
         filename = values[0]
@@ -176,7 +177,7 @@ class XfpanelSwitch:
                 else:
                     self.copy_configuration(self.get_selected(), name)
         dialog.destroy()
-        
+
     def on_export_clicked(self, widget):
         dialog = self._filedlg(_("Export configuration as..."),
                                Gtk.FileChooserAction.SAVE, _("Untitled"))
@@ -189,7 +190,7 @@ class XfpanelSwitch:
             else:
                 self.copy_configuration(self.get_selected(), filename, False)
         dialog.destroy()
-        
+
     def on_import_clicked(self, widget):
         dialog = self._filedlg(_("Import configuration file..."),
                                Gtk.FileChooserAction.OPEN)
@@ -199,10 +200,10 @@ class XfpanelSwitch:
             savedlg = PanelSaveDialog()
             if savedlg.run() == Gtk.ResponseType.ACCEPT:
                 name = savedlg.get_save_name()
-                dst = os.path.join(self.save_location, name+".tar.bz2")
+                dst = os.path.join(self.save_location, name + ".tar.bz2")
                 self._copy(filename, dst)
-                self.tree_model.append([dst, name, 
-                                        datetime.datetime.now().strftime("%X")])
+                self.tree_model.append(
+                    [dst, name, datetime.datetime.now().strftime("%X")])
             savedlg.destroy()
         dialog.destroy()
 
@@ -220,7 +221,7 @@ class XfpanelSwitch:
 
     def on_delete_clicked(self, widget):
         model, treeiter, values = self.get_selected()
-        filename = values[0] 
+        filename = values[0]
         if filename == "":
             return
         self.delete_configuration(filename)
@@ -233,16 +234,20 @@ class XfpanelSwitch:
     def on_close_clicked(self, *args):
         '''Exit the application when the window is closed.'''
         Gtk.main_quit()
-        
+
+
 class PanelSaveDialog(Gtk.MessageDialog):
+
     def __init__(self, parent=None, default=None):
         primary = _("Name the new panel configuration")
         secondary = ""
-        Gtk.MessageDialog.__init__(self, transient_for=parent, modal=True,
-                                   message_type=Gtk.MessageType.QUESTION,
-                                   message_format=primary,
-                                   buttons=(_("Cancel"), Gtk.ResponseType.CANCEL,
-                                    _("Save Configuration"), Gtk.ResponseType.ACCEPT))
+        Gtk.MessageDialog.__init__(
+            self, transient_for=parent, modal=True,
+            message_type=Gtk.MessageType.QUESTION,
+            message_format=primary,
+            buttons=(
+                _("Cancel"), Gtk.ResponseType.CANCEL,
+                _("Save Configuration"), Gtk.ResponseType.ACCEPT))
         self.set_default_icon_name("document-save-as")
         self.set_default_response(Gtk.ResponseType.ACCEPT)
         box = self.get_message_area()
@@ -254,16 +259,16 @@ class PanelSaveDialog(Gtk.MessageDialog):
             self.default()
         box.pack_start(self.entry, True, True, 0)
         box.show_all()
-        
+
     def default(self):
         date = datetime.datetime.now().strftime("%x %X")
         date = date.replace(":", "-").replace("/", "-").replace(" ", "_")
         name = _("Backup_%s") % date
         self.set_save_name(name)
-        
+
     def get_save_name(self):
         return self.entry.get_text().strip()
-        
+
     def set_save_name(self, name):
         self.entry.set_text(name.strip())
 
