@@ -20,7 +20,6 @@ from gettext import gettext as _
 from gettext import ngettext
 
 import shlex
-import shutil
 import os
 import datetime
 from gi.repository import Gtk, GLib, Gio
@@ -59,6 +58,23 @@ class XfpanelSwitch:
             os.makedirs(self.save_location)
 
         self.window.show()
+        
+    def _copy(self, src, dst):
+        PanelConfig.from_file(src).to_file(dst)
+        
+    def _filedlg(self, title, action, default=None):
+        if action == Gtk.FileChooserAction.SAVE:
+            button = _("Save")
+        else:
+            button = _("Open")
+        dialog = Gtk.FileChooserDialog(title,
+                                       self.window, action,
+                                       (_("Cancel"), Gtk.ResponseType.CANCEL,
+                                        button, Gtk.ResponseType.ACCEPT))
+        dialog.set_default_response(Gtk.ResponseType.ACCEPT)
+        if default:
+            dialog.set_current_name(default)
+        return dialog
 
     def load_xfconf(self):
         session_bus = Gio.BusType.SESSION
@@ -123,17 +139,11 @@ class XfpanelSwitch:
         model, treeiter = self.treeview.get_selection().get_selected()
         values = model[treeiter][:]
         return (model, treeiter, values)
-
-    def get_save_dialog(self, default_name=None):
-        dialog = self.builder.get_object("save_dialog")
-        self.name_entry = self.builder.get_object("name_entry")
-        if default_name is None:
-            date = datetime.datetime.now().strftime("%x %X")
-            date = date.replace(":", "-").replace("/", "-").replace(" ", "_")
-            default_name = _("Backup_%s") % date
-        self.name_entry.set_text(default_name)
-
-        return dialog
+        
+    def get_selected_filename(self):
+        model, treeiter, values = self.get_selected()
+        filename = values[0]
+        return filename
 
     def copy_configuration(self, row, new_name, append=True):
         model, treeiter, values = row
@@ -142,7 +152,7 @@ class XfpanelSwitch:
         created = values[2]
         new_filename = new_name + ".tar.bz2"
         new_filename = os.path.join(self.save_location, new_filename)
-        PanelConfig.from_file(filename).to_file(new_filename)
+        self._copy(filename, new_filename)
         if append:
             name = _("%s (Copy of %s)") % (new_name, old_name)
             self.tree_model.append([new_filename, name, created])
@@ -156,67 +166,52 @@ class XfpanelSwitch:
             self.tree_model.append([filename, name, created])
 
     def on_save_clicked(self, widget):
-        model, treeiter, values = self.get_selected()
-        filename = values[0]
-        dialog = self.get_save_dialog()
-        if dialog.run() == Gtk.ResponseType.OK:
-            name = self.name_entry.get_text().strip()
+        filename = self.get_selected_filename()
+        dialog = PanelSaveDialog(self.window)
+        if dialog.run() == Gtk.ResponseType.ACCEPT:
+            name = dialog.get_save_name()
             if len(name) > 0:
                 if filename == "":
                     self.save_configuration(name)
                 else:
                     self.copy_configuration(self.get_selected(), name)
-        dialog.hide()
+        dialog.destroy()
         
     def on_export_clicked(self, widget):
-        dialog = Gtk.FileChooserDialog(_("Export configuration as..."),
-                                       self.window, Gtk.FileChooserAction.SAVE,
-                                       (_("Cancel"), Gtk.ResponseType.CANCEL,
-                                        _("Save"), Gtk.ResponseType.ACCEPT))
-        dialog.set_current_name(_("Untitled"))
+        dialog = self._filedlg(_("Export configuration as..."),
+                               Gtk.FileChooserAction.SAVE, _("Untitled"))
         response = dialog.run()
         if response == Gtk.ResponseType.ACCEPT:
+            selected = self.get_selected_filename()
             filename = dialog.get_filename()
-            if filename == "":
+            if selected == "":
                 self.save_configuration(filename, False)
             else:
-                self.copy_configuration(self.get_selected(), filename)
-        dialog.hide()
+                self.copy_configuration(self.get_selected(), filename, False)
         dialog.destroy()
         
     def on_import_clicked(self, widget):
-        dialog = Gtk.FileChooserDialog(_("Import configuration file..."),
-                                       self.window, Gtk.FileChooserAction.OPEN,
-                                       (_("Cancel"), Gtk.ResponseType.CANCEL,
-                                        _("Save"), Gtk.ResponseType.ACCEPT))
+        dialog = self._filedlg(_("Import configuration file..."),
+                               Gtk.FileChooserAction.OPEN)
         response = dialog.run()
         if response == Gtk.ResponseType.ACCEPT:
             filename = dialog.get_filename()
-            savedlg = self.get_save_dialog()
-            if savedlg.run() == Gtk.ResponseType.OK:
-                name = self.name_entry.get_text().strip()
+            savedlg = PanelSaveDialog()
+            if savedlg.run() == Gtk.ResponseType.ACCEPT:
+                name = savedlg.get_save_name()
                 dst = os.path.join(self.save_location, name+".tar.bz2")
-                shutil.copyfile(filename, dst)
+                self._copy(filename, dst)
                 self.tree_model.append([dst, name, 
                                         datetime.datetime.now().strftime("%X")])
-            savedlg.hide()
-        dialog.hide()
+            savedlg.destroy()
         dialog.destroy()
-        
-    def get_selected_filename(self):
-        model, treeiter, values = self.get_selected()
-        filename = values[0]
-        if filename == "":
-            return
-        return filename
 
     def load_configuration(self, filename):
         if os.path.isfile(filename):
             PanelConfig.from_file(filename).to_xfconf(self.xfconf)
 
     def on_apply_clicked(self, widget):
-        model, treeiter, values = self.get_selected()
-        filename = values[0]
+        filename = self.get_selected_filename()
         self.load_configuration(filename)
 
     def delete_configuration(self, filename):
@@ -225,7 +220,7 @@ class XfpanelSwitch:
 
     def on_delete_clicked(self, widget):
         model, treeiter, values = self.get_selected()
-        filename = values[0]
+        filename = values[0] 
         if filename == "":
             return
         self.delete_configuration(filename)
@@ -238,6 +233,39 @@ class XfpanelSwitch:
     def on_close_clicked(self, *args):
         '''Exit the application when the window is closed.'''
         Gtk.main_quit()
+        
+class PanelSaveDialog(Gtk.MessageDialog):
+    def __init__(self, parent=None, default=None):
+        primary = _("Name the new panel configuration")
+        secondary = ""
+        Gtk.MessageDialog.__init__(self, transient_for=parent, modal=True,
+                                   message_type=Gtk.MessageType.QUESTION,
+                                   message_format=primary,
+                                   buttons=(_("Cancel"), Gtk.ResponseType.CANCEL,
+                                    _("Save Configuration"), Gtk.ResponseType.ACCEPT))
+        self.set_default_icon_name("document-save-as")
+        self.set_default_response(Gtk.ResponseType.ACCEPT)
+        box = self.get_message_area()
+        self.entry = Gtk.Entry.new()
+        self.entry.set_activates_default(True)
+        if default:
+            self.entry.set_text(default)
+        else:
+            self.default()
+        box.pack_start(self.entry, True, True, 0)
+        box.show_all()
+        
+    def default(self):
+        date = datetime.datetime.now().strftime("%x %X")
+        date = date.replace(":", "-").replace("/", "-").replace(" ", "_")
+        name = _("Backup_%s") % date
+        self.set_save_name(name)
+        
+    def get_save_name(self):
+        return self.entry.get_text().strip()
+        
+    def set_save_name(self, name):
+        self.entry.set_text(name.strip())
 
 if __name__ == "__main__":
     main = XfpanelSwitch()
