@@ -1,0 +1,12 @@
+Initial release: xfpanel-switch 1.0
+
+    * This is the first release of xfpanel-switch. This application
+      allows users to manage their panel configuration, make backups,
+      and even import/export their creations. Distributors can provide
+      default configurations to be used.
+    * As an initial release, it is expected to be a bit rough around 
+      the edges.
+    * Current features:
+      - Backup/Restore
+      - Export/Import
+      - Reading pre-installed panel configuration from /usr/share
