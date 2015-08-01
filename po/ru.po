@@ -1,0 +1,109 @@
+# Russian translation for xfpanel-switch
+# Copyright (c) 2015 Rosetta Contributors and Canonical Ltd 2015
+# This file is distributed under the same license as the xfpanel-switch package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xfpanel-switch\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-07-20 22:28-0400\n"
+"PO-Revision-Date: 2015-07-31 10:30+0000\n"
+"Last-Translator: Aleksey Kabanov <Unknown>\n"
+"Language-Team: Russian <ru@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2015-08-01 05:49+0000\n"
+"X-Generator: Launchpad (build 17656)\n"
+
+#: ../xfpanel-switch.desktop.in.h:1 ../xfpanel-switch/xfpanel-switch.py:48
+msgid "Xfce Panel Switch"
+msgstr ""
+
+#: ../xfpanel-switch.desktop.in.h:2
+msgid "Backup and restore your panel configuration"
+msgstr ""
+
+#: ../xfpanel-switch/xfpanel-switch.glade.h:1
+msgid ""
+"<b><big>Xfce Panel Switch</big></b>\n"
+"Backup and restore your panel configuration"
+msgstr ""
+
+#: ../xfpanel-switch/xfpanel-switch.glade.h:3
+msgid "Filename"
+msgstr "Имя файла"
+
+#: ../xfpanel-switch/xfpanel-switch.glade.h:4
+msgid "Date Modified"
+msgstr "Дата изменения"
+
+#: ../xfpanel-switch/xfpanel-switch.glade.h:5
+msgid "Apply Configuration"
+msgstr "Применить конфигурацию"
+
+#: ../xfpanel-switch/xfpanel-switch.glade.h:6
+#: ../xfpanel-switch/xfpanel-switch.py:250
+msgid "Save Configuration"
+msgstr "Сохранить конфигурацию"
+
+#: ../xfpanel-switch/xfpanel-switch.glade.h:7
+msgid "Remove Configuration"
+msgstr "Удалить конфигурацию"
+
+#: ../xfpanel-switch/xfpanel-switch.glade.h:8
+msgid "Export"
+msgstr "Экспортировать"
+
+#: ../xfpanel-switch/xfpanel-switch.glade.h:9
+msgid "Import"
+msgstr "Импортировать"
+
+#: ../xfpanel-switch/xfpanel-switch.glade.h:10
+msgid "Save panel configuration as..."
+msgstr "Сохранить конфигурацию панели как ..."
+
+#: ../xfpanel-switch/xfpanel-switch.glade.h:11
+#: ../xfpanel-switch/xfpanel-switch.py:73
+#: ../xfpanel-switch/xfpanel-switch.py:249
+msgid "Cancel"
+msgstr "Отменить"
+
+#: ../xfpanel-switch/xfpanel-switch.glade.h:12
+msgid "<b>Name the new panel configuration</b>"
+msgstr "<b>Имя для новой конфигурации панели</b>"
+
+#: ../xfpanel-switch/xfpanel-switch.py:68
+msgid "Save"
+msgstr "Сохранить"
+
+#: ../xfpanel-switch/xfpanel-switch.py:70
+msgid "Open"
+msgstr "Открыть"
+
+#: ../xfpanel-switch/xfpanel-switch.py:158
+#, python-format
+msgid "%s (Copy of %s)"
+msgstr "%s (копия %s)"
+
+#: ../xfpanel-switch/xfpanel-switch.py:182
+msgid "Export configuration as..."
+msgstr "Экспортировать конфигурацию как..."
+
+#: ../xfpanel-switch/xfpanel-switch.py:183
+msgid "Untitled"
+msgstr ""
+
+#: ../xfpanel-switch/xfpanel-switch.py:195
+msgid "Import configuration file..."
+msgstr "Импортировать файл конфигурации..."
+
+#: ../xfpanel-switch/xfpanel-switch.py:242
+msgid "Name the new panel configuration"
+msgstr "Имя для новой конфигурации панели"
+
+#: ../xfpanel-switch/xfpanel-switch.py:266
+#, python-format
+msgid "Backup_%s"
+msgstr ""
