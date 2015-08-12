@@ -6,6 +6,6 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE;
-OnlyShownIn=XFCE
+OnlyShowIn=XFCE;
 Keywords=Configuration;User;
 Icon=xfce4-panel
