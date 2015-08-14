@@ -64,11 +64,11 @@
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="margin_start">12</property>
+                        <property name="xalign">0</property>
                         <property name="label" translatable="yes">&lt;b&gt;&lt;big&gt;Xfce Panel Switch&lt;/big&gt;&lt;/b&gt;
 Backup and restore your panel configuration</property>
                         <property name="use_markup">True</property>
                         <property name="ellipsize">end</property>
-                        <property name="xalign">0</property>
                       </object>
                       <packing>
                         <property name="expand">True</property>
@@ -126,6 +126,7 @@ Backup and restore your panel configuration</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="model">liststore1</property>
+                        <property name="search_column">0</property>
                         <property name="tooltip_column">0</property>
                         <child internal-child="selection">
                           <object class="GtkTreeSelection" id="treeview-selection1"/>
@@ -134,6 +135,8 @@ Backup and restore your panel configuration</property>
                           <object class="GtkTreeViewColumn" id="treeviewcolumn1">
                             <property name="title" translatable="yes">Filename</property>
                             <property name="expand">True</property>
+                            <property name="sort_indicator">True</property>
+                            <property name="sort_column_id">0</property>
                             <child>
                               <object class="GtkCellRendererText" id="cellrenderertext1">
                                 <property name="ellipsize">end</property>
@@ -147,6 +150,8 @@ Backup and restore your panel configuration</property>
                         <child>
                           <object class="GtkTreeViewColumn" id="treeviewcolumn2">
                             <property name="title" translatable="yes">Date Modified</property>
+                            <property name="sort_indicator">True</property>
+                            <property name="sort_column_id">1</property>
                             <child>
                               <object class="GtkCellRendererText" id="cellrenderertext2"/>
                               <attributes>
@@ -274,10 +279,11 @@ Backup and restore your panel configuration</property>
                     </child>
                     <child>
                       <object class="GtkButton" id="button2">
-                        <property name="label">Close</property>
+                        <property name="label">_Close</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
+                        <property name="use_underline">True</property>
                         <signal name="clicked" handler="on_close_clicked" swapped="no"/>
                       </object>
                       <packing>

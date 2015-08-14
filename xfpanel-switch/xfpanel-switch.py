@@ -57,6 +57,7 @@ class XfpanelSwitch:
         self.tree_model = self.treeview.get_model()
         for config in self.get_saved_configurations():
             self.tree_model.append(config)
+        self.tree_model.set_sort_column_id(1, Gtk.SortType.DESCENDING)
 
         if not os.path.exists(self.save_location):
             os.makedirs(self.save_location)
@@ -125,6 +126,7 @@ class XfpanelSwitch:
     def get_saved_configurations(self):
         results = []
         results.append(("", "Current Configuration", ""))
+        today_delta = datetime.datetime.today() - datetime.timedelta(days=1)
 
         for directory in self.get_data_dirs():
             for filename in os.listdir(directory):
@@ -134,7 +136,12 @@ class XfpanelSwitch:
                     path = os.path.join(directory, filename)
                     t = os.path.getmtime(path)
                     datetime_o = datetime.datetime.fromtimestamp(t)
-                    modified = datetime_o.strftime("%x")
+                    if datetime_o > today_delta:
+                        modified = ("Today")
+                    elif datetime_o == today_delta:
+                        modified = ("Yesterday")
+                    else:
+                        modified = datetime_o.strftime("%x")
                     results.append((path, name, modified))
 
         return results
