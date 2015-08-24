@@ -1,0 +1,111 @@
+# Serbian translation for xfpanel-switch
+# Copyright (c) 2015 Rosetta Contributors and Canonical Ltd 2015
+# This file is distributed under the same license as the xfpanel-switch package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xfpanel-switch\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-07-20 22:28-0400\n"
+"PO-Revision-Date: 2015-08-23 07:23+0000\n"
+"Last-Translator: Саша Петровић <salepetronije@gmail.com>\n"
+"Language-Team: Serbian <sr@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2015-08-24 05:23+0000\n"
+"X-Generator: Launchpad (build 17690)\n"
+
+#: ../xfpanel-switch.desktop.in.h:1 ../xfpanel-switch/xfpanel-switch.py:48
+msgid "Xfce Panel Switch"
+msgstr "Прекидач полице Иксфце-а"
+
+#: ../xfpanel-switch.desktop.in.h:2
+msgid "Backup and restore your panel configuration"
+msgstr "Прави умножак поставки полице за чување и враћа га"
+
+#: ../xfpanel-switch/xfpanel-switch.glade.h:1
+msgid ""
+"<b><big>Xfce Panel Switch</big></b>\n"
+"Backup and restore your panel configuration"
+msgstr ""
+"<b><big>Прекидач полице Иксфце-а</big></b>\n"
+"Прави умножак поставки полице за чување и враћа га"
+
+#: ../xfpanel-switch/xfpanel-switch.glade.h:3
+msgid "Filename"
+msgstr "Име датотеке"
+
+#: ../xfpanel-switch/xfpanel-switch.glade.h:4
+msgid "Date Modified"
+msgstr "Дан измене"
+
+#: ../xfpanel-switch/xfpanel-switch.glade.h:5
+msgid "Apply Configuration"
+msgstr "Примени поставке"
+
+#: ../xfpanel-switch/xfpanel-switch.glade.h:6
+#: ../xfpanel-switch/xfpanel-switch.py:250
+msgid "Save Configuration"
+msgstr "Сачувај поставке"
+
+#: ../xfpanel-switch/xfpanel-switch.glade.h:7
+msgid "Remove Configuration"
+msgstr "Уклони поставке"
+
+#: ../xfpanel-switch/xfpanel-switch.glade.h:8
+msgid "Export"
+msgstr "Извези"
+
+#: ../xfpanel-switch/xfpanel-switch.glade.h:9
+msgid "Import"
+msgstr "Увези"
+
+#: ../xfpanel-switch/xfpanel-switch.glade.h:10
+msgid "Save panel configuration as..."
+msgstr "Сачувај поставке полице као..."
+
+#: ../xfpanel-switch/xfpanel-switch.glade.h:11
+#: ../xfpanel-switch/xfpanel-switch.py:73
+#: ../xfpanel-switch/xfpanel-switch.py:249
+msgid "Cancel"
+msgstr "Откажи"
+
+#: ../xfpanel-switch/xfpanel-switch.glade.h:12
+msgid "<b>Name the new panel configuration</b>"
+msgstr "<b>Име нових поставки полице</b>"
+
+#: ../xfpanel-switch/xfpanel-switch.py:68
+msgid "Save"
+msgstr "Сачувај"
+
+#: ../xfpanel-switch/xfpanel-switch.py:70
+msgid "Open"
+msgstr "Отвори"
+
+#: ../xfpanel-switch/xfpanel-switch.py:158
+#, python-format
+msgid "%s (Copy of %s)"
+msgstr "%s (Умножак %s)"
+
+#: ../xfpanel-switch/xfpanel-switch.py:182
+msgid "Export configuration as..."
+msgstr "Извези поставке као..."
+
+#: ../xfpanel-switch/xfpanel-switch.py:183
+msgid "Untitled"
+msgstr "Безимено"
+
+#: ../xfpanel-switch/xfpanel-switch.py:195
+msgid "Import configuration file..."
+msgstr "Увези датотеку поставки..."
+
+#: ../xfpanel-switch/xfpanel-switch.py:242
+msgid "Name the new panel configuration"
+msgstr "Име нових поставки полице"
+
+#: ../xfpanel-switch/xfpanel-switch.py:266
+#, python-format
+msgid "Backup_%s"
+msgstr "Умножак за чување_%s"
