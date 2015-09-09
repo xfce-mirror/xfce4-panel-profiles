@@ -17,8 +17,6 @@ import io
 import time
 import os
 
-from os.path import expanduser
-
 # yes, python 3.2 has exist_ok, but it will still fail if the mode is different
 
 
@@ -97,7 +95,7 @@ class PanelConfig(object):
     def get_desktop_source_file(self, desktop):
         if self.source is None:
             path = os.path.join(
-                expanduser("~"), '/.config/xfce4/panel/', desktop)
+                GLib.get_home_dir(), '.config/xfce4/panel/', desktop)
             return open(path, 'rb')
         else:
             return self.source.extractfile(desktop)
@@ -136,7 +134,8 @@ class PanelConfig(object):
                 result = xfconf.call_sync('SetProperty', GLib.Variant(
                     '(ssv)', ('xfce4-panel', pp, pv)), 0, -1, None)
 
-            panel_path = expanduser("~") + '/.config/xfce4/panel/'
+            panel_path = os.path.join(
+                GLib.get_home_dir(), '.config/xfce4/panel/')
             for d in self.desktops:
                 bytes = self.get_desktop_source_file(d).read()
                 mkdir_p(panel_path + os.path.dirname(d))
