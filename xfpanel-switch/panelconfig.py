@@ -122,21 +122,29 @@ class PanelConfig(object):
         t.close()
 
     def to_xfconf(self, xfconf):
-        os.system('killall xfce4-panel')
+        session_bus = Gio.BusType.SESSION
+        conn = Gio.bus_get_sync(session_bus, None)
 
-        for (pp, pv) in sorted(self.properties.items()):
-            result = xfconf.call_sync('SetProperty', GLib.Variant(
-                '(ssv)', ('xfce4-panel', pp, pv)), 0, -1, None)
+        destination = 'org.xfce.Panel'
+        path = '/org/xfce/Panel'
+        interface = destination
 
-        panel_path = expanduser("~") + '/.config/xfce4/panel/'
-        for d in self.desktops:
-            bytes = self.get_desktop_source_file(d).read()
-            mkdir_p(panel_path + os.path.dirname(d))
-            f = open(panel_path + d, 'wb')
-            f.write(bytes)
-            f.close()
+        dbus_proxy = Gio.DBusProxy.new_sync(conn, 0, None, destination, path, interface, None)
 
-        os.system('cd ~ && xfce4-panel &')
+        if dbus_proxy is not None:
+            for (pp, pv) in sorted(self.properties.items()):
+                result = xfconf.call_sync('SetProperty', GLib.Variant(
+                    '(ssv)', ('xfce4-panel', pp, pv)), 0, -1, None)
+
+            panel_path = expanduser("~") + '/.config/xfce4/panel/'
+            for d in self.desktops:
+                bytes = self.get_desktop_source_file(d).read()
+                mkdir_p(panel_path + os.path.dirname(d))
+                f = open(panel_path + d, 'wb')
+                f.write(bytes)
+                f.close()
+
+            dbus_proxy.call_sync('Terminate', GLib.Variant('(b)', ('xfce4-panel',)), 0, -1, None)
 
 
 if __name__ == '__main__':
