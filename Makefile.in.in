@@ -34,9 +34,11 @@ install: all
 	install -d $(DESTDIR)/$(PREFIX)/share/applications
 	install -m 644 $(APPNAME).desktop $(DESTDIR)/$(PREFIX)/share/applications
 	
-	# Enable once we have locales
-	# cp -rf locale $(DESTDIR)/$(PREFIX)/share
-	# ln -sf $(PREFIX)/share/locale $(DESTDIR)/$(PREFIX)/share/$(APPNAME)/locale
+	install -d $(DESTDIR)/$(PREFIX)/share/xfpanel-switch
+	install data/layouts/*.tar.bz2 $(DESTDIR)/$(PREFIX)/share/xfpanel-switch
+
+	cp -rf locale $(DESTDIR)/$(PREFIX)/share
+	ln -sf $(PREFIX)/share/locale $(DESTDIR)/$(PREFIX)/share/$(APPNAME)/locale
 
 uninstall:
 	rm -f $(DESTDIR)/$(PREFIX)/share/applications/$(APPNAME).desktop
