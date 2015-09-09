@@ -32,7 +32,7 @@ install: all
 	install README $(DESTDIR)/$(PREFIX)/share/doc/$(APPNAME)
 
 	install -d $(DESTDIR)/$(PREFIX)/share/applications
-	install --mode=644 $(APPNAME).desktop $(DESTDIR)/$(PREFIX)/share/applications
+	install -m 644 $(APPNAME).desktop $(DESTDIR)/$(PREFIX)/share/applications
 	
 	# Enable once we have locales
 	# cp -rf locale $(DESTDIR)/$(PREFIX)/share
