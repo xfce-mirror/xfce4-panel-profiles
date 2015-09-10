@@ -1,0 +1,72 @@
+/configver 2
+/panels [<1>, <2>]
+/panels/panel-1/autohide-behavior uint32 0
+/panels/panel-1/background-alpha uint32 100
+/panels/panel-1/background-style uint32 0
+/panels/panel-1/disable-struts false
+/panels/panel-1/enter-opacity uint32 100
+/panels/panel-1/leave-opacity uint32 100
+/panels/panel-1/length uint32 100
+/panels/panel-1/mode uint32 0
+/panels/panel-1/nrows uint32 1
+/panels/panel-1/plugin-ids [<1>, <2>, <3>, <4>, <5>, <6>, <7>]
+/panels/panel-1/position 'p=6;x=0;y=0'
+/panels/panel-1/position-locked true
+/panels/panel-1/size uint32 30
+/panels/panel-2/autohide-behavior uint32 0
+/panels/panel-2/background-alpha uint32 100
+/panels/panel-2/background-style uint32 0
+/panels/panel-2/disable-struts false
+/panels/panel-2/enter-opacity uint32 100
+/panels/panel-2/leave-opacity uint32 100
+/panels/panel-2/length uint32 10
+/panels/panel-2/length-adjust true
+/panels/panel-2/mode uint32 0
+/panels/panel-2/nrows uint32 1
+/panels/panel-2/plugin-ids [<8>, <9>, <10>, <11>, <12>, <13>, <14>, <15>]
+/panels/panel-2/position 'p=10;x=0;y=0'
+/panels/panel-2/position-locked true
+/panels/panel-2/size uint32 48
+/plugins/plugin-1 'applicationsmenu'
+/plugins/plugin-1/button-icon 'xfce4-panel-menu'
+/plugins/plugin-1/button-title 'Applications Menu'
+/plugins/plugin-1/show-button-title true
+/plugins/plugin-1/show-menu-icons true
+/plugins/plugin-1/show-tooltips false
+/plugins/plugin-2 'tasklist'
+/plugins/plugin-3 'separator'
+/plugins/plugin-3/expand true
+/plugins/plugin-3/style uint32 0
+/plugins/plugin-4 'pager'
+/plugins/plugin-4/miniature-view true
+/plugins/plugin-4/rows uint32 1
+/plugins/plugin-5 'clock'
+/plugins/plugin-5/digital-format '%R'
+/plugins/plugin-5/mode uint32 2
+/plugins/plugin-5/show-frame true
+/plugins/plugin-5/tooltip-format '%A %d %B %Y'
+/plugins/plugin-6 'systray'
+/plugins/plugin-6/show-frame true
+/plugins/plugin-6/size-max uint32 22
+/plugins/plugin-7 'actions'
+/plugins/plugin-7/appearance uint32 1
+/plugins/plugin-7/ask-confirmation true
+/plugins/plugin-8 'showdesktop'
+/plugins/plugin-9 'separator'
+/plugins/plugin-9/expand false
+/plugins/plugin-9/items [<'14418417141.desktop'>]
+/plugins/plugin-9/style uint32 1
+/plugins/plugin-10 'launcher'
+/plugins/plugin-10/items [<'14418417141.desktop'>]
+/plugins/plugin-11 'launcher'
+/plugins/plugin-11/items [<'14418417142.desktop'>]
+/plugins/plugin-12 'launcher'
+/plugins/plugin-12/items [<'14418417143.desktop'>]
+/plugins/plugin-13 'launcher'
+/plugins/plugin-13/items [<'14418417144.desktop'>]
+/plugins/plugin-14 'separator'
+/plugins/plugin-14/expand false
+/plugins/plugin-14/style uint32 1
+/plugins/plugin-15 'directorymenu'
+/plugins/plugin-15/expand true
+/plugins/plugin-15/style uint32 0

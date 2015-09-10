@@ -1,0 +1,65 @@
+/configver 2
+/panels uint32 1
+/panels/panel-0/autohide-behavior uint32 0
+/panels/panel-0/background-alpha uint32 80
+/panels/panel-0/background-style uint32 0
+/panels/panel-0/disable-struts false
+/panels/panel-0/enter-opacity uint32 100
+/panels/panel-0/leave-opacity uint32 100
+/panels/panel-0/length uint32 100
+/panels/panel-0/length-adjust true
+/panels/panel-0/mode uint32 0
+/panels/panel-0/nrows uint32 1
+/panels/panel-0/plugin-ids [<1>, <2>, <3>, <4>, <5>, <6>, <7>, <8>]
+/panels/panel-0/position 'p=6;x=0;y=0'
+/panels/panel-0/position-locked true
+/panels/panel-0/size uint32 24
+/panels/panel-0/span-monitors false
+/plugins/plugin-1 'whiskermenu'
+/plugins/plugin-1/button-icon 'xfce4-panel-menu'
+/plugins/plugin-1/button-title 'Applications'
+/plugins/plugin-1/custom-menu false
+/plugins/plugin-1/show-button-title true
+/plugins/plugin-1/show-generic-names false
+/plugins/plugin-1/show-menu-icons true
+/plugins/plugin-1/show-tooltips false
+/plugins/plugin-2 'tasklist'
+/plugins/plugin-2/flat-buttons true
+/plugins/plugin-2/grouping uint32 0
+/plugins/plugin-2/include-all-monitors true
+/plugins/plugin-2/include-all-workspaces false
+/plugins/plugin-2/middle-click uint32 0
+/plugins/plugin-2/show-button-type 1
+/plugins/plugin-2/show-handle true
+/plugins/plugin-2/show-labels true
+/plugins/plugin-2/show-only-minimized false
+/plugins/plugin-2/show-wireframes false
+/plugins/plugin-2/sort-order uint32 1
+/plugins/plugin-2/switch-workspace-on-unminimize true
+/plugins/plugin-2/window-scrolling true
+/plugins/plugin-3 'separator'
+/plugins/plugin-3/expand true
+/plugins/plugin-3/style uint32 0
+/plugins/plugin-4 'systray'
+/plugins/plugin-4/items [<'14418443291.desktop'>]
+/plugins/plugin-4/show-frame false
+/plugins/plugin-4/size-max uint32 22
+/plugins/plugin-5 'power-manager-plugin'
+/plugins/plugin-5/items [<'14418443522.desktop'>]
+/plugins/plugin-6 'indicator'
+/plugins/plugin-6/align-left false
+/plugins/plugin-6/items [<'14418443623.desktop'>]
+/plugins/plugin-6/mode-whitelist false
+/plugins/plugin-6/single-row false
+/plugins/plugin-6/style uint32 0
+/plugins/plugin-7 'separator'
+/plugins/plugin-7/digital-format '%a, %d %b %H:%M'
+/plugins/plugin-7/expand false
+/plugins/plugin-7/style uint32 0
+/plugins/plugin-8 'clock'
+/plugins/plugin-8/digital-format '%d %b, %H:%M'
+/plugins/plugin-8/mode uint32 2
+/plugins/plugin-8/show-frame true
+/plugins/plugin-8/size-max uint32 22
+/plugins/plugin-8/style uint32 0
+/plugins/plugin-8/tooltip-format '%A %d %B %Y'

@@ -118,6 +118,9 @@ class XfpanelSwitch:
             path = os.path.join(directory, self.data_dir)
             if os.path.isdir(path):
                 dirs.append(path)
+                path = os.path.join(path, "layouts")
+                if os.path.isdir(path):
+                    dirs.append(path)
         path = os.path.join(GLib.get_user_data_dir(), self.data_dir)
         if os.path.isdir(path):
             dirs.append(path)

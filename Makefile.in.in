@@ -4,7 +4,7 @@ PYTHON=`which @python@`
 LANGUAGE_FILES=$(patsubst po/%.po, locale/%/LC_MESSAGES/$(APPNAME).mo, $(wildcard po/*.po))
 DESTDIR=
 
-all: $(LANGUAGE_FILES)
+all: $(LANGUAGE_FILES) layouts
 	intltool-merge -d po xfpanel-switch.desktop.in xfpanel-switch.desktop
 	chmod +x xfpanel-switch.desktop
 	sed -e s,%prefix%,$(PREFIX), bin/$(APPNAME).in.in > bin/$(APPNAME).in
@@ -14,6 +14,13 @@ all: $(LANGUAGE_FILES)
 locale/%/LC_MESSAGES/$(APPNAME).mo: po/%.po
 	mkdir -p $(dir $@)
 	msgfmt $< -o $@
+
+layouts:
+	cd data/layouts/gnome2; tar -cvjf "../GNOME 2.tar.bz2" *
+	cd data/layouts/redmond; tar -cvjf "../Redmond.tar.bz2" *
+	cd data/layouts/xfce-4.12; tar -cvjf "../Xfce 4.12.tar.bz2" *
+	cd data/layouts/xubuntu-classic; tar -cvjf "../Xubuntu Classic.tar.bz2" *
+	cd data/layouts/xubuntu-modern; tar -cvjf "../Xubuntu Modern.tar.bz2" *
 
 install: all
 	install -d $(DESTDIR)/$(PREFIX)/bin
@@ -35,7 +42,8 @@ install: all
 	install -m 644 $(APPNAME).desktop $(DESTDIR)/$(PREFIX)/share/applications
 	
 	install -d $(DESTDIR)/$(PREFIX)/share/xfpanel-switch
-	install data/layouts/*.tar.bz2 $(DESTDIR)/$(PREFIX)/share/xfpanel-switch
+	install -d $(DESTDIR)/$(PREFIX)/share/xfpanel-switch/layouts
+	install data/layouts/*.tar.bz2 $(DESTDIR)/$(PREFIX)/share/xfpanel-switch/layouts
 
 	cp -rf locale $(DESTDIR)/$(PREFIX)/share
 	ln -sf $(PREFIX)/share/locale $(DESTDIR)/$(PREFIX)/share/$(APPNAME)/locale
@@ -52,6 +60,7 @@ clean:
 	rm -f xfpanel-switch/*.pyc
 	rm -f bin/$(APPNAME).in
 	rm -f bin/$(APPNAME)
+	rm -f data/layouts/*.tar.bz2
 	rm -f xfpanel-switch.desktop
 	rm -f Makefile.in
 	rm -f Makefile

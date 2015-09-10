@@ -1,0 +1,36 @@
+/configver 2
+/panels [<1>]
+/panels/panel-1/autohide-behavior uint32 0
+/panels/panel-1/background-alpha uint32 100
+/panels/panel-1/background-style uint32 0
+/panels/panel-1/disable-struts false
+/panels/panel-1/enter-opacity uint32 100
+/panels/panel-1/leave-opacity uint32 100
+/panels/panel-1/length uint32 100
+/panels/panel-1/mode uint32 0
+/panels/panel-1/nrows uint32 1
+/panels/panel-1/plugin-ids [<1>, <2>, <3>, <4>, <5>]
+/panels/panel-1/position 'p=8;x=512;y=752'
+/panels/panel-1/position-locked true
+/panels/panel-1/size uint32 30
+/plugins/plugin-1 'applicationsmenu'
+/plugins/plugin-1/button-icon 'xfce4-panel-menu'
+/plugins/plugin-1/button-title 'Start'
+/plugins/plugin-1/custom-menu false
+/plugins/plugin-1/show-button-title true
+/plugins/plugin-1/show-generic-names false
+/plugins/plugin-1/show-menu-icons true
+/plugins/plugin-1/show-tooltips false
+/plugins/plugin-2 'tasklist'
+/plugins/plugin-3 'separator'
+/plugins/plugin-3/expand true
+/plugins/plugin-3/style uint32 0
+/plugins/plugin-4 'systray'
+/plugins/plugin-4/names-visible [<'networkmanager applet'>]
+/plugins/plugin-4/show-frame true
+/plugins/plugin-4/size-max uint32 22
+/plugins/plugin-5 'clock'
+/plugins/plugin-5/digital-format '%I:%M %p'
+/plugins/plugin-5/mode uint32 2
+/plugins/plugin-5/show-frame true
+/plugins/plugin-5/tooltip-format '%A %d %B %Y'
