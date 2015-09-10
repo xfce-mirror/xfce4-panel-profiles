@@ -1,3 +1,19 @@
+xfpanel-switch 1.0.1
+
+    * New Features
+      - Ths new release ships with it's first set of templates.
+        The templates include GNOME 2, Redmond, Xfce 4.12, 
+        Xubuntu Classic (12.04) and Xubuntu Modern (14.04+)
+      - The first round of translations have now landed. We now
+        have full support for German, Lithuanian, Serbian, and
+        Swedish. Partial Russian support is also included.
+    * Bugs Fixed
+      - Terminate xfce-panel by dbus instead of kill (LP: #1489551)
+      - Improved code portability to non-Linux systems (LP: #1489547)
+      - Fixed path handling for launchers (LP: #1484548)
+    * Many thanks to our contributors!
+
+
 Initial release: xfpanel-switch 1.0
 
     * This is the first release of xfpanel-switch. This application
