@@ -1,8 +1,16 @@
+xfpanel-switch 1.0.2
+
+    * Bugs Fixed
+      - Wrong shebang in xfpanel-switch/xfpanel-switch.py (LP: #1494843)
+      - Check if user can delete backup (LP: #1494846)
+      - Do not list saved configurations multiple times
+    * New Translation: French
+
 xfpanel-switch 1.0.1
 
     * New Features
       - Ths new release ships with it's first set of templates.
-        The templates include GNOME 2, Redmond, Xfce 4.12, 
+        The templates include GNOME 2, Redmond, Xfce 4.12,
         Xubuntu Classic (12.04) and Xubuntu Modern (14.04+)
       - The first round of translations have now landed. We now
         have full support for German, Lithuanian, Serbian, and
@@ -20,7 +28,7 @@ Initial release: xfpanel-switch 1.0
       allows users to manage their panel configuration, make backups,
       and even import/export their creations. Distributors can provide
       default configurations to be used.
-    * As an initial release, it is expected to be a bit rough around 
+    * As an initial release, it is expected to be a bit rough around
       the edges.
     * Current features:
       - Backup/Restore
