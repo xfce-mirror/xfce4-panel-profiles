@@ -64,11 +64,11 @@
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="margin_start">12</property>
-                        <property name="xalign">0</property>
                         <property name="label" translatable="yes">&lt;b&gt;&lt;big&gt;Xfce Panel Switch&lt;/big&gt;&lt;/b&gt;
 Backup and restore your panel configuration</property>
                         <property name="use_markup">True</property>
                         <property name="ellipsize">end</property>
+                        <property name="xalign">0</property>
                       </object>
                       <packing>
                         <property name="expand">True</property>
@@ -128,6 +128,7 @@ Backup and restore your panel configuration</property>
                         <property name="model">liststore1</property>
                         <property name="search_column">0</property>
                         <property name="tooltip_column">0</property>
+                        <signal name="cursor-changed" handler="on_saved_configurations_cursor_changed" swapped="no"/>
                         <child internal-child="selection">
                           <object class="GtkTreeSelection" id="treeview-selection1"/>
                         </child>
@@ -175,7 +176,7 @@ Backup and restore your panel configuration</property>
                     <property name="can_focus">False</property>
                     <property name="icon_size">2</property>
                     <child>
-                      <object class="GtkToolButton" id="toolbutton3">
+                      <object class="GtkToolButton" id="toolbar_apply">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="tooltip_text" translatable="yes">Apply Configuration</property>
@@ -190,7 +191,7 @@ Backup and restore your panel configuration</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkToolButton" id="toolbutton1">
+                      <object class="GtkToolButton" id="toolbar_save">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="tooltip_text" translatable="yes">Save Configuration</property>
@@ -205,7 +206,7 @@ Backup and restore your panel configuration</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkToolButton" id="toolbutton2">
+                      <object class="GtkToolButton" id="toolbar_delete">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="tooltip_text" translatable="yes">Remove Configuration</property>
@@ -220,7 +221,7 @@ Backup and restore your panel configuration</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkToolButton" id="toolbutton5">
+                      <object class="GtkToolButton" id="toolbar_export">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="tooltip_text" translatable="yes">Export</property>
@@ -235,7 +236,7 @@ Backup and restore your panel configuration</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkToolButton" id="toolbutton4">
+                      <object class="GtkToolButton" id="toolbar_import">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="tooltip_text" translatable="yes">Import</property>

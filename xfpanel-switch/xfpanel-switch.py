@@ -240,6 +240,14 @@ class XfpanelSwitch:
         self.delete_configuration(filename)
         model.remove(treeiter)
 
+    def on_saved_configurations_cursor_changed(self, widget):
+        filename = self.get_selected_filename()
+        delete = self.builder.get_object("toolbar_delete")
+        if os.access(filename, os.W_OK):
+            delete.set_sensitive(True)
+        else:
+            delete.set_sensitive(False)
+
     def on_window_destroy(self, *args):
         '''Exit the application when the window is closed.'''
         Gtk.main_quit()
