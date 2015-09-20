@@ -124,7 +124,7 @@ class XfpanelSwitch:
         path = os.path.join(GLib.get_user_data_dir(), self.data_dir)
         if os.path.isdir(path):
             dirs.append(path)
-        return dirs
+        return list(set(dirs))
 
     def get_saved_configurations(self):
         results = []
