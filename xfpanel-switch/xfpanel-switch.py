@@ -128,7 +128,7 @@ class XfpanelSwitch:
 
     def get_saved_configurations(self):
         results = []
-        results.append(("", "Current Configuration", ""))
+        results.append(("", _("Current Configuration"), ""))
         today_delta = datetime.datetime.today() - datetime.timedelta(days=1)
 
         for directory in self.get_data_dirs():
@@ -140,9 +140,9 @@ class XfpanelSwitch:
                     t = os.path.getmtime(path)
                     datetime_o = datetime.datetime.fromtimestamp(t)
                     if datetime_o > today_delta:
-                        modified = ("Today")
+                        modified = (_("Today"))
                     elif datetime_o == today_delta:
-                        modified = ("Yesterday")
+                        modified = (_("Yesterday"))
                     else:
                         modified = datetime_o.strftime("%x")
                     results.append((path, name, modified))
