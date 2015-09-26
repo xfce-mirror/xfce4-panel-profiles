@@ -53,11 +53,19 @@ class XfpanelSwitch:
 
         self.load_xfconf()
 
+        modified_col = self.builder.get_object('modified_column')
+        cell = Gtk.CellRendererText()
+        modified_col.pack_start(cell, False)
+        modified_col.set_cell_data_func(cell, self.cell_data_func_modified, 2)
+
         self.treeview = self.builder.get_object('saved_configurations')
         self.tree_model = self.treeview.get_model()
         for config in self.get_saved_configurations():
             self.tree_model.append(config)
-        self.tree_model.set_sort_column_id(1, Gtk.SortType.DESCENDING)
+
+        # Sort by name, then sort by date so timestamp sort is alphabetical
+        self.tree_model.set_sort_column_id(1, Gtk.SortType.ASCENDING)
+        self.tree_model.set_sort_column_id(2, Gtk.SortType.DESCENDING)
 
         if not os.path.exists(self.save_location):
             os.makedirs(self.save_location)
@@ -128,7 +136,8 @@ class XfpanelSwitch:
 
     def get_saved_configurations(self):
         results = []
-        results.append(("", _("Current Configuration"), ""))
+        now = int(datetime.datetime.now().strftime('%s'))
+        results.append(("", _("Current Configuration"), now))
         today_delta = datetime.datetime.today() - datetime.timedelta(days=1)
 
         for directory in self.get_data_dirs():
@@ -137,17 +146,24 @@ class XfpanelSwitch:
                 name, tar = os.path.splitext(name)
                 if ext in [".gz", ".bz2"]:
                     path = os.path.join(directory, filename)
-                    t = os.path.getmtime(path)
-                    datetime_o = datetime.datetime.fromtimestamp(t)
-                    if datetime_o > today_delta:
-                        modified = (_("Today"))
-                    elif datetime_o == today_delta:
-                        modified = (_("Yesterday"))
-                    else:
-                        modified = datetime_o.strftime("%x")
-                    results.append((path, name, modified))
+                    t = int(os.path.getmtime(path))
+                    results.append((path, name, int(t)))
 
         return results
+
+    def cell_data_func_modified(self, column, cell_renderer,
+                                tree_model, tree_iter, id):
+        today_delta = datetime.datetime.today() - datetime.timedelta(days=1)
+        t = tree_model.get_value(tree_iter, id)
+        datetime_o = datetime.datetime.fromtimestamp(t)
+        if datetime_o > today_delta:
+            modified = _("Today")
+        elif datetime_o == today_delta:
+            modified = _("Yesterday")
+        else:
+            modified = datetime_o.strftime("%x")
+        cell_renderer.set_property('text', modified)
+        return
 
     def get_selected(self):
         model, treeiter = self.treeview.get_selection().get_selected()
@@ -175,7 +191,7 @@ class XfpanelSwitch:
         filename = name + ".tar.bz2"
         filename = os.path.join(self.save_location, filename)
         PanelConfig.from_xfconf(self.xfconf).to_file(filename)
-        created = datetime.datetime.now().strftime("%X")
+        created = int(datetime.datetime.now().strftime('%s'))
         if append:
             self.tree_model.append([filename, name, created])
 
@@ -216,7 +232,7 @@ class XfpanelSwitch:
                 dst = os.path.join(self.save_location, name + ".tar.bz2")
                 self._copy(filename, dst)
                 self.tree_model.append(
-                    [dst, name, datetime.datetime.now().strftime("%X")])
+                    [dst, name, int(datetime.datetime.now().strftime('%s'))])
             savedlg.destroy()
         dialog.destroy()
 
