@@ -226,7 +226,7 @@ class XfpanelSwitch:
         response = dialog.run()
         if response == Gtk.ResponseType.ACCEPT:
             filename = dialog.get_filename()
-            savedlg = PanelSaveDialog()
+            savedlg = PanelSaveDialog(self.window)
             if savedlg.run() == Gtk.ResponseType.ACCEPT:
                 name = savedlg.get_save_name()
                 dst = os.path.join(self.save_location, name + ".tar.bz2")
