@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfpanel-switch\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2015-07-20 22:28-0400\n"
+"POT-Creation-Date: 2015-10-06 21:08-0400\n"
 "PO-Revision-Date: 2015-09-20 15:58+0000\n"
 "Last-Translator: Olivier Duchateau <duchateau.olivier@gmail.com>\n"
 "Language-Team: French <fr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-10-04 06:14+0000\n"
-"X-Generator: Launchpad (build 17783)\n"
+"X-Launchpad-Export-Date: 2015-10-07 06:17+0000\n"
+"X-Generator: Launchpad (build 17802)\n"
 
-#: ../xfpanel-switch.desktop.in.h:1 ../xfpanel-switch/xfpanel-switch.py:48
+#: ../xfpanel-switch.desktop.in.h:1 ../xfpanel-switch/xfpanel-switch.py:51
 msgid "Xfce Panel Switch"
 msgstr "Xfce Panel Switch"
 
@@ -46,7 +46,7 @@ msgid "Apply Configuration"
 msgstr "Appliquer la configuration"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:6
-#: ../xfpanel-switch/xfpanel-switch.py:250
+#: ../xfpanel-switch/xfpanel-switch.py:293
 msgid "Save Configuration"
 msgstr "Sauvegarder la configuration"
 
@@ -67,8 +67,8 @@ msgid "Save panel configuration as..."
 msgstr "Sauvegarde de la configuration du tableau de bord"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:11
-#: ../xfpanel-switch/xfpanel-switch.py:73
-#: ../xfpanel-switch/xfpanel-switch.py:249
+#: ../xfpanel-switch/xfpanel-switch.py:85
+#: ../xfpanel-switch/xfpanel-switch.py:292
 msgid "Cancel"
 msgstr "Annuler"
 
@@ -76,36 +76,48 @@ msgstr "Annuler"
 msgid "<b>Name the new panel configuration</b>"
 msgstr "<b>Nom du la nouvelle configuration du tableau de bord</b>"
 
-#: ../xfpanel-switch/xfpanel-switch.py:68
+#: ../xfpanel-switch/xfpanel-switch.py:80
 msgid "Save"
 msgstr "Sauvegarder"
 
-#: ../xfpanel-switch/xfpanel-switch.py:70
+#: ../xfpanel-switch/xfpanel-switch.py:82
 msgid "Open"
 msgstr "Ouvrir"
 
-#: ../xfpanel-switch/xfpanel-switch.py:158
+#: ../xfpanel-switch/xfpanel-switch.py:140
+msgid "Current Configuration"
+msgstr ""
+
+#: ../xfpanel-switch/xfpanel-switch.py:160
+msgid "Today"
+msgstr ""
+
+#: ../xfpanel-switch/xfpanel-switch.py:162
+msgid "Yesterday"
+msgstr ""
+
+#: ../xfpanel-switch/xfpanel-switch.py:187
 #, python-format
 msgid "%s (Copy of %s)"
 msgstr "%s (Copie vers %s)"
 
-#: ../xfpanel-switch/xfpanel-switch.py:182
+#: ../xfpanel-switch/xfpanel-switch.py:211
 msgid "Export configuration as..."
 msgstr "Exporter la configuration...."
 
-#: ../xfpanel-switch/xfpanel-switch.py:183
+#: ../xfpanel-switch/xfpanel-switch.py:212
 msgid "Untitled"
 msgstr "Document sans nom"
 
-#: ../xfpanel-switch/xfpanel-switch.py:195
+#: ../xfpanel-switch/xfpanel-switch.py:224
 msgid "Import configuration file..."
 msgstr "Importer la sauvegarde..."
 
-#: ../xfpanel-switch/xfpanel-switch.py:242
+#: ../xfpanel-switch/xfpanel-switch.py:285
 msgid "Name the new panel configuration"
 msgstr "Nom de la nouvelle configuration du tableau de bord"
 
-#: ../xfpanel-switch/xfpanel-switch.py:266
+#: ../xfpanel-switch/xfpanel-switch.py:309
 #, python-format
 msgid "Backup_%s"
 msgstr "Sauvegarde_%s"
