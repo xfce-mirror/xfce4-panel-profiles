@@ -10,10 +10,13 @@ all: $(LANGUAGE_FILES) layouts
 	sed -e s,%prefix%,$(PREFIX), bin/$(APPNAME).in.in > bin/$(APPNAME).in
 	sed -e s,%python%,$(PYTHON), bin/$(APPNAME).in > bin/$(APPNAME)
 	chmod +x bin/$(APPNAME)
-	
+
 locale/%/LC_MESSAGES/$(APPNAME).mo: po/%.po
 	mkdir -p $(dir $@)
 	msgfmt $< -o $@
+
+pot:
+	cd po; intltool-update --pot --gettext-package=xfpanel-switch
 
 layouts:
 	cd data/layouts/gnome2; tar -cvjf "../GNOME 2.tar.bz2" *
@@ -25,7 +28,7 @@ layouts:
 install: all
 	install -d $(DESTDIR)/$(PREFIX)/bin
 	install bin/$(APPNAME) $(DESTDIR)/$(PREFIX)/bin
-	
+
 	install -d $(DESTDIR)/$(PREFIX)/share/$(APPNAME)/xfpanel-switch
 	install xfpanel-switch/panelconfig.py $(DESTDIR)/$(PREFIX)/share/$(APPNAME)/xfpanel-switch
 	install xfpanel-switch/xfpanel-switch.py $(DESTDIR)/$(PREFIX)/share/$(APPNAME)/xfpanel-switch
@@ -40,7 +43,7 @@ install: all
 
 	install -d $(DESTDIR)/$(PREFIX)/share/applications
 	install -m 644 $(APPNAME).desktop $(DESTDIR)/$(PREFIX)/share/applications
-	
+
 	install -d $(DESTDIR)/$(PREFIX)/share/xfpanel-switch
 	install -d $(DESTDIR)/$(PREFIX)/share/xfpanel-switch/layouts
 	install data/layouts/*.tar.bz2 $(DESTDIR)/$(PREFIX)/share/xfpanel-switch/layouts

@@ -272,6 +272,12 @@ class XfpanelSwitch:
         '''Exit the application when the window is closed.'''
         Gtk.main_quit()
 
+    def on_help_clicked(self, *args):
+        '''Navigate to the application documentation on Help click.'''
+        screen = self.window.get_screen()
+        link = "https://wiki.smdavis.us/doku.php?id=xfpanel-switch-docs"
+        Gtk.show_uri(screen, link, Gtk.get_current_event_time())
+
 
 class PanelSaveDialog(Gtk.MessageDialog):
 
