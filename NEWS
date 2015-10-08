@@ -5,7 +5,8 @@ xfpanel-switch 1.0.3
       - Correctly sort modification dates
       - Set the save dialog parent to fix a runtime warning
       - Add link to documentation when clicking Help
-    * Updated translation: French
+    * New translations: Finnish, Spanish
+    * Updated translations: German, French
 
 xfpanel-switch 1.0.2
 
