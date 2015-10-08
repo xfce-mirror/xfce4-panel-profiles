@@ -1,4 +1,4 @@
-# German translation for xfpanel-switch
+# Finnish translation for xfpanel-switch
 # Copyright (c) 2015 Rosetta Contributors and Canonical Ltd 2015
 # This file is distributed under the same license as the xfpanel-switch package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: xfpanel-switch\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-10-06 21:08-0400\n"
-"PO-Revision-Date: 2015-10-07 07:34+0000\n"
-"Last-Translator: Daniel Kessel <Unknown>\n"
-"Language-Team: German <de@li.org>\n"
+"PO-Revision-Date: 2015-10-07 09:13+0000\n"
+"Last-Translator: Pasi Lallinaho <pasi@shimmerproject.org>\n"
+"Language-Team: Finnish <fi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,105 +19,105 @@ msgstr ""
 
 #: ../xfpanel-switch.desktop.in.h:1 ../xfpanel-switch/xfpanel-switch.py:51
 msgid "Xfce Panel Switch"
-msgstr "Xfce-Leistenschalter"
+msgstr "Xfce-paneelin vaihtaja"
 
 #: ../xfpanel-switch.desktop.in.h:2
 msgid "Backup and restore your panel configuration"
-msgstr "Ihre Leistenkonfiguration sichern und wiederherstellen"
+msgstr "Varmuuskopioi ja palauta paneeliasetuksesi"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:1
 msgid ""
 "<b><big>Xfce Panel Switch</big></b>\n"
 "Backup and restore your panel configuration"
 msgstr ""
-"<b><big>Xfce-Leistenschalter</big></b>\n"
-"Ihre Leistenkonfiguration sichern und wiederherstellen"
+"<b><big>Xfce-paneelin vaihtaja</big></b>\n"
+"Varmuuskopioi ja palauta paneelin asetukset"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:3
 msgid "Filename"
-msgstr "Dateiname"
+msgstr "Tiedoston nimi"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:4
 msgid "Date Modified"
-msgstr "Änderungsdatum"
+msgstr "Muokkauspäivämäärä"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:5
 msgid "Apply Configuration"
-msgstr "Konfiguration anwenden"
+msgstr "Ota asetukset käyttöön"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:6
 #: ../xfpanel-switch/xfpanel-switch.py:293
 msgid "Save Configuration"
-msgstr "Konfiguration speichern"
+msgstr "Tallenna asetukset"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:7
 msgid "Remove Configuration"
-msgstr "Konfiguration entfernen"
+msgstr "Poista asetukset"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:8
 msgid "Export"
-msgstr "Exportieren"
+msgstr "Vie"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:9
 msgid "Import"
-msgstr "Importieren"
+msgstr "Tuo"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:10
 msgid "Save panel configuration as..."
-msgstr "Leistenkonfiguration speichern unter …"
+msgstr "Tallenna paneelin asetukset nimellä..."
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:11
 #: ../xfpanel-switch/xfpanel-switch.py:85
 #: ../xfpanel-switch/xfpanel-switch.py:292
 msgid "Cancel"
-msgstr "Abbrechen"
+msgstr "Peruuta"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:12
 msgid "<b>Name the new panel configuration</b>"
-msgstr "<b>Die neue Leistenkonfiguration benennen</b>"
+msgstr "<b>Nimeä uudet paneelin asetukset</b>"
 
 #: ../xfpanel-switch/xfpanel-switch.py:80
 msgid "Save"
-msgstr "Speichern"
+msgstr "Tallenna"
 
 #: ../xfpanel-switch/xfpanel-switch.py:82
 msgid "Open"
-msgstr "Öffnen"
+msgstr "Avaa"
 
 #: ../xfpanel-switch/xfpanel-switch.py:140
 msgid "Current Configuration"
-msgstr "Aktuelle Konfiguration"
+msgstr "Nykyiset asetukset"
 
 #: ../xfpanel-switch/xfpanel-switch.py:160
 msgid "Today"
-msgstr "Heute"
+msgstr "Tänään"
 
 #: ../xfpanel-switch/xfpanel-switch.py:162
 msgid "Yesterday"
-msgstr "Gestern"
+msgstr "Eilen"
 
 #: ../xfpanel-switch/xfpanel-switch.py:187
 #, python-format
 msgid "%s (Copy of %s)"
-msgstr "%s (Kopie von %s)"
+msgstr "%s (kopio: %s)"
 
 #: ../xfpanel-switch/xfpanel-switch.py:211
 msgid "Export configuration as..."
-msgstr "Konfiguration exportieren nach …"
+msgstr "Vie asetukset nimellä..."
 
 #: ../xfpanel-switch/xfpanel-switch.py:212
 msgid "Untitled"
-msgstr "Unbenannt"
+msgstr "Nimetön"
 
 #: ../xfpanel-switch/xfpanel-switch.py:224
 msgid "Import configuration file..."
-msgstr "Konfigurationsdatei importieren …"
+msgstr "Tuo asetustiedosto..."
 
 #: ../xfpanel-switch/xfpanel-switch.py:285
 msgid "Name the new panel configuration"
-msgstr "Die neue Leistenkonfiguration benennen"
+msgstr "Nimeä uudet paneelin asetukset"
 
 #: ../xfpanel-switch/xfpanel-switch.py:309
 #, python-format
 msgid "Backup_%s"
-msgstr "Sicherung_%s"
+msgstr "Varmuuskopioi_%s"
