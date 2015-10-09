@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: xfpanel-switch\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-10-06 21:08-0400\n"
-"PO-Revision-Date: 2015-10-07 16:20+0000\n"
-"Last-Translator: GridCube <gridcube@gmail.com>\n"
+"PO-Revision-Date: 2015-10-08 18:29+0000\n"
+"Last-Translator: Eugenio González <eugeagb@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-10-08 05:58+0000\n"
+"X-Launchpad-Export-Date: 2015-10-09 05:48+0000\n"
 "X-Generator: Launchpad (build 17802)\n"
 
 #: ../xfpanel-switch.desktop.in.h:1 ../xfpanel-switch/xfpanel-switch.py:51
@@ -23,7 +23,7 @@ msgstr "Xfce Panel Switch"
 
 #: ../xfpanel-switch.desktop.in.h:2
 msgid "Backup and restore your panel configuration"
-msgstr "Resguarda y restaura tu configuración de panel"
+msgstr "Resguarde y restaure su configuración de panel"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:1
 msgid ""
@@ -31,7 +31,7 @@ msgid ""
 "Backup and restore your panel configuration"
 msgstr ""
 "<b><big>Xfce Panel Switch</big></b>\n"
-"Resguarda y restaura tu configuración de panel"
+"Resguarde y restaure su configuración de panel"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:3
 msgid "Filename"
