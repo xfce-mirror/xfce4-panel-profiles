@@ -1,0 +1,123 @@
+# Kazakh translation for xfpanel-switch
+# Copyright (c) 2017 Rosetta Contributors and Canonical Ltd 2017
+# This file is distributed under the same license as the xfpanel-switch package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xfpanel-switch\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-10-06 21:08-0400\n"
+"PO-Revision-Date: 2017-06-01 15:50+0000\n"
+"Last-Translator: Baurzhan Muftakhidinov <Unknown>\n"
+"Language-Team: Kazakh <kk@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2017-06-02 06:41+0000\n"
+"X-Generator: Launchpad (build 18391)\n"
+
+#: ../xfpanel-switch.desktop.in.h:1 ../xfpanel-switch/xfpanel-switch.py:51
+msgid "Xfce Panel Switch"
+msgstr "Xfce панель аустырғышы"
+
+#: ../xfpanel-switch.desktop.in.h:2
+msgid "Backup and restore your panel configuration"
+msgstr "Панель баптауларын қорға көшіру және қалпына келтіру"
+
+#: ../xfpanel-switch/xfpanel-switch.glade.h:1
+msgid ""
+"<b><big>Xfce Panel Switch</big></b>\n"
+"Backup and restore your panel configuration"
+msgstr ""
+"<b><big>Xfce панель аустырғышы</big></b>\n"
+"Панель баптауларын қорға көшіру және қалпына келтіру"
+
+#: ../xfpanel-switch/xfpanel-switch.glade.h:3
+msgid "Filename"
+msgstr "Файл аты"
+
+#: ../xfpanel-switch/xfpanel-switch.glade.h:4
+msgid "Date Modified"
+msgstr "Өзгертілген күні"
+
+#: ../xfpanel-switch/xfpanel-switch.glade.h:5
+msgid "Apply Configuration"
+msgstr "Баптауларды іске асыру"
+
+#: ../xfpanel-switch/xfpanel-switch.glade.h:6
+#: ../xfpanel-switch/xfpanel-switch.py:293
+msgid "Save Configuration"
+msgstr "Баптауларды сақтау"
+
+#: ../xfpanel-switch/xfpanel-switch.glade.h:7
+msgid "Remove Configuration"
+msgstr "Баптауларды өшіру"
+
+#: ../xfpanel-switch/xfpanel-switch.glade.h:8
+msgid "Export"
+msgstr "Экспорттау"
+
+#: ../xfpanel-switch/xfpanel-switch.glade.h:9
+msgid "Import"
+msgstr "Импорттау"
+
+#: ../xfpanel-switch/xfpanel-switch.glade.h:10
+msgid "Save panel configuration as..."
+msgstr "Панель баптауларын қалайша сақтау..."
+
+#: ../xfpanel-switch/xfpanel-switch.glade.h:11
+#: ../xfpanel-switch/xfpanel-switch.py:85
+#: ../xfpanel-switch/xfpanel-switch.py:292
+msgid "Cancel"
+msgstr "Бас тарту"
+
+#: ../xfpanel-switch/xfpanel-switch.glade.h:12
+msgid "<b>Name the new panel configuration</b>"
+msgstr "<b>Жаңа панель баптауларын атаңыз</b>"
+
+#: ../xfpanel-switch/xfpanel-switch.py:80
+msgid "Save"
+msgstr "Сақтау"
+
+#: ../xfpanel-switch/xfpanel-switch.py:82
+msgid "Open"
+msgstr "Ашу"
+
+#: ../xfpanel-switch/xfpanel-switch.py:140
+msgid "Current Configuration"
+msgstr "Ағымдағы баптаулар"
+
+#: ../xfpanel-switch/xfpanel-switch.py:160
+msgid "Today"
+msgstr "Бүгін"
+
+#: ../xfpanel-switch/xfpanel-switch.py:162
+msgid "Yesterday"
+msgstr "Кеше"
+
+#: ../xfpanel-switch/xfpanel-switch.py:187
+#, python-format
+msgid "%s (Copy of %s)"
+msgstr "%s (%s көшірмесі)"
+
+#: ../xfpanel-switch/xfpanel-switch.py:211
+msgid "Export configuration as..."
+msgstr "Баптауларды қалайша экспорттау..."
+
+#: ../xfpanel-switch/xfpanel-switch.py:212
+msgid "Untitled"
+msgstr "Атаусыз"
+
+#: ../xfpanel-switch/xfpanel-switch.py:224
+msgid "Import configuration file..."
+msgstr "Баптаулар файлын импорттау..."
+
+#: ../xfpanel-switch/xfpanel-switch.py:285
+msgid "Name the new panel configuration"
+msgstr "Жаңа панель баптауларын атау"
+
+#: ../xfpanel-switch/xfpanel-switch.py:309
+#, python-format
+msgid "Backup_%s"
+msgstr "Қор_көшірме_%s"
