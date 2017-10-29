@@ -73,8 +73,11 @@ class PanelConfig(object):
         config = pc.source.extractfile('config.txt')
 
         for line in config:
-            x = line.decode('utf-8').strip().split(' ', 1)
-            pc.properties[x[0]] = GLib.Variant.parse(None, x[1], None, None)
+            try:
+                x = line.decode('utf-8').strip().split(' ', 1)
+                pc.properties[x[0]] = GLib.Variant.parse(None, x[1], None, None)
+            except:
+                pass
 
         pc.find_desktops()
 
