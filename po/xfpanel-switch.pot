@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-06 21:08-0400\n"
+"POT-Creation-Date: 2018-03-23 06:37-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -118,4 +118,15 @@ msgstr ""
 #: ../xfpanel-switch/xfpanel-switch.py:309
 #, python-format
 msgid "Backup_%s"
+msgstr ""
+
+#: ../data/metainfo/org.xubuntu.XfpanelSwitch.appdata.xml.in.h:1
+msgid "Application to manage different panel layouts in Xfce"
+msgstr ""
+
+#: ../data/metainfo/org.xubuntu.XfpanelSwitch.appdata.xml.in.h:2
+msgid ""
+"Multitude of panel layouts can be created using Xfce panel. This tool "
+"enables managing different layouts with little effort. Xfpanel-switch makes "
+"it possible to backup, restore, import and export panel layouts."
 msgstr ""

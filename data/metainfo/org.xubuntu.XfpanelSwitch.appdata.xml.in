@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+  <id>xfpanel-switch.desktop</id>
+  <metadata_license>CC-BY-3.0</metadata_license>
+  <project_license>GPL-3.0</project_license>
+  <name>Xfpanel Switch</name>
+  <_summary>Application to manage different panel layouts in Xfce</_summary>
+
+  <description>
+    <_p>Multitude of panel layouts can be created using Xfce panel.
+        This tool enables managing different layouts with little effort.
+        Xfpanel-switch makes it possible to backup, restore, import and export panel layouts.</_p>
+  </description>
+
+  <screenshots>
+    <screenshot type="default">
+      <image width="960" height="540">https://screenshots.bluesabre.org/xfpanel-switch/xfpanel-switch.png</image>
+    </screenshot>
+  </screenshots>
+
+  ​<translation type="gettext">xfpanel-switch</translation>
+
+  <url type="homepage">https://launchpad.net/xfpanel-switch</url>
+  <url type="bugtracker">https://bugs.launchpad.net/xfpanel-switch</url>
+
+  <updatecontact>bluesabre@ubuntu.com</updatecontact>
+
+  <project_group>XFCE</project_group>
+
+  <provides>
+    <binary>xfpanel-switch</binary>
+  </provides>
+
+</component>

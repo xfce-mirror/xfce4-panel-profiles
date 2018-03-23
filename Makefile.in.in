@@ -6,6 +6,8 @@ DESTDIR=
 
 all: $(LANGUAGE_FILES) layouts
 	intltool-merge -d po xfpanel-switch.desktop.in xfpanel-switch.desktop
+	intltool-merge -x po data/metainfo/org.xubuntu.XfpanelSwitch.appdata.xml.in \
+		data/metainfo/org.xubuntu.XfpanelSwitch.appdata.xml
 	chmod +x xfpanel-switch.desktop
 	sed -e s,%prefix%,$(PREFIX), bin/$(APPNAME).in.in > bin/$(APPNAME).in
 	sed -e s,%python%,$(PYTHON), bin/$(APPNAME).in > bin/$(APPNAME)
@@ -47,6 +49,9 @@ install: all
 	install -d $(DESTDIR)/$(PREFIX)/share/xfpanel-switch
 	install -d $(DESTDIR)/$(PREFIX)/share/xfpanel-switch/layouts
 	install data/layouts/*.tar.bz2 $(DESTDIR)/$(PREFIX)/share/xfpanel-switch/layouts
+
+	install -d $(DESTDIR)/$(PREFIX)/share/metainfo
+	install data/metainfo/*.xml $(DESTDIR)/$(PREFIX)/share/metainfo
 
 	cp -rf locale $(DESTDIR)/$(PREFIX)/share
 	ln -sf $(PREFIX)/share/locale $(DESTDIR)/$(PREFIX)/share/$(APPNAME)/locale
