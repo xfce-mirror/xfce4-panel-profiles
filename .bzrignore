@@ -1,0 +1,8 @@
+*.desktop
+*.tar.bz2
+*.xml
+Makefile.in
+Makefile
+locale
+bin/xfpanel-switch
+bin/xfpanel-switch.in
