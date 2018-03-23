@@ -1,121 +1,123 @@
-# Czech translation for xfpanel-switch
-# Copyright (c) 2015 Rosetta Contributors and Canonical Ltd 2015
-# This file is distributed under the same license as the xfpanel-switch package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: xfpanel-switch\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2018-03-22 05:43+0000\n"
-"PO-Revision-Date: 2015-09-23 03:51+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Czech <cs@li.org>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-06 21:08-0400\n"
+"PO-Revision-Date: 2017-11-06 16:30+0100\n"
+"Last-Translator: k3dar7 <k3dar7@gmail.com>\n"
+"Language-Team: <Czech <cs@li.org>>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2018-03-23 05:36+0000\n"
-"X-Generator: Launchpad (build 18573)\n"
+"X-Generator: Poedit 2.0.4\n"
+"Language: cs\n"
 
 #: ../xfpanel-switch.desktop.in.h:1 ../xfpanel-switch/xfpanel-switch.py:51
 msgid "Xfce Panel Switch"
-msgstr ""
+msgstr "Xfce Panel Switch"
 
 #: ../xfpanel-switch.desktop.in.h:2
 msgid "Backup and restore your panel configuration"
-msgstr ""
+msgstr "Záloha a obnova nastavení panelu"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:1
 msgid ""
 "<b><big>Xfce Panel Switch</big></b>\n"
 "Backup and restore your panel configuration"
 msgstr ""
+"<b><big>Xfce Panel Switch</big></b>\n"
+"Záloha a obnova nastavení panelu"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:3
 msgid "Filename"
-msgstr ""
+msgstr "Název souboru"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:4
 msgid "Date Modified"
-msgstr ""
+msgstr "Datum změny"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:5
 msgid "Apply Configuration"
-msgstr ""
+msgstr "Aplikovat nastavení"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:6
 #: ../xfpanel-switch/xfpanel-switch.py:293
 msgid "Save Configuration"
-msgstr ""
+msgstr "Uložit nastavení"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:7
 msgid "Remove Configuration"
-msgstr ""
+msgstr "Odebrat nastavení"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:8
 msgid "Export"
-msgstr ""
+msgstr "Exportovat"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:9
 msgid "Import"
-msgstr ""
+msgstr "Importovat"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:10
 msgid "Save panel configuration as..."
-msgstr ""
+msgstr "Uložit nastavení panelu jako..."
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:11
 #: ../xfpanel-switch/xfpanel-switch.py:85
 #: ../xfpanel-switch/xfpanel-switch.py:292
 msgid "Cancel"
-msgstr ""
+msgstr "Zrušit"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:12
 msgid "<b>Name the new panel configuration</b>"
-msgstr ""
+msgstr "<b>Jméno nového nastavení panelu</b>"
 
 #: ../xfpanel-switch/xfpanel-switch.py:80
 msgid "Save"
-msgstr ""
+msgstr "Uložit"
 
 #: ../xfpanel-switch/xfpanel-switch.py:82
 msgid "Open"
-msgstr ""
+msgstr "Otevřít"
 
 #: ../xfpanel-switch/xfpanel-switch.py:140
 msgid "Current Configuration"
-msgstr ""
+msgstr "Současné nastavení"
 
 #: ../xfpanel-switch/xfpanel-switch.py:160
 msgid "Today"
-msgstr ""
+msgstr "Dnes"
 
 #: ../xfpanel-switch/xfpanel-switch.py:162
 msgid "Yesterday"
-msgstr ""
+msgstr "Včera"
 
 #: ../xfpanel-switch/xfpanel-switch.py:187
 #, python-format
 msgid "%s (Copy of %s)"
-msgstr ""
+msgstr "%s (Kopie z %s)"
 
 #: ../xfpanel-switch/xfpanel-switch.py:211
 msgid "Export configuration as..."
-msgstr ""
+msgstr "Exportovat nastavení jako..."
 
 #: ../xfpanel-switch/xfpanel-switch.py:212
 msgid "Untitled"
-msgstr ""
+msgstr "Bez názvu"
 
 #: ../xfpanel-switch/xfpanel-switch.py:224
 msgid "Import configuration file..."
-msgstr ""
+msgstr "Importovat soubor nastavení..."
 
 #: ../xfpanel-switch/xfpanel-switch.py:285
 msgid "Name the new panel configuration"
-msgstr ""
+msgstr "Jméno nového nastavení panelu"
 
 #: ../xfpanel-switch/xfpanel-switch.py:309
 #, python-format
 msgid "Backup_%s"
-msgstr ""
+msgstr "Záloha_%s"
