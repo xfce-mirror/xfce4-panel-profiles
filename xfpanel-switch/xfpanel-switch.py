@@ -25,6 +25,10 @@ from gettext import ngettext
 import shlex
 import os
 import datetime
+
+import gi
+gi.require_version('Gtk', '3.0')
+
 from gi.repository import Gtk, GLib, Gio
 
 from panelconfig import PanelConfig
