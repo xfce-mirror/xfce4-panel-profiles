@@ -29,6 +29,15 @@ from gi.repository import Gtk, GLib, Gio
 
 from panelconfig import PanelConfig
 
+homedir = GLib.get_home_dir()
+cachedir = GLib.get_user_cache_dir()
+cachefile = os.path.join(cachedir, "xfpanel-switch.tar.gz")
+
+try:
+    if not os.path.exists(cachedir):
+        os.makedirs(cachedir)
+except:
+    pass
 
 class XfpanelSwitch:
 
@@ -137,7 +146,10 @@ class XfpanelSwitch:
     def get_saved_configurations(self):
         results = []
         now = int(datetime.datetime.now().strftime('%s'))
-        results.append(("", _("Current Configuration"), now))
+        if (os.path.isfile(cachefile)):
+            results.append((cachefile, _("Current Configuration"), now))
+        else:
+            results.append(("", _("Current Configuration"), now))
         today_delta = datetime.datetime.today() - datetime.timedelta(days=1)
 
         for directory in self.get_data_dirs():
@@ -318,27 +330,27 @@ class PanelSaveDialog(Gtk.MessageDialog):
 if __name__ == "__main__":
     import sys
 
+    session_bus = Gio.BusType.SESSION
+    cancellable = None
+    connection = Gio.bus_get_sync(session_bus, cancellable)
+
+    proxy_property = 0
+    interface_properties_array = None
+    destination = 'org.xfce.Xfconf'
+    path = '/org/xfce/Xfconf'
+    interface = destination
+
+    xfconf = Gio.DBusProxy.new_sync(
+        connection,
+        proxy_property,
+        interface_properties_array,
+        destination,
+        path,
+        interface,
+        cancellable)
+
     if len(sys.argv) > 1:
         if sys.argv[1] in ['save', 'load']:
-            session_bus = Gio.BusType.SESSION
-            cancellable = None
-            connection = Gio.bus_get_sync(session_bus, cancellable)
-
-            proxy_property = 0
-            interface_properties_array = None
-            destination = 'org.xfce.Xfconf'
-            path = '/org/xfce/Xfconf'
-            interface = destination
-
-            xfconf = Gio.DBusProxy.new_sync(
-                connection,
-                proxy_property,
-                interface_properties_array,
-                destination,
-                path,
-                interface,
-                cancellable)
-
             try:
                 if sys.argv[1] == 'save':
                     PanelConfig.from_xfconf(xfconf).to_file(sys.argv[2])
@@ -355,6 +367,11 @@ if __name__ == "__main__":
             print(sys.argv[0] + ' load <filename> : load configuration from file.')
             print('')
             exit(-1)
+
+    try:
+        PanelConfig.from_xfconf(xfconf).to_file(cachefile)
+    except:
+        pass
 
     main = XfpanelSwitch()
     Gtk.main()
