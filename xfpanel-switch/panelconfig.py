@@ -200,39 +200,3 @@ class PanelConfig(object):
                 dbus_proxy.call_sync('Terminate', GLib.Variant('(b)', ('xfce4-panel',)), 0, -1, None)
             except GLib.GError:
                 pass
-
-
-if __name__ == '__main__':
-
-    import sys
-
-    session_bus = Gio.BusType.SESSION
-    cancellable = None
-    connection = Gio.bus_get_sync(session_bus, cancellable)
-
-    proxy_property = 0
-    interface_properties_array = None
-    destination = 'org.xfce.Xfconf'
-    path = '/org/xfce/Xfconf'
-    interface = destination
-
-    xfconf = Gio.DBusProxy.new_sync(
-        connection,
-        proxy_property,
-        interface_properties_array,
-        destination,
-        path,
-        interface,
-        cancellable)
-
-    if len(sys.argv) != 3 or sys.argv[1] not in ['load', 'save']:
-        print('Panel Switch v0.1 - Usage:')
-        print(sys.argv[0] + ' save <filename> : save current configuration.')
-        print(sys.argv[0] + ' load <filename> : load configuration from file.')
-        print('')
-        exit(-1)
-
-    if sys.argv[1] == 'save':
-        PanelConfig.from_xfconf(xfconf).to_file(sys.argv[2])
-    elif sys.argv[1] == 'load':
-        PanelConfig.from_file(sys.argv[2]).to_xfconf(xfconf)

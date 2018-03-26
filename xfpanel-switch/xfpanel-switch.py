@@ -316,5 +316,45 @@ class PanelSaveDialog(Gtk.MessageDialog):
         self.entry.set_text(name.strip())
 
 if __name__ == "__main__":
+    import sys
+
+    if len(sys.argv) > 1:
+        if sys.argv[1] in ['save', 'load']:
+            session_bus = Gio.BusType.SESSION
+            cancellable = None
+            connection = Gio.bus_get_sync(session_bus, cancellable)
+
+            proxy_property = 0
+            interface_properties_array = None
+            destination = 'org.xfce.Xfconf'
+            path = '/org/xfce/Xfconf'
+            interface = destination
+
+            xfconf = Gio.DBusProxy.new_sync(
+                connection,
+                proxy_property,
+                interface_properties_array,
+                destination,
+                path,
+                interface,
+                cancellable)
+
+            try:
+                if sys.argv[1] == 'save':
+                    PanelConfig.from_xfconf(xfconf).to_file(sys.argv[2])
+                elif sys.argv[1] == 'load':
+                    PanelConfig.from_file(sys.argv[2]).to_xfconf(xfconf)
+            except Exception as e:
+                print(repr(e))
+                exit(1)
+            exit(0)
+        else:
+            print('Xfce Panel Switch - Usage:')
+            print(sys.argv[0] + ' : load graphical user interface.')
+            print(sys.argv[0] + ' save <filename> : save current configuration.')
+            print(sys.argv[0] + ' load <filename> : load configuration from file.')
+            print('')
+            exit(-1)
+
     main = XfpanelSwitch()
     Gtk.main()
