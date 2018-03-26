@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfpanel-switch\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2018-03-24 05:55+0000\n"
+"POT-Creation-Date: 2018-03-26 03:03+0000\n"
 "PO-Revision-Date: 2017-06-01 15:50+0000\n"
 "Last-Translator: Baurzhan Muftakhidinov <Unknown>\n"
 "Language-Team: Kazakh <kk@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2018-03-25 05:38+0000\n"
+"X-Launchpad-Export-Date: 2018-03-26 05:39+0000\n"
 "X-Generator: Launchpad (build 18573)\n"
 
-#: ../xfpanel-switch.desktop.in.h:1 ../xfpanel-switch/xfpanel-switch.py:51
+#: ../xfpanel-switch.desktop.in.h:1 ../xfpanel-switch/xfpanel-switch.py:64
 msgid "Xfce Panel Switch"
 msgstr "Xfce панель аустырғышы"
 
@@ -46,7 +46,7 @@ msgid "Apply Configuration"
 msgstr "Баптауларды іске асыру"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:6
-#: ../xfpanel-switch/xfpanel-switch.py:293
+#: ../xfpanel-switch/xfpanel-switch.py:309
 msgid "Save Configuration"
 msgstr "Баптауларды сақтау"
 
@@ -67,8 +67,8 @@ msgid "Save panel configuration as..."
 msgstr "Панель баптауларын қалайша сақтау..."
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:11
-#: ../xfpanel-switch/xfpanel-switch.py:85
-#: ../xfpanel-switch/xfpanel-switch.py:292
+#: ../xfpanel-switch/xfpanel-switch.py:98
+#: ../xfpanel-switch/xfpanel-switch.py:308
 msgid "Cancel"
 msgstr "Бас тарту"
 
@@ -76,48 +76,49 @@ msgstr "Бас тарту"
 msgid "<b>Name the new panel configuration</b>"
 msgstr "<b>Жаңа панель баптауларын атаңыз</b>"
 
-#: ../xfpanel-switch/xfpanel-switch.py:80
+#: ../xfpanel-switch/xfpanel-switch.py:93
 msgid "Save"
 msgstr "Сақтау"
 
-#: ../xfpanel-switch/xfpanel-switch.py:82
+#: ../xfpanel-switch/xfpanel-switch.py:95
 msgid "Open"
 msgstr "Ашу"
 
-#: ../xfpanel-switch/xfpanel-switch.py:140
+#: ../xfpanel-switch/xfpanel-switch.py:154
+#: ../xfpanel-switch/xfpanel-switch.py:156
 msgid "Current Configuration"
 msgstr "Ағымдағы баптаулар"
 
-#: ../xfpanel-switch/xfpanel-switch.py:160
+#: ../xfpanel-switch/xfpanel-switch.py:176
 msgid "Today"
 msgstr "Бүгін"
 
-#: ../xfpanel-switch/xfpanel-switch.py:162
+#: ../xfpanel-switch/xfpanel-switch.py:178
 msgid "Yesterday"
 msgstr "Кеше"
 
-#: ../xfpanel-switch/xfpanel-switch.py:187
+#: ../xfpanel-switch/xfpanel-switch.py:203
 #, python-format
 msgid "%s (Copy of %s)"
 msgstr "%s (%s көшірмесі)"
 
-#: ../xfpanel-switch/xfpanel-switch.py:211
+#: ../xfpanel-switch/xfpanel-switch.py:227
 msgid "Export configuration as..."
 msgstr "Баптауларды қалайша экспорттау..."
 
-#: ../xfpanel-switch/xfpanel-switch.py:212
+#: ../xfpanel-switch/xfpanel-switch.py:228
 msgid "Untitled"
 msgstr "Атаусыз"
 
-#: ../xfpanel-switch/xfpanel-switch.py:224
+#: ../xfpanel-switch/xfpanel-switch.py:240
 msgid "Import configuration file..."
 msgstr "Баптаулар файлын импорттау..."
 
-#: ../xfpanel-switch/xfpanel-switch.py:285
+#: ../xfpanel-switch/xfpanel-switch.py:301
 msgid "Name the new panel configuration"
 msgstr "Жаңа панель баптауларын атау"
 
-#: ../xfpanel-switch/xfpanel-switch.py:309
+#: ../xfpanel-switch/xfpanel-switch.py:325
 #, python-format
 msgid "Backup_%s"
 msgstr "Қор_көшірме_%s"
