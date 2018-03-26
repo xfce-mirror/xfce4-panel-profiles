@@ -1,3 +1,20 @@
+xfpanel-switch 1.0.5 (UNRELEASED)
+
+    * General
+      - Add gi.require_version('Gtk', '3.0') to silence warning
+      - Add appdata file and install (LP: #1554273)
+      - Add .bzrignore
+    * Bugs Fixed
+      - Added error handling for failed backup file parsing
+      - Update categories to display in Xfce Settings Manager (LP: #1734516)
+      - Improve restoration of saved templates (LP: #1575996)
+      - Move supported save and load commandline parameters to the main
+        binary (LP: #1556737)
+      - Backup current configuration at startup so it can be rolled
+        back (LP: #1555265)
+    * Updated translations: French, Galician, Brazilian Portuguese, Kazakh,
+      Polish, Slovenian, Czech, Italian
+
 xfpanel-switch 1.0.4
 
     * New translations: Dutch, Greek, Japanese, Portuguese
