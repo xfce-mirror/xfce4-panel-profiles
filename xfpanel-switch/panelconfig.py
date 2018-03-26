@@ -83,7 +83,23 @@ class PanelConfig(object):
 
         return pc
 
+    def check_desktop(self, path):
+        bytes = self.get_desktop_source_file(path).read()
+
+        # Check if binary exists
+        keyfile = GLib.KeyFile.new()
+        decoded = bytes.decode()
+        if keyfile.load_from_data(decoded, len(decoded),
+                                  GLib.KeyFileFlags.NONE):
+            exec_str = keyfile.get_string("Desktop Entry", "Exec")
+            if self.check_exec(exec_str):
+                return True
+
+        return False
+
     def find_desktops(self):
+        remove_keys = []
+
         for pp, pv in self.properties.items():
             path = pp.split('/')
             if len(path) == 3 and path[0] == '' and path[1] == 'plugins' and \
@@ -93,7 +109,17 @@ class PanelConfig(object):
                         pv.get_string() == 'launcher':
                     for d in self.properties['/plugins/plugin-' + number +
                                              '/items'].unpack():
-                        self.desktops.append('launcher-' + number + '/' + d)
+                        desktop_path = 'launcher-' + number + '/' + d
+                        if self.check_desktop(desktop_path):
+                            self.desktops.append(desktop_path)
+                        else:
+                            remove_keys.append('/plugins/plugin-' + number)
+
+        keys = list(self.properties.keys())
+        for param in keys:
+            for bad_plugin in remove_keys:
+                if param.startswith(bad_plugin):
+                    self.properties.pop(param, None)
 
     def get_desktop_source_file(self, desktop):
         if self.source is None:
@@ -122,6 +148,23 @@ class PanelConfig(object):
 
         t.close()
 
+    def check_exec(self, program):
+        program = program.strip()
+        if len(program) == 0:
+            return False
+
+        params = list(GLib.shell_parse_argv(program)[1])
+        executable = params[0]
+
+        if os.path.exists(executable):
+            return True
+
+        path = GLib.find_program_in_path(executable)
+        if path is not None:
+            return True
+
+        return False
+
     def to_xfconf(self, xfconf):
         session_bus = Gio.BusType.SESSION
         conn = Gio.bus_get_sync(session_bus, None)
@@ -133,6 +176,13 @@ class PanelConfig(object):
         dbus_proxy = Gio.DBusProxy.new_sync(conn, 0, None, destination, path, interface, None)
 
         if dbus_proxy is not None:
+            # Reset all properties to make sure old settings are invalidated
+            try:
+                xfconf.call_sync('ResetProperty', GLib.Variant(
+                    '(ssb)', ('xfce4-panel', '/', True)), 0, -1, None)
+            except GLib.Error:
+                pass
+
             for (pp, pv) in sorted(self.properties.items()):
                 result = xfconf.call_sync('SetProperty', GLib.Variant(
                     '(ssv)', ('xfce4-panel', pp, pv)), 0, -1, None)
@@ -146,7 +196,10 @@ class PanelConfig(object):
                 f.write(bytes)
                 f.close()
 
-            dbus_proxy.call_sync('Terminate', GLib.Variant('(b)', ('xfce4-panel',)), 0, -1, None)
+            try:
+                dbus_proxy.call_sync('Terminate', GLib.Variant('(b)', ('xfce4-panel',)), 0, -1, None)
+            except GLib.GError:
+                pass
 
 
 if __name__ == '__main__':
