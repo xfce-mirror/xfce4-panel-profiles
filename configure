@@ -1,7 +1,7 @@
 #!/bin/sh
 
 APPNAME=xfpanel-switch
-VERSION=1.0.5
+VERSION=1.0.6
 
 PYTHON=python3
 

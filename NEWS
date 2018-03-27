@@ -1,3 +1,8 @@
+xfpanel-switch 1.0.6
+
+    * Bugs Fixed
+      - Restore missing launchers for "Xubuntu Precise" layout
+
 xfpanel-switch 1.0.5
 
     * General

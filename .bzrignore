@@ -1,4 +1,4 @@
-*.desktop
+xfpanel-switch.desktop
 *.tar.bz2
 *.xml
 Makefile.in
