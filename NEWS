@@ -1,4 +1,4 @@
-xfpanel-switch 1.0.5 (UNRELEASED)
+xfpanel-switch 1.0.5
 
     * General
       - Add gi.require_version('Gtk', '3.0') to silence warning
@@ -6,6 +6,7 @@ xfpanel-switch 1.0.5 (UNRELEASED)
       - Add .bzrignore
       - Add "Xubuntu Bionic" layout, rename old Xubuntu layouts to
         "Xubuntu Precise" and "Xubuntu Trusty"
+      - Drop unused properties from the various layouts
     * Bugs Fixed
       - Added error handling for failed backup file parsing
       - Update categories to display in Xfce Settings Manager (LP: #1734516)

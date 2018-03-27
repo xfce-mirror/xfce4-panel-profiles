@@ -55,34 +55,22 @@
 /plugins/plugin-3/expand true
 /plugins/plugin-3/style uint32 0
 /plugins/plugin-4 'systray'
-/plugins/plugin-4/items [<'14418443291.desktop'>]
 /plugins/plugin-4/show-frame false
 /plugins/plugin-4/size-max uint32 22
 /plugins/plugin-5 'indicator'
 /plugins/plugin-5/align-left false
-/plugins/plugin-5/items [<'14418443522.desktop'>]
 /plugins/plugin-5/mode-whitelist false
 /plugins/plugin-5/single-row false
 /plugins/plugin-6 'separator'
-/plugins/plugin-6/align-left false
-/plugins/plugin-6/blacklist [<'libappmenu.so'>]
 /plugins/plugin-6/expand false
-/plugins/plugin-6/items [<'14418443623.desktop'>]
-/plugins/plugin-6/mode-whitelist false
-/plugins/plugin-6/single-row false
 /plugins/plugin-6/style uint32 0
 /plugins/plugin-7 'clock'
 /plugins/plugin-7/digital-format '%a, %d %b %H:%M'
 /plugins/plugin-7/expand false
 /plugins/plugin-7/style uint32 0
 /plugins/plugin-8 'separator'
-/plugins/plugin-8/digital-format '%d %b, %H:%M'
 /plugins/plugin-8/expand false
-/plugins/plugin-8/mode uint32 2
-/plugins/plugin-8/show-frame true
-/plugins/plugin-8/size-max uint32 22
 /plugins/plugin-8/style uint32 0
-/plugins/plugin-8/tooltip-format '%A %d %B %Y'
 /plugins/plugin-9 'pager'
 /plugins/plugin-9/miniature-view true
 /plugins/plugin-9/rows uint32 1
@@ -93,14 +81,10 @@
 /plugins/plugin-10/style uint32 0
 /plugins/plugin-11 'actions'
 /plugins/plugin-11/ask-confirmation true
-/plugins/plugin-11/digital-format '%a %b %d, %I:%M %p'
-/plugins/plugin-11/items [<'14417693471.desktop'>]
 /plugins/plugin-11/mode uint32 2
 /plugins/plugin-11/show-frame true
-/plugins/plugin-11/tooltip-format '%A %d %B %Y'
 /plugins/plugin-12 'separator'
 /plugins/plugin-12/expand true
-/plugins/plugin-12/items [<'14417693472.desktop'>]
 /plugins/plugin-12/style uint32 0
 /plugins/plugin-13 'showdesktop'
 /plugins/plugin-13/expand true
@@ -108,7 +92,6 @@
 /plugins/plugin-13/grouping uint32 0
 /plugins/plugin-13/include-all-monitors true
 /plugins/plugin-13/include-all-workspaces false
-/plugins/plugin-13/items [<'14417693473.desktop'>]
 /plugins/plugin-13/show-handle true
 /plugins/plugin-13/show-labels true
 /plugins/plugin-13/show-only-minimized false
@@ -119,22 +102,14 @@
 /plugins/plugin-13/window-scrolling true
 /plugins/plugin-14 'separator'
 /plugins/plugin-14/expand false
-/plugins/plugin-14/items [<'14417693474.desktop'>]
 /plugins/plugin-14/show-handle false
 /plugins/plugin-14/style uint32 1
 /plugins/plugin-15 'launcher'
 /plugins/plugin-15/items [<'14294989531.desktop'>]
-/plugins/plugin-15/miniature-view true
-/plugins/plugin-15/rows uint32 1
-/plugins/plugin-15/workspace-scrolling true
 /plugins/plugin-16 'launcher'
-/plugins/plugin-16/button-title 'Start'
 /plugins/plugin-16/items [<'14294989532.desktop'>]
 /plugins/plugin-17 'launcher'
-/plugins/plugin-17/expand true
 /plugins/plugin-17/items [<'14294989533.desktop'>]
-/plugins/plugin-17/show-button-type 1
-/plugins/plugin-17/style uint32 0
 /plugins/plugin-18 'launcher'
 /plugins/plugin-18/items [<'14294989534.desktop'>]
 /plugins/plugin-19 'launcher'
@@ -143,12 +118,10 @@
 /plugins/plugin-20/items [<'14294989536.desktop'>]
 /plugins/plugin-21 'launcher'
 /plugins/plugin-21/items [<'14294989537.desktop'>]
-/plugins/plugin-21/style uint32 0
 /plugins/plugin-22 'launcher'
 /plugins/plugin-22/items [<'14294989538.desktop'>]
 /plugins/plugin-23 'launcher'
 /plugins/plugin-23/items [<'14294989539.desktop'>]
-/plugins/plugin-23/show-handle false
 /plugins/plugin-24 'separator'
 /plugins/plugin-24/expand false
 /plugins/plugin-24/style uint32 1

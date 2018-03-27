@@ -54,7 +54,6 @@
 /plugins/plugin-8 'showdesktop'
 /plugins/plugin-9 'separator'
 /plugins/plugin-9/expand false
-/plugins/plugin-9/items [<'14418417141.desktop'>]
 /plugins/plugin-9/style uint32 1
 /plugins/plugin-10 'launcher'
 /plugins/plugin-10/items [<'14418417141.desktop'>]
