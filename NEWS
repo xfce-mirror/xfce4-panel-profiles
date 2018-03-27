@@ -4,6 +4,8 @@ xfpanel-switch 1.0.5 (UNRELEASED)
       - Add gi.require_version('Gtk', '3.0') to silence warning
       - Add appdata file and install (LP: #1554273)
       - Add .bzrignore
+      - Add "Xubuntu Bionic" layout, rename old Xubuntu layouts to
+        "Xubuntu Precise" and "Xubuntu Trusty"
     * Bugs Fixed
       - Added error handling for failed backup file parsing
       - Update categories to display in Xfce Settings Manager (LP: #1734516)
@@ -12,8 +14,8 @@ xfpanel-switch 1.0.5 (UNRELEASED)
         binary (LP: #1556737)
       - Backup current configuration at startup so it can be rolled
         back (LP: #1555265)
-    * Updated translations: French, Galician, Brazilian Portuguese, Kazakh,
-      Polish, Slovenian, Czech, Italian
+    * Updated translations: Brazilian Portuguese, Czech, French, Galician,
+      Italian, Kazakh, Polish, Slovenian
 
 xfpanel-switch 1.0.4
 

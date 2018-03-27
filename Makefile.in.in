@@ -24,8 +24,9 @@ layouts:
 	cd data/layouts/gnome2; tar -cvjf "../GNOME 2.tar.bz2" *
 	cd data/layouts/redmond; tar -cvjf "../Redmond.tar.bz2" *
 	cd data/layouts/xfce-4.12; tar -cvjf "../Xfce 4.12.tar.bz2" *
-	cd data/layouts/xubuntu-classic; tar -cvjf "../Xubuntu Classic.tar.bz2" *
-	cd data/layouts/xubuntu-modern; tar -cvjf "../Xubuntu Modern.tar.bz2" *
+	cd data/layouts/xubuntu-precise; tar -cvjf "../Xubuntu Precise.tar.bz2" *
+	cd data/layouts/xubuntu-trusty; tar -cvjf "../Xubuntu Trusty.tar.bz2" *
+	cd data/layouts/xubuntu-bionic; tar -cvjf "../Xubuntu Bionic.tar.bz2" *
 
 install: all
 	install -d $(DESTDIR)/$(PREFIX)/bin
