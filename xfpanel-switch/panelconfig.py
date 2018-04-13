@@ -40,6 +40,7 @@ class PanelConfig(object):
     def __init__(self):
         self.desktops = []
         self.properties = {}
+        self.source = None
 
     def from_xfconf(xfconf):
         pc = PanelConfig()
