@@ -122,7 +122,7 @@ class PanelConfig(object):
                     self.properties.pop(param, None)
 
     def get_desktop_source_file(self, desktop):
-        if self.source is None:
+        if getattr(self, 'source', None) is None:
             path = os.path.join(
                 GLib.get_home_dir(), '.config/xfce4/panel/', desktop)
             return open(path, 'rb')
