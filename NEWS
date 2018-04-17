@@ -1,3 +1,10 @@
+xfpanel-switch 1.0.7
+
+    * Bugs Fixed
+      - AttributeError: 'PanelConfig' object has no attribute 'source'
+        (LP: #1762779)
+    * Updated translation: French
+
 xfpanel-switch 1.0.6
 
     * Bugs Fixed
