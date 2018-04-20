@@ -81,6 +81,7 @@ class PanelConfig(object):
             except:
                 pass
 
+        pc.remove_orphans()
         pc.find_desktops()
 
         return pc
