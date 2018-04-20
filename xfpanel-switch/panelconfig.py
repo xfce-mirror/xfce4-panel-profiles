@@ -150,8 +150,8 @@ class PanelConfig(object):
         keys = list(self.properties.keys())
         for param in keys:
             for bad_plugin in rem_keys:
-                if param.startswith(bad_plugin):
-                    self.properties.pop(param, None)
+                if param == bad_plugin or param.startswith(bad_plugin+'/'):
+                    del self.properties[param]
 
     def get_desktop_source_file(self, desktop):
         if getattr(self, 'source', None) is None:
