@@ -61,6 +61,7 @@ class PanelConfig(object):
 
             pc.properties[pp] = pv
 
+        pc.remove_orphans()
         pc.find_desktops()
 
         pc.source = None
@@ -80,12 +81,40 @@ class PanelConfig(object):
             except:
                 pass
 
+        pc.remove_orphans()
         pc.find_desktops()
 
         return pc
 
+    def remove_orphans(self):
+        plugin_ids = set()
+        rem_keys = []
+
+        for pp, pv in self.properties.items():
+            path = pp.split('/')
+            if len(path) == 4 and path[0] == '' and path[1] == 'panels' and \
+                    path[2].startswith('panel-') and path[3] == 'plugin-ids':
+                plugin_ids.update(pv)
+
+        for pp, pv in self.properties.items():
+            path = pp.split('/')
+            if len(path) == 3 and path[0] == '' and path[1] == 'plugins' and \
+                    path[2].startswith('plugin-'):
+                number = path[2].split('-')[1]
+                try:
+                    if int(number) not in plugin_ids:
+                        rem_keys.append('/plugins/plugin-' + number)
+                except ValueError:
+                    pass
+
+        self.remove_keys(rem_keys)
+
     def check_desktop(self, path):
-        bytes = self.get_desktop_source_file(path).read()
+        try:
+            bytes = self.get_desktop_source_file(path).read()
+        except FileNotFoundError:
+            # If the .desktop file does not exist at all return False
+            return False
 
         # Check if binary exists
         keyfile = GLib.KeyFile.new()
@@ -99,7 +128,7 @@ class PanelConfig(object):
         return False
 
     def find_desktops(self):
-        remove_keys = []
+        rem_keys = []
 
         for pp, pv in self.properties.items():
             path = pp.split('/')
@@ -114,13 +143,16 @@ class PanelConfig(object):
                         if self.check_desktop(desktop_path):
                             self.desktops.append(desktop_path)
                         else:
-                            remove_keys.append('/plugins/plugin-' + number)
+                            rem_keys.append('/plugins/plugin-' + number)
 
+        self.remove_keys(rem_keys)
+
+    def remove_keys(self, rem_keys):
         keys = list(self.properties.keys())
         for param in keys:
-            for bad_plugin in remove_keys:
-                if param.startswith(bad_plugin):
-                    self.properties.pop(param, None)
+            for bad_plugin in rem_keys:
+                if param == bad_plugin or param.startswith(bad_plugin+'/'):
+                    del self.properties[param]
 
     def get_desktop_source_file(self, desktop):
         if getattr(self, 'source', None) is None:
