@@ -8,18 +8,18 @@ msgstr ""
 "Project-Id-Version: xfpanel-switch\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2018-04-26 05:45+0000\n"
-"PO-Revision-Date: 2018-03-23 11:09+0000\n"
-"Last-Translator: k3dar7 <k3dar7@gmail.com>\n"
+"PO-Revision-Date: 2018-05-15 10:29+0000\n"
+"Last-Translator: lang-it <Unknown>\n"
 "Language-Team: Italian <it@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2018-04-27 05:50+0000\n"
-"X-Generator: Launchpad (build 18623)\n"
+"X-Launchpad-Export-Date: 2018-05-16 05:35+0000\n"
+"X-Generator: Launchpad (build 18658)\n"
 
 #: ../xfpanel-switch.desktop.in.h:1 ../xfpanel-switch/xfpanel-switch.py:64
 msgid "Xfce Panel Switch"
-msgstr "Xfce Panel Switch"
+msgstr "Commutatore Pannelli di Xfce"
 
 #: ../xfpanel-switch.desktop.in.h:2
 msgid "Backup and restore your panel configuration"
@@ -30,12 +30,12 @@ msgid ""
 "<b><big>Xfce Panel Switch</big></b>\n"
 "Backup and restore your panel configuration"
 msgstr ""
-"<b><big>Xfce Panel Switch</big></b>\n"
+"<b><big>Commutatore Pannelli di Xfce</big></b>\n"
 "Backup e ripristino della configurazione del pannello"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:3
 msgid "Filename"
-msgstr "Nome del File"
+msgstr "Nome File"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:4
 msgid "Date Modified"
@@ -52,15 +52,15 @@ msgstr "Salva Configurazione"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:7
 msgid "Remove Configuration"
-msgstr "Rimuovere Configurazione"
+msgstr "Rimuovi Configurazione"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:8
 msgid "Export"
-msgstr "Esportare"
+msgstr "Esporta"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:9
 msgid "Import"
-msgstr "Importare"
+msgstr "Importa"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:10
 msgid "Save panel configuration as..."
@@ -74,15 +74,15 @@ msgstr "Annulla"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:12
 msgid "<b>Name the new panel configuration</b>"
-msgstr "<b>Assegnare un nome alla nuova configurazione del pannello</b>"
+msgstr "<b>Assegna un nome alla nuova configurazione del pannello</b>"
 
 #: ../xfpanel-switch/xfpanel-switch.py:93
 msgid "Save"
-msgstr "Salvare"
+msgstr "Salva"
 
 #: ../xfpanel-switch/xfpanel-switch.py:95
 msgid "Open"
-msgstr "Aperto"
+msgstr "Apri"
 
 #: ../xfpanel-switch/xfpanel-switch.py:154
 #: ../xfpanel-switch/xfpanel-switch.py:156
@@ -116,7 +116,7 @@ msgstr "Importa file di configurazione..."
 
 #: ../xfpanel-switch/xfpanel-switch.py:301
 msgid "Name the new panel configuration"
-msgstr "Importa file di configurazione"
+msgstr "Assegna nome alla nuova configurazione del pannello"
 
 #: ../xfpanel-switch/xfpanel-switch.py:325
 #, python-format
@@ -126,6 +126,7 @@ msgstr "Backup_%s"
 #: ../data/metainfo/org.xubuntu.XfpanelSwitch.appdata.xml.in.h:1
 msgid "Application to manage different panel layouts in Xfce"
 msgstr ""
+"Applicazione per gestire differenti configurazioni del pannello in Xfce"
 
 #: ../data/metainfo/org.xubuntu.XfpanelSwitch.appdata.xml.in.h:2
 msgid ""
@@ -133,3 +134,7 @@ msgid ""
 "enables managing different layouts with little effort. Xfpanel-switch makes "
 "it possible to backup, restore, import and export panel layouts."
 msgstr ""
+"Si possono creare molte configurazioni del pannello in Xfce. Questo "
+"strumento permette di gestire i diversi layout con un minimo sforzo. Xfpanel-"
+"switch permette di salvare, ripristinare, importare ed esportare le "
+"configurazioni del pannello."
