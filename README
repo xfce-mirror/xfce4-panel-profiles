@@ -1,10 +1,17 @@
-Xfce Panel Switch (xfpanel-switch) is a simple application to manage Xfce panel layouts.
+Xfce4 Panel Profiles
+==================
 
-With the modular Xfce Panel, a multitude of panel layouts can be created. 
+Xfce4 Panel Profiles (xfce4-panel-profiles, formerly known as xfpanel-switch) is a simple application to manage Xfce panel layouts.
+
+With the modular Xfce Panel, a multitude of panel layouts can be created.
 This tool makes it possible to backup, restore, import, and export these panel layouts.
 
-Homepage: https://launchpad.net/xfpanel-switch
-
 Requirements:
- * python3
- * python3-gi (>= 3.0)
+-------------
+* xfce4-panel
+* python3
+* python3-gi (>= 3.0)
+
+Homepage
+-------------
+https://git.xfce.org/apps/xfce4-panel-profiles
