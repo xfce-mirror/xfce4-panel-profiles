@@ -6,21 +6,21 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce4-panel-profiles\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-13 17:28+0200\n"
+"POT-Creation-Date: 2018-03-23 06:37-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Xfce Bot <transifex@xfce.org>, 2018\n"
+"Last-Translator: Emanuele Petriglia <inbox@emanuelepetriglia.me>, 2018\n"
 "Language-Team: Italian (https://www.transifex.com/xfce/teams/16840/it/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: it\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../xfpanel-switch.desktop.in.h:1 ../xfpanel-switch/xfpanel-switch.py:64
+#: ../xfpanel-switch.desktop.in.h:1 ../xfpanel-switch/xfpanel-switch.py:51
 msgid "Xfce Panel Switch"
-msgstr "Commutatore Pannelli di Xfce"
+msgstr "Commutatore pannelli di Xfce"
 
 #: ../xfpanel-switch.desktop.in.h:2
 msgid "Backup and restore your panel configuration"
@@ -31,29 +31,29 @@ msgid ""
 "<b><big>Xfce Panel Switch</big></b>\n"
 "Backup and restore your panel configuration"
 msgstr ""
-"<b><big>Commutatore Pannelli di Xfce</big></b>\n"
+"<b><big>Commutatore pannelli di Xfce</big></b>\n"
 "Backup e ripristino della configurazione del pannello"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:3
 msgid "Filename"
-msgstr "Nome File"
+msgstr "Nome del file"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:4
 msgid "Date Modified"
-msgstr "Data Modifica"
+msgstr "Data di modifica"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:5
 msgid "Apply Configuration"
-msgstr "Applica Configurazione"
+msgstr "Applica configurazione"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:6
-#: ../xfpanel-switch/xfpanel-switch.py:309
+#: ../xfpanel-switch/xfpanel-switch.py:293
 msgid "Save Configuration"
-msgstr "Salva Configurazione"
+msgstr "Salva configurazione"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:7
 msgid "Remove Configuration"
-msgstr "Rimuovi Configurazione"
+msgstr "Rimuovi configurazione"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:8
 msgid "Export"
@@ -65,11 +65,11 @@ msgstr "Importa"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:10
 msgid "Save panel configuration as..."
-msgstr "Salva la configurazione del pannello come..."
+msgstr "Salva la configurazione del pannello come…"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:11
-#: ../xfpanel-switch/xfpanel-switch.py:98
-#: ../xfpanel-switch/xfpanel-switch.py:308
+#: ../xfpanel-switch/xfpanel-switch.py:85
+#: ../xfpanel-switch/xfpanel-switch.py:292
 msgid "Cancel"
 msgstr "Annulla"
 
@@ -77,49 +77,48 @@ msgstr "Annulla"
 msgid "<b>Name the new panel configuration</b>"
 msgstr "<b>Assegna un nome alla nuova configurazione del pannello</b>"
 
-#: ../xfpanel-switch/xfpanel-switch.py:93
+#: ../xfpanel-switch/xfpanel-switch.py:80
 msgid "Save"
 msgstr "Salva"
 
-#: ../xfpanel-switch/xfpanel-switch.py:95
+#: ../xfpanel-switch/xfpanel-switch.py:82
 msgid "Open"
 msgstr "Apri"
 
-#: ../xfpanel-switch/xfpanel-switch.py:154
-#: ../xfpanel-switch/xfpanel-switch.py:156
+#: ../xfpanel-switch/xfpanel-switch.py:140
 msgid "Current Configuration"
-msgstr "Configurazione Corrente"
+msgstr "Configurazione corrente"
 
-#: ../xfpanel-switch/xfpanel-switch.py:176
+#: ../xfpanel-switch/xfpanel-switch.py:160
 msgid "Today"
 msgstr "Oggi"
 
-#: ../xfpanel-switch/xfpanel-switch.py:178
+#: ../xfpanel-switch/xfpanel-switch.py:162
 msgid "Yesterday"
 msgstr "Ieri"
 
-#: ../xfpanel-switch/xfpanel-switch.py:203
+#: ../xfpanel-switch/xfpanel-switch.py:187
 #, python-format
 msgid "%s (Copy of %s)"
 msgstr "%s (Copia di %s)"
 
-#: ../xfpanel-switch/xfpanel-switch.py:227
+#: ../xfpanel-switch/xfpanel-switch.py:211
 msgid "Export configuration as..."
-msgstr "Esporta configurazione come..."
+msgstr "Esporta configurazione come…"
 
-#: ../xfpanel-switch/xfpanel-switch.py:228
+#: ../xfpanel-switch/xfpanel-switch.py:212
 msgid "Untitled"
 msgstr "Senza titolo"
 
-#: ../xfpanel-switch/xfpanel-switch.py:240
+#: ../xfpanel-switch/xfpanel-switch.py:224
 msgid "Import configuration file..."
-msgstr "Importa file di configurazione..."
+msgstr "Importa file di configurazione…"
 
-#: ../xfpanel-switch/xfpanel-switch.py:301
+#: ../xfpanel-switch/xfpanel-switch.py:285
 msgid "Name the new panel configuration"
-msgstr "Assegna nome alla nuova configurazione del pannello"
+msgstr "Assegna un nome alla nuova configurazione del pannello"
 
-#: ../xfpanel-switch/xfpanel-switch.py:325
+#: ../xfpanel-switch/xfpanel-switch.py:309
 #, python-format
 msgid "Backup_%s"
 msgstr "Backup_%s"
