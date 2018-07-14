@@ -1,0 +1,137 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-23 06:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Jeff Huang <s8321414@gmail.com>, 2018\n"
+"Language-Team: Chinese (Taiwan) (https://www.transifex.com/xfce/teams/16840/zh_TW/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../xfce4-panel-profiles.desktop.in.h:1
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:51
+msgid "Panel Profiles"
+msgstr "面板設定檔"
+
+#: ../xfce4-panel-profiles.desktop.in.h:2
+msgid "Backup and restore your panel configuration"
+msgstr "備份並還原您的面板設定"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:1
+msgid ""
+"<b><big>Panel Profiles</big></b>\n"
+"Backup and restore your panel configuration"
+msgstr ""
+"<b><big>面板設定檔</big></b>\n"
+"備份並還原您的面板設定"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:3
+msgid "Filename"
+msgstr "檔案名稱"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:4
+msgid "Date Modified"
+msgstr "修改日期"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:5
+msgid "Apply Configuration"
+msgstr "套用設定"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:6
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:293
+msgid "Save Configuration"
+msgstr "儲存設定"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:7
+msgid "Remove Configuration"
+msgstr "移除設定"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:8
+msgid "Export"
+msgstr "匯出"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:9
+msgid "Import"
+msgstr "匯入"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:10
+msgid "Save panel configuration as..."
+msgstr "儲存面板設定為……"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:11
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:85
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:292
+msgid "Cancel"
+msgstr "取消"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:12
+msgid "<b>Name the new panel configuration</b>"
+msgstr "<b>命名新的面板設定</b>"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:80
+msgid "Save"
+msgstr "儲存"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:82
+msgid "Open"
+msgstr "開啟"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:140
+msgid "Current Configuration"
+msgstr "目前的設定"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:160
+msgid "Today"
+msgstr "今天"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:162
+msgid "Yesterday"
+msgstr "昨天"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:187
+#, python-format
+msgid "%s (Copy of %s)"
+msgstr "%s（%s 的副本）"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:211
+msgid "Export configuration as..."
+msgstr "匯出設定為……"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:212
+msgid "Untitled"
+msgstr "未命名"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:224
+msgid "Import configuration file..."
+msgstr "匯入設定檔……"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:285
+msgid "Name the new panel configuration"
+msgstr "命名新的面板設定"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:309
+#, python-format
+msgid "Backup_%s"
+msgstr "備份_%s"
+
+#: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:1
+msgid "Application to manage different panel layouts in Xfce"
+msgstr "在 Xfce 中管理不同面板的應用程式"
+
+#: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:2
+msgid ""
+"Multitude of panel layouts can be created using Xfce panel. This tool "
+"enables managing different layouts with little effort. Xfpanel-switch makes "
+"it possible to backup, restore, import and export panel layouts."
+msgstr ""
+"可以使用 Xfce 面板建立多種佈局。這個工具可以輕鬆管理不同的佈局。Xfpanel-switch 讓它可以備份、還原、匯入與匯出面板佈局。"
