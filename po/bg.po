@@ -1,0 +1,140 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-23 06:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Kiril Kirilov <cybercop_montana@abv.bg>, 2018\n"
+"Language-Team: Bulgarian (https://www.transifex.com/xfce/teams/16840/bg/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: bg\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../xfce4-panel-profiles.desktop.in.h:1
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:51
+msgid "Panel Profiles"
+msgstr "Профили на панела"
+
+#: ../xfce4-panel-profiles.desktop.in.h:2
+msgid "Backup and restore your panel configuration"
+msgstr "Съхраняване и възстановяване на вашата конфигурация на панела"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:1
+msgid ""
+"<b><big>Panel Profiles</big></b>\n"
+"Backup and restore your panel configuration"
+msgstr ""
+"<b><big>Профили на панела</big></b>\n"
+"Съхраняване и възстановяване на вашата конфигурация на панела"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:3
+msgid "Filename"
+msgstr "Име на файл"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:4
+msgid "Date Modified"
+msgstr "Дата на промяна"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:5
+msgid "Apply Configuration"
+msgstr "Прилагане на конфигурацията"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:6
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:293
+msgid "Save Configuration"
+msgstr "Запазване на конфигурацията"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:7
+msgid "Remove Configuration"
+msgstr "Премахване на конфигурацията"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:8
+msgid "Export"
+msgstr "Изнасяне"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:9
+msgid "Import"
+msgstr "Внасяне"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:10
+msgid "Save panel configuration as..."
+msgstr "Запазване на конфигурацията като..."
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:11
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:85
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:292
+msgid "Cancel"
+msgstr "Отказ"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:12
+msgid "<b>Name the new panel configuration</b>"
+msgstr "<b>Име на новата конфигурация на панела</b>"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:80
+msgid "Save"
+msgstr "Запазване"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:82
+msgid "Open"
+msgstr "Отваряне"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:140
+msgid "Current Configuration"
+msgstr "Текуща конфигурация"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:160
+msgid "Today"
+msgstr "Днес"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:162
+msgid "Yesterday"
+msgstr "Вчера"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:187
+#, python-format
+msgid "%s (Copy of %s)"
+msgstr "%s (Копиране на %s)"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:211
+msgid "Export configuration as..."
+msgstr "Изнасяне на конфигурацията като..."
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:212
+msgid "Untitled"
+msgstr "Без име"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:224
+msgid "Import configuration file..."
+msgstr "Внасяне на конфигурационен файл..."
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:285
+msgid "Name the new panel configuration"
+msgstr "Име на новата конфигурация на панела"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:309
+#, python-format
+msgid "Backup_%s"
+msgstr "Резервно копие_%s"
+
+#: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:1
+msgid "Application to manage different panel layouts in Xfce"
+msgstr "Приложение за управление на различните подредби на панела на Xfce"
+
+#: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:2
+msgid ""
+"Multitude of panel layouts can be created using Xfce panel. This tool "
+"enables managing different layouts with little effort. Xfpanel-switch makes "
+"it possible to backup, restore, import and export panel layouts."
+msgstr ""
+"Множество подредби на панелите могат да бъдат създадени чрез панела на Xfce."
+" Този инструмент ви позволява да управлявате различни оформления с малко "
+"усилия. Превключвателят на Xfpanel позволява архивиране, възстановяване, "
+"импортиране и експортиране на панелни подредби."
