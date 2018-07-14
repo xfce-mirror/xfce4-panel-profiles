@@ -1,6 +1,6 @@
 #!/bin/sh
 
-APPNAME=xfpanel-switch
+APPNAME=xfce4-panel-profiles
 VERSION=1.0.7
 
 PYTHON=python3

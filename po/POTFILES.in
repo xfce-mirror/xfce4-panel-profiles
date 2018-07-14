@@ -14,14 +14,14 @@
 ### END LICENSE
 
 # Desktop File
-xfpanel-switch.desktop.in
+xfce4-panel-profiles.desktop.in
 
 # Glade Files
-[type: gettext/glade]xfpanel-switch/xfpanel-switch.glade
+[type: gettext/glade]xfce4-panel-profiles/xfce4-panel-profiles.glade
 
 # Python Files
-xfpanel-switch/panelconfig.py
-xfpanel-switch/xfpanel-switch.py
+xfce4-panel-profiles/panelconfig.py
+xfce4-panel-profiles/xfce4-panel-profiles.py
 
 # XML
-data/metainfo/org.xubuntu.XfpanelSwitch.appdata.xml.in
+data/metainfo/org.xfce.PanelProfiles.appdata.xml.in

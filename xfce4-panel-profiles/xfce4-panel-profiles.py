@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- Mode: Python; coding: utf-8; indent-tabs-mode: nil; tab-width: 4 -*-
-#   Xfce Panel Switch
+#   Panel Profiles
 #   Copyright (C) 2013 Alistair Buxton <a.j.buxton@gmail.com>
 #   Copyright (C) 2015 Sean Davis <smd.seandavis@gmail.com>
 #
@@ -17,7 +17,7 @@
 #   with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import gettext
-gettext.textdomain('xfpanel-switch')
+gettext.textdomain('xfce4-panel-profiles')
 
 from gettext import gettext as _
 from gettext import ngettext
@@ -35,7 +35,7 @@ from panelconfig import PanelConfig
 
 homedir = GLib.get_home_dir()
 cachedir = GLib.get_user_cache_dir()
-cachefile = os.path.join(cachedir, "xfpanel-switch.tar.gz")
+cachefile = os.path.join(cachedir, "xfce4-panel-profiles.tar.gz")
 
 try:
     if not os.path.exists(cachedir):
@@ -43,25 +43,25 @@ try:
 except:
     pass
 
-class XfpanelSwitch:
+class XfcePanelProfiles:
 
-    '''XfpanelSwitch application class.'''
+    '''XfcePanelProfiles application class.'''
 
-    data_dir = "xfpanel-switch"
+    data_dir = "xfce4-panel-profiles"
     save_location = os.path.join(GLib.get_user_data_dir(), data_dir)
 
     def __init__(self):
-        '''Initialize the Xfce Panel Switch application.'''
+        '''Initialize the Panel Profiles application.'''
         self.builder = Gtk.Builder()
-        self.builder.set_translation_domain('xfpanel-switch')
+        self.builder.set_translation_domain('xfce4-panel-profiles')
 
         script_dir = os.path.dirname(os.path.abspath(__file__))
-        glade_file = os.path.join(script_dir, "xfpanel-switch.glade")
+        glade_file = os.path.join(script_dir, "xfce4-panel-profiles.glade")
         self.builder.add_from_file(glade_file)
         self.builder.connect_signals(self)
 
         self.window = self.builder.get_object("xfpanel_switch_window")
-        self.window.set_title(_("Xfce Panel Switch"))
+        self.window.set_title(_("Panel Profiles"))
         self.fix_xfce_header()
 
         self.load_xfconf()
@@ -291,7 +291,7 @@ class XfpanelSwitch:
     def on_help_clicked(self, *args):
         '''Navigate to the application documentation on Help click.'''
         screen = self.window.get_screen()
-        link = "https://wiki.smdavis.us/doku.php?id=xfpanel-switch-docs"
+        link = "https://docs.xfce.org/apps/xfce4-panel-profiles/start"
         Gtk.show_uri(screen, link, Gtk.get_current_event_time())
 
 
@@ -365,7 +365,7 @@ if __name__ == "__main__":
                 exit(1)
             exit(0)
         else:
-            print('Xfce Panel Switch - Usage:')
+            print('Xfce Panel Profiles - Usage:')
             print(sys.argv[0] + ' : load graphical user interface.')
             print(sys.argv[0] + ' save <filename> : save current configuration.')
             print(sys.argv[0] + ' load <filename> : load configuration from file.')
@@ -377,5 +377,5 @@ if __name__ == "__main__":
     except:
         pass
 
-    main = XfpanelSwitch()
+    main = XfcePanelProfiles()
     Gtk.main()

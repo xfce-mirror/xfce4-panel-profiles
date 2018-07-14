@@ -1,14 +1,14 @@
-APPNAME=xfpanel-switch
+APPNAME=xfce4-panel-profiles
 PREFIX=@prefix@
 PYTHON=`which @python@`
 LANGUAGE_FILES=$(patsubst po/%.po, locale/%/LC_MESSAGES/$(APPNAME).mo, $(wildcard po/*.po))
 DESTDIR=
 
 all: $(LANGUAGE_FILES) layouts
-	intltool-merge -d po xfpanel-switch.desktop.in xfpanel-switch.desktop
-	intltool-merge -x po data/metainfo/org.xubuntu.XfpanelSwitch.appdata.xml.in \
-		data/metainfo/org.xubuntu.XfpanelSwitch.appdata.xml
-	chmod +x xfpanel-switch.desktop
+	intltool-merge -d po xfce4-panel-profiles.desktop.in xfce4-panel-profiles.desktop
+	intltool-merge -x po data/metainfo/org.xfce.PanelProfiles.appdata.xml.in \
+		data/metainfo/org.xfce.PanelProfiles.appdata.xml
+	chmod +x xfce4-panel-profiles.desktop
 	sed -e s,%prefix%,$(PREFIX), bin/$(APPNAME).in.in > bin/$(APPNAME).in
 	sed -e s,%python%,$(PYTHON), bin/$(APPNAME).in > bin/$(APPNAME)
 	chmod +x bin/$(APPNAME)
@@ -18,7 +18,7 @@ locale/%/LC_MESSAGES/$(APPNAME).mo: po/%.po
 	msgfmt $< -o $@
 
 pot:
-	cd po; intltool-update --pot --gettext-package=xfpanel-switch
+	cd po; intltool-update --pot --gettext-package=xfce4-panel-profiles
 
 layouts:
 	cd data/layouts/gnome2; tar -cvjf "../GNOME 2.tar.bz2" *
@@ -32,10 +32,10 @@ install: all
 	install -d $(DESTDIR)/$(PREFIX)/bin
 	install bin/$(APPNAME) $(DESTDIR)/$(PREFIX)/bin
 
-	install -d $(DESTDIR)/$(PREFIX)/share/$(APPNAME)/xfpanel-switch
-	install xfpanel-switch/panelconfig.py $(DESTDIR)/$(PREFIX)/share/$(APPNAME)/xfpanel-switch
-	install xfpanel-switch/xfpanel-switch.py $(DESTDIR)/$(PREFIX)/share/$(APPNAME)/xfpanel-switch
-	install xfpanel-switch/xfpanel-switch.glade $(DESTDIR)/$(PREFIX)/share/$(APPNAME)/xfpanel-switch
+	install -d $(DESTDIR)/$(PREFIX)/share/$(APPNAME)/xfce4-panel-profiles
+	install xfce4-panel-profiles/panelconfig.py $(DESTDIR)/$(PREFIX)/share/$(APPNAME)/xfce4-panel-profiles
+	install xfce4-panel-profiles/xfce4-panel-profiles.py $(DESTDIR)/$(PREFIX)/share/$(APPNAME)/xfce4-panel-profiles
+	install xfce4-panel-profiles/xfce4-panel-profiles.glade $(DESTDIR)/$(PREFIX)/share/$(APPNAME)/xfce4-panel-profiles
 
 	install -d $(DESTDIR)/$(PREFIX)/share/doc/$(APPNAME)
 	install AUTHORS $(DESTDIR)/$(PREFIX)/share/doc/$(APPNAME)
@@ -47,9 +47,9 @@ install: all
 	install -d $(DESTDIR)/$(PREFIX)/share/applications
 	install -m 644 $(APPNAME).desktop $(DESTDIR)/$(PREFIX)/share/applications
 
-	install -d $(DESTDIR)/$(PREFIX)/share/xfpanel-switch
-	install -d $(DESTDIR)/$(PREFIX)/share/xfpanel-switch/layouts
-	install data/layouts/*.tar.bz2 $(DESTDIR)/$(PREFIX)/share/xfpanel-switch/layouts
+	install -d $(DESTDIR)/$(PREFIX)/share/xfce4-panel-profiles
+	install -d $(DESTDIR)/$(PREFIX)/share/xfce4-panel-profiles/layouts
+	install data/layouts/*.tar.bz2 $(DESTDIR)/$(PREFIX)/share/xfce4-panel-profiles/layouts
 
 	install -d $(DESTDIR)/$(PREFIX)/share/metainfo
 	install data/metainfo/*.xml $(DESTDIR)/$(PREFIX)/share/metainfo
@@ -66,10 +66,11 @@ uninstall:
 
 clean:
 	rm -Rf locale
-	rm -f xfpanel-switch/*.pyc
+	rm -f xfce4-panel-profiles/*.pyc
 	rm -f bin/$(APPNAME).in
 	rm -f bin/$(APPNAME)
+	rm -f data/metainfo/org.xfce.PanelProfiles.appdata.xml
 	rm -f data/layouts/*.tar.bz2
-	rm -f xfpanel-switch.desktop
+	rm -f xfce4-panel-profiles.desktop
 	rm -f Makefile.in
 	rm -f Makefile

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
-  <id>xfpanel-switch.desktop</id>
+  <id>xfce4-panel-profiles.desktop</id>
   <metadata_license>CC-BY-3.0</metadata_license>
   <project_license>GPL-3.0</project_license>
-  <name>Xfpanel Switch</name>
+  <name>Xfce Panel Profiles</name>
   <_summary>Application to manage different panel layouts in Xfce</_summary>
 
   <description>
@@ -14,21 +14,21 @@
 
   <screenshots>
     <screenshot type="default">
-      <image width="960" height="540">https://screenshots.bluesabre.org/xfpanel-switch/xfpanel-switch.png</image>
+      <image width="960" height="540">https://screenshots.bluesabre.org/xfce4-panel-profiles/xfce4-panel-profiles.png</image>
     </screenshot>
   </screenshots>
 
-  ​<translation type="gettext">xfpanel-switch</translation>
+  ​<translation type="gettext">xfce4-panel-profiles</translation>
 
-  <url type="homepage">https://launchpad.net/xfpanel-switch</url>
-  <url type="bugtracker">https://bugs.launchpad.net/xfpanel-switch</url>
+  <url type="homepage">https://git.xfce.org/apps/xfce4-panel-profiles</url>
+  <url type="bugtracker">https://bugzilla.xfce.org/</url>
 
-  <updatecontact>bluesabre@ubuntu.com</updatecontact>
+  <updatecontact>bluesabre@xfce.org</updatecontact>
 
   <project_group>XFCE</project_group>
 
   <provides>
-    <binary>xfpanel-switch</binary>
+    <binary>xfce4-panel-profiles</binary>
   </provides>
 
 </component>

@@ -1,8 +1,8 @@
 1. Unpack the archive.
 
-2. To build xfpanel-switch run 
+2. To build xfce4-panel-profiles run 
       ./configure
       make
 
-3. To install xfpanel-switch run
+3. To install xfce4-panel-profiles run
       (sudo) make install

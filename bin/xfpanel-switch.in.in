@@ -1,2 +1,0 @@
-#!/bin/sh
-%python% %prefix%/share/xfpanel-switch/xfpanel-switch/xfpanel-switch.py "$@"

@@ -1,0 +1,8 @@
+xfce4-panel-profiles.desktop
+*.tar.bz2
+*.xml
+Makefile.in
+Makefile
+locale
+bin/xfce4-panel-profiles
+bin/xfce4-panel-profiles.in

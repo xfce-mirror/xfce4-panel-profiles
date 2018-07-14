@@ -1,16 +1,16 @@
-xfpanel-switch 1.0.7
+xfce4-panel-profiles 1.0.7
 
     * Bugs Fixed
       - AttributeError: 'PanelConfig' object has no attribute 'source'
         (LP: #1762779)
     * Updated translation: French
 
-xfpanel-switch 1.0.6
+xfce4-panel-profiles 1.0.6
 
     * Bugs Fixed
       - Restore missing launchers for "Xubuntu Precise" layout
 
-xfpanel-switch 1.0.5
+xfce4-panel-profiles 1.0.5
 
     * General
       - Add gi.require_version('Gtk', '3.0') to silence warning
@@ -30,12 +30,12 @@ xfpanel-switch 1.0.5
     * Updated translations: Brazilian Portuguese, Czech, French, Galician,
       Italian, Kazakh, Polish, Slovenian
 
-xfpanel-switch 1.0.4
+xfce4-panel-profiles 1.0.4
 
     * New translations: Dutch, Greek, Japanese, Portuguese
     * Updated translations: French, Lithuanian, Spanish, Swedish
 
-xfpanel-switch 1.0.3
+xfce4-panel-profiles 1.0.3
 
     * Bugs Fixed
       - Allow translation of missing messages (LP: #1497762)
@@ -45,15 +45,15 @@ xfpanel-switch 1.0.3
     * New translations: Finnish, Spanish
     * Updated translations: German, French
 
-xfpanel-switch 1.0.2
+xfce4-panel-profiles 1.0.2
 
     * Bugs Fixed
-      - Wrong shebang in xfpanel-switch/xfpanel-switch.py (LP: #1494843)
+      - Wrong shebang in xfce4-panel-profiles/xfce4-panel-profiles.py (LP: #1494843)
       - Check if user can delete backup (LP: #1494846)
       - Do not list saved configurations multiple times
     * New Translation: French
 
-xfpanel-switch 1.0.1
+xfce4-panel-profiles 1.0.1
 
     * New Features
       - Ths new release ships with it's first set of templates.
@@ -69,9 +69,9 @@ xfpanel-switch 1.0.1
     * Many thanks to our contributors!
 
 
-Initial release: xfpanel-switch 1.0
+Initial release: xfce4-panel-profiles 1.0
 
-    * This is the first release of xfpanel-switch. This application
+    * This is the first release of xfce4-panel-profiles. This application
       allows users to manage their panel configuration, make backups,
       and even import/export their creations. Distributors can provide
       default configurations to be used.
