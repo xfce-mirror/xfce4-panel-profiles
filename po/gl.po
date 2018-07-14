@@ -6,19 +6,19 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce4-panel-profiles\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-13 17:28+0200\n"
+"POT-Creation-Date: 2018-03-23 06:37-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Xfce Bot <transifex@xfce.org>, 2018\n"
+"Last-Translator: Daniel Muñiz Fontoira <dani@damufo.com>, 2018\n"
 "Language-Team: Galician (https://www.transifex.com/xfce/teams/16840/gl/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: gl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../xfpanel-switch.desktop.in.h:1 ../xfpanel-switch/xfpanel-switch.py:64
+#: ../xfpanel-switch.desktop.in.h:1 ../xfpanel-switch/xfpanel-switch.py:51
 msgid "Xfce Panel Switch"
 msgstr "Selector de panel para Xcfe"
 
@@ -47,7 +47,7 @@ msgid "Apply Configuration"
 msgstr "Aplicar a configuración"
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:6
-#: ../xfpanel-switch/xfpanel-switch.py:309
+#: ../xfpanel-switch/xfpanel-switch.py:293
 msgid "Save Configuration"
 msgstr "Gardar a configuración"
 
@@ -68,8 +68,8 @@ msgid "Save panel configuration as..."
 msgstr "Gardar a configuración do panel como..."
 
 #: ../xfpanel-switch/xfpanel-switch.glade.h:11
-#: ../xfpanel-switch/xfpanel-switch.py:98
-#: ../xfpanel-switch/xfpanel-switch.py:308
+#: ../xfpanel-switch/xfpanel-switch.py:85
+#: ../xfpanel-switch/xfpanel-switch.py:292
 msgid "Cancel"
 msgstr "Cancelar"
 
@@ -77,56 +77,55 @@ msgstr "Cancelar"
 msgid "<b>Name the new panel configuration</b>"
 msgstr "<b>Nome da nova configuración do panel</b>"
 
-#: ../xfpanel-switch/xfpanel-switch.py:93
+#: ../xfpanel-switch/xfpanel-switch.py:80
 msgid "Save"
 msgstr "Gardar"
 
-#: ../xfpanel-switch/xfpanel-switch.py:95
+#: ../xfpanel-switch/xfpanel-switch.py:82
 msgid "Open"
 msgstr "Abrir"
 
-#: ../xfpanel-switch/xfpanel-switch.py:154
-#: ../xfpanel-switch/xfpanel-switch.py:156
+#: ../xfpanel-switch/xfpanel-switch.py:140
 msgid "Current Configuration"
 msgstr "Configuración actual"
 
-#: ../xfpanel-switch/xfpanel-switch.py:176
+#: ../xfpanel-switch/xfpanel-switch.py:160
 msgid "Today"
 msgstr "Hoxe"
 
-#: ../xfpanel-switch/xfpanel-switch.py:178
+#: ../xfpanel-switch/xfpanel-switch.py:162
 msgid "Yesterday"
 msgstr "Onte"
 
-#: ../xfpanel-switch/xfpanel-switch.py:203
+#: ../xfpanel-switch/xfpanel-switch.py:187
 #, python-format
 msgid "%s (Copy of %s)"
 msgstr "%s (Copia de %s)"
 
-#: ../xfpanel-switch/xfpanel-switch.py:227
+#: ../xfpanel-switch/xfpanel-switch.py:211
 msgid "Export configuration as..."
 msgstr "Exportar a configuración como..."
 
-#: ../xfpanel-switch/xfpanel-switch.py:228
+#: ../xfpanel-switch/xfpanel-switch.py:212
 msgid "Untitled"
 msgstr "Sen título"
 
-#: ../xfpanel-switch/xfpanel-switch.py:240
+#: ../xfpanel-switch/xfpanel-switch.py:224
 msgid "Import configuration file..."
 msgstr "Importar ficheiro de configuración..."
 
-#: ../xfpanel-switch/xfpanel-switch.py:301
+#: ../xfpanel-switch/xfpanel-switch.py:285
 msgid "Name the new panel configuration"
 msgstr "Nome da nova configuración do panel"
 
-#: ../xfpanel-switch/xfpanel-switch.py:325
+#: ../xfpanel-switch/xfpanel-switch.py:309
 #, python-format
 msgid "Backup_%s"
 msgstr "Copia de seguranza %s"
 
 #: ../data/metainfo/org.xubuntu.XfpanelSwitch.appdata.xml.in.h:1
 msgid "Application to manage different panel layouts in Xfce"
-msgstr ""
+msgstr "Aplicativo para xestionar as diferentes disposicións do panel en Xfce"
 
 #: ../data/metainfo/org.xubuntu.XfpanelSwitch.appdata.xml.in.h:2
 msgid ""
@@ -134,3 +133,7 @@ msgid ""
 "enables managing different layouts with little effort. Xfpanel-switch makes "
 "it possible to backup, restore, import and export panel layouts."
 msgstr ""
+"Pode crear multitude de disposicións de panel empregando o panel Xfce. Esta "
+"ferramenta permite a xestión de diferentes disposicións con pouco esforzo. O"
+" Xfpanel-switch permite facer copias de seguranza, restauración, importación"
+" e exportación das disposicións de panel."
