@@ -42,7 +42,8 @@ class PanelConfig(object):
         self.properties = {}
         self.source = None
 
-    def from_xfconf(xfconf):
+    @classmethod
+    def from_xfconf(cls, xfconf):
         pc = PanelConfig()
 
         result = xfconf.call_sync(
@@ -68,7 +69,8 @@ class PanelConfig(object):
 
         return pc
 
-    def from_file(filename):
+    @classmethod
+    def from_file(cls, filename):
         pc = PanelConfig()
 
         pc.source = tarfile.open(filename, mode='r')
@@ -213,11 +215,11 @@ class PanelConfig(object):
             try:
                 xfconf.call_sync('ResetProperty', GLib.Variant(
                     '(ssb)', ('xfce4-panel', '/', True)), 0, -1, None)
-            except GLib.Error:
+            except GLib.Error:  # pylint: disable=E0712
                 pass
 
             for (pp, pv) in sorted(self.properties.items()):
-                result = xfconf.call_sync('SetProperty', GLib.Variant(
+                xfconf.call_sync('SetProperty', GLib.Variant(
                     '(ssv)', ('xfce4-panel', pp, pv)), 0, -1, None)
 
             panel_path = os.path.join(
@@ -231,5 +233,5 @@ class PanelConfig(object):
 
             try:
                 dbus_proxy.call_sync('Terminate', GLib.Variant('(b)', ('xfce4-panel',)), 0, -1, None)
-            except GLib.GError:
+            except GLib.GError:  # pylint: disable=E0712
                 pass

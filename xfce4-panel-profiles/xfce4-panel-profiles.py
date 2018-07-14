@@ -154,12 +154,11 @@ class XfcePanelProfiles:
             results.append((cachefile, _("Current Configuration"), now))
         else:
             results.append(("", _("Current Configuration"), now))
-        today_delta = datetime.datetime.today() - datetime.timedelta(days=1)
 
         for directory in self.get_data_dirs():
             for filename in os.listdir(directory):
                 name, ext = os.path.splitext(filename)
-                name, tar = os.path.splitext(name)
+                name = os.path.splitext(name)[0]
                 if ext in [".gz", ".bz2"]:
                     path = os.path.join(directory, filename)
                     t = int(os.path.getmtime(path))
@@ -187,12 +186,12 @@ class XfcePanelProfiles:
         return (model, treeiter, values)
 
     def get_selected_filename(self):
-        model, treeiter, values = self.get_selected()
+        values = self.get_selected()[2]
         filename = values[0]
         return filename
 
     def copy_configuration(self, row, new_name, append=True):
-        model, treeiter, values = row
+        values = row[2]
         filename = values[0]
         old_name = values[1]
         created = values[2]
@@ -299,7 +298,6 @@ class PanelSaveDialog(Gtk.MessageDialog):
 
     def __init__(self, parent=None, default=None):
         primary = _("Name the new panel configuration")
-        secondary = ""
         Gtk.MessageDialog.__init__(
             self, transient_for=parent, modal=True,
             message_type=Gtk.MessageType.QUESTION,
