@@ -18,116 +18,117 @@ msgstr ""
 "Language: lt\n"
 "Plural-Forms: nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < 11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? 1 : n % 1 != 0 ? 2: 3);\n"
 
-#: ../xfpanel-switch.desktop.in.h:1 ../xfpanel-switch/xfpanel-switch.py:51
-msgid "Xfce Panel Switch"
-msgstr "Xfce skydelio perjungiklis"
+#: ../xfce4-panel-profiles.desktop.in.h:1
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:51
+msgid "Panel Profiles"
+msgstr "Skydelio profiliai"
 
-#: ../xfpanel-switch.desktop.in.h:2
+#: ../xfce4-panel-profiles.desktop.in.h:2
 msgid "Backup and restore your panel configuration"
 msgstr "Daryti ir atkurti skydelio konfigūracijos atsarginę kopiją"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:1
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:1
 msgid ""
-"<b><big>Xfce Panel Switch</big></b>\n"
+"<b><big>Panel Profiles</big></b>\n"
 "Backup and restore your panel configuration"
 msgstr ""
-"<b><big>Xfce skydelio perjungiklis</big></b>\n"
+"<b><big>Skydelio profiliai</big></b>\n"
 "Darykite ir atkurkite skydelio konfigūracijos atsarginę kopiją"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:3
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:3
 msgid "Filename"
 msgstr "Failo pavadinimas"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:4
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:4
 msgid "Date Modified"
 msgstr "Modifikavimo data"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:5
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:5
 msgid "Apply Configuration"
 msgstr "Taikyti konfigūraciją"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:6
-#: ../xfpanel-switch/xfpanel-switch.py:293
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:6
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:293
 msgid "Save Configuration"
 msgstr "Įrašyti konfigūraciją"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:7
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:7
 msgid "Remove Configuration"
 msgstr "Šalinti konfigūraciją"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:8
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:8
 msgid "Export"
 msgstr "Eksportuoti"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:9
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:9
 msgid "Import"
 msgstr "Importuoti"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:10
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:10
 msgid "Save panel configuration as..."
 msgstr "Įrašyti skydelio konfigūraciją kaip..."
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:11
-#: ../xfpanel-switch/xfpanel-switch.py:85
-#: ../xfpanel-switch/xfpanel-switch.py:292
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:11
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:85
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:292
 msgid "Cancel"
 msgstr "Atsisakyti"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:12
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:12
 msgid "<b>Name the new panel configuration</b>"
 msgstr "<b>Suteikite naujai skydelio konfigūracijai pavadinimą</b>"
 
-#: ../xfpanel-switch/xfpanel-switch.py:80
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:80
 msgid "Save"
 msgstr "Įrašyti"
 
-#: ../xfpanel-switch/xfpanel-switch.py:82
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:82
 msgid "Open"
 msgstr "Atverti"
 
-#: ../xfpanel-switch/xfpanel-switch.py:140
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:140
 msgid "Current Configuration"
 msgstr "Esama konfigūracija"
 
-#: ../xfpanel-switch/xfpanel-switch.py:160
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:160
 msgid "Today"
 msgstr "Šiandien"
 
-#: ../xfpanel-switch/xfpanel-switch.py:162
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:162
 msgid "Yesterday"
 msgstr "Vakar"
 
-#: ../xfpanel-switch/xfpanel-switch.py:187
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:187
 #, python-format
 msgid "%s (Copy of %s)"
 msgstr "%s (%s kopija)"
 
-#: ../xfpanel-switch/xfpanel-switch.py:211
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:211
 msgid "Export configuration as..."
 msgstr "Eksportuoti konfigūraciją kaip..."
 
-#: ../xfpanel-switch/xfpanel-switch.py:212
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:212
 msgid "Untitled"
 msgstr "Be pavadinimo"
 
-#: ../xfpanel-switch/xfpanel-switch.py:224
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:224
 msgid "Import configuration file..."
 msgstr "Importuoti konfigūracijos failą..."
 
-#: ../xfpanel-switch/xfpanel-switch.py:285
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:285
 msgid "Name the new panel configuration"
 msgstr "Suteikite naujai skydelio konfigūracijai pavadinimą"
 
-#: ../xfpanel-switch/xfpanel-switch.py:309
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:309
 #, python-format
 msgid "Backup_%s"
 msgstr "Atsarginė_kopija_%s"
 
-#: ../data/metainfo/org.xubuntu.XfpanelSwitch.appdata.xml.in.h:1
+#: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:1
 msgid "Application to manage different panel layouts in Xfce"
 msgstr "Programa, skirta tvarkyti įvairius Xfce skydelio išdėstymus"
 
-#: ../data/metainfo/org.xubuntu.XfpanelSwitch.appdata.xml.in.h:2
+#: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:2
 msgid ""
 "Multitude of panel layouts can be created using Xfce panel. This tool "
 "enables managing different layouts with little effort. Xfpanel-switch makes "
