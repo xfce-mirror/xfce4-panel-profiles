@@ -66,7 +66,7 @@ msgstr "Importer"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:10
 msgid "Save panel configuration as..."
-msgstr "Sauvegarder la configuration du tableau de bord sous..."
+msgstr "Sauvegarder la configuration du tableau de bord sous…"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:11
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:85
@@ -92,7 +92,7 @@ msgstr "Configuration actuelle"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:160
 msgid "Today"
-msgstr "Aujourd'hui"
+msgstr "Aujourd’hui"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:162
 msgid "Yesterday"
@@ -105,7 +105,7 @@ msgstr "%s (Copie de %s)"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:211
 msgid "Export configuration as..."
-msgstr "Exporter la configuration...."
+msgstr "Exporter la configuration…"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:212
 msgid "Untitled"
@@ -113,7 +113,7 @@ msgstr "Document sans nom"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:224
 msgid "Import configuration file..."
-msgstr "Importer le fichier de configuration..."
+msgstr "Importer le fichier de configuration…"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:285
 msgid "Name the new panel configuration"
@@ -138,5 +138,5 @@ msgid ""
 msgstr ""
 "Différentes dispositions de tableau de bord Xfce peuvent êtres créées. Cet "
 "outil permet de gérer facilement les différentes dispositions. Xfpanel-"
-"switch permet la sauvegarde, la restauration, l'importation et l'exportation"
+"switch permet la sauvegarde, la restauration, l’importation et l’exportation"
 " de dispositions de tableau de bord."
