@@ -6,11 +6,11 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce4-panel-profiles\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-13 17:28+0200\n"
+"POT-Creation-Date: 2018-03-23 06:37-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Xfce Bot <transifex@xfce.org>, 2018\n"
+"Last-Translator: Саша Петровић <salepetronije@gmail.com>, 2018\n"
 "Language-Team: Serbian (https://www.transifex.com/xfce/teams/16840/sr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,119 +18,122 @@ msgstr ""
 "Language: sr\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: ../xfpanel-switch.desktop.in.h:1 ../xfpanel-switch/xfpanel-switch.py:64
-msgid "Xfce Panel Switch"
-msgstr "Прекидач полице Иксфце-а"
+#: ../xfce4-panel-profiles.desktop.in.h:1
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:51
+msgid "Panel Profiles"
+msgstr "Обрасци полице"
 
-#: ../xfpanel-switch.desktop.in.h:2
+#: ../xfce4-panel-profiles.desktop.in.h:2
 msgid "Backup and restore your panel configuration"
 msgstr "Прави умножак поставки полице за чување и враћа га"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:1
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:1
 msgid ""
-"<b><big>Xfce Panel Switch</big></b>\n"
+"<b><big>Panel Profiles</big></b>\n"
 "Backup and restore your panel configuration"
 msgstr ""
-"<b><big>Прекидач полице Иксфце-а</big></b>\n"
-"Прави умножак поставки полице за чување и враћа га"
+"<b><big>Обрасци полице</big></b>\n"
+"За чување и враћање поставки полице"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:3
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:3
 msgid "Filename"
 msgstr "Име датотеке"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:4
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:4
 msgid "Date Modified"
 msgstr "Дан измене"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:5
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:5
 msgid "Apply Configuration"
 msgstr "Примени поставке"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:6
-#: ../xfpanel-switch/xfpanel-switch.py:309
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:6
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:293
 msgid "Save Configuration"
 msgstr "Сачувај поставке"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:7
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:7
 msgid "Remove Configuration"
 msgstr "Уклони поставке"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:8
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:8
 msgid "Export"
 msgstr "Извези"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:9
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:9
 msgid "Import"
 msgstr "Увези"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:10
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:10
 msgid "Save panel configuration as..."
 msgstr "Сачувај поставке полице као..."
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:11
-#: ../xfpanel-switch/xfpanel-switch.py:98
-#: ../xfpanel-switch/xfpanel-switch.py:308
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:11
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:85
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:292
 msgid "Cancel"
 msgstr "Откажи"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:12
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:12
 msgid "<b>Name the new panel configuration</b>"
 msgstr "<b>Име нових поставки полице</b>"
 
-#: ../xfpanel-switch/xfpanel-switch.py:93
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:80
 msgid "Save"
 msgstr "Сачувај"
 
-#: ../xfpanel-switch/xfpanel-switch.py:95
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:82
 msgid "Open"
 msgstr "Отвори"
 
-#: ../xfpanel-switch/xfpanel-switch.py:154
-#: ../xfpanel-switch/xfpanel-switch.py:156
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:140
 msgid "Current Configuration"
-msgstr ""
+msgstr "Тренутне поставке"
 
-#: ../xfpanel-switch/xfpanel-switch.py:176
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:160
 msgid "Today"
-msgstr ""
+msgstr "Данас"
 
-#: ../xfpanel-switch/xfpanel-switch.py:178
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:162
 msgid "Yesterday"
-msgstr ""
+msgstr "Јуче"
 
-#: ../xfpanel-switch/xfpanel-switch.py:203
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:187
 #, python-format
 msgid "%s (Copy of %s)"
 msgstr "%s (Умножак %s)"
 
-#: ../xfpanel-switch/xfpanel-switch.py:227
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:211
 msgid "Export configuration as..."
 msgstr "Извези поставке као..."
 
-#: ../xfpanel-switch/xfpanel-switch.py:228
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:212
 msgid "Untitled"
 msgstr "Безимено"
 
-#: ../xfpanel-switch/xfpanel-switch.py:240
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:224
 msgid "Import configuration file..."
 msgstr "Увези датотеку поставки..."
 
-#: ../xfpanel-switch/xfpanel-switch.py:301
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:285
 msgid "Name the new panel configuration"
 msgstr "Име нових поставки полице"
 
-#: ../xfpanel-switch/xfpanel-switch.py:325
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:309
 #, python-format
 msgid "Backup_%s"
 msgstr "Умножак за чување_%s"
 
-#: ../data/metainfo/org.xubuntu.XfpanelSwitch.appdata.xml.in.h:1
+#: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:1
 msgid "Application to manage different panel layouts in Xfce"
-msgstr ""
+msgstr "Програм за управљање различитим размештајем полице ИксФЦЕ-а"
 
-#: ../data/metainfo/org.xubuntu.XfpanelSwitch.appdata.xml.in.h:2
+#: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:2
 msgid ""
 "Multitude of panel layouts can be created using Xfce panel. This tool "
 "enables managing different layouts with little effort. Xfpanel-switch makes "
 "it possible to backup, restore, import and export panel layouts."
 msgstr ""
+"На полици ИксФЦЕ-а се могу направити многоструки размештаји. Овај прибор "
+"омогућава управљање различитим размештајима са мало труда. Прекидач полице "
+"омогућава чување, повраћај, увоз и извоз размештаја полице."
