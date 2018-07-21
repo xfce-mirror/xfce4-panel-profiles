@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce4-panel-profiles\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-13 17:28+0200\n"
+"POT-Creation-Date: 2018-03-23 06:37-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Igor <f2404@yandex.ru>, 2018\n"
 "Language-Team: Russian (https://www.transifex.com/xfce/teams/16840/ru/)\n"
@@ -18,117 +18,117 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: ../xfpanel-switch.desktop.in.h:1 ../xfpanel-switch/xfpanel-switch.py:64
-msgid "Xfce Panel Switch"
-msgstr "Переключение панелей Xfce"
+#: ../xfce4-panel-profiles.desktop.in.h:1
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:51
+msgid "Panel Profiles"
+msgstr "Профайлы панели"
 
-#: ../xfpanel-switch.desktop.in.h:2
+#: ../xfce4-panel-profiles.desktop.in.h:2
 msgid "Backup and restore your panel configuration"
-msgstr "Сохранение и восстановление конфигурации вашей панели"
+msgstr "Сохранение и восстановление настроек панели"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:1
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:1
 msgid ""
-"<b><big>Xfce Panel Switch</big></b>\n"
+"<b><big>Panel Profiles</big></b>\n"
 "Backup and restore your panel configuration"
 msgstr ""
-"<b><big>Переключение панелей Xfce</big></b>\n"
-"Сохранение и восстановление конфигурации вашей панели"
+"<b><big>Профайлы панели</big></b>\n"
+"Сохранение и восстановление настроек панели"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:3
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:3
 msgid "Filename"
 msgstr "Имя файла"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:4
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:4
 msgid "Date Modified"
 msgstr "Дата изменения"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:5
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:5
 msgid "Apply Configuration"
 msgstr "Применить конфигурацию"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:6
-#: ../xfpanel-switch/xfpanel-switch.py:309
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:6
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:293
 msgid "Save Configuration"
 msgstr "Сохранить конфигурацию"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:7
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:7
 msgid "Remove Configuration"
 msgstr "Удалить конфигурацию"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:8
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:8
 msgid "Export"
 msgstr "Экспортировать"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:9
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:9
 msgid "Import"
 msgstr "Импортировать"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:10
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:10
 msgid "Save panel configuration as..."
 msgstr "Сохранить конфигурацию панели как ..."
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:11
-#: ../xfpanel-switch/xfpanel-switch.py:98
-#: ../xfpanel-switch/xfpanel-switch.py:308
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:11
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:85
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:292
 msgid "Cancel"
 msgstr "Отменить"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:12
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:12
 msgid "<b>Name the new panel configuration</b>"
 msgstr "<b>Имя для новой конфигурации панели</b>"
 
-#: ../xfpanel-switch/xfpanel-switch.py:93
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:80
 msgid "Save"
 msgstr "Сохранить"
 
-#: ../xfpanel-switch/xfpanel-switch.py:95
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:82
 msgid "Open"
 msgstr "Открыть"
 
-#: ../xfpanel-switch/xfpanel-switch.py:154
-#: ../xfpanel-switch/xfpanel-switch.py:156
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:140
 msgid "Current Configuration"
 msgstr "Текущая конфигурация"
 
-#: ../xfpanel-switch/xfpanel-switch.py:176
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:160
 msgid "Today"
 msgstr "Сегодня"
 
-#: ../xfpanel-switch/xfpanel-switch.py:178
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:162
 msgid "Yesterday"
 msgstr "Вчера"
 
-#: ../xfpanel-switch/xfpanel-switch.py:203
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:187
 #, python-format
 msgid "%s (Copy of %s)"
 msgstr "%s (копия %s)"
 
-#: ../xfpanel-switch/xfpanel-switch.py:227
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:211
 msgid "Export configuration as..."
 msgstr "Экспортировать конфигурацию как..."
 
-#: ../xfpanel-switch/xfpanel-switch.py:228
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:212
 msgid "Untitled"
 msgstr "Без названия"
 
-#: ../xfpanel-switch/xfpanel-switch.py:240
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:224
 msgid "Import configuration file..."
 msgstr "Импортировать файл конфигурации..."
 
-#: ../xfpanel-switch/xfpanel-switch.py:301
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:285
 msgid "Name the new panel configuration"
 msgstr "Имя для новой конфигурации панели"
 
-#: ../xfpanel-switch/xfpanel-switch.py:325
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:309
 #, python-format
 msgid "Backup_%s"
 msgstr "Бэкап_%s"
 
-#: ../data/metainfo/org.xubuntu.XfpanelSwitch.appdata.xml.in.h:1
+#: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:1
 msgid "Application to manage different panel layouts in Xfce"
 msgstr "Приложения для управления разными расположениями панелей Xfce"
 
-#: ../data/metainfo/org.xubuntu.XfpanelSwitch.appdata.xml.in.h:2
+#: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:2
 msgid ""
 "Multitude of panel layouts can be created using Xfce panel. This tool "
 "enables managing different layouts with little effort. Xfpanel-switch makes "
