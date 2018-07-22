@@ -66,7 +66,7 @@ msgstr "Импортировать"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:10
 msgid "Save panel configuration as..."
-msgstr "Сохранить конфигурацию панели как ..."
+msgstr "Сохранить конфигурацию панели как..."
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:11
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:85
@@ -122,7 +122,7 @@ msgstr "Имя для новой конфигурации панели"
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:309
 #, python-format
 msgid "Backup_%s"
-msgstr "Бэкап_%s"
+msgstr "Копия_%s"
 
 #: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:1
 msgid "Application to manage different panel layouts in Xfce"
@@ -135,6 +135,6 @@ msgid ""
 "it possible to backup, restore, import and export panel layouts."
 msgstr ""
 "Множество расположений панелей может быть создано при помощи панели Xfce. "
-"Этот инструмент позволяет управлять разными расположениями с небольшими "
-"усилиями. Xfpanel-switch позволяет сохранять, восстанавливать, импортировать"
-" и экспортировать расположения панелей."
+"Данный инструмент позволяет управлять разными расположениями с небольшими "
+"усилиями. Xfpanel-switch даёт возможность сохранять, восстанавливать, "
+"импортировать и экспортировать расположения панелей."
