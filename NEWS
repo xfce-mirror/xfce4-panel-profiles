@@ -1,3 +1,21 @@
+xfce4-panel-profiles 1.0.8
+
+    * Xfpanel Switch is now Xfce4 Panel Profiles!
+      - Homepage: https://git.xfce.org/apps/xfce4-panel-profiles
+    * Bugs Fixed
+      - Failure to save some panel configurations (LP: #1765565)
+      - Crash on corrupted panel configs (LP: #1765565)
+      - Apply more strict logic when removing bad plugins
+      - Remove orphaned plugins when loading configuration
+    * General
+      - Tidied up pylint notices
+    * Updated translations: Albanian, Bulgarian, Catalan,
+      Chinese (China), Chinese (Taiwan), Croatian, Czech, Danish,
+      Dutch, Finnish, French, Galician, German, Greek, Hebrew, Italian,
+      Japanese, Kazakh, Korean, Lithuanian, Polish, Portuguese,
+      Portuguese (Brazil), Russian, Serbian, Slovenian, Spanish,
+      Swedish, Turkish
+
 xfpanel-switch 1.0.7
 
     * Bugs Fixed
