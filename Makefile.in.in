@@ -1,4 +1,5 @@
-APPNAME=xfce4-panel-profiles
+APPNAME=@appname@
+VERSION=@version@
 PREFIX=@prefix@
 PYTHON=`which @python@`
 LANGUAGE_FILES=$(patsubst po/%.po, locale/%/LC_MESSAGES/$(APPNAME).mo, $(wildcard po/*.po))
@@ -63,6 +64,15 @@ uninstall:
 	rm -rf $(DESTDIR)/$(PREFIX)/share/doc/$(APPNAME)
 	# FIXME: Uninstall locales
 	rm -f $(DESTDIR)/$(PREFIX)/bin/$(APPNAME)
+
+distcheck: all
+	mkdir -p $(APPNAME)-$(VERSION)
+	for filename in `git ls-tree -r master --name-only | grep -v git`; do \
+		mkdir -p $(APPNAME)-$(VERSION)/`dirname $$filename`; \
+		cp $$filename $(APPNAME)-$(VERSION)/$$filename; \
+	done;
+	tar -cvjSf $(APPNAME)-$(VERSION).tar.bz2 $(APPNAME)-$(VERSION)
+	rm -rf $(APPNAME)-$(VERSION)
 
 clean:
 	rm -Rf locale
