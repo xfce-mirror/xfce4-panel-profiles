@@ -21,7 +21,7 @@ msgstr ""
 #: ../xfce4-panel-profiles.desktop.in.h:1
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:51
 msgid "Panel Profiles"
-msgstr "Профайлы панели"
+msgstr "Профили панели"
 
 #: ../xfce4-panel-profiles.desktop.in.h:2
 msgid "Backup and restore your panel configuration"
@@ -32,7 +32,7 @@ msgid ""
 "<b><big>Panel Profiles</big></b>\n"
 "Backup and restore your panel configuration"
 msgstr ""
-"<b><big>Профайлы панели</big></b>\n"
+"<b><big>Профили панели</big></b>\n"
 "Сохранение и восстановление настроек панели"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:3
