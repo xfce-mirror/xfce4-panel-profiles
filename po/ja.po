@@ -32,6 +32,8 @@ msgid ""
 "<b><big>Panel Profiles</big></b>\n"
 "Backup and restore your panel configuration"
 msgstr ""
+"<b><big>パネルプロファイル</big></b>\n"
+"パネル設定のバックアップと復元"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:3
 msgid "Filename"
@@ -124,7 +126,7 @@ msgstr "バックアップ_%s"
 
 #: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:1
 msgid "Application to manage different panel layouts in Xfce"
-msgstr ""
+msgstr "Xfceの異なったパネルレイアウトを管理するアプリケーション"
 
 #: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:2
 msgid ""
@@ -132,3 +134,5 @@ msgid ""
 "enables managing different layouts with little effort. Xfpanel-switch makes "
 "it possible to backup, restore, import and export panel layouts."
 msgstr ""
+"Xfce パネルを使用することによって、多数のパネルレイアウトを作成できます。このツールは、少しの作業で異なるレイアウトを管理できます。 "
+"Xfpanel-switchは、パネルレイアウトのバックアップ、復元、インポート、およびエクスポートを可能にします。"
