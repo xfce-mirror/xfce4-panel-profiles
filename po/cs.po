@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce4-panel-profiles\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-13 17:28+0200\n"
+"POT-Creation-Date: 2018-03-23 06:37-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Xfce Bot <transifex@xfce.org>, 2018\n"
 "Language-Team: Czech (https://www.transifex.com/xfce/teams/16840/cs/)\n"
@@ -18,119 +18,123 @@ msgstr ""
 "Language: cs\n"
 "Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
 
-#: ../xfpanel-switch.desktop.in.h:1 ../xfpanel-switch/xfpanel-switch.py:64
-msgid "Xfce Panel Switch"
-msgstr "Xfce Panel Switch"
+#: ../xfce4-panel-profiles.desktop.in.h:1
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:51
+msgid "Panel Profiles"
+msgstr "Profily panelu"
 
-#: ../xfpanel-switch.desktop.in.h:2
+#: ../xfce4-panel-profiles.desktop.in.h:2
 msgid "Backup and restore your panel configuration"
 msgstr "Záloha a obnova nastavení panelu"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:1
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:1
 msgid ""
-"<b><big>Xfce Panel Switch</big></b>\n"
+"<b><big>Panel Profiles</big></b>\n"
 "Backup and restore your panel configuration"
 msgstr ""
-"<b><big>Xfce Panel Switch</big></b>\n"
+"<b><big>Profily panelu</big></b>\n"
 "Záloha a obnova nastavení panelu"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:3
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:3
 msgid "Filename"
 msgstr "Název souboru"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:4
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:4
 msgid "Date Modified"
 msgstr "Datum změny"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:5
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:5
 msgid "Apply Configuration"
 msgstr "Aplikovat nastavení"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:6
-#: ../xfpanel-switch/xfpanel-switch.py:309
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:6
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:293
 msgid "Save Configuration"
 msgstr "Uložit nastavení"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:7
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:7
 msgid "Remove Configuration"
 msgstr "Odebrat nastavení"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:8
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:8
 msgid "Export"
 msgstr "Exportovat"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:9
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:9
 msgid "Import"
 msgstr "Importovat"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:10
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:10
 msgid "Save panel configuration as..."
 msgstr "Uložit nastavení panelu jako..."
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:11
-#: ../xfpanel-switch/xfpanel-switch.py:98
-#: ../xfpanel-switch/xfpanel-switch.py:308
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:11
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:85
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:292
 msgid "Cancel"
 msgstr "Zrušit"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:12
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:12
 msgid "<b>Name the new panel configuration</b>"
-msgstr "<b>Jméno nového nastavení panelu</b>"
+msgstr "</b>Název nového nastavení panelu</b>"
 
-#: ../xfpanel-switch/xfpanel-switch.py:93
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:80
 msgid "Save"
 msgstr "Uložit"
 
-#: ../xfpanel-switch/xfpanel-switch.py:95
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:82
 msgid "Open"
 msgstr "Otevřít"
 
-#: ../xfpanel-switch/xfpanel-switch.py:154
-#: ../xfpanel-switch/xfpanel-switch.py:156
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:140
 msgid "Current Configuration"
 msgstr "Současné nastavení"
 
-#: ../xfpanel-switch/xfpanel-switch.py:176
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:160
 msgid "Today"
 msgstr "Dnes"
 
-#: ../xfpanel-switch/xfpanel-switch.py:178
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:162
 msgid "Yesterday"
 msgstr "Včera"
 
-#: ../xfpanel-switch/xfpanel-switch.py:203
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:187
 #, python-format
 msgid "%s (Copy of %s)"
 msgstr "%s (Kopie z %s)"
 
-#: ../xfpanel-switch/xfpanel-switch.py:227
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:211
 msgid "Export configuration as..."
 msgstr "Exportovat nastavení jako..."
 
-#: ../xfpanel-switch/xfpanel-switch.py:228
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:212
 msgid "Untitled"
 msgstr "Bez názvu"
 
-#: ../xfpanel-switch/xfpanel-switch.py:240
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:224
 msgid "Import configuration file..."
 msgstr "Importovat soubor nastavení..."
 
-#: ../xfpanel-switch/xfpanel-switch.py:301
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:285
 msgid "Name the new panel configuration"
-msgstr "Jméno nového nastavení panelu"
+msgstr "Název nového nastavení panelu"
 
-#: ../xfpanel-switch/xfpanel-switch.py:325
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:309
 #, python-format
 msgid "Backup_%s"
 msgstr "Záloha_%s"
 
-#: ../data/metainfo/org.xubuntu.XfpanelSwitch.appdata.xml.in.h:1
+#: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:1
 msgid "Application to manage different panel layouts in Xfce"
-msgstr ""
+msgstr "Aplikace pro správu různých rozvržení panelu v Xfce"
 
-#: ../data/metainfo/org.xubuntu.XfpanelSwitch.appdata.xml.in.h:2
+#: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:2
 msgid ""
 "Multitude of panel layouts can be created using Xfce panel. This tool "
 "enables managing different layouts with little effort. Xfpanel-switch makes "
 "it possible to backup, restore, import and export panel layouts."
 msgstr ""
+"Při používání panelu Xfce je možné vytvořit jeho různá rozvržení. Tento "
+"nástroj vám umožňuje spravovat různá rozvržení s minimálním úsilím. Xfpanel-"
+"switch umožňuje rozvržení panelu zálohovat, obnovovat, importovat a "
+"exportovat."
