@@ -21,17 +21,19 @@ msgstr ""
 #: ../xfce4-panel-profiles.desktop.in.h:1
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:51
 msgid "Panel Profiles"
-msgstr ""
+msgstr "Профілі панелі"
 
 #: ../xfce4-panel-profiles.desktop.in.h:2
 msgid "Backup and restore your panel configuration"
-msgstr ""
+msgstr "Створення запасної копії і відновлення конфігурації Вашої панелі"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:1
 msgid ""
 "<b><big>Panel Profiles</big></b>\n"
 "Backup and restore your panel configuration"
 msgstr ""
+"<b><big>Профілі панелі</big></b>\n"
+"Створення запасної копії і відновлення конфігурації Вашої панелі"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:3
 msgid "Filename"
@@ -124,7 +126,7 @@ msgstr "Запасна копія_%s"
 
 #: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:1
 msgid "Application to manage different panel layouts in Xfce"
-msgstr ""
+msgstr "Програма керуванням різними розкладками панелей в Xfce"
 
 #: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:2
 msgid ""
@@ -132,3 +134,7 @@ msgid ""
 "enables managing different layouts with little effort. Xfpanel-switch makes "
 "it possible to backup, restore, import and export panel layouts."
 msgstr ""
+"Можна створити безліч конфігурацій панелей, використовуючи панель Xfce. Це "
+"знаряддя дозволяє без зусиль керувати різними конфігураціями панелей. За "
+"допомогою Xfpanel-switch можна робити запасні копії, відновлювати, "
+"імпортувати і експортувати конфігурації панелей."
