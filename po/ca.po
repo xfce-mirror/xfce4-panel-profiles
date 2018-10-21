@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce4-panel-profiles\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-13 17:28+0200\n"
+"POT-Creation-Date: 2018-03-23 06:37-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Xfce Bot <transifex@xfce.org>, 2018\n"
 "Language-Team: Catalan (https://www.transifex.com/xfce/teams/16840/ca/)\n"
@@ -18,118 +18,117 @@ msgstr ""
 "Language: ca\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../xfpanel-switch.desktop.in.h:1 ../xfpanel-switch/xfpanel-switch.py:64
-msgid "Xfce Panel Switch"
-msgstr "Commutador de plafons de Xfce"
+#: ../xfce4-panel-profiles.desktop.in.h:1
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:51
+msgid "Panel Profiles"
+msgstr "Perfils de taulers"
 
-#: ../xfpanel-switch.desktop.in.h:2
+#: ../xfce4-panel-profiles.desktop.in.h:2
 msgid "Backup and restore your panel configuration"
-msgstr ""
-"Feu una còpia de seguretat i restaureu la vostra configuració del plafó"
+msgstr "Feu una còpia de seguretat i restaureu la configuració del tauler"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:1
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:1
 msgid ""
-"<b><big>Xfce Panel Switch</big></b>\n"
+"<b><big>Panel Profiles</big></b>\n"
 "Backup and restore your panel configuration"
 msgstr ""
-"<b><big>Commutador de plafons de Xfce</big></b>\n"
-"Creeu una copia de seguretat de la vostra configuració del plafó i restaureu-la"
+"<b><big>Perfils de taulers</big></b>\n"
+"Creeu una copia de seguretat de la vostra configuració del tauler i restaureu-la"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:3
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:3
 msgid "Filename"
 msgstr "Nom del fitxer"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:4
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:4
 msgid "Date Modified"
 msgstr "Data de modificació"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:5
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:5
 msgid "Apply Configuration"
 msgstr "Aplica la configuració"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:6
-#: ../xfpanel-switch/xfpanel-switch.py:309
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:6
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:293
 msgid "Save Configuration"
 msgstr "Desa la configuració"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:7
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:7
 msgid "Remove Configuration"
 msgstr "Suprimeix la configuració"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:8
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:8
 msgid "Export"
 msgstr "Exporta"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:9
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:9
 msgid "Import"
 msgstr "Importa"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:10
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:10
 msgid "Save panel configuration as..."
-msgstr "Anomena i desa la configuració del plafó..."
+msgstr "Anomena i desa la configuració del tauler..."
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:11
-#: ../xfpanel-switch/xfpanel-switch.py:98
-#: ../xfpanel-switch/xfpanel-switch.py:308
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:11
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:85
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:292
 msgid "Cancel"
 msgstr "Cancel·la"
 
-#: ../xfpanel-switch/xfpanel-switch.glade.h:12
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:12
 msgid "<b>Name the new panel configuration</b>"
 msgstr "<b>Anomeneu la nova configuració del plafó</b>"
 
-#: ../xfpanel-switch/xfpanel-switch.py:93
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:80
 msgid "Save"
 msgstr "Desa"
 
-#: ../xfpanel-switch/xfpanel-switch.py:95
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:82
 msgid "Open"
 msgstr "Obre"
 
-#: ../xfpanel-switch/xfpanel-switch.py:154
-#: ../xfpanel-switch/xfpanel-switch.py:156
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:140
 msgid "Current Configuration"
 msgstr "Configuració atual"
 
-#: ../xfpanel-switch/xfpanel-switch.py:176
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:160
 msgid "Today"
 msgstr "avui"
 
-#: ../xfpanel-switch/xfpanel-switch.py:178
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:162
 msgid "Yesterday"
 msgstr "ahir"
 
-#: ../xfpanel-switch/xfpanel-switch.py:203
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:187
 #, python-format
 msgid "%s (Copy of %s)"
 msgstr "%s (còpia de %s)"
 
-#: ../xfpanel-switch/xfpanel-switch.py:227
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:211
 msgid "Export configuration as..."
 msgstr "Exporta la configuració com a..."
 
-#: ../xfpanel-switch/xfpanel-switch.py:228
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:212
 msgid "Untitled"
 msgstr "Sense nom"
 
-#: ../xfpanel-switch/xfpanel-switch.py:240
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:224
 msgid "Import configuration file..."
 msgstr "Import el fitxer de configuració..."
 
-#: ../xfpanel-switch/xfpanel-switch.py:301
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:285
 msgid "Name the new panel configuration"
-msgstr "Anomeneu la nova configuració del plafó"
+msgstr "Anomeneu la nova configuració del tauler"
 
-#: ../xfpanel-switch/xfpanel-switch.py:325
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:309
 #, python-format
 msgid "Backup_%s"
 msgstr "Còpia_de_seguretat_%s"
 
-#: ../data/metainfo/org.xubuntu.XfpanelSwitch.appdata.xml.in.h:1
+#: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:1
 msgid "Application to manage different panel layouts in Xfce"
-msgstr "Aplicació per gestionar els diferents dissenys del plafó a Xfce"
+msgstr "Aplicació per gestionar els diferents dissenys de taulers a Xfce"
 
-#: ../data/metainfo/org.xubuntu.XfpanelSwitch.appdata.xml.in.h:2
+#: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:2
 msgid ""
 "Multitude of panel layouts can be created using Xfce panel. This tool "
 "enables managing different layouts with little effort. Xfpanel-switch makes "
