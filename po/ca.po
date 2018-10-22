@@ -33,7 +33,7 @@ msgid ""
 "Backup and restore your panel configuration"
 msgstr ""
 "<b><big>Perfils de taulers</big></b>\n"
-"Creeu una copia de seguretat de la vostra configuració del tauler i restaureu-la"
+"Feu una còpia de seguretat i restaureu la configuració del tauler"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:3
 msgid "Filename"
@@ -76,7 +76,7 @@ msgstr "Cancel·la"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:12
 msgid "<b>Name the new panel configuration</b>"
-msgstr "<b>Anomeneu la nova configuració del plafó</b>"
+msgstr "<b>Anomeneu la nova configuració del tauler</b>"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:80
 msgid "Save"
@@ -113,7 +113,7 @@ msgstr "Sense nom"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:224
 msgid "Import configuration file..."
-msgstr "Import el fitxer de configuració..."
+msgstr "Importa el fitxer de configuració..."
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:285
 msgid "Name the new panel configuration"
@@ -134,7 +134,7 @@ msgid ""
 "enables managing different layouts with little effort. Xfpanel-switch makes "
 "it possible to backup, restore, import and export panel layouts."
 msgstr ""
-"Es poden crear multituds de dissenys de plafons mitjançant el plafó de Xfce."
-" Aquesta eina permet gestionar diferents dissenys amb poc esforç. Xfpanel-"
-"switch permet realitzar còpies de seguretat, restaurar, importar i exportar "
-"els dissenys dels plafons."
+"Es poden crear multituds de dissenys de taulers mitjançant el tauler de "
+"Xfce. Aquesta eina permet gestionar diferents dissenys amb poc esforç. "
+"Xfpanel-switch permet realitzar còpies de seguretat, restaurar, importar i "
+"exportar els dissenys dels taulers."
