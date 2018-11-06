@@ -1,0 +1,144 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Xfce Bot <transifex@xfce.org>, 2018
+# Sveinn í Felli <sv1@fellsnet.is>, 2018
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-23 06:37-0400\n"
+"PO-Revision-Date: 2018-07-13 15:34+0000\n"
+"Last-Translator: Sveinn í Felli <sv1@fellsnet.is>, 2018\n"
+"Language-Team: Icelandic (https://www.transifex.com/xfce/teams/16840/is/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: is\n"
+"Plural-Forms: nplurals=2; plural=(n % 10 != 1 || n % 100 == 11);\n"
+
+#: ../xfce4-panel-profiles.desktop.in.h:1
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:51
+msgid "Panel Profiles"
+msgstr "Skjástikusnið"
+
+#: ../xfce4-panel-profiles.desktop.in.h:2
+msgid "Backup and restore your panel configuration"
+msgstr "Öryggisafritaðu og endurheimtu uppsetningu á skjástikum"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:1
+msgid ""
+"<b><big>Panel Profiles</big></b>\n"
+"Backup and restore your panel configuration"
+msgstr ""
+"<b><big>Skjástikusnið</big></b>\n"
+"Öryggisafritaðu og endurheimtu uppsetningu á skjástikum"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:3
+msgid "Filename"
+msgstr "Skráarheiti"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:4
+msgid "Date Modified"
+msgstr "Breytt þann"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:5
+msgid "Apply Configuration"
+msgstr "Beita stillingum"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:6
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:293
+msgid "Save Configuration"
+msgstr "Vista stillingar"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:7
+msgid "Remove Configuration"
+msgstr "Fjarlægja uppsetningu"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:8
+msgid "Export"
+msgstr "Flytja út"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:9
+msgid "Import"
+msgstr "Flytja inn"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:10
+msgid "Save panel configuration as..."
+msgstr "Vista skjástikustillingar sem..."
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:11
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:85
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:292
+msgid "Cancel"
+msgstr "Hætta við"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:12
+msgid "<b>Name the new panel configuration</b>"
+msgstr "<b>Settu nafn á nýju skjástikustillingarnar</b>"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:80
+msgid "Save"
+msgstr "Vista"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:82
+msgid "Open"
+msgstr "Opna"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:140
+msgid "Current Configuration"
+msgstr "Núgildandi uppsetning"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:160
+msgid "Today"
+msgstr "Í dag"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:162
+msgid "Yesterday"
+msgstr "Í gær"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:187
+#, python-format
+msgid "%s (Copy of %s)"
+msgstr "%s (afrit af %s)"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:211
+msgid "Export configuration as..."
+msgstr "Flytja út uppsetningu sem..."
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:212
+msgid "Untitled"
+msgstr "Ónefnt"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:224
+msgid "Import configuration file..."
+msgstr "Flytja inn uppsetningarskrá..."
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:285
+msgid "Name the new panel configuration"
+msgstr "Settu nafn á nýju skjástikustillingarnar"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:309
+#, python-format
+msgid "Backup_%s"
+msgstr "Öryggisafrita_%s"
+
+#: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:1
+msgid "Application to manage different panel layouts in Xfce"
+msgstr "Forrit til að sýsla með mismunandi uppsetningar á skjástikum í XFCE"
+
+#: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:2
+msgid ""
+"Multitude of panel layouts can be created using Xfce panel. This tool "
+"enables managing different layouts with little effort. Xfpanel-switch makes "
+"it possible to backup, restore, import and export panel layouts."
+msgstr ""
+"Hægt er að útbúa urmul af mismunandi uppsetningum á skjástikum í XFCE. Þetta"
+" tól auðveldar að sýsla með mismunandi uppsetningar á skjástikum í XFCE. "
+"Xfpanel-switch gefur kost á að taka öryggisafrit, endurheimta, flytja "
+"uppsetningar á skjástikum út og inn úr kerfinu."
