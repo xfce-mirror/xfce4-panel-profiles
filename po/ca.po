@@ -5,7 +5,6 @@
 # 
 # Translators:
 # Xfce Bot <transifex@xfce.org>, 2018
-# Davidmp <medipas@gmail.com>, 2018
 # Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2018
 # 
 #, fuzzy
@@ -139,7 +138,7 @@ msgid ""
 "enables managing different layouts with little effort. Xfpanel-switch makes "
 "it possible to backup, restore, import and export panel layouts."
 msgstr ""
-"Es poden crear multituds de dissenys de taulers mitjançant el tauler d'Xfce."
-" Aquesta eina permet gestionar diferents dissenys amb poc esforç. Xfpanel-"
-"switch permet realitzar còpies de seguretat, restaurar, importar i exportar "
-"els dissenys dels taulers."
+"Es poden crear multituds de dissenys de taulers mitjançant el tauler de "
+"Xfce. Aquesta eina permet gestionar diferents dissenys amb poc esforç. "
+"Xfpanel-switch permet realitzar còpies de seguretat, restaurar, importar i "
+"exportar els dissenys dels taulers."
