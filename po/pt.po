@@ -3,14 +3,19 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Xfce Bot <transifex@xfce.org>, 2018
+# José Vieira <jvieira33@sapo.pt>, 2018
+# Nuno Miguel <nunomgue@gmail.com>, 2018
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-23 06:37-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: José Vieira <jvieira33@sapo.pt>, 2018\n"
+"PO-Revision-Date: 2018-07-13 15:34+0000\n"
+"Last-Translator: Nuno Miguel <nunomgue@gmail.com>, 2018\n"
 "Language-Team: Portuguese (https://www.transifex.com/xfce/teams/16840/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -50,7 +55,7 @@ msgstr "Aplicar Configuração"
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:6
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:293
 msgid "Save Configuration"
-msgstr "Guardar Configuração"
+msgstr "Gravar configuração"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:7
 msgid "Remove Configuration"
@@ -66,7 +71,7 @@ msgstr "Importar"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:10
 msgid "Save panel configuration as..."
-msgstr "Guardar configuração do painel como..."
+msgstr "Gravar configuração do painel como..."
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:11
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:85
@@ -80,7 +85,7 @@ msgstr "<b>Dar um nome à nova configuração do painel </b>"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:80
 msgid "Save"
-msgstr "Guardar"
+msgstr "Gravar"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:82
 msgid "Open"
@@ -134,7 +139,7 @@ msgid ""
 "enables managing different layouts with little effort. Xfpanel-switch makes "
 "it possible to backup, restore, import and export panel layouts."
 msgstr ""
-"Podem ser criados múltiplos esquemas de painel usando o \"Painel do Xfce\" "
-"[Xfce Panel]. Esta ferramenta permite gerir sem esforço diferentes esquemas."
-" A ferramenta \"Troca de painel\" [Xfpanel-switch] permite guardar, "
-"restaurar, importar e exportar esquemas de painel."
+"Podem ser criados múltiplos esquemas de painel usando o painel do Xfce. Esta"
+" ferramenta permite gerir sem esforço diferentes esquemas. A ferramenta "
+"Xfpanel-switch permite guardar, restaurar, importar e exportar esquemas de "
+"painel."
