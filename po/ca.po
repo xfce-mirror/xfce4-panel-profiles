@@ -92,7 +92,7 @@ msgstr "Obre"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:140
 msgid "Current Configuration"
-msgstr "Configuració atual"
+msgstr "Configuració actual"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:160
 msgid "Today"
