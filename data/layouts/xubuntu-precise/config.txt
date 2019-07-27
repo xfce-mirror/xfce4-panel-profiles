@@ -105,23 +105,23 @@
 /plugins/plugin-14/show-handle false
 /plugins/plugin-14/style uint32 1
 /plugins/plugin-15 'launcher'
-/plugins/plugin-15/items [<'14294989531.desktop'>]
+/plugins/plugin-15/items [<'exo-web-browser.desktop'>]
 /plugins/plugin-16 'launcher'
-/plugins/plugin-16/items [<'14294989532.desktop'>]
+/plugins/plugin-16/items [<'exo-mail-reader.desktop'>]
 /plugins/plugin-17 'launcher'
-/plugins/plugin-17/items [<'14294989533.desktop'>]
+/plugins/plugin-17/items [<'exo-terminal-emulator.desktop'>]
 /plugins/plugin-18 'launcher'
-/plugins/plugin-18/items [<'14294989534.desktop'>]
+/plugins/plugin-18/items [<'xfce4-settings-manager.desktop'>]
 /plugins/plugin-19 'launcher'
-/plugins/plugin-19/items [<'14294989535.desktop'>]
+/plugins/plugin-19/items [<'xfce4-appfinder.desktop'>]
 /plugins/plugin-20 'launcher'
-/plugins/plugin-20/items [<'14294989536.desktop'>]
+/plugins/plugin-20/items [<'software-center.desktop'>]
 /plugins/plugin-21 'launcher'
-/plugins/plugin-21/items [<'14294989537.desktop'>]
+/plugins/plugin-21/items [<'abiword.desktop'>]
 /plugins/plugin-22 'launcher'
-/plugins/plugin-22/items [<'14294989538.desktop'>]
+/plugins/plugin-22/items [<'gmusicbrowser.desktop'>]
 /plugins/plugin-23 'launcher'
-/plugins/plugin-23/items [<'14294989539.desktop'>]
+/plugins/plugin-23/items [<'gimp.desktop'>]
 /plugins/plugin-24 'separator'
 /plugins/plugin-24/expand false
 /plugins/plugin-24/style uint32 1

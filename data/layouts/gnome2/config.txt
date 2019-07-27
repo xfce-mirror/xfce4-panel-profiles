@@ -41,11 +41,11 @@
 /plugins/plugin-3/expand false
 /plugins/plugin-3/style uint32 0
 /plugins/plugin-4 'launcher'
-/plugins/plugin-4/items [<'14418443291.desktop'>]
+/plugins/plugin-4/items [<'xfce4-settings-manager.desktop'>]
 /plugins/plugin-5 'launcher'
-/plugins/plugin-5/items [<'14418443522.desktop'>]
+/plugins/plugin-5/items [<'exo-web-browser.desktop'>]
 /plugins/plugin-6 'launcher'
-/plugins/plugin-6/items [<'14418443623.desktop'>]
+/plugins/plugin-6/items [<'exo-mail-reader.desktop'>]
 /plugins/plugin-7 'separator'
 /plugins/plugin-7/expand true
 /plugins/plugin-7/style uint32 0

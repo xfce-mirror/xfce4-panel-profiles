@@ -56,13 +56,13 @@
 /plugins/plugin-9/expand false
 /plugins/plugin-9/style uint32 1
 /plugins/plugin-10 'launcher'
-/plugins/plugin-10/items [<'14418417141.desktop'>]
+/plugins/plugin-10/items [<'exo-terminal-emulator.desktop'>]
 /plugins/plugin-11 'launcher'
-/plugins/plugin-11/items [<'14418417142.desktop'>]
+/plugins/plugin-11/items [<'exo-file-manager.desktop'>]
 /plugins/plugin-12 'launcher'
-/plugins/plugin-12/items [<'14418417143.desktop'>]
+/plugins/plugin-12/items [<'exo-web-browser.desktop'>]
 /plugins/plugin-13 'launcher'
-/plugins/plugin-13/items [<'14418417144.desktop'>]
+/plugins/plugin-13/items [<'xfce4-appfinder.desktop'>]
 /plugins/plugin-14 'separator'
 /plugins/plugin-14/expand false
 /plugins/plugin-14/style uint32 1
