@@ -26,12 +26,16 @@ import shlex
 import os
 import datetime
 
+import warnings
+
 import gi
 gi.require_version('Gtk', '3.0')
 
 from gi.repository import Gtk, GLib, Gio
 
 from panelconfig import PanelConfig
+
+warnings.filterwarnings("ignore")
 
 homedir = GLib.get_home_dir()
 cachedir = GLib.get_user_cache_dir()
