@@ -154,7 +154,10 @@ class PanelConfig(object):
         for param in keys:
             for bad_plugin in rem_keys:
                 if param == bad_plugin or param.startswith(bad_plugin+'/'):
-                    del self.properties[param]
+                    try:
+                        del self.properties[param]
+                    except KeyError:
+                        pass #  https://bugzilla.xfce.org/show_bug.cgi?id=14934
 
     def get_desktop_source_file(self, desktop):
         if getattr(self, 'source', None) is None:
