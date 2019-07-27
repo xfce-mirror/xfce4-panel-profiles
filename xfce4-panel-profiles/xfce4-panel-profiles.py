@@ -93,10 +93,13 @@ class XfcePanelProfiles:
             button = _("Save")
         else:
             button = _("Open")
-        dialog = Gtk.FileChooserDialog(title,
-                                       self.window, action,
-                                       (_("Cancel"), Gtk.ResponseType.CANCEL,
-                                        button, Gtk.ResponseType.ACCEPT))
+        dialog = Gtk.FileChooserDialog(title=title,
+                                       transient_for=self.window,
+                                       action=action)
+        dialog.add_buttons(
+            _("Cancel"), Gtk.ResponseType.CANCEL,
+            button, Gtk.ResponseType.ACCEPT
+        )
         dialog.set_default_response(Gtk.ResponseType.ACCEPT)
         if default:
             dialog.set_current_name(default)
@@ -301,10 +304,11 @@ class PanelSaveDialog(Gtk.MessageDialog):
         Gtk.MessageDialog.__init__(
             self, transient_for=parent, modal=True,
             message_type=Gtk.MessageType.QUESTION,
-            message_format=primary,
-            buttons=(
-                _("Cancel"), Gtk.ResponseType.CANCEL,
-                _("Save Configuration"), Gtk.ResponseType.ACCEPT))
+            text=primary)
+        self.add_buttons(
+            _("Cancel"), Gtk.ResponseType.CANCEL,
+            _("Save Configuration"), Gtk.ResponseType.ACCEPT
+        )
         self.set_default_icon_name("document-save-as")
         self.set_default_response(Gtk.ResponseType.ACCEPT)
         box = self.get_message_area()
