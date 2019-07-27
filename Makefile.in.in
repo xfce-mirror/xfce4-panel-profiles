@@ -26,9 +26,9 @@ layouts:
 	cd data/layouts/redmond; tar -cvjf "../Redmond.tar.bz2" *
 	cd data/layouts/xfce-4.12; tar -cvjf "../Xfce 4.12.tar.bz2" *
 	cd data/layouts/xfce-4.14; tar -cvjf "../Xfce 4.14.tar.bz2" *
-	cd data/layouts/xubuntu-precise; tar -cvjf "../Xubuntu Precise.tar.bz2" *
-	cd data/layouts/xubuntu-trusty; tar -cvjf "../Xubuntu Trusty.tar.bz2" *
-	cd data/layouts/xubuntu-bionic; tar -cvjf "../Xubuntu Bionic.tar.bz2" *
+	cd data/layouts/xubuntu-12.04; tar -cvjf "../Xubuntu 12.04 (Precise).tar.bz2" *
+	cd data/layouts/xubuntu-14.04; tar -cvjf "../Xubuntu 14.04 (Trusty).tar.bz2" *
+	cd data/layouts/xubuntu-18.04; tar -cvjf "../Xubuntu 18.04 (Bionic).tar.bz2" *
 
 install: all
 	install -d $(DESTDIR)/$(PREFIX)/bin
