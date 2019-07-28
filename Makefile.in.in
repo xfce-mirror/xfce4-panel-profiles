@@ -72,6 +72,7 @@ distcheck: all
 		mkdir -p $(APPNAME)-$(VERSION)/`dirname $$filename`; \
 		cp $$filename $(APPNAME)-$(VERSION)/$$filename; \
 	done;
+	git log > $(APPNAME)-$(VERSION)/ChangeLog
 	tar -cvjSf $(APPNAME)-$(VERSION).tar.bz2 $(APPNAME)-$(VERSION)
 	rm -rf $(APPNAME)-$(VERSION)
 
