@@ -1,3 +1,23 @@
+xfce4-panel-profiles 1.0.9
+
+    * New Features
+      - Add Xfce 4.14 profile
+    * General
+      - Suppress deprecation warnings
+      - Rename launchers to be more explicit
+      - Rename Xubuntu releases to version numbers instead of codenames
+      - Unversion gimp desktop file to work with any release
+    * Bugs Fixed
+      - Fix KeyError when processing some layouts (Xfce #14934)
+      - Safely handle values that GLib cannot process (Xfce #14597)
+    * Updated translations: Albanian, Armenian (Armenia), Basque,
+      Belarusian, Bulgarian, Catalan, Chinese (China), Chinese (Taiwan),
+      Croatian, Czech, Danish, Dutch, English (Australia), Finnish,
+      French, Galician, German, Greek, Hebrew, Hungarian, Icelandic,
+      Interlingue, Italian, Japanese, Kazakh, Korean, Lithuanian, Malay,
+      Norwegian Bokmål, Polish, Portuguese (Brazil), Portuguese, Russian,
+      Serbian, Slovenian, Spanish, Swedish, Turkish, Ukrainian
+
 xfce4-panel-profiles 1.0.8
 
     * Xfpanel Switch is now Xfce4 Panel Profiles!
