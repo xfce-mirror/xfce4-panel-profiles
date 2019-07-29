@@ -1,0 +1,42 @@
+/configver 2
+/panels [<1>]
+/panels/panel-1/length uint32 100
+/panels/panel-1/length-adjust false
+/panels/panel-1/plugin-ids [<1>, <2>, <3>, <4>, <5>, <8>, <6>, <13>, <15>, <7>, <9>, <10>, <11>, <14>]
+/panels/panel-1/position 'p=10;x=0;y=0'
+/panels/panel-1/position-locked true
+/panels/panel-1/size uint32 24
+/plugins/plugin-1 'whiskermenu'
+/plugins/plugin-10 'clock'
+/plugins/plugin-10/show-frame false
+/plugins/plugin-11/digital-format '%d %b, %H:%M'
+/plugins/plugin-11 'separator'
+/plugins/plugin-11/style uint32 0
+/plugins/plugin-13 'power-manager-plugin'
+/plugins/plugin-14 'notification-plugin'
+/plugins/plugin-15 'statusnotifier'
+/plugins/plugin-15/icon-size 16
+/plugins/plugin-15/known-items [<'org.guido-berhoerster.code.package-update-indicator'>, <'nm-applet'>, <'redshift'>]
+/plugins/plugin-15/menu-is-primary true
+/plugins/plugin-15/square-icons true
+/plugins/plugin-15/symbolic-icons true
+/plugins/plugin-2 'separator'
+/plugins/plugin-2/style uint32 0
+/plugins/plugin-3 'showdesktop'
+/plugins/plugin-4 'tasklist'
+/plugins/plugin-4/flat-buttons true
+/plugins/plugin-4/grouping uint32 1
+/plugins/plugin-4/show-handle true
+/plugins/plugin-5 'separator'
+/plugins/plugin-5/expand true
+/plugins/plugin-5/style uint32 0
+/plugins/plugin-6 'pulseaudio'
+/plugins/plugin-6/enable-keyboard-shortcuts true
+/plugins/plugin-7 'systray'
+/plugins/plugin-7/names-ordered [<'redshift-gtk'>, <'network'>, <'package update indicator'>, <'bluetooth'>]
+/plugins/plugin-7/show-frame false
+/plugins/plugin-7/size-max uint32 16
+/plugins/plugin-7/square-icons true
+/plugins/plugin-8 'pager'
+/plugins/plugin-9 'separator'
+/plugins/plugin-9/style uint32 0
