@@ -1,0 +1,142 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Panwar108 <caspian7pena@gmail.com>, 2019
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-23 06:37-0400\n"
+"PO-Revision-Date: 2018-07-13 15:34+0000\n"
+"Last-Translator: Panwar108 <caspian7pena@gmail.com>, 2019\n"
+"Language-Team: Hindi (https://www.transifex.com/xfce/teams/16840/hi/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: hi\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../xfce4-panel-profiles.desktop.in.h:1
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:51
+msgid "Panel Profiles"
+msgstr "पैनल प्रोफाइल"
+
+#: ../xfce4-panel-profiles.desktop.in.h:2
+msgid "Backup and restore your panel configuration"
+msgstr "पैनल विन्यास को बैकअप व पुनः स्थापित करें"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:1
+msgid ""
+"<b><big>Panel Profiles</big></b>\n"
+"Backup and restore your panel configuration"
+msgstr ""
+"<b><big>पैनल प्रोफाइल </big></b>\n"
+"पैनल विन्यास को बैकअप व पुनः स्थापित करें"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:3
+msgid "Filename"
+msgstr "फ़ाइल का नाम"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:4
+msgid "Date Modified"
+msgstr "संशोधन की तिथि"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:5
+msgid "Apply Configuration"
+msgstr "विन्यास लागू करें"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:6
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:293
+msgid "Save Configuration"
+msgstr "विन्यास संचित करें"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:7
+msgid "Remove Configuration"
+msgstr "विन्यास सेटिंग्स हटाएँ"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:8
+msgid "Export"
+msgstr "निर्यात करें"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:9
+msgid "Import"
+msgstr "आयात करें"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:10
+msgid "Save panel configuration as..."
+msgstr "इसके रूप में पैनल विन्यास को संचित करें..."
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:11
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:85
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:292
+msgid "Cancel"
+msgstr "रद्द करें"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:12
+msgid "<b>Name the new panel configuration</b>"
+msgstr "<b>नए पैनल विन्यास को नाम दें</b>"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:80
+msgid "Save"
+msgstr "संचित करें"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:82
+msgid "Open"
+msgstr "खोलें"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:140
+msgid "Current Configuration"
+msgstr "वर्तमान विन्यास"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:160
+msgid "Today"
+msgstr "आज"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:162
+msgid "Yesterday"
+msgstr "कल"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:187
+#, python-format
+msgid "%s (Copy of %s)"
+msgstr "%s(%s की प्रतिलिपि)"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:211
+msgid "Export configuration as..."
+msgstr "इसके रूप में विन्यास को निर्यात करें..."
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:212
+msgid "Untitled"
+msgstr "शीर्षकहीन"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:224
+msgid "Import configuration file..."
+msgstr "विन्यास फ़ाइल को आयात करें..."
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:285
+msgid "Name the new panel configuration"
+msgstr "नए पैनल विन्यास को नाम दें"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:309
+#, python-format
+msgid "Backup_%s"
+msgstr "बैकअप_%s"
+
+#: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:1
+msgid "Application to manage different panel layouts in Xfce"
+msgstr "विभिन्न पैनल अभिन्यास के प्रबंधन हेतु अनुप्रयोग"
+
+#: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:2
+msgid ""
+"Multitude of panel layouts can be created using Xfce panel. This tool "
+"enables managing different layouts with little effort. Xfpanel-switch makes "
+"it possible to backup, restore, import and export panel layouts."
+msgstr ""
+"Xfce पैनल से कई पैनल अभिन्यास बनाएँ जा सकते हैं। इस साधन द्वारा थोड़े प्रयास "
+"से ही विभिन्न अभिन्यासों का प्रबंधन संभव है। Xfpanel-switch के मदद से पैनल "
+"अभिन्यास का बैकअप, पुनर्स्थापना, आयात व निर्यात किया जा सकता है।"
