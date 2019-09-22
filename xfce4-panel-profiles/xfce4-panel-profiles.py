@@ -16,6 +16,8 @@
 #   You should have received a copy of the GNU General Public License along
 #   with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+import tarfile
+
 import gettext
 gettext.textdomain('xfce4-panel-profiles')
 
@@ -252,9 +254,24 @@ class XfcePanelProfiles:
             if savedlg.run() == Gtk.ResponseType.ACCEPT:
                 name = savedlg.get_save_name()
                 dst = os.path.join(self.save_location, name + ".tar.bz2")
-                self._copy(filename, dst)
-                self.tree_model.append(
-                    [dst, name, int(datetime.datetime.now().strftime('%s'))])
+                try:
+                    self._copy(filename, dst)
+                    self.tree_model.append(
+                        [dst, name, int(datetime.datetime.now().strftime('%s'))])
+                except tarfile.ReadError:
+                    message = _("Invalid configuration file!\n"
+                                "Please select a valid configuration file.")
+
+                    errordlg = Gtk.MessageDialog(
+                        transient_for=self.window, modal=True,
+                        message_type=Gtk.MessageType.ERROR,
+                        text=message)
+
+                    errordlg.add_button(_("OK"), Gtk.ResponseType.OK)
+
+                    errordlg.run()
+                    errordlg.destroy()
+
             savedlg.destroy()
         dialog.destroy()
 
@@ -336,6 +353,7 @@ class PanelSaveDialog(Gtk.MessageDialog):
 
     def set_save_name(self, name):
         self.entry.set_text(name.strip())
+
 
 if __name__ == "__main__":
     import sys
