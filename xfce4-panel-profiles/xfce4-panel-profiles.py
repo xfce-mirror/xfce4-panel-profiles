@@ -40,14 +40,6 @@ from panelconfig import PanelConfig
 warnings.filterwarnings("ignore")
 
 homedir = GLib.get_home_dir()
-cachedir = GLib.get_user_cache_dir()
-cachefile = os.path.join(cachedir, "xfce4-panel-profiles.tar.gz")
-
-try:
-    if not os.path.exists(cachedir):
-        os.makedirs(cachedir)
-except:
-    pass
 
 class XfcePanelProfiles:
 
@@ -157,13 +149,9 @@ class XfcePanelProfiles:
         return list(set(dirs))
 
     def get_saved_configurations(self):
-        results = []
         now = int(datetime.datetime.now().strftime('%s'))
-        if (os.path.isfile(cachefile)):
-            results.append((cachefile, _("Current Configuration"), now))
-        else:
-            results.append(("", _("Current Configuration"), now))
 
+        results = [('', _('Current Configuration'), now)]
         for directory in self.get_data_dirs():
             for filename in os.listdir(directory):
                 name, ext = os.path.splitext(filename)
@@ -225,7 +213,7 @@ class XfcePanelProfiles:
         if dialog.run() == Gtk.ResponseType.ACCEPT:
             name = dialog.get_save_name()
             if len(name) > 0:
-                if filename == "":
+                if filename == "": # Current configuration.
                     self.save_configuration(name)
                 else:
                     self.copy_configuration(self.get_selected(), name)
@@ -238,7 +226,7 @@ class XfcePanelProfiles:
         if response == Gtk.ResponseType.ACCEPT:
             selected = self.get_selected_filename()
             filename = dialog.get_filename()
-            if selected == "":
+            if selected == "": # Current configuration.
                 self.save_configuration(filename, False)
             else:
                 self.copy_configuration(self.get_selected(), filename, False)
@@ -290,18 +278,20 @@ class XfcePanelProfiles:
     def on_delete_clicked(self, widget):
         model, treeiter, values = self.get_selected()
         filename = values[0]
-        if filename == "":
+        if filename == "": # Current configuration.
             return
         self.delete_configuration(filename)
         model.remove(treeiter)
 
     def on_saved_configurations_cursor_changed(self, widget):
         filename = self.get_selected_filename()
-        delete = self.builder.get_object("toolbar_delete")
-        if os.access(filename, os.W_OK):
-            delete.set_sensitive(True)
-        else:
-            delete.set_sensitive(False)
+
+        delete = self.builder.get_object('toolbar_delete')
+        delete.set_sensitive(True if os.access(filename, os.W_OK) else False)
+
+        # Current configuration cannot be applied.
+        apply = self.builder.get_object('toolbar_apply')
+        apply.set_sensitive(False if filename == '' else True)
 
     def on_window_destroy(self, *args):
         '''Exit the application when the window is closed.'''
@@ -395,11 +385,6 @@ if __name__ == "__main__":
             print(sys.argv[0] + ' load <filename> : load configuration from file.')
             print('')
             exit(-1)
-
-    try:
-        PanelConfig.from_xfconf(xfconf).to_file(cachefile)
-    except:
-        pass
 
     main = XfcePanelProfiles()
     Gtk.main()
