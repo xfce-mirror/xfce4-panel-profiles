@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated with glade 3.18.3 -->
 <interface>
   <requires lib="gtk+" version="3.12"/>
+  <requires lib="libxfce4ui-2" version="4.12"/>
   <object class="GtkListStore" id="liststore1">
     <columns>
       <!-- column-name filename -->
@@ -12,100 +12,20 @@
       <column type="gint"/>
     </columns>
   </object>
-  <object class="GtkWindow" id="xfpanel_switch_window">
+  <object class="XfceTitledDialog" id="xfpanel_switch_window">
+    <property name="title" translatable="yes">Panel Profiles</property>
+    <property name="subtitle" translatable="yes">Backup and restore your panel configuration</property>
+    <property name="type_hint">dialog</property>
     <property name="can_focus">False</property>
     <property name="default_width">350</property>
     <property name="default_height">400</property>
     <property name="icon_name">xfce4-panel</property>
     <signal name="delete-event" handler="on_window_destroy" swapped="no"/>
-    <child>
+    <child internal-child="vbox">
       <object class="GtkBox" id="box1">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="orientation">vertical</property>
-        <child>
-          <object class="GtkBox" id="box3">
-            <property name="visible">True</property>
-            <property name="can_focus">False</property>
-            <property name="hexpand">True</property>
-            <property name="vexpand">False</property>
-            <property name="orientation">vertical</property>
-            <child>
-              <object class="GtkEventBox" id="xfce_header">
-                <property name="name">xfce_header</property>
-                <property name="height_request">60</property>
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <child>
-                  <object class="GtkBox" id="box2">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="hexpand">True</property>
-                    <property name="vexpand">True</property>
-                    <child>
-                      <object class="GtkImage" id="appicon">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="halign">start</property>
-                        <property name="margin_start">6</property>
-                        <property name="margin_top">1</property>
-                        <property name="pixel_size">48</property>
-                        <property name="icon_name">xfce4-panel</property>
-                        <property name="icon_size">6</property>
-                      </object>
-                      <packing>
-                        <property name="expand">False</property>
-                        <property name="fill">True</property>
-                        <property name="position">0</property>
-                      </packing>
-                    </child>
-                    <child>
-                      <object class="GtkLabel" id="apptitle">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="margin_start">12</property>
-                        <property name="label" translatable="yes">&lt;b&gt;&lt;big&gt;Panel Profiles&lt;/big&gt;&lt;/b&gt;
-Backup and restore your panel configuration</property>
-                        <property name="use_markup">True</property>
-                        <property name="ellipsize">end</property>
-                        <property name="xalign">0</property>
-                      </object>
-                      <packing>
-                        <property name="expand">True</property>
-                        <property name="fill">True</property>
-                        <property name="position">1</property>
-                      </packing>
-                    </child>
-                  </object>
-                </child>
-                <style>
-                  <class name="XfceHeading"/>
-                </style>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">0</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkSeparator" id="separator1">
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">1</property>
-              </packing>
-            </child>
-          </object>
-          <packing>
-            <property name="expand">False</property>
-            <property name="fill">True</property>
-            <property name="position">0</property>
-          </packing>
-        </child>
         <child>
           <object class="GtkAlignment" id="alignment1">
             <property name="visible">True</property>

@@ -53,6 +53,9 @@ class XfcePanelProfiles:
 
     def __init__(self):
         '''Initialize the Panel Profiles application.'''
+        # Temporary fix: https://stackoverflow.com/a/44230815
+        _ = libxfce4ui.TitledDialog()
+
         self.builder = Gtk.Builder()
         self.builder.set_translation_domain('xfce4-panel-profiles')
 
@@ -62,8 +65,6 @@ class XfcePanelProfiles:
         self.builder.connect_signals(self)
 
         self.window = self.builder.get_object("xfpanel_switch_window")
-        self.window.set_title(_("Panel Profiles"))
-        self.fix_xfce_header()
 
         self.load_xfconf()
 
@@ -125,17 +126,6 @@ class XfcePanelProfiles:
             path,
             interface,
             cancellable)
-
-    def fix_xfce_header(self):
-        ''' Set background-color of frame to base-color to make it resemble the
-        XfceHeading widget '''
-        self.xfce_header = self.builder.get_object("xfce_header")
-        entry = Gtk.Entry.new()
-        style = entry.get_style_context()
-        base_color = style.lookup_color("theme_base_color")
-        self.xfce_header.override_background_color(0, base_color[1])
-        fg_color = style.lookup_color("theme_fg_color")
-        self.xfce_header.override_color(0, fg_color[1])
 
     def get_data_dirs(self):
         dirs = []
