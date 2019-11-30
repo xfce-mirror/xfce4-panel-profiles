@@ -32,8 +32,9 @@ import warnings
 
 import gi
 gi.require_version('Gtk', '3.0')
+gi.require_version('libxfce4ui', '2.0')
 
-from gi.repository import Gtk, GLib, Gio
+from gi.repository import Gtk, GLib, Gio, libxfce4ui
 
 from panelconfig import PanelConfig
 
@@ -311,10 +312,11 @@ class XfcePanelProfiles:
         Gtk.main_quit()
 
     def on_help_clicked(self, *args):
-        '''Navigate to the application documentation on Help click.'''
-        screen = self.window.get_screen()
-        link = "https://docs.xfce.org/apps/xfce4-panel-profiles/start"
-        Gtk.show_uri(screen, link, Gtk.get_current_event_time())
+        '''Shows Xfce's standard help dialog.'''
+        libxfce4ui.dialog_show_help(parent=self.window,
+                                    component='xfce4-panel-profiles',
+                                    page='xfce4-panel-profiles',
+                                    offset=None)
 
 
 class PanelSaveDialog(Gtk.MessageDialog):
