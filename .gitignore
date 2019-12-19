@@ -1,4 +1,6 @@
 xfce4-panel-profiles.desktop
+*.gz
+*.orig
 *.tar.bz2
 *.xml
 Makefile.in
