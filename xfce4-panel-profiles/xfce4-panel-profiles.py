@@ -269,7 +269,14 @@ class XfcePanelProfiles:
 
     def on_apply_clicked(self, widget):
         filename = self.get_selected_filename()
-        self.load_configuration(filename)
+
+        dialog = PanelConfirmDialog(self.window)
+        if dialog.run() == Gtk.ResponseType.ACCEPT:
+            if dialog.backup.get_active():
+                self.on_save_clicked(dialog)
+
+            self.load_configuration(filename)
+        dialog.destroy()
 
     def delete_configuration(self, filename):
         if os.path.isfile(filename):
@@ -344,6 +351,35 @@ class PanelSaveDialog(Gtk.MessageDialog):
     def set_save_name(self, name):
         self.entry.set_text(name.strip())
 
+
+
+class PanelConfirmDialog(Gtk.MessageDialog):
+    '''Ask to the user if he wants to apply a configuration, because the current
+    configuration will be lost.'''
+
+    def __init__(self, parent=None):
+        message = _("Do you want to apply this configuration?\n"
+                    " The current configuration will be lost!")
+
+        Gtk.MessageDialog.__init__(
+            self, transient_for=parent, modal=True,
+            message_type=Gtk.MessageType.QUESTION,
+            text=message)
+
+        self.add_buttons(
+            _("Cancel"), Gtk.ResponseType.CANCEL,
+            _("Apply Configuration"), Gtk.ResponseType.ACCEPT
+        )
+
+        self.set_default_icon_name("dialog-information")
+        self.set_default_response(Gtk.ResponseType.ACCEPT)
+
+        self.backup = Gtk.CheckButton.new()
+        self.backup.set_label(_("Make a backup of the current configuration"))
+
+        box = self.get_message_area()
+        box.pack_start(self.backup, True, True, 0)
+        box.show_all()
 
 if __name__ == "__main__":
     import sys
