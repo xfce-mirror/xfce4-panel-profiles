@@ -1,3 +1,15 @@
+xfce4-panel-profiles 1.0.10
+
+    * New Features
+      - Add openSUSE profile
+      - Add new error for invalid configuration files (Xfce #15983)
+      - 'Current Configuration' now pulls the current panel state
+        instead of the state cached when the program starts (Xfce #16114)
+      - A cancellable warning is now displayed when applying
+        configurations (Xfce #14559)
+    * Updated translations: English (United Kingdom), Galician, Hindi,
+      Slovenian, Thai
+
 xfce4-panel-profiles 1.0.9
 
     * New Features
