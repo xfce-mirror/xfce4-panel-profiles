@@ -51,7 +51,7 @@ class XfcePanelProfiles:
     def __init__(self, from_panel=False):
         '''Initialize the Panel Profiles application.
 
-        If 'from_panel' is set to 'True' the application launchs 'xfce4-panel
+        If 'from_panel' is set to 'True' the application launches 'xfce4-panel
         --preferences' when the user closes this application.
         '''
         self.builder = Gtk.Builder()
@@ -311,7 +311,11 @@ class XfcePanelProfiles:
         Gtk.main_quit()
 
     def on_close_clicked(self, *args):
-        '''Exit the application when the window is closed.'''
+        '''
+        Exit the application when the window is closed. Optionally launch
+        'xfce4-panel --preferences' if the application is launched with
+        '--from-profile' option.
+        '''
         if self.from_panel:
             path = GLib.find_program_in_path('xfce4-panel')
 
