@@ -25,17 +25,19 @@ msgstr ""
 #: ../xfce4-panel-profiles.desktop.in.h:1
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:51
 msgid "Panel Profiles"
-msgstr ""
+msgstr "Paneeliprofiilid"
 
 #: ../xfce4-panel-profiles.desktop.in.h:2
 msgid "Backup and restore your panel configuration"
-msgstr ""
+msgstr "Varunda ja taasta oma paneeli seadistused"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:1
 msgid ""
 "<b><big>Panel Profiles</big></b>\n"
 "Backup and restore your panel configuration"
 msgstr ""
+"<b><big>Paneliprofiilid</big></b>\n"
+"Varunda ja taasta oma paneeli seadistused"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:3
 msgid "Filename"
@@ -78,7 +80,7 @@ msgstr "Tühista"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:12
 msgid "<b>Name the new panel configuration</b>"
-msgstr ""
+msgstr "<b>Anna nimi uuele paneeliseadistusele</b>"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:80
 msgid "Save"
@@ -128,7 +130,7 @@ msgstr "Varundus_%s"
 
 #: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:1
 msgid "Application to manage different panel layouts in Xfce"
-msgstr ""
+msgstr "Rakendus, mis võimaldab hallata erinevaid Xfce paneelide paigutusi"
 
 #: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:2
 msgid ""
@@ -136,3 +138,7 @@ msgid ""
 "enables managing different layouts with little effort. Xfpanel-switch makes "
 "it possible to backup, restore, import and export panel layouts."
 msgstr ""
+"Xfce paneelide jaoks saab luua erinevaid paigutusi. Käesolev töövahend "
+"võimaldab vähese vaevaga hallata selliseid erinevaid paigutusi. Xfpanel'i "
+"lülitaja võimaldab varundada, taastada,importida ja eksportida paneelidei "
+"paigutusi."
