@@ -5,6 +5,8 @@ PYTHON=`which @python@`
 LANGUAGE_FILES=$(patsubst po/%.po, locale/%/LC_MESSAGES/$(APPNAME).mo, $(wildcard po/*.po))
 DESTDIR=
 
+GIT_BRANCH := $(shell git branch --show-current)
+
 all: $(LANGUAGE_FILES) layouts
 	intltool-merge -d po xfce4-panel-profiles.desktop.in xfce4-panel-profiles.desktop
 	intltool-merge -x po data/metainfo/org.xfce.PanelProfiles.appdata.xml.in \
@@ -75,7 +77,7 @@ uninstall:
 
 distcheck: all
 	mkdir -p $(APPNAME)-$(VERSION)
-	for filename in `git ls-tree -r master --name-only | grep -v git`; do \
+	for filename in `git ls-tree -r $(GIT_BRANCH) --name-only | grep -v git`; do \
 		mkdir -p $(APPNAME)-$(VERSION)/`dirname $$filename`; \
 		cp $$filename $(APPNAME)-$(VERSION)/$$filename; \
 	done;
