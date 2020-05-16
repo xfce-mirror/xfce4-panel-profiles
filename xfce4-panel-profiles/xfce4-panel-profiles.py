@@ -416,6 +416,9 @@ if __name__ == "__main__":
                 print(repr(e))
                 exit(1)
             exit(0)
+        elif sys.argv[1] == '--version':
+            print(info.appname + ' ' + info.version)
+            exit(0)
         else:
             print('Xfce Panel Profiles - Usage:')
             print(info.appname + ' : load graphical user interface.')
