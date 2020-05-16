@@ -12,6 +12,10 @@ all: $(LANGUAGE_FILES) layouts
 	chmod +x xfce4-panel-profiles.desktop
 	sed -e s,%prefix%,$(PREFIX), bin/$(APPNAME).in.in > bin/$(APPNAME).in
 	sed -e s,%python%,$(PYTHON), bin/$(APPNAME).in > bin/$(APPNAME)
+
+	sed -e s,%appname%,$(APPNAME), xfce4-panel-profiles/info.py.in.in > xfce4-panel-profiles/info.py.in
+	sed -e s,%version%,$(VERSION), xfce4-panel-profiles/info.py.in > xfce4-panel-profiles/info.py
+
 	chmod +x bin/$(APPNAME)
 
 locale/%/LC_MESSAGES/$(APPNAME).mo: po/%.po
@@ -39,6 +43,7 @@ install: all xfce4-panel-profiles.1.gz
 	install bin/$(APPNAME) $(DESTDIR)/$(PREFIX)/bin
 
 	install -d $(DESTDIR)/$(PREFIX)/share/$(APPNAME)/xfce4-panel-profiles
+	install xfce4-panel-profiles/info.py $(DESTDIR)/$(PREFIX)/share/$(APPNAME)/xfce4-panel-profiles
 	install xfce4-panel-profiles/panelconfig.py $(DESTDIR)/$(PREFIX)/share/$(APPNAME)/xfce4-panel-profiles
 	install xfce4-panel-profiles/xfce4-panel-profiles.py $(DESTDIR)/$(PREFIX)/share/$(APPNAME)/xfce4-panel-profiles
 	install xfce4-panel-profiles/xfce4-panel-profiles.glade $(DESTDIR)/$(PREFIX)/share/$(APPNAME)/xfce4-panel-profiles
@@ -94,3 +99,5 @@ clean:
 	rm -f Makefile.in
 	rm -f Makefile
 	rm -f xfce4-panel-profiles.1.gz
+	rm -f xfce4-panel-profiles/info.py
+	rm -f xfce4-panel-profiles/info.py.in
