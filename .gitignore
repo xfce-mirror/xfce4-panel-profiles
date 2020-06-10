@@ -8,3 +8,5 @@ Makefile
 locale
 bin/xfce4-panel-profiles
 bin/xfce4-panel-profiles.in
+xfce4-panel-profiles/info.py
+xfce4-panel-profiles/info.py.in
