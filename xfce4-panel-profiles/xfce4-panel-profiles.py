@@ -37,6 +37,8 @@ from gi.repository import Gtk, GLib, Gio
 
 from panelconfig import PanelConfig
 
+import info
+
 warnings.filterwarnings("ignore")
 
 homedir = GLib.get_home_dir()
@@ -414,11 +416,14 @@ if __name__ == "__main__":
                 print(repr(e))
                 exit(1)
             exit(0)
+        elif sys.argv[1] == '--version':
+            print(info.appname + ' ' + info.version)
+            exit(0)
         else:
             print('Xfce Panel Profiles - Usage:')
-            print(sys.argv[0] + ' : load graphical user interface.')
-            print(sys.argv[0] + ' save <filename> : save current configuration.')
-            print(sys.argv[0] + ' load <filename> : load configuration from file.')
+            print(info.appname + ' : load graphical user interface.')
+            print(info.appname + ' save <filename> : save current configuration.')
+            print(info.appname + ' load <filename> : load configuration from file.')
             print('')
             exit(-1)
 
