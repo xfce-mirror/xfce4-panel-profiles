@@ -119,11 +119,6 @@ class PanelConfig(object):
         self.remove_keys(rem_keys)
 
     def check_desktop(self, path):
-        try:
-            bytes = self.get_desktop_source_file(path).read()
-        except FileNotFoundError:
-            # If the .desktop file does not exist at all return False
-
         if not os.path.isfile(path):
             return False
 
