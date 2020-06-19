@@ -148,7 +148,7 @@ class PanelConfig(object):
             except KeyError: # Not in backup, likely from previous version
                 return False
 
-        return self.check_exec("xfce4-popup-whiskermenu") #FIXME, is there a better way to check if the whiskermenu is installed?         
+        return True
 
     def find_desktops(self):
         rem_keys = []
