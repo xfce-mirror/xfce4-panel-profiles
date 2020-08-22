@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated with glade 3.18.3 -->
+<!-- Generated with glade 3.36.0 -->
 <interface>
   <requires lib="gtk+" version="3.12"/>
   <object class="GtkListStore" id="liststore1">
@@ -16,7 +16,7 @@
     <property name="can_focus">False</property>
     <property name="default_width">350</property>
     <property name="default_height">400</property>
-    <property name="icon_name">xfce4-panel</property>
+    <property name="icon_name">org.xfce.panelprofiles</property>
     <signal name="delete-event" handler="on_window_destroy" swapped="no"/>
     <child>
       <object class="GtkBox" id="box1">
@@ -50,7 +50,7 @@
                         <property name="margin_start">6</property>
                         <property name="margin_top">1</property>
                         <property name="pixel_size">48</property>
-                        <property name="icon_name">xfce4-panel</property>
+                        <property name="icon_name">org.xfce.PanelProfiles</property>
                         <property name="icon_size">6</property>
                       </object>
                       <packing>
@@ -306,6 +306,9 @@ Backup and restore your panel configuration</property>
         </child>
       </object>
     </child>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
   </object>
   <object class="GtkDialog" id="save_dialog">
     <property name="can_focus">False</property>
@@ -419,5 +422,8 @@ Backup and restore your panel configuration</property>
       <action-widget response="-6">button3</action-widget>
       <action-widget response="-5">button4</action-widget>
     </action-widgets>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
   </object>
 </interface>
