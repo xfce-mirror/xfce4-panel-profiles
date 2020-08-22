@@ -8,4 +8,4 @@ StartupNotify=true
 Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings;
 OnlyShowIn=XFCE;
 Keywords=Configuration;User;
-Icon=xfce4-panel
+Icon=org.xfce.PanelProfiles

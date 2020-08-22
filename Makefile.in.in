@@ -8,10 +8,10 @@ DESTDIR=
 GIT_BRANCH := $(shell git branch --show-current)
 
 all: $(LANGUAGE_FILES) layouts
-	intltool-merge -d po xfce4-panel-profiles.desktop.in xfce4-panel-profiles.desktop
+	intltool-merge -d po org.xfce.PanelProfiles.desktop.in org.xfce.PanelProfiles.desktop
 	intltool-merge -x po data/metainfo/org.xfce.PanelProfiles.appdata.xml.in \
 		data/metainfo/org.xfce.PanelProfiles.appdata.xml
-	chmod +x xfce4-panel-profiles.desktop
+	chmod +x org.xfce.PanelProfiles.desktop
 	sed -e s,%prefix%,$(PREFIX), bin/$(APPNAME).in.in > bin/$(APPNAME).in
 	sed -e s,%python%,$(PYTHON), bin/$(APPNAME).in > bin/$(APPNAME)
 
@@ -58,7 +58,7 @@ install: all xfce4-panel-profiles.1.gz
 	install README $(DESTDIR)/$(PREFIX)/share/doc/$(APPNAME)
 
 	install -d $(DESTDIR)/$(PREFIX)/share/applications
-	install -m 644 $(APPNAME).desktop $(DESTDIR)/$(PREFIX)/share/applications
+	install -m 644 org.xfce.PanelProfiles.desktop $(DESTDIR)/$(PREFIX)/share/applications
 
 	install -d $(DESTDIR)/$(PREFIX)/share/xfce4-panel-profiles
 	install -d $(DESTDIR)/$(PREFIX)/share/xfce4-panel-profiles/layouts
@@ -72,13 +72,20 @@ install: all xfce4-panel-profiles.1.gz
 
 	install -d $(DESTDIR)/$(PREFIX)/share/man/man1
 	install xfce4-panel-profiles.1.gz $(DESTDIR)/$(PREFIX)/share/man/man1
+	
+	install data/icons/128x128/org.xfce.PanelProfiles.png $(DESTDIR)/$(PREFIX)/share/icons/hicolor/128x128/apps
+	install data/icons/48x48/org.xfce.PanelProfiles.png $(DESTDIR)/$(PREFIX)/share/icons/hicolor/48x48/apps
+	install data/icons/16x16/org.xfce.PanelProfiles.png $(DESTDIR)/$(PREFIX)/share/icons/hicolor/16x16/apps
+	install data/icons/scalable/org.xfce.PanelProfiles.svg $(DESTDIR)/$(PREFIX)/share/icons/hicolor/scalable/apps
 
 uninstall:
-	rm -f $(DESTDIR)/$(PREFIX)/share/applications/$(APPNAME).desktop
+	rm -f $(DESTDIR)/$(PREFIX)/share/applications/org.xfce.PanelProfiles.desktop
 	rm -rf $(DESTDIR)/$(PREFIX)/share/$(APPNAME)
 	rm -rf $(DESTDIR)/$(PREFIX)/share/doc/$(APPNAME)
 	# FIXME: Uninstall locales
 	rm -f $(DESTDIR)/$(PREFIX)/bin/$(APPNAME)
+	rm -rf $(DESTDIR)/$(PREFIX)/share/icons/hicolor/{128x128,48x48,16x16}/apps/org.xfce.PanelProfiles.png
+	rm -rf $(DESTDIR)/$(PREFIX)/share/icons/hicolor/scalable/apps/org.xfce.PanelProfiles.svg
 
 distcheck: all
 	mkdir -p $(APPNAME)-$(VERSION)
@@ -97,7 +104,9 @@ clean:
 	rm -f bin/$(APPNAME)
 	rm -f data/metainfo/org.xfce.PanelProfiles.appdata.xml
 	rm -f data/layouts/*.tar.bz2
-	rm -f xfce4-panel-profiles.desktop
+	rm -f data/icons/{128x128,48x48,16x16}/org.xfce.panelprofiles.png
+	rm -f data/icons/scalable/org.xfce.panelprofiles.svg
+	rm -f org.xfce.PanelProfiles.desktop
 	rm -f Makefile.in
 	rm -f Makefile
 	rm -f xfce4-panel-profiles.1.gz
