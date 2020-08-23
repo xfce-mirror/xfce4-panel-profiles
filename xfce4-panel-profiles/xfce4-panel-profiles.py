@@ -51,8 +51,12 @@ class XfcePanelProfiles:
     data_dir = "xfce4-panel-profiles"
     save_location = os.path.join(GLib.get_user_data_dir(), data_dir)
 
-    def __init__(self):
-        '''Initialize the Panel Profiles application.'''
+    def __init__(self, from_panel=False):
+        '''Initialize the Panel Profiles application.
+
+        If 'from_panel' is set to 'True' the application launches 'xfce4-panel
+        --preferences' when the user closes this application.
+        '''
         # Temporary fix: https://stackoverflow.com/a/44230815
         _ = libxfce4ui.TitledDialog()
 
@@ -84,6 +88,8 @@ class XfcePanelProfiles:
 
         if not os.path.exists(self.save_location):
             os.makedirs(self.save_location)
+
+        self.from_panel = from_panel
 
         self.window.show()
 
@@ -298,7 +304,17 @@ class XfcePanelProfiles:
         Gtk.main_quit()
 
     def on_close_clicked(self, *args):
-        '''Exit the application when the window is closed.'''
+        '''
+        Exit the application when the window is closed. Optionally launch
+        'xfce4-panel --preferences' if the application is launched with
+        '--from-profile' option.
+        '''
+        if self.from_panel:
+            path = GLib.find_program_in_path('xfce4-panel')
+
+            if path != None:
+                GLib.spawn_command_line_async(path + ' --preferences')
+
         Gtk.main_quit()
 
     def on_help_clicked(self, *args):
@@ -376,6 +392,8 @@ class PanelConfirmDialog(Gtk.MessageDialog):
         box.show_all()
 
 if __name__ == "__main__":
+    from_panel = False
+
     import sys
 
     session_bus = Gio.BusType.SESSION
@@ -411,6 +429,8 @@ if __name__ == "__main__":
         elif sys.argv[1] == '--version':
             print(info.appname + ' ' + info.version)
             exit(0)
+        elif sys.argv[1] == '--from-panel':
+            from_panel = True
         else:
             print('Xfce Panel Profiles - Usage:')
             print(info.appname + ' : load graphical user interface.')
@@ -419,5 +439,5 @@ if __name__ == "__main__":
             print('')
             exit(-1)
 
-    main = XfcePanelProfiles()
+    main = XfcePanelProfiles(from_panel)
     Gtk.main()
