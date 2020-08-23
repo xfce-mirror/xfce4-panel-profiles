@@ -19,6 +19,8 @@ import os
 
 # yes, python 3.2 has exist_ok, but it will still fail if the mode is different
 
+whiskermenu_file = 'whiskermenu-1.rc'
+whiskermenu_path = os.path.join(GLib.get_home_dir(), '.config/xfce4/panel/', whiskermenu_file)
 
 def mkdir_p(path):
     try:
@@ -40,6 +42,7 @@ class PanelConfig(object):
     def __init__(self):
         self.desktops = []
         self.properties = {}
+        self.whiskermenu_data = ""
         self.source = None
 
     @classmethod
@@ -64,9 +67,10 @@ class PanelConfig(object):
 
         pc.remove_orphans()
         pc.find_desktops()
-
-        pc.source = None
-
+        
+        if pc.check_whiskermenu():
+            pc.whiskermenu_data = pc.get_whiskermenu_file().read()
+       
         return pc
 
     @classmethod
@@ -86,6 +90,9 @@ class PanelConfig(object):
         pc.remove_orphans()
         pc.find_desktops()
 
+        if pc.check_whiskermenu():
+            pc.whiskermenu_data = pc.get_whiskermenu_file().read()
+        
         return pc
 
     def remove_orphans(self):
@@ -112,10 +119,7 @@ class PanelConfig(object):
         self.remove_keys(rem_keys)
 
     def check_desktop(self, path):
-        try:
-            bytes = self.get_desktop_source_file(path).read()
-        except FileNotFoundError:
-            # If the .desktop file does not exist at all return False
+        if not os.path.isfile(path):
             return False
 
         # Check if binary exists
@@ -131,6 +135,20 @@ class PanelConfig(object):
                 pass #  https://bugzilla.xfce.org/show_bug.cgi?id=14597
 
         return False
+
+    def check_whiskermenu(self):
+        if not os.path.isfile(whiskermenu_path):
+            return False
+        
+        if not getattr(self, 'source', None) is None:
+            try:
+                f = self.get_whiskermenu_file()
+                f.close()
+
+            except KeyError: # Not in backup, likely from previous version
+                return False
+
+        return True
 
     def find_desktops(self):
         rem_keys = []
@@ -170,6 +188,13 @@ class PanelConfig(object):
         else:
             return self.source.extractfile(desktop)
 
+    def get_whiskermenu_file(self):
+        if getattr(self, 'source', None) is None:
+            return open(whiskermenu_path, 'rb')
+
+        else:
+            return self.source.extractfile(whiskermenu_file)
+
     def to_file(self, filename):
         if filename.endswith('.gz'):
             mode = 'w:gz'
@@ -186,6 +211,10 @@ class PanelConfig(object):
         for d in self.desktops:
             bytes = self.get_desktop_source_file(d).read()
             add_to_tar(t, bytes, d)
+    
+        if self.check_whiskermenu():
+            bytes = self.get_whiskermenu_file().read()
+            add_to_tar(t, bytes, whiskermenu_file)
 
         t.close()
 
@@ -241,3 +270,8 @@ class PanelConfig(object):
                 dbus_proxy.call_sync('Terminate', GLib.Variant('(b)', ('xfce4-panel',)), 0, -1, None)
             except GLib.GError:  # pylint: disable=E0712
                 pass
+
+        if self.check_whiskermenu():
+            f = open(whiskermenu_path, 'wb')
+            f.write(self.whiskermenu_data)
+            f.close()
