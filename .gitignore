@@ -3,6 +3,7 @@ xfce4-panel-profiles.desktop
 *.orig
 *.tar.bz2
 *.xml
+*~
 Makefile.in
 Makefile
 locale
