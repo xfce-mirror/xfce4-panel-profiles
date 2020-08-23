@@ -1,4 +1,4 @@
-xfce4-panel-profiles.desktop
+*.desktop
 *.gz
 *.orig
 *.tar.bz2
