@@ -27,15 +27,18 @@ locale/%/LC_MESSAGES/$(APPNAME).mo: po/%.po
 pot:
 	cd po; intltool-update --pot --gettext-package=xfce4-panel-profiles
 
+ifeq ($(shell tar --help|grep -o sort=),sort=)
+  TAROPTS := --sort=name --format ustar
+endif
 layouts:
-	cd data/layouts/gnome2; tar -cvjf "../GNOME 2.tar.bz2" *
-	cd data/layouts/redmond; tar -cvjf "../Redmond.tar.bz2" *
-	cd data/layouts/xfce-4.12; tar -cvjf "../Xfce 4.12.tar.bz2" *
-	cd data/layouts/xfce-4.14; tar -cvjf "../Xfce 4.14.tar.bz2" *
-	cd data/layouts/xubuntu-12.04; tar -cvjf "../Xubuntu 12.04 (Precise).tar.bz2" *
-	cd data/layouts/xubuntu-14.04; tar -cvjf "../Xubuntu 14.04 (Trusty).tar.bz2" *
-	cd data/layouts/xubuntu-18.04; tar -cvjf "../Xubuntu 18.04 (Bionic).tar.bz2" *
-	cd data/layouts/openSUSE-15.1; tar -cvjf "../openSUSE 15.1.tar.bz2" *
+	cd data/layouts/gnome2; tar $(TAROPTS) -cvjf "../GNOME 2.tar.bz2" *
+	cd data/layouts/redmond; tar $(TAROPTS) -cvjf "../Redmond.tar.bz2" *
+	cd data/layouts/xfce-4.12; tar $(TAROPTS) -cvjf "../Xfce 4.12.tar.bz2" *
+	cd data/layouts/xfce-4.14; tar $(TAROPTS) -cvjf "../Xfce 4.14.tar.bz2" *
+	cd data/layouts/xubuntu-12.04; tar $(TAROPTS) -cvjf "../Xubuntu 12.04 (Precise).tar.bz2" *
+	cd data/layouts/xubuntu-14.04; tar $(TAROPTS) -cvjf "../Xubuntu 14.04 (Trusty).tar.bz2" *
+	cd data/layouts/xubuntu-18.04; tar $(TAROPTS) -cvjf "../Xubuntu 18.04 (Bionic).tar.bz2" *
+	cd data/layouts/openSUSE-15.1; tar $(TAROPTS) -cvjf "../openSUSE 15.1.tar.bz2" *
 
 xfce4-panel-profiles.1.gz : xfce4-panel-profiles.1
 	gzip -c $< > $@
