@@ -38,7 +38,7 @@ layouts:
 	cd data/layouts/xubuntu-12.04; tar $(TAROPTS) -cvjf "../Xubuntu 12.04 (Precise).tar.bz2" *
 	cd data/layouts/xubuntu-14.04; tar $(TAROPTS) -cvjf "../Xubuntu 14.04 (Trusty).tar.bz2" *
 	cd data/layouts/xubuntu-18.04; tar $(TAROPTS) -cvjf "../Xubuntu 18.04 (Bionic).tar.bz2" *
-	cd data/layouts/openSUSE-15.1; tar $(TAROPTS) -cvjf "../openSUSE 15.1.tar.bz2" *
+	cd data/layouts/openSUSE-Leap-15.x; tar $(TAROPTS) -cvjf "../openSUSE Leap 15.x.tar.bz2" *
 
 xfce4-panel-profiles.1.gz : xfce4-panel-profiles.1
 	gzip -c $< > $@

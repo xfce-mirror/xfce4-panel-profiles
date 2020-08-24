@@ -2,7 +2,7 @@
 /panels [<1>]
 /panels/panel-1/length uint32 100
 /panels/panel-1/length-adjust false
-/panels/panel-1/plugin-ids [<1>, <2>, <3>, <4>, <5>, <6>, <7>, <8>, <9>, <10>, <11>, <12>, <13>, <14>]
+/panels/panel-1/plugin-ids [<1>, <2>, <3>, <4>, <5>, <6>, <7>, <8>, <10>, <11>, <12>, <13>, <14>]
 /panels/panel-1/position 'p=10;x=0;y=0'
 /panels/panel-1/position-locked true
 /panels/panel-1/size uint32 24
@@ -20,23 +20,22 @@
 /plugins/plugin-6 'pager'
 /plugins/plugin-7 'pulseaudio'
 /plugins/plugin-7/enable-keyboard-shortcuts true
+/plugins/plugin-7/show-frame false
+/plugins/plugin-7/size-max uint32 16
+/plugins/plugin-7/square-icons true
 /plugins/plugin-8 'power-manager-plugin'
-/plugins/plugin-9 'statusnotifier'
-/plugins/plugin-9/icon-size 16
-/plugins/plugin-9/known-items [<'org.guido-berhoerster.code.package-update-indicator'>, <'nm-applet'>, <'redshift'>]
-/plugins/plugin-9/menu-is-primary true
-/plugins/plugin-9/square-icons true
-/plugins/plugin-9/symbolic-icons true
 /plugins/plugin-10 'systray'
-/plugins/plugin-10/names-ordered [<'redshift-gtk'>, <'network'>, <'package update indicator'>, <'bluetooth'>]
+/plugins/plugin-10/digital-format '%a %d %b, %R'
+/plugins/plugin-10/icon-size 16
 /plugins/plugin-10/show-frame false
 /plugins/plugin-10/size-max uint32 16
 /plugins/plugin-10/square-icons true
+/plugins/plugin-10/symbolic-icons true
 /plugins/plugin-11 'separator'
 /plugins/plugin-11/style uint32 0
 /plugins/plugin-12 'clock'
 /plugins/plugin-12/show-frame false
-/plugins/plugin-13/digital-format '%d %b, %H:%M'
 /plugins/plugin-13 'separator'
+/plugins/plugin-13/digital-format '%d %b, %H:%M'
 /plugins/plugin-13/style uint32 0
 /plugins/plugin-14 'notification-plugin'
