@@ -38,7 +38,7 @@ layouts:
 	cd data/layouts/xubuntu-12.04; tar $(TAROPTS) -cvjf "../Xubuntu 12.04 (Precise).tar.bz2" *
 	cd data/layouts/xubuntu-14.04; tar $(TAROPTS) -cvjf "../Xubuntu 14.04 (Trusty).tar.bz2" *
 	cd data/layouts/xubuntu-18.04; tar $(TAROPTS) -cvjf "../Xubuntu 18.04 (Bionic).tar.bz2" *
-	cd data/layouts/openSUSE-15.1; tar $(TAROPTS) -cvjf "../openSUSE 15.1.tar.bz2" *
+	cd data/layouts/openSUSE-Leap-15.x; tar $(TAROPTS) -cvjf "../openSUSE Leap 15.x.tar.bz2" *
 
 xfce4-panel-profiles.1.gz : xfce4-panel-profiles.1
 	gzip -c $< > $@
@@ -76,6 +76,7 @@ install: all xfce4-panel-profiles.1.gz
 	install -d $(DESTDIR)/$(PREFIX)/share/man/man1
 	install xfce4-panel-profiles.1.gz $(DESTDIR)/$(PREFIX)/share/man/man1
 	
+	install -d $(DESTDIR)/$(PREFIX)/share/icons/hicolor/{128x128,48x48,16x16,scalable}/apps
 	install data/icons/128x128/org.xfce.PanelProfiles.png $(DESTDIR)/$(PREFIX)/share/icons/hicolor/128x128/apps
 	install data/icons/48x48/org.xfce.PanelProfiles.png $(DESTDIR)/$(PREFIX)/share/icons/hicolor/48x48/apps
 	install data/icons/16x16/org.xfce.PanelProfiles.png $(DESTDIR)/$(PREFIX)/share/icons/hicolor/16x16/apps
