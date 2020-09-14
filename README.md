@@ -1,8 +1,8 @@
-[![License](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://gitlab.xfce.org/xfce/xfce4-panel-profiles/COPYING)
+[![License](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://gitlab.xfce.org/apps/xfce4-panel-profiles/-/blob/master/COPYING)
 
 # xfce4-panel-profiles
 
-xfce4-panel-profiles is a simple application to manage Xfce panel layouts.
+Xfce4-panel-profiles is a simple application to manage Xfce panel layouts.
 
 With the modular Xfce Panel, a multitude of panel layouts can be created.
 This tool makes it possible to backup, restore, import, and export these
@@ -12,7 +12,7 @@ panel layouts.
 
 ### Homepage
 
-[xfce4-panel-profiles documentation](https://docs.xfce.org/apps/xfce4-panel-profiles/start)
+[Xfce4-panel-profiles documentation](https://docs.xfce.org/apps/xfce4-panel-profiles/start)
 
 ### Changelog
 
@@ -20,13 +20,13 @@ See [NEWS](https://gitlab.xfce.org/apps/xfce4-panel-profiles/-/blob/master/NEWS)
 
 ### Source Code Repository
 
-[xfce4-panel-profiles source code](https://gitlab.xfce.org/apps/xfce4-panel-profiles)
+[Xfce4-panel-profiles source code](https://gitlab.xfce.org/apps/xfce4-panel-profiles)
 
-### Download A Release Tarball
+### Download a Release Tarball
 
-[xfce4-panel-profiles archive](https://archive.xfce.org/src/apps/xfce4-panel-profiles)
+[Xfce4-panel-profiles archive](https://archive.xfce.org/src/apps/xfce4-panel-profiles)
     or
-[xfce4-panel-profiles tags](https://gitlab.xfce.org/apps/xfce4-panel-profiles/-/tags)
+[Xfce4-panel-profiles tags](https://gitlab.xfce.org/apps/xfce4-panel-profiles/-/tags)
 
 ### Installation
 
