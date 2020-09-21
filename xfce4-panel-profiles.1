@@ -1,16 +1,12 @@
 .\" Man page written by Emanuele Petriglia for xfce4-panel-profiles.
-.TH XFCE4-PANEL-PROFILES "1" "January 2020" "xfce4-panel-profiles 1.0.10" "User Commands"
-
+.TH XFCE4-PANEL-PROFILES "1" "September 2020" "xfce4-panel-profiles 1.0.10" "User Commands"
+.
 .SH Name
-xfce4-panel-profiles - A simple application to manage Xfce panel layouts
-
+xfce4-panel-profiles \- A simple application to manage Xfce panel layouts
+.
 .SH SYNOPSIS
-.B xfce4-panel-profiles
-[
-.I COMMAND
-]
-.I filename
-
+\fBxfce4-panel-profiles\fR [load|save \fIPATH\fR]
+.
 .SH DESCRIPTION
 \fBxfce4-panel-profiles\fP is a simple application to manage Xfce panel layouts.
 It allows you to \fIapply\fP, \fIsave\fP, \fIremove\fP, \fIexport\fP,
@@ -19,16 +15,16 @@ current panel layout, or import a previously exported panel profile.
 
 \fBxfce4-panel-profiles\fP is a \fIGUI application\fP, but it can be also used
 via command line with limited features.
-
+.
 .SH COMMANDS
 .TP
-\fBload\fP \fIfilename\fP
-Load and apply a previously exported \fIfilename\fP panel profile.
+\fBload\fP \fIPATH\fP
+Load and apply a previously exported \fIPATH\fP panel profile.
 .TP
-\fBsave\fP \fIfilename\fP
-Save the current panel layout as \fIfilename\fP. The profile's name should end
+\fBsave\fP \fIPATH\fP
+Save the current panel layout as \fIPATH\fP. The profile's name should end
 with \fItar.bz2\fP for clarity.
-
+.
 .SH FILES
 .TP
 .I ~/.local/share/xfce4-panel-profiles
@@ -36,47 +32,36 @@ User's custom panel profiles storage directory.
 .TP
 .I /usr/share/xfce4-panel-profiles/layouts
 System provided panel profiles storage directory.
-
+.
 .SH EXAMPLES
 .TP
 .B xfce4-panel-profiles save backup.tar.bz2
 Make a backup of current panel layout.
+.
 .TP
 .B xfce4-panel-profiles load backup.tar.bz2
 Load and apply the previously exported panel layout.
-
-.SH AUTHOR
+.
+.SH SEE ALSO
+.BR xfce-panel (1)
+.
+.SH AUTHORS
 .TP
 2015-2020
 .MT bluesabre@xfce.org
 Sean Davis
 .ME
+.
 .TP
 2013
 .MT a.j.buxton@gmail.com
 Alistair Buxton
 .ME
-
+.
 .SH REPORTING BUGS
-If you encounter a bug in \fBxfce4-panel-profiles\fP, please submit a bug report
-to the
-.UR https://bugzilla.xfce.org
-.I Xfce Bugzilla
-.UE . Please note that to do this you will need to have or create
-an account on Bugzilla.
-
-.SH COPYING
-This program is free software: you can redistribute it and/or modify it under
-the terms of the GNU General Public License as published by the Free Software
-Foundation, either version 3 of the License, or (at your option) any later
-version.
-
-This program is distributed in the hope that it will be useful, but WITHOUT ANY
-WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
-PARTICULAR PURPOSE. See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with
-this program. If not, see
-.UR http://www.gnu.org/licenses
-GNU website
-.UE .
+Visit the
+.UR https://docs.xfce.org/apps/xfce4-panel-profiles/bugs
+reporting bus
+.UE
+page to view currently open bug reports and instructions on reporting new bugs
+or submitting bugfixes.
