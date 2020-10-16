@@ -7,7 +7,7 @@
 # kelemeng <kelemeng@ubuntu.com>, 2018
 # Gábor P., 2018
 # Xfce Bot <transifex@xfce.org>, 2018
-# Balázs Meskó <mesko.balazs@fsf.hu>, 2018
+# Balázs Meskó <meskobalazs@mailbox.org>, 2018
 # user14 <nleknh@gmail.com>, 2018
 # 
 #, fuzzy
