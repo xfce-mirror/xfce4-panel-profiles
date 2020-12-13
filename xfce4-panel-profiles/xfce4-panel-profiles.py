@@ -32,9 +32,16 @@ import warnings
 
 import gi
 gi.require_version('Gtk', '3.0')
-gi.require_version('libxfce4ui', '2.0')
+# Try to import the new Libxfce4ui gir name (since 4.15.7)
+# if it does not exists, try the old libxfce4ui
+try:
+  gi.require_version('Libxfce4ui', '2.0')
+  from gi.repository import Libxfce4ui as libxfce4ui
+except ValueError:
+  gi.require_version('libxfce4ui', '2.0')
+  from gi.repository import libxfce4ui
 
-from gi.repository import Gtk, GLib, Gio, libxfce4ui
+from gi.repository import Gtk, GLib, Gio
 
 from panelconfig import PanelConfig
 
