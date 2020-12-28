@@ -1,6 +1,7 @@
 APPNAME=@appname@
 VERSION=@version@
 PREFIX=@prefix@
+MANDIR=@mandir@
 DOCDIR=@docdir@
 PYTHON=`which @python@`
 LANGUAGE_FILES=$(patsubst po/%.po, locale/%/LC_MESSAGES/$(APPNAME).mo, $(wildcard po/*.po))
@@ -74,8 +75,8 @@ install: all xfce4-panel-profiles.1.gz
 	cp -rf locale $(DESTDIR)/$(PREFIX)/share
 	ln -sf $(PREFIX)/share/locale $(DESTDIR)/$(PREFIX)/share/$(APPNAME)/locale
 
-	install -d $(DESTDIR)/$(PREFIX)/share/man/man1
-	install xfce4-panel-profiles.1.gz $(DESTDIR)/$(PREFIX)/share/man/man1
+	install -d $(DESTDIR)/$(MANDIR)/man1
+	install xfce4-panel-profiles.1.gz $(DESTDIR)/$(MANDIR)/man1
 	
 	install -d $(DESTDIR)/$(PREFIX)/share/icons/hicolor/{128x128,48x48,16x16,scalable}/apps
 	install data/icons/128x128/org.xfce.PanelProfiles.png $(DESTDIR)/$(PREFIX)/share/icons/hicolor/128x128/apps
@@ -88,6 +89,7 @@ uninstall:
 	rm -rf $(DESTDIR)/$(PREFIX)/share/$(APPNAME)
 	rm -rf $(DESTDIR)/$(DOCDIR)
 	# FIXME: Uninstall locales
+	rm -f $(DESTDIR)/$(MANDIR)/man1/xfce4-panel-profiles.1.gz
 	rm -f $(DESTDIR)/$(PREFIX)/bin/$(APPNAME)
 	rm -rf $(DESTDIR)/$(PREFIX)/share/icons/hicolor/{128x128,48x48,16x16}/apps/org.xfce.PanelProfiles.png
 	rm -rf $(DESTDIR)/$(PREFIX)/share/icons/hicolor/scalable/apps/org.xfce.PanelProfiles.svg
