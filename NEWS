@@ -1,3 +1,31 @@
+xfce4-panel-profiles 1.0.11
+
+    * New Features
+      - Add support for saving xfce4-whiskermenu's configuration file
+      - Prefer CSD in XfceTitledDialog
+      - Use XfceTitledDialog from libxfce4ui
+      - Use Xfce's about dialog via libxfce4ui
+      - Add new icons and use reverse DNS for icons and files
+      - Open xfce4-panel on close button (bug #16505)
+    * General
+
+      - Add new README.md over old README
+      - Try the new and old libxfce4ui gir file name
+      - Add basic GitLab pipeline
+      - Make tarball creation reproducible
+    * Bugs Fixed
+      - Update openSUSE profile and fix build
+      - Removed check for if the menu is installed. This would probably get
+        in the way.
+      - Use current branch in 'make distcheck'
+      - Use configured appname instead of argv[0]
+      - Fix typos in comments.
+    * Updated translations: Albanian, Armenian (Armenia), Belarusian,
+      Chinese (China), Chinese (Hong Kong), Chinese (Taiwan), Czech,
+      Eastern Armenian, Estonian, Hebrew, Hungarian, Indonesian,
+      Interlingue, Persian (Iran), Portuguese, Slovak, Spanish,
+      Turkish
+
 xfce4-panel-profiles 1.0.10
 
     * New Features
