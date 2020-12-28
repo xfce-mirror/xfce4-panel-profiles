@@ -58,7 +58,7 @@ install: all xfce4-panel-profiles.1.gz
 	install COPYING $(DESTDIR)/$(PREFIX)/share/doc/$(APPNAME)
 	install NEWS $(DESTDIR)/$(PREFIX)/share/doc/$(APPNAME)
 	install INSTALL $(DESTDIR)/$(PREFIX)/share/doc/$(APPNAME)
-	install README $(DESTDIR)/$(PREFIX)/share/doc/$(APPNAME)
+	install README.md $(DESTDIR)/$(PREFIX)/share/doc/$(APPNAME)
 
 	install -d $(DESTDIR)/$(PREFIX)/share/applications
 	install -m 644 org.xfce.PanelProfiles.desktop $(DESTDIR)/$(PREFIX)/share/applications
