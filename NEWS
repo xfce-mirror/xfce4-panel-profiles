@@ -1,3 +1,13 @@
+xfce4-panel-profiles 1.0.12
+
+    * New Features
+      - New build option `--docdir` for documentation install path
+      - New build option `--mandir` for manpage install path
+    * General
+      - Manpage `xfce4-panel-profiles.1` is no longer gzipped (#5)
+    * Bugs Fixed
+      - Release install error: incorrect README filename (#24)
+
 xfce4-panel-profiles 1.0.11
 
     * New Features
@@ -8,7 +18,6 @@ xfce4-panel-profiles 1.0.11
       - Add new icons and use reverse DNS for icons and files
       - Open xfce4-panel on close button (bug #16505)
     * General
-
       - Add new README.md over old README
       - Try the new and old libxfce4ui gir file name
       - Add basic GitLab pipeline
