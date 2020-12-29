@@ -14,9 +14,12 @@ help () {
     echo "    --python=<python executable>    specify python version"
     echo "        python or python3"
     echo "        default <python executable> is $PYTHON"
+    echo "    --docdir=<path>    specify docdir"
+    echo "        default <path> is \$PREFIX/share/doc/$APPNAME"
 }
 
-PREFIX="/usr/local"
+PREFIX=${PREFIX:-"/usr/local"}
+
 while [ $# -gt 0 ]; do
     case $1 in
         --help)
@@ -29,6 +32,12 @@ while [ $# -gt 0 ]; do
         --python=*)
             PYTHON=`echo $1 | sed 's/--python=//'`
             ;;
+        --mandir=*)
+            MANDIR=`echo $1 | sed 's/--mandir=//'`
+            ;;
+        --docdir=*)
+            DOCDIR=`echo $1 | sed 's/--docdir=//'`
+            ;;
         *)
             echo "Unknown option $1"
             help
@@ -38,9 +47,18 @@ while [ $# -gt 0 ]; do
     shift
 done
 
+DOCDIR=${DOCDIR:-"$PREFIX/share/doc/$APPNAME"}
+MANDIR=${MANDIR:-"$PREFIX/share/man"}
+
 echo "Creating Makefile..."
 sed -e s,@prefix@,$PREFIX, Makefile.in.in > Makefile.in
-sed -i -e s,@appname@,$APPNAME, Makefile.in
-sed -i -e s,@version@,$VERSION, Makefile.in
-sed -e s,@python@,$PYTHON, Makefile.in > Makefile
+sed \
+  -e s,@appname@,$APPNAME,g \
+  -e s,@version@,$VERSION,g \
+  -e s,@mandir@,$MANDIR,g \
+  -e s,@docdir@,$DOCDIR,g \
+  -e s,@python@,$PYTHON,g \
+  Makefile.in > Makefile
 echo "Installation prefix is $PREFIX"
+echo "Installation mandir is $MANDIR"
+echo "Installation docdir is $DOCDIR"

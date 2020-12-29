@@ -1,6 +1,8 @@
 APPNAME=@appname@
 VERSION=@version@
 PREFIX=@prefix@
+MANDIR=@mandir@
+DOCDIR=@docdir@
 PYTHON=`which @python@`
 LANGUAGE_FILES=$(patsubst po/%.po, locale/%/LC_MESSAGES/$(APPNAME).mo, $(wildcard po/*.po))
 DESTDIR=
@@ -40,10 +42,7 @@ layouts:
 	cd data/layouts/xubuntu-18.04; tar $(TAROPTS) -cvjf "../Xubuntu 18.04 (Bionic).tar.bz2" *
 	cd data/layouts/openSUSE-Leap-15.x; tar $(TAROPTS) -cvjf "../openSUSE Leap 15.x.tar.bz2" *
 
-xfce4-panel-profiles.1.gz : xfce4-panel-profiles.1
-	gzip -c $< > $@
-
-install: all xfce4-panel-profiles.1.gz
+install: all xfce4-panel-profiles.1
 	install -d $(DESTDIR)/$(PREFIX)/bin
 	install bin/$(APPNAME) $(DESTDIR)/$(PREFIX)/bin
 
@@ -53,12 +52,12 @@ install: all xfce4-panel-profiles.1.gz
 	install xfce4-panel-profiles/xfce4-panel-profiles.py $(DESTDIR)/$(PREFIX)/share/$(APPNAME)/xfce4-panel-profiles
 	install xfce4-panel-profiles/xfce4-panel-profiles.glade $(DESTDIR)/$(PREFIX)/share/$(APPNAME)/xfce4-panel-profiles
 
-	install -d $(DESTDIR)/$(PREFIX)/share/doc/$(APPNAME)
-	install AUTHORS $(DESTDIR)/$(PREFIX)/share/doc/$(APPNAME)
-	install COPYING $(DESTDIR)/$(PREFIX)/share/doc/$(APPNAME)
-	install NEWS $(DESTDIR)/$(PREFIX)/share/doc/$(APPNAME)
-	install INSTALL $(DESTDIR)/$(PREFIX)/share/doc/$(APPNAME)
-	install README $(DESTDIR)/$(PREFIX)/share/doc/$(APPNAME)
+	install -d $(DESTDIR)/$(DOCDIR)
+	install AUTHORS $(DESTDIR)/$(DOCDIR)
+	install COPYING $(DESTDIR)/$(DOCDIR)
+	install NEWS $(DESTDIR)/$(DOCDIR)
+	install INSTALL $(DESTDIR)/$(DOCDIR)
+	install README.md $(DESTDIR)/$(DOCDIR)
 
 	install -d $(DESTDIR)/$(PREFIX)/share/applications
 	install -m 644 org.xfce.PanelProfiles.desktop $(DESTDIR)/$(PREFIX)/share/applications
@@ -73,8 +72,8 @@ install: all xfce4-panel-profiles.1.gz
 	cp -rf locale $(DESTDIR)/$(PREFIX)/share
 	ln -sf $(PREFIX)/share/locale $(DESTDIR)/$(PREFIX)/share/$(APPNAME)/locale
 
-	install -d $(DESTDIR)/$(PREFIX)/share/man/man1
-	install xfce4-panel-profiles.1.gz $(DESTDIR)/$(PREFIX)/share/man/man1
+	install -d $(DESTDIR)/$(MANDIR)/man1
+	install xfce4-panel-profiles.1 $(DESTDIR)/$(MANDIR)/man1
 	
 	install -d $(DESTDIR)/$(PREFIX)/share/icons/hicolor/{128x128,48x48,16x16,scalable}/apps
 	install data/icons/128x128/org.xfce.PanelProfiles.png $(DESTDIR)/$(PREFIX)/share/icons/hicolor/128x128/apps
@@ -85,7 +84,7 @@ install: all xfce4-panel-profiles.1.gz
 uninstall:
 	rm -f $(DESTDIR)/$(PREFIX)/share/applications/org.xfce.PanelProfiles.desktop
 	rm -rf $(DESTDIR)/$(PREFIX)/share/$(APPNAME)
-	rm -rf $(DESTDIR)/$(PREFIX)/share/doc/$(APPNAME)
+	rm -rf $(DESTDIR)/$(DOCDIR)
 	# FIXME: Uninstall locales
 	rm -f $(DESTDIR)/$(PREFIX)/bin/$(APPNAME)
 	rm -rf $(DESTDIR)/$(PREFIX)/share/icons/hicolor/{128x128,48x48,16x16}/apps/org.xfce.PanelProfiles.png
@@ -113,6 +112,5 @@ clean:
 	rm -f org.xfce.PanelProfiles.desktop
 	rm -f Makefile.in
 	rm -f Makefile
-	rm -f xfce4-panel-profiles.1.gz
 	rm -f xfce4-panel-profiles/info.py
 	rm -f xfce4-panel-profiles/info.py.in
