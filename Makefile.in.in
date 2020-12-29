@@ -42,10 +42,7 @@ layouts:
 	cd data/layouts/xubuntu-18.04; tar $(TAROPTS) -cvjf "../Xubuntu 18.04 (Bionic).tar.bz2" *
 	cd data/layouts/openSUSE-Leap-15.x; tar $(TAROPTS) -cvjf "../openSUSE Leap 15.x.tar.bz2" *
 
-xfce4-panel-profiles.1.gz : xfce4-panel-profiles.1
-	gzip -c $< > $@
-
-install: all xfce4-panel-profiles.1.gz
+install: all xfce4-panel-profiles.1
 	install -d $(DESTDIR)/$(PREFIX)/bin
 	install bin/$(APPNAME) $(DESTDIR)/$(PREFIX)/bin
 
@@ -76,7 +73,7 @@ install: all xfce4-panel-profiles.1.gz
 	ln -sf $(PREFIX)/share/locale $(DESTDIR)/$(PREFIX)/share/$(APPNAME)/locale
 
 	install -d $(DESTDIR)/$(MANDIR)/man1
-	install xfce4-panel-profiles.1.gz $(DESTDIR)/$(MANDIR)/man1
+	install xfce4-panel-profiles.1 $(DESTDIR)/$(MANDIR)/man1
 	
 	install -d $(DESTDIR)/$(PREFIX)/share/icons/hicolor/{128x128,48x48,16x16,scalable}/apps
 	install data/icons/128x128/org.xfce.PanelProfiles.png $(DESTDIR)/$(PREFIX)/share/icons/hicolor/128x128/apps
@@ -115,6 +112,5 @@ clean:
 	rm -f org.xfce.PanelProfiles.desktop
 	rm -f Makefile.in
 	rm -f Makefile
-	rm -f xfce4-panel-profiles.1.gz
 	rm -f xfce4-panel-profiles/info.py
 	rm -f xfce4-panel-profiles/info.py.in
