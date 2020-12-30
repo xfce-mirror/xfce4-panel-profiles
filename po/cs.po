@@ -50,7 +50,7 @@ msgstr "Datum změny"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:5
 msgid "Apply Configuration"
-msgstr "Aplikovat nastavení"
+msgstr "Použít nastavení"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:6
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:293
