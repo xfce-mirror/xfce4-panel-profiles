@@ -1,12 +1,15 @@
 /configver 2
 /panels [<1>]
+/panels/dark-mode false
 /panels/panel-1/autohide-behavior uint32 0
 /panels/panel-1/background-alpha uint32 100
 /panels/panel-1/background-style uint32 0
 /panels/panel-1/disable-struts false
 /panels/panel-1/enter-opacity uint32 100
+/panels/panel-1/icon-size uint32 0
 /panels/panel-1/leave-opacity uint32 100
 /panels/panel-1/length uint32 100
+/panels/panel-1/length-adjust true
 /panels/panel-1/mode uint32 0
 /panels/panel-1/nrows uint32 1
 /panels/panel-1/plugin-ids [<1>, <2>, <3>, <4>, <5>]
@@ -22,13 +25,31 @@
 /plugins/plugin-1/show-menu-icons true
 /plugins/plugin-1/show-tooltips false
 /plugins/plugin-2 'tasklist'
+/plugins/plugin-2/flat-buttons false
+/plugins/plugin-2/grouping uint32 0
+/plugins/plugin-2/include-all-monitors true
+/plugins/plugin-2/include-all-workspaces false
+/plugins/plugin-2/middle-click uint32 0
+/plugins/plugin-2/show-handle true
+/plugins/plugin-2/show-labels true
+/plugins/plugin-2/show-only-minimized false
+/plugins/plugin-2/show-wireframes false
+/plugins/plugin-2/sort-order uint32 1
+/plugins/plugin-2/switch-workspace-on-unminimize true
+/plugins/plugin-2/window-scrolling true
 /plugins/plugin-3 'separator'
 /plugins/plugin-3/expand true
 /plugins/plugin-3/style uint32 0
 /plugins/plugin-4 'systray'
+/plugins/plugin-4/hide-new-items false
+/plugins/plugin-4/icon-size 22
+/plugins/plugin-4/menu-is-primary false
 /plugins/plugin-4/names-visible [<'networkmanager applet'>]
 /plugins/plugin-4/show-frame true
+/plugins/plugin-4/single-row false
 /plugins/plugin-4/size-max uint32 22
+/plugins/plugin-4/square-icons false
+/plugins/plugin-4/symbolic-icons false
 /plugins/plugin-5 'clock'
 /plugins/plugin-5/digital-format '%I:%M %p'
 /plugins/plugin-5/mode uint32 2
