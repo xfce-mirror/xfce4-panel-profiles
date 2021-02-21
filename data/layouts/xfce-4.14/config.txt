@@ -105,7 +105,6 @@
 /plugins/plugin-20/expand false
 /plugins/plugin-20/style uint32 1
 /plugins/plugin-21 'directorymenu'
-/plugins/plugin-21/base-directory '/home/bluesabre'
 /plugins/plugin-21/expand true
 /plugins/plugin-21/new-document true
 /plugins/plugin-21/new-folder true
