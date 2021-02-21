@@ -28,7 +28,7 @@
 /panels/panel-1/length-adjust true
 /panels/panel-1/mode uint32 0
 /panels/panel-1/nrows uint32 1
-/panels/panel-1/plugin-ids [<12>, <13>, <14>, <15>, <16>, <17>, <18>, <19>, <20>, <21>, <22>, <23>, <24>, <25>, <26>, <27>]
+/panels/panel-1/plugin-ids [<12>, <13>, <14>, <15>, <16>, <17>, <18>, <19>, <20>, <21>, <22>, <23>, <24>, <25>, <26>]
 /panels/panel-1/position 'p=8;x=960;y=1176'
 /panels/panel-1/position-locked true
 /panels/panel-1/size uint32 46
@@ -134,18 +134,16 @@
 /plugins/plugin-21 'launcher'
 /plugins/plugin-21/items [<'libreoffice-writer.desktop'>]
 /plugins/plugin-22 'launcher'
-/plugins/plugin-22/items [<'parole.desktop'>]
-/plugins/plugin-23 'launcher'
-/plugins/plugin-23/items [<'gimp.desktop'>]
-/plugins/plugin-24 'separator'
-/plugins/plugin-24/expand false
-/plugins/plugin-24/style uint32 1
-/plugins/plugin-25 'directorymenu'
-/plugins/plugin-25/new-document true
-/plugins/plugin-25/new-folder true
-/plugins/plugin-25/open-folder true
-/plugins/plugin-25/open-in-terminal true
-/plugins/plugin-26 'thunar-tpa'
-/plugins/plugin-27 'separator'
-/plugins/plugin-27/expand true
-/plugins/plugin-27/style uint32 0
+/plugins/plugin-22/items [<'gimp.desktop'>]
+/plugins/plugin-23 'separator'
+/plugins/plugin-23/expand false
+/plugins/plugin-23/style uint32 1
+/plugins/plugin-24 'directorymenu'
+/plugins/plugin-24/new-document true
+/plugins/plugin-24/new-folder true
+/plugins/plugin-24/open-folder true
+/plugins/plugin-24/open-in-terminal true
+/plugins/plugin-25 'thunar-tpa'
+/plugins/plugin-25 'separator'
+/plugins/plugin-26/expand true
+/plugins/plugin-26/style uint32 0
