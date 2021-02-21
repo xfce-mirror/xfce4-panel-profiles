@@ -1,26 +1,20 @@
 /configver 2
 /panels [<1>, <2>]
-/panels/dark-mode false
+/panels/dark-mode true
 /panels/panel-1/autohide-behavior uint32 0
-/panels/panel-1/background-alpha uint32 100
-/panels/panel-1/background-style uint32 0
-/panels/panel-1/disable-struts false
 /panels/panel-1/enter-opacity uint32 100
-/panels/panel-1/icon-size uint32 0
+/panels/panel-1/icon-size uint32 16
 /panels/panel-1/leave-opacity uint32 100
 /panels/panel-1/length uint32 100
-/panels/panel-1/length-adjust true
-/panels/panel-1/mode uint32 0
 /panels/panel-1/nrows uint32 1
 /panels/panel-1/plugin-ids [<1>, <2>, <3>, <4>, <5>, <6>, <7>, <8>, <9>, <10>, <11>, <12>, <13>]
 /panels/panel-1/position 'p=6;x=0;y=0'
 /panels/panel-1/position-locked true
 /panels/panel-1/size uint32 26
 /panels/panel-2/autohide-behavior uint32 1
-/panels/panel-2/background-alpha uint32 100
 /panels/panel-2/background-style uint32 0
-/panels/panel-2/disable-struts false
 /panels/panel-2/enter-opacity uint32 100
+/panels/panel-2/icon-size uint32 0
 /panels/panel-2/leave-opacity uint32 100
 /panels/panel-2/length uint32 10
 /panels/panel-2/length-adjust true
@@ -32,7 +26,7 @@
 /panels/panel-2/size uint32 48
 /plugins/plugin-1 'applicationsmenu'
 /plugins/plugin-1/button-icon 'xfce4-panel-menu'
-/plugins/plugin-1/button-title 'Applications Menu'
+/plugins/plugin-1/button-title 'Applications'
 /plugins/plugin-1/show-button-title true
 /plugins/plugin-1/show-generic-names false
 /plugins/plugin-1/show-menu-icons true
@@ -63,9 +57,7 @@
 /plugins/plugin-6/hide-new-items false
 /plugins/plugin-6/icon-size 22
 /plugins/plugin-6/menu-is-primary false
-/plugins/plugin-6/show-frame false
 /plugins/plugin-6/single-row false
-/plugins/plugin-6/size-max uint32 22
 /plugins/plugin-6/square-icons true
 /plugins/plugin-6/symbolic-icons false
 /plugins/plugin-7 'pulseaudio'
@@ -79,7 +71,6 @@
 /plugins/plugin-11 'clock'
 /plugins/plugin-11/digital-format '%a %d %b, %R'
 /plugins/plugin-11/mode uint32 2
-/plugins/plugin-11/show-frame true
 /plugins/plugin-11/tooltip-format '%A %d %B %Y'
 /plugins/plugin-12 'separator'
 /plugins/plugin-12/expand false
@@ -105,9 +96,7 @@
 /plugins/plugin-20/expand false
 /plugins/plugin-20/style uint32 1
 /plugins/plugin-21 'directorymenu'
-/plugins/plugin-21/expand true
 /plugins/plugin-21/new-document true
 /plugins/plugin-21/new-folder true
 /plugins/plugin-21/open-folder true
 /plugins/plugin-21/open-in-terminal true
-/plugins/plugin-21/style uint32 0

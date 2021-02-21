@@ -1,4 +1,4 @@
-*.desktop
+org.xfce.PanelProfiles.desktop
 *.gz
 *.orig
 *.tar.bz2

@@ -1,10 +1,12 @@
 /configver 2
 /panels uint32 1
+/panels/dark-mode false
 /panels/panel-0/autohide-behavior uint32 0
 /panels/panel-0/background-alpha uint32 80
 /panels/panel-0/background-style uint32 0
 /panels/panel-0/disable-struts false
 /panels/panel-0/enter-opacity uint32 100
+/panels/panel-0/icon-size uint32 0
 /panels/panel-0/leave-opacity uint32 100
 /panels/panel-0/length uint32 100
 /panels/panel-0/length-adjust true
@@ -41,13 +43,20 @@
 /plugins/plugin-3/expand true
 /plugins/plugin-3/style uint32 0
 /plugins/plugin-4 'systray'
+/plugins/plugin-4/hide-new-items false
+/plugins/plugin-4/icon-size 22
+/plugins/plugin-4/menu-is-primary false
 /plugins/plugin-4/show-frame false
+/plugins/plugin-4/single-row false
 /plugins/plugin-4/size-max uint32 22
+/plugins/plugin-4/square-icons false
+/plugins/plugin-4/symbolic-icons false
 /plugins/plugin-5 'power-manager-plugin'
 /plugins/plugin-6 'indicator'
 /plugins/plugin-6/align-left false
 /plugins/plugin-6/mode-whitelist false
 /plugins/plugin-6/single-row false
+/plugins/plugin-6/square-icons false
 /plugins/plugin-6/style uint32 0
 /plugins/plugin-7 'separator'
 /plugins/plugin-7/expand false
