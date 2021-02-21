@@ -1,0 +1,102 @@
+/configver 2
+/panels [<1>, <2>]
+/panels/dark-mode true
+/panels/panel-1/autohide-behavior uint32 0
+/panels/panel-1/enter-opacity uint32 100
+/panels/panel-1/icon-size uint32 16
+/panels/panel-1/leave-opacity uint32 100
+/panels/panel-1/length uint32 100
+/panels/panel-1/nrows uint32 1
+/panels/panel-1/plugin-ids [<1>, <2>, <3>, <4>, <5>, <6>, <7>, <8>, <9>, <10>, <11>, <12>, <13>]
+/panels/panel-1/position 'p=6;x=0;y=0'
+/panels/panel-1/position-locked true
+/panels/panel-1/size uint32 26
+/panels/panel-2/autohide-behavior uint32 1
+/panels/panel-2/background-style uint32 0
+/panels/panel-2/enter-opacity uint32 100
+/panels/panel-2/icon-size uint32 0
+/panels/panel-2/leave-opacity uint32 100
+/panels/panel-2/length uint32 10
+/panels/panel-2/length-adjust true
+/panels/panel-2/mode uint32 0
+/panels/panel-2/nrows uint32 1
+/panels/panel-2/plugin-ids [<14>, <15>, <16>, <17>, <18>, <19>, <20>, <21>]
+/panels/panel-2/position 'p=10;x=0;y=0'
+/panels/panel-2/position-locked true
+/panels/panel-2/size uint32 48
+/plugins/plugin-1 'applicationsmenu'
+/plugins/plugin-1/button-icon 'xfce4-panel-menu'
+/plugins/plugin-1/button-title 'Applications'
+/plugins/plugin-1/show-button-title true
+/plugins/plugin-1/show-generic-names false
+/plugins/plugin-1/show-menu-icons true
+/plugins/plugin-1/show-tooltips false
+/plugins/plugin-2 'tasklist'
+/plugins/plugin-2/flat-buttons false
+/plugins/plugin-2/grouping uint32 1
+/plugins/plugin-2/include-all-monitors true
+/plugins/plugin-2/include-all-workspaces false
+/plugins/plugin-2/middle-click uint32 0
+/plugins/plugin-2/show-handle true
+/plugins/plugin-2/show-labels true
+/plugins/plugin-2/show-only-minimized false
+/plugins/plugin-2/show-wireframes false
+/plugins/plugin-2/sort-order uint32 1
+/plugins/plugin-2/switch-workspace-on-unminimize true
+/plugins/plugin-2/window-scrolling true
+/plugins/plugin-3 'separator'
+/plugins/plugin-3/expand true
+/plugins/plugin-3/style uint32 0
+/plugins/plugin-4 'pager'
+/plugins/plugin-4/miniature-view true
+/plugins/plugin-4/rows uint32 1
+/plugins/plugin-5 'separator'
+/plugins/plugin-5/expand false
+/plugins/plugin-5/style uint32 0
+/plugins/plugin-6 'systray'
+/plugins/plugin-6/hide-new-items false
+/plugins/plugin-6/icon-size 22
+/plugins/plugin-6/menu-is-primary false
+/plugins/plugin-6/single-row false
+/plugins/plugin-6/square-icons true
+/plugins/plugin-6/symbolic-icons false
+/plugins/plugin-7 'pulseaudio'
+/plugins/plugin-7/enable-keyboard-shortcuts true
+/plugins/plugin-7/show-notifications true
+/plugins/plugin-8 'power-manager-plugin'
+/plugins/plugin-9 'notification-plugin'
+/plugins/plugin-10 'separator'
+/plugins/plugin-10/expand false
+/plugins/plugin-10/style uint32 0
+/plugins/plugin-11 'clock'
+/plugins/plugin-11/digital-format '%a %d %b, %R'
+/plugins/plugin-11/mode uint32 2
+/plugins/plugin-11/tooltip-format '%A %d %B %Y'
+/plugins/plugin-12 'separator'
+/plugins/plugin-12/expand false
+/plugins/plugin-12/style uint32 0
+/plugins/plugin-13 'actions'
+/plugins/plugin-13/appearance uint32 1
+/plugins/plugin-13/ask-confirmation true
+/plugins/plugin-13/button-title uint32 0
+/plugins/plugin-13/items [<'+lock-screen'>, <'+switch-user'>, <'+separator'>, <'+suspend'>, <'-hibernate'>, <'-hybrid-sleep'>, <'-separator'>, <'+shutdown'>, <'-restart'>, <'+separator'>, <'+logout'>, <'-logout-dialog'>]
+/plugins/plugin-14 'showdesktop'
+/plugins/plugin-15 'separator'
+/plugins/plugin-15/expand false
+/plugins/plugin-15/style uint32 1
+/plugins/plugin-16 'launcher'
+/plugins/plugin-16/items [<'xfce4-terminal-emulator.desktop'>]
+/plugins/plugin-17 'launcher'
+/plugins/plugin-17/items [<'xfce4-file-manager.desktop'>]
+/plugins/plugin-18 'launcher'
+/plugins/plugin-18/items [<'xfce4-web-browser.desktop'>]
+/plugins/plugin-19 'launcher'
+/plugins/plugin-19/items [<'xfce4-appfinder.desktop'>]
+/plugins/plugin-20 'separator'
+/plugins/plugin-20/expand false
+/plugins/plugin-20/style uint32 1
+/plugins/plugin-21 'directorymenu'
+/plugins/plugin-21/new-document true
+/plugins/plugin-21/new-folder true
+/plugins/plugin-21/open-folder true
+/plugins/plugin-21/open-in-terminal true
