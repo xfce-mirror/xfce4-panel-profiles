@@ -1,0 +1,72 @@
+/configver 2
+/panels [<1>]
+/panels/dark-mode false
+/panels/panel-1/autohide-behavior uint32 0
+/panels/panel-1/background-alpha uint32 100
+/panels/panel-1/background-style uint32 0
+/panels/panel-1/disable-struts false
+/panels/panel-1/enter-opacity uint32 100
+/panels/panel-1/icon-size uint32 0
+/panels/panel-1/leave-opacity uint32 100
+/panels/panel-1/length uint32 100
+/panels/panel-1/length-adjust true
+/panels/panel-1/mode uint32 0
+/panels/panel-1/nrows uint32 1
+/panels/panel-1/plugin-ids [<1>, <2>, <3>, <4>, <5>, <6>, <7>, <8>, <9>, <10>, <11>, <12>, <13>]
+/panels/panel-1/position 'p=8;x=512;y=752'
+/panels/panel-1/position-locked true
+/panels/panel-1/size uint32 39
+/plugins/plugin-1 'whiskermenu'
+/plugins/plugin-2 'separator'
+/plugins/plugin-2/expand false
+/plugins/plugin-2/style uint32 2
+/plugins/plugin-3 'launcher'
+/plugins/plugin-3/disable-tooltips false
+/plugins/plugin-3/items [<'xfce4-web-browser.desktop'>]
+/plugins/plugin-3/show-label false
+/plugins/plugin-4 'launcher'
+/plugins/plugin-4/items [<'xfce4-file-manager.desktop'>]
+/plugins/plugin-5 'tasklist'
+/plugins/plugin-5/flat-buttons true
+/plugins/plugin-5/grouping uint32 1
+/plugins/plugin-5/include-all-monitors true
+/plugins/plugin-5/include-all-workspaces false
+/plugins/plugin-5/middle-click uint32 0
+/plugins/plugin-5/show-handle true
+/plugins/plugin-5/show-labels false
+/plugins/plugin-5/show-only-minimized false
+/plugins/plugin-5/show-wireframes false
+/plugins/plugin-5/sort-order uint32 0
+/plugins/plugin-5/switch-workspace-on-unminimize true
+/plugins/plugin-5/window-scrolling true
+/plugins/plugin-6 'separator'
+/plugins/plugin-6/expand true
+/plugins/plugin-6/style uint32 0
+/plugins/plugin-7 'systray'
+/plugins/plugin-7/hide-new-items false
+/plugins/plugin-7/icon-size 22
+/plugins/plugin-7/menu-is-primary false
+/plugins/plugin-7/names-hidden @av []
+/plugins/plugin-7/show-frame false
+/plugins/plugin-7/single-row false
+/plugins/plugin-7/size-max uint32 24
+/plugins/plugin-7/square-icons false
+/plugins/plugin-7/symbolic-icons false
+/plugins/plugin-8 'separator'
+/plugins/plugin-8/expand false
+/plugins/plugin-8/style uint32 0
+/plugins/plugin-9 'pulseaudio'
+/plugins/plugin-9/enable-keyboard-shortcuts true
+/plugins/plugin-9/show-notifications false
+/plugins/plugin-10 'separator'
+/plugins/plugin-10/expand false
+/plugins/plugin-10/style uint32 0
+/plugins/plugin-11 'clock'
+/plugins/plugin-11/digital-format '%I:%M %p%n%x'
+/plugins/plugin-11/mode uint32 2
+/plugins/plugin-11/show-frame true
+/plugins/plugin-11/tooltip-format '%A, %d %B, %Y'
+/plugins/plugin-12 'separator'
+/plugins/plugin-12/expand false
+/plugins/plugin-12/style uint32 0
+/plugins/plugin-13 'showdesktop'

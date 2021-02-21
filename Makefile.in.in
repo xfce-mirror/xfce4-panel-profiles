@@ -35,6 +35,7 @@ endif
 layouts:
 	cd data/layouts/gnome2; tar $(TAROPTS) -cvjf "../GNOME 2.tar.bz2" *
 	cd data/layouts/redmond; tar $(TAROPTS) -cvjf "../Redmond.tar.bz2" *
+	cd data/layouts/redmond7; tar $(TAROPTS) -cvjf "../Redmond 7.tar.bz2" *
 	cd data/layouts/xfce-4.12; tar $(TAROPTS) -cvjf "../Xfce 4.12.tar.bz2" *
 	cd data/layouts/xfce-4.14; tar $(TAROPTS) -cvjf "../Xfce 4.14.tar.bz2" *
 	cd data/layouts/xfce-4.16; tar $(TAROPTS) -cvjf "../Xfce 4.16.tar.bz2" *
