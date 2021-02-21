@@ -1,12 +1,15 @@
 /configver 2
 /panels [<1>, <2>]
+/panels/dark-mode false
 /panels/panel-1/autohide-behavior uint32 0
 /panels/panel-1/background-alpha uint32 100
 /panels/panel-1/background-style uint32 0
 /panels/panel-1/disable-struts false
 /panels/panel-1/enter-opacity uint32 100
+/panels/panel-1/icon-size uint32 0
 /panels/panel-1/leave-opacity uint32 100
 /panels/panel-1/length uint32 100
+/panels/panel-1/length-adjust true
 /panels/panel-1/mode uint32 0
 /panels/panel-1/nrows uint32 1
 /panels/panel-1/plugin-ids [<1>, <2>, <3>, <4>, <5>, <6>, <7>]
@@ -31,9 +34,22 @@
 /plugins/plugin-1/button-icon 'xfce4-panel-menu'
 /plugins/plugin-1/button-title 'Applications Menu'
 /plugins/plugin-1/show-button-title true
+/plugins/plugin-1/show-generic-names false
 /plugins/plugin-1/show-menu-icons true
 /plugins/plugin-1/show-tooltips false
 /plugins/plugin-2 'tasklist'
+/plugins/plugin-2/flat-buttons false
+/plugins/plugin-2/grouping uint32 0
+/plugins/plugin-2/include-all-monitors true
+/plugins/plugin-2/include-all-workspaces false
+/plugins/plugin-2/middle-click uint32 0
+/plugins/plugin-2/show-handle true
+/plugins/plugin-2/show-labels true
+/plugins/plugin-2/show-only-minimized false
+/plugins/plugin-2/show-wireframes false
+/plugins/plugin-2/sort-order uint32 1
+/plugins/plugin-2/switch-workspace-on-unminimize true
+/plugins/plugin-2/window-scrolling true
 /plugins/plugin-3 'separator'
 /plugins/plugin-3/expand true
 /plugins/plugin-3/style uint32 0
@@ -46,11 +62,19 @@
 /plugins/plugin-5/show-frame true
 /plugins/plugin-5/tooltip-format '%A %d %B %Y'
 /plugins/plugin-6 'systray'
+/plugins/plugin-6/hide-new-items false
+/plugins/plugin-6/icon-size 22
+/plugins/plugin-6/menu-is-primary false
 /plugins/plugin-6/show-frame true
+/plugins/plugin-6/single-row false
 /plugins/plugin-6/size-max uint32 22
+/plugins/plugin-6/square-icons false
+/plugins/plugin-6/symbolic-icons false
 /plugins/plugin-7 'actions'
 /plugins/plugin-7/appearance uint32 1
 /plugins/plugin-7/ask-confirmation true
+/plugins/plugin-7/button-title uint32 0
+/plugins/plugin-7/items [<'+lock-screen'>, <'+switch-user'>, <'+separator'>, <'+suspend'>, <'-hibernate'>, <'-hybrid-sleep'>, <'-separator'>, <'+shutdown'>, <'-restart'>, <'+separator'>, <'+logout'>, <'-logout-dialog'>]
 /plugins/plugin-8 'showdesktop'
 /plugins/plugin-9 'separator'
 /plugins/plugin-9/expand false
