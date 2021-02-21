@@ -10,4 +10,4 @@ OnlyShowIn=XFCE;
 X-XFCE-MimeType=x-scheme-handler/mailto;
 Name=Mail Reader
 Comment=Read your email
-X-XFCE-Source=file:///usr/share/applications/exo-mail-reader.desktop
+X-XFCE-Source=file:///usr/share/applications/xfce4-mail-reader.desktop

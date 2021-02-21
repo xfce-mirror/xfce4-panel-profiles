@@ -43,9 +43,9 @@
 /plugins/plugin-4 'launcher'
 /plugins/plugin-4/items [<'xfce4-settings-manager.desktop'>]
 /plugins/plugin-5 'launcher'
-/plugins/plugin-5/items [<'exo-web-browser.desktop'>]
+/plugins/plugin-5/items [<'xfce4-web-browser.desktop'>]
 /plugins/plugin-6 'launcher'
-/plugins/plugin-6/items [<'exo-mail-reader.desktop'>]
+/plugins/plugin-6/items [<'xfce4-mail-reader.desktop'>]
 /plugins/plugin-7 'separator'
 /plugins/plugin-7/expand true
 /plugins/plugin-7/style uint32 0

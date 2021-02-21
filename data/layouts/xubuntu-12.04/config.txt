@@ -105,11 +105,11 @@
 /plugins/plugin-14/show-handle false
 /plugins/plugin-14/style uint32 1
 /plugins/plugin-15 'launcher'
-/plugins/plugin-15/items [<'exo-web-browser.desktop'>]
+/plugins/plugin-15/items [<'xfce4-web-browser.desktop'>]
 /plugins/plugin-16 'launcher'
-/plugins/plugin-16/items [<'exo-mail-reader.desktop'>]
+/plugins/plugin-16/items [<'xfce4-mail-reader.desktop'>]
 /plugins/plugin-17 'launcher'
-/plugins/plugin-17/items [<'exo-terminal-emulator.desktop'>]
+/plugins/plugin-17/items [<'xfce4-terminal-emulator.desktop'>]
 /plugins/plugin-18 'launcher'
 /plugins/plugin-18/items [<'xfce4-settings-manager.desktop'>]
 /plugins/plugin-19 'launcher'

@@ -75,11 +75,11 @@
 /plugins/plugin-16/expand false
 /plugins/plugin-16/style uint32 1
 /plugins/plugin-17 'launcher'
-/plugins/plugin-17/items [<'exo-terminal-emulator.desktop'>]
+/plugins/plugin-17/items [<'xfce4-terminal-emulator.desktop'>]
 /plugins/plugin-18 'launcher'
-/plugins/plugin-18/items [<'exo-file-manager.desktop'>]
+/plugins/plugin-18/items [<'xfce4-file-manager.desktop'>]
 /plugins/plugin-19 'launcher'
-/plugins/plugin-19/items [<'exo-web-browser.desktop'>]
+/plugins/plugin-19/items [<'xfce4-web-browser.desktop'>]
 /plugins/plugin-20 'launcher'
 /plugins/plugin-20/items [<'xfce4-appfinder.desktop'>]
 /plugins/plugin-21 'separator'

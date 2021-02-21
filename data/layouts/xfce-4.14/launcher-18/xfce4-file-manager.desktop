@@ -10,4 +10,4 @@ OnlyShowIn=XFCE;
 X-XFCE-MimeType=inode/directory;x-scheme-handler/trash;
 Name=File Manager
 Comment=Browse the file system
-X-XFCE-Source=file:///usr/share/applications/exo-file-manager.desktop
+X-XFCE-Source=file:///usr/share/applications/xfce4-file-manager.desktop
