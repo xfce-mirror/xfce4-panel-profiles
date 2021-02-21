@@ -1,5 +1,6 @@
 /configver 2
 /panels uint32 2
+/panels/dark-mode false
 /panels/panel-0/autohide-behavior uint32 0
 /panels/panel-0/background-alpha uint32 100
 /panels/panel-0/background-style uint32 0
@@ -17,15 +18,17 @@
 /panels/panel-0/span-monitors false
 /panels/panel-1/autohide-behavior uint32 2
 /panels/panel-1/background-alpha uint32 15
-/panels/panel-1/background-style uint32 0
+/panels/panel-1/background-rgba [<0.28627450980392155>, <0.28627450980392155>, <0.28627450980392155>, <0.14999999999999999>]
+/panels/panel-1/background-style uint32 1
 /panels/panel-1/disable-struts false
 /panels/panel-1/enter-opacity uint32 100
+/panels/panel-1/icon-size uint32 0
 /panels/panel-1/leave-opacity uint32 100
 /panels/panel-1/length uint32 100
 /panels/panel-1/length-adjust true
 /panels/panel-1/mode uint32 0
 /panels/panel-1/nrows uint32 1
-/panels/panel-1/plugin-ids [<12>, <13>, <14>, <15>, <16>, <17>, <18>, <19>, <20>, <21>, <22>, <23>, <24>, <25>, <26>, <27>]
+/panels/panel-1/plugin-ids [<12>, <13>, <14>, <15>, <16>, <17>, <18>, <19>, <20>, <21>, <22>, <23>, <24>, <25>, <26>]
 /panels/panel-1/position 'p=8;x=960;y=1176'
 /panels/panel-1/position-locked true
 /panels/panel-1/size uint32 46
@@ -55,19 +58,28 @@
 /plugins/plugin-3/expand true
 /plugins/plugin-3/style uint32 0
 /plugins/plugin-4 'systray'
+/plugins/plugin-4/hide-new-items false
+/plugins/plugin-4/icon-size 22
+/plugins/plugin-4/menu-is-primary false
 /plugins/plugin-4/show-frame false
+/plugins/plugin-4/single-row false
 /plugins/plugin-4/size-max uint32 22
+/plugins/plugin-4/square-icons false
+/plugins/plugin-4/symbolic-icons false
 /plugins/plugin-5 'indicator'
 /plugins/plugin-5/align-left false
 /plugins/plugin-5/mode-whitelist false
 /plugins/plugin-5/single-row false
+/plugins/plugin-5/square-icons false
 /plugins/plugin-6 'separator'
 /plugins/plugin-6/expand false
 /plugins/plugin-6/style uint32 0
 /plugins/plugin-7 'clock'
 /plugins/plugin-7/digital-format '%a, %d %b %H:%M'
 /plugins/plugin-7/expand false
+/plugins/plugin-7/mode uint32 2
 /plugins/plugin-7/style uint32 0
+/plugins/plugin-7/tooltip-format '%A %d %B %Y'
 /plugins/plugin-8 'separator'
 /plugins/plugin-8/expand false
 /plugins/plugin-8/style uint32 0
@@ -80,7 +92,10 @@
 /plugins/plugin-10/expand false
 /plugins/plugin-10/style uint32 0
 /plugins/plugin-11 'actions'
+/plugins/plugin-11/appearance uint32 1
 /plugins/plugin-11/ask-confirmation true
+/plugins/plugin-11/button-title uint32 0
+/plugins/plugin-11/items [<'+lock-screen'>, <'+switch-user'>, <'+separator'>, <'+suspend'>, <'-hibernate'>, <'-hybrid-sleep'>, <'-separator'>, <'+shutdown'>, <'-restart'>, <'+separator'>, <'+logout'>, <'-logout-dialog'>]
 /plugins/plugin-11/mode uint32 2
 /plugins/plugin-11/show-frame true
 /plugins/plugin-12 'separator'
@@ -105,28 +120,30 @@
 /plugins/plugin-14/show-handle false
 /plugins/plugin-14/style uint32 1
 /plugins/plugin-15 'launcher'
-/plugins/plugin-15/items [<'exo-web-browser.desktop'>]
+/plugins/plugin-15/items [<'xfce4-web-browser.desktop'>]
 /plugins/plugin-16 'launcher'
-/plugins/plugin-16/items [<'exo-mail-reader.desktop'>]
+/plugins/plugin-16/items [<'xfce4-mail-reader.desktop'>]
 /plugins/plugin-17 'launcher'
-/plugins/plugin-17/items [<'exo-terminal-emulator.desktop'>]
+/plugins/plugin-17/items [<'xfce4-terminal-emulator.desktop'>]
 /plugins/plugin-18 'launcher'
 /plugins/plugin-18/items [<'xfce4-settings-manager.desktop'>]
 /plugins/plugin-19 'launcher'
 /plugins/plugin-19/items [<'xfce4-appfinder.desktop'>]
 /plugins/plugin-20 'launcher'
-/plugins/plugin-20/items [<'software-center.desktop'>]
+/plugins/plugin-20/items [<'gnome-software.desktop'>]
 /plugins/plugin-21 'launcher'
-/plugins/plugin-21/items [<'abiword.desktop'>]
+/plugins/plugin-21/items [<'libreoffice-writer.desktop'>]
 /plugins/plugin-22 'launcher'
-/plugins/plugin-22/items [<'gmusicbrowser.desktop'>]
-/plugins/plugin-23 'launcher'
-/plugins/plugin-23/items [<'gimp.desktop'>]
-/plugins/plugin-24 'separator'
-/plugins/plugin-24/expand false
-/plugins/plugin-24/style uint32 1
-/plugins/plugin-25 'directorymenu'
-/plugins/plugin-26 'thunar-tpa'
-/plugins/plugin-27 'separator'
-/plugins/plugin-27/expand true
-/plugins/plugin-27/style uint32 0
+/plugins/plugin-22/items [<'gimp.desktop'>]
+/plugins/plugin-23 'separator'
+/plugins/plugin-23/expand false
+/plugins/plugin-23/style uint32 1
+/plugins/plugin-24 'directorymenu'
+/plugins/plugin-24/new-document true
+/plugins/plugin-24/new-folder true
+/plugins/plugin-24/open-folder true
+/plugins/plugin-24/open-in-terminal true
+/plugins/plugin-25 'thunar-tpa'
+/plugins/plugin-25 'separator'
+/plugins/plugin-26/expand true
+/plugins/plugin-26/style uint32 0

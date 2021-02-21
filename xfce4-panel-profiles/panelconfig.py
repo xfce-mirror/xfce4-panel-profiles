@@ -119,7 +119,11 @@ class PanelConfig(object):
         self.remove_keys(rem_keys)
 
     def check_desktop(self, path):
-        if not os.path.isfile(path):
+        try:
+            f = self.get_desktop_source_file(path)
+            bytes = f.read()
+            f.close()
+        except (KeyError, FileNotFoundError):
             return False
 
         # Check if binary exists
@@ -137,16 +141,12 @@ class PanelConfig(object):
         return False
 
     def check_whiskermenu(self):
-        if not os.path.isfile(whiskermenu_path):
-            return False
-        
-        if not getattr(self, 'source', None) is None:
-            try:
-                f = self.get_whiskermenu_file()
-                f.close()
+        try:
+            f = self.get_whiskermenu_file()
+            f.close()
 
-            except KeyError: # Not in backup, likely from previous version
-                return False
+        except (KeyError, FileNotFoundError):
+            return False
 
         return True
 

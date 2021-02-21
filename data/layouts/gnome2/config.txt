@@ -1,12 +1,15 @@
 /configver 2
 /panels [<1>, <2>]
+/panels/dark-mode false
 /panels/panel-1/autohide-behavior uint32 0
 /panels/panel-1/background-alpha uint32 100
 /panels/panel-1/background-style uint32 0
 /panels/panel-1/disable-struts false
 /panels/panel-1/enter-opacity uint32 100
+/panels/panel-1/icon-size uint32 0
 /panels/panel-1/leave-opacity uint32 100
 /panels/panel-1/length uint32 100
+/panels/panel-1/length-adjust true
 /panels/panel-1/mode uint32 0
 /panels/panel-1/nrows uint32 1
 /panels/panel-1/plugin-ids [<1>, <2>, <3>, <4>, <5>, <6>, <7>, <8>, <9>]
@@ -36,22 +39,34 @@
 /plugins/plugin-1/show-menu-icons true
 /plugins/plugin-1/show-tooltips false
 /plugins/plugin-2 'places'
+/plugins/plugin-2/button-label 'Places'
+/plugins/plugin-2/show-bookmarks true
 /plugins/plugin-2/show-button-type 1
+/plugins/plugin-2/show-icons true
+/plugins/plugin-2/show-recent true
+/plugins/plugin-2/show-recent-clear true
+/plugins/plugin-2/show-volumes true
 /plugins/plugin-3 'separator'
 /plugins/plugin-3/expand false
 /plugins/plugin-3/style uint32 0
 /plugins/plugin-4 'launcher'
 /plugins/plugin-4/items [<'xfce4-settings-manager.desktop'>]
 /plugins/plugin-5 'launcher'
-/plugins/plugin-5/items [<'exo-web-browser.desktop'>]
+/plugins/plugin-5/items [<'xfce4-web-browser.desktop'>]
 /plugins/plugin-6 'launcher'
-/plugins/plugin-6/items [<'exo-mail-reader.desktop'>]
+/plugins/plugin-6/items [<'xfce4-mail-reader.desktop'>]
 /plugins/plugin-7 'separator'
 /plugins/plugin-7/expand true
 /plugins/plugin-7/style uint32 0
 /plugins/plugin-8 'systray'
+/plugins/plugin-8/hide-new-items false
+/plugins/plugin-8/icon-size 22
+/plugins/plugin-8/menu-is-primary false
 /plugins/plugin-8/show-frame true
+/plugins/plugin-8/single-row false
 /plugins/plugin-8/size-max uint32 22
+/plugins/plugin-8/square-icons false
+/plugins/plugin-8/symbolic-icons false
 /plugins/plugin-9 'clock'
 /plugins/plugin-9/digital-format '%a %b %d, %I:%M %p'
 /plugins/plugin-9/mode uint32 2
@@ -63,6 +78,7 @@
 /plugins/plugin-11/grouping uint32 0
 /plugins/plugin-11/include-all-monitors true
 /plugins/plugin-11/include-all-workspaces false
+/plugins/plugin-11/middle-click uint32 0
 /plugins/plugin-11/show-handle true
 /plugins/plugin-11/show-labels true
 /plugins/plugin-11/show-only-minimized false

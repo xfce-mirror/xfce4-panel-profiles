@@ -2,7 +2,7 @@
 # -*- Mode: Python; coding: utf-8; indent-tabs-mode: nil; tab-width: 4 -*-
 #   Panel Profiles
 #   Copyright (C) 2013 Alistair Buxton <a.j.buxton@gmail.com>
-#   Copyright (C) 2015-2020 Sean Davis <bluesabre@xfce.org>
+#   Copyright (C) 2015-2021 Sean Davis <bluesabre@xfce.org>
 #
 #   This program is free software: you can redistribute it and/or modify it
 #   under the terms of the GNU General Public License version 3 or newer,
@@ -447,4 +447,8 @@ if __name__ == "__main__":
             exit(-1)
 
     main = XfcePanelProfiles(from_panel)
-    Gtk.main()
+
+    try:
+        Gtk.main()
+    except KeyboardInterrupt:
+        pass
