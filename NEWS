@@ -1,3 +1,15 @@
+xfce4-panel-profiles 1.0.13
+
+    * New Features
+      - Add Cupertino layout (#7)
+      - Add Redmond 7 layout (#8)
+      - Add Xfce 4.16 layout
+    * General
+      - Updated existing templates to support Xfce 4.16
+      - Makefile.in.in: remove bashisms
+      - Enabled exporting Whisker menu configuration (#11)
+    * Updated translations: Belarusian, Czech
+
 xfce4-panel-profiles 1.0.12
 
     * New Features
