@@ -447,4 +447,8 @@ if __name__ == "__main__":
             exit(-1)
 
     main = XfcePanelProfiles(from_panel)
-    Gtk.main()
+
+    try:
+        Gtk.main()
+    except KeyboardInterrupt:
+        pass
