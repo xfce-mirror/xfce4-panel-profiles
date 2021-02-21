@@ -33,6 +33,7 @@ ifeq ($(shell tar --help|grep -o sort=),sort=)
   TAROPTS := --sort=name --format ustar
 endif
 layouts:
+	cd data/layouts/cupertino; tar $(TAROPTS) -cvjf "../Cupertino.tar.bz2" *
 	cd data/layouts/gnome2; tar $(TAROPTS) -cvjf "../GNOME 2.tar.bz2" *
 	cd data/layouts/redmond; tar $(TAROPTS) -cvjf "../Redmond.tar.bz2" *
 	cd data/layouts/redmond7; tar $(TAROPTS) -cvjf "../Redmond 7.tar.bz2" *
