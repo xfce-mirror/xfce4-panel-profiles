@@ -10,7 +10,7 @@
 /panels/panel-0/length-adjust true
 /panels/panel-0/mode uint32 0
 /panels/panel-0/nrows uint32 1
-/panels/panel-0/plugin-ids [<1>, <2>, <3>, <4>, <5>, <6>, <7>, <8>, <9>, <10>, <11>]
+/panels/panel-0/plugin-ids [<1>, <2>, <3>, <4>, <5>, <6>, <7>, <8>, <9>, <10>]
 /panels/panel-0/position 'p=6;x=0;y=0'
 /panels/panel-0/position-locked true
 /panels/panel-0/size uint32 24
@@ -41,36 +41,36 @@
 /plugins/plugin-3/expand true
 /plugins/plugin-3/style uint32 0
 /plugins/plugin-4 'systray'
+/plugins/plugin-4/hide-new-items false
+/plugins/plugin-4/icon-size 22
+/plugins/plugin-4/menu-is-primary true
 /plugins/plugin-4/show-frame false
+/plugins/plugin-4/single-row false
 /plugins/plugin-4/size-max uint32 22
+/plugins/plugin-4/square-icons false
+/plugins/plugin-4/symbolic-icons true
 /plugins/plugin-5 'notification-plugin'
 /plugins/plugin-6 'indicator'
 /plugins/plugin-6/align-left false
 /plugins/plugin-6/mode-whitelist false
 /plugins/plugin-6/single-row false
+/plugins/plugin-6/square-icons false
 /plugins/plugin-6/style uint32 0
-/plugins/plugin-7 'statusnotifier'
-/plugins/plugin-7/icon-size uint32 22
-/plugins/plugin-7/menu-is-primary true
-/plugins/plugin-7/mode-whitelist false
-/plugins/plugin-7/single-row false
-/plugins/plugin-7/square-icons false
-/plugins/plugin-7/symbolic-icons true
-/plugins/plugin-8 'power-manager-plugin'
-/plugins/plugin-9 'pulseaudio'
-/plugins/plugin-9/enable-keyboard-shortcuts true
-/plugins/plugin-9/enable-mpris true
-/plugins/plugin-9/enable-wnck true
-/plugins/plugin-9/mixer-command 'pavucontrol'
-/plugins/plugin-9/mpris-players 'parole;'
-/plugins/plugin-9/show-notifications true
-/plugins/plugin-10 'separator'
-/plugins/plugin-10/expand false
+/plugins/plugin-7 'power-manager-plugin'
+/plugins/plugin-8 'pulseaudio'
+/plugins/plugin-8/enable-keyboard-shortcuts true
+/plugins/plugin-8/enable-mpris true
+/plugins/plugin-8/enable-multimedia-keys true
+/plugins/plugin-8/mixer-command 'pavucontrol'
+/plugins/plugin-8/mpris-players 'parole;'
+/plugins/plugin-8/show-notifications true
+/plugins/plugin-9 'separator'
+/plugins/plugin-9/expand false
+/plugins/plugin-9/style uint32 0
+/plugins/plugin-10 'clock'
+/plugins/plugin-10/digital-format '%d %b, %H:%M'
+/plugins/plugin-10/mode uint32 2
+/plugins/plugin-10/show-frame true
+/plugins/plugin-10/size-max uint32 22
 /plugins/plugin-10/style uint32 0
-/plugins/plugin-11 'clock'
-/plugins/plugin-11/digital-format '%d %b, %H:%M'
-/plugins/plugin-11/mode uint32 2
-/plugins/plugin-11/show-frame true
-/plugins/plugin-11/size-max uint32 22
-/plugins/plugin-11/style uint32 0
-/plugins/plugin-11/tooltip-format '%A %d %B %Y'
+/plugins/plugin-10/tooltip-format '%A %d %B %Y'
