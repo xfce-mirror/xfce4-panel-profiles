@@ -214,8 +214,7 @@ class PanelConfig(object):
             add_to_tar(t, bytes, d)
         
         for rc in self.rc_files:
-            path = os.path.join(rc_dir, rc)
-            bytes = self.get_rc_source_file(path).read()
+            bytes = self.get_rc_source_file(rc).read()
             add_to_tar(t, bytes, rc)
 
         t.close()
