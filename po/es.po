@@ -25,19 +25,19 @@ msgstr ""
 #: ../xfce4-panel-profiles.desktop.in.h:1
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:51
 msgid "Panel Profiles"
-msgstr "Perfiles del panel"
+msgstr "Perfiles de paneles"
 
 #: ../xfce4-panel-profiles.desktop.in.h:2
 msgid "Backup and restore your panel configuration"
-msgstr "Respalde y restaure la configuración de panel"
+msgstr "Respalde y restaure la configuración de paneles"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:1
 msgid ""
 "<b><big>Panel Profiles</big></b>\n"
 "Backup and restore your panel configuration"
 msgstr ""
-"<b><big>Perfiles del panel</big></b>\n"
-"Respalde y restaure la configuración del panel"
+"<b><big>Perfil de los paneles</big></b>\n"
+"Respalde y restaure la configuración de paneles"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:3
 msgid "Filename"
@@ -70,7 +70,7 @@ msgstr "Importar"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:10
 msgid "Save panel configuration as..."
-msgstr "Guardar la configuración del panel como..."
+msgstr "Guardar la configuración como..."
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:11
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:85
@@ -80,7 +80,7 @@ msgstr "Cancelar"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:12
 msgid "<b>Name the new panel configuration</b>"
-msgstr "<b>Asigne un nombre a la nueva configuración del panel</b>"
+msgstr "<b>Nombre de la nueva configuración</b>"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:80
 msgid "Save"
@@ -121,7 +121,7 @@ msgstr "Importar un archivo de configuración..."
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:285
 msgid "Name the new panel configuration"
-msgstr "Asigne un nombre a la configuración nueva"
+msgstr "Nombre de la configuración nueva"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:309
 #, python-format
@@ -130,7 +130,8 @@ msgstr "Copia_de_seguridad_%s"
 
 #: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:1
 msgid "Application to manage different panel layouts in Xfce"
-msgstr "Aplicación para gestionar diferentes distribuciones del panel en Xfce"
+msgstr ""
+"Aplicación para gestionar diferentes distribuciones de paneles en Xfce"
 
 #: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:2
 msgid ""
@@ -138,7 +139,6 @@ msgid ""
 "enables managing different layouts with little effort. Xfpanel-switch makes "
 "it possible to backup, restore, import and export panel layouts."
 msgstr ""
-"Se pueden crear muchas distribuciones del panel en Xfce. Esta herramienta "
-"permite gestionar diferentes distribuciones sin apenas esfuerzo. Xfpanel-"
-"switch permite hacer copias de seguridad, restaurar, importar y exportar las"
-" distribuciones del panel."
+"Se pueden crear muchas distribuciones de paneles en Xfce. Esta herramienta "
+"permite gestionar diferentes distribuciones sin apenas esfuerzo. Permite "
+"respaldar, restaurar, importar y exportar las distribuciones de paneles."
