@@ -196,7 +196,6 @@ class PanelConfig(object):
             return self.source.extractfile(rc)
 
     def to_file(self, filename):
-        
         if filename.endswith('.gz'):
             mode = 'w:gz'
         elif filename.endswith('.bz2'):
@@ -208,7 +207,7 @@ class PanelConfig(object):
         for (pp, pv) in sorted(self.properties.items()):
             props_tmp.append(str(pp) + ' ' + str(pv))
         add_to_tar(t, '\n'.join(props_tmp).encode('utf8'), 'config.txt')
-        
+
         for d in self.desktops:
             bytes = self.get_desktop_source_file(d).read()
             add_to_tar(t, bytes, d)
@@ -269,7 +268,6 @@ class PanelConfig(object):
                 f = open(os.path.join(desktop_dir, rc), 'wb')
                 f.write(bytes)
                 f.close()
-
 
             try:
                 dbus_proxy.call_sync('Terminate', GLib.Variant('(b)', ('xfce4-panel',)), 0, -1, None)
