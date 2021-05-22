@@ -29,7 +29,7 @@ msgstr "Perfiles de paneles"
 
 #: ../xfce4-panel-profiles.desktop.in.h:2
 msgid "Backup and restore your panel configuration"
-msgstr "Respalde y restaure la configuración de paneles"
+msgstr "Respalde y restaure la configuración de los paneles"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:1
 msgid ""
@@ -37,7 +37,7 @@ msgid ""
 "Backup and restore your panel configuration"
 msgstr ""
 "<b><big>Perfil de los paneles</big></b>\n"
-"Respalde y restaure la configuración de paneles"
+"Respalde y restaure la configuración de los paneles"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:3
 msgid "Filename"
