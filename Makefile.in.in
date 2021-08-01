@@ -73,7 +73,6 @@ install: all xfce4-panel-profiles.1
 	install data/metainfo/*.xml $(DESTDIR)/$(PREFIX)/share/metainfo
 
 	cp -rf locale $(DESTDIR)/$(PREFIX)/share
-	ln -sf $(PREFIX)/share/locale $(DESTDIR)/$(PREFIX)/share/$(APPNAME)/locale
 
 	install -d $(DESTDIR)/$(MANDIR)/man1
 	install xfce4-panel-profiles.1 $(DESTDIR)/$(MANDIR)/man1
