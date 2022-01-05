@@ -1,0 +1,144 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Nick Schermer <nick@xfce.org>, 2018
+# Marius Ghita, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-23 06:37-0400\n"
+"PO-Revision-Date: 2018-07-13 15:34+0000\n"
+"Last-Translator: Marius Ghita, 2022\n"
+"Language-Team: Romanian (https://www.transifex.com/xfce/teams/16840/ro/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ro\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
+
+#: ../xfce4-panel-profiles.desktop.in.h:1
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:51
+msgid "Panel Profiles"
+msgstr "Profiluri Panou"
+
+#: ../xfce4-panel-profiles.desktop.in.h:2
+msgid "Backup and restore your panel configuration"
+msgstr "Restaurați și creați copii de siguranță ale configurației de panou"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:1
+msgid ""
+"<b><big>Panel Profiles</big></b>\n"
+"Backup and restore your panel configuration"
+msgstr ""
+"<b><big>Profiluri Panou</big></b>\n"
+"Restaurați și creați copii de siguranță ale configurației de panou"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:3
+msgid "Filename"
+msgstr "Nume fișier"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:4
+msgid "Date Modified"
+msgstr "Data Modificării"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:5
+msgid "Apply Configuration"
+msgstr "Aplicați Configurația"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:6
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:293
+msgid "Save Configuration"
+msgstr "Salvați Configurația"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:7
+msgid "Remove Configuration"
+msgstr "Înlăturați Configurația"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:8
+msgid "Export"
+msgstr "Export"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:9
+msgid "Import"
+msgstr "Import"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:10
+msgid "Save panel configuration as..."
+msgstr "Salvați configurația panoului ca..."
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:11
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:85
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:292
+msgid "Cancel"
+msgstr "Anulați"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:12
+msgid "<b>Name the new panel configuration</b>"
+msgstr "<b>Denumiți noua configurație de panou</b>"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:80
+msgid "Save"
+msgstr "Salvează"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:82
+msgid "Open"
+msgstr "Deschide"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:140
+msgid "Current Configuration"
+msgstr "Configurația Curentă"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:160
+msgid "Today"
+msgstr "Zilei de azi"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:162
+msgid "Yesterday"
+msgstr "Ieri"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:187
+#, python-format
+msgid "%s (Copy of %s)"
+msgstr "%s(Copie a %s)"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:211
+msgid "Export configuration as..."
+msgstr "Exportați configurația ca..."
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:212
+msgid "Untitled"
+msgstr "Fără titlu"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:224
+msgid "Import configuration file..."
+msgstr "Importați fișier de configurație"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:285
+msgid "Name the new panel configuration"
+msgstr "Denumiți noua configurație de panou"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:309
+#, python-format
+msgid "Backup_%s"
+msgstr "Copie de siguranță_%s"
+
+#: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:1
+msgid "Application to manage different panel layouts in Xfce"
+msgstr "Aplicație pentru managementul aspectelor panourilor Xfce"
+
+#: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:2
+msgid ""
+"Multitude of panel layouts can be created using Xfce panel. This tool "
+"enables managing different layouts with little effort. Xfpanel-switch makes "
+"it possible to backup, restore, import and export panel layouts."
+msgstr ""
+"Xfce vă permite să creați multiple aspecte ale panourilor. Acest instrument "
+"vă ajută sa administrați diferitele aspecte cu efort minim. Xfpanel-switch "
+"face posibilă crearea copilor de siguranța, restaurarea, importul și "
+"exportul aspectelor acestor panouri."
