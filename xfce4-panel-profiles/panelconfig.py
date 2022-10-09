@@ -44,6 +44,7 @@ class PanelConfig(object):
         self.properties = {}
         self.whiskermenu_data = ""
         self.source = None
+        self.errors = []
 
     @classmethod
     def from_xfconf(cls, xfconf):
@@ -135,6 +136,7 @@ class PanelConfig(object):
                 if self.check_exec(exec_str):
                     return True
         except GLib.Error:  # pylint: disable=E0712
+            self.errors.append('Error parsing desktop file ' + path)
             pass #  https://bugzilla.xfce.org/show_bug.cgi?id=14597
 
         return False
@@ -277,3 +279,6 @@ class PanelConfig(object):
             f = open(whiskermenu_path, 'wb')
             f.write(self.whiskermenu_data)
             f.close()
+
+    def has_errors(self):
+        return len(self.errors) > 0
