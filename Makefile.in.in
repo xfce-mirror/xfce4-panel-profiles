@@ -31,6 +31,8 @@ pot:
 
 ifeq ($(shell tar --help|grep -o sort=),sort=)
   TAROPTS := --sort=name --format ustar
+  TAROPTS += --owner=0 --group=0 --numeric-owner
+  TAROPTS += --mode=u=wrX,og=
 endif
 layouts:
 	cd data/layouts/cupertino; tar $(TAROPTS) -cvjf "../Cupertino.tar.bz2" *
