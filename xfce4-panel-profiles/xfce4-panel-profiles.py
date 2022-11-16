@@ -49,8 +49,6 @@ import info
 
 warnings.filterwarnings("ignore")
 
-homedir = GLib.get_home_dir()
-
 class XfcePanelProfiles:
 
     '''XfcePanelProfiles application class.'''
