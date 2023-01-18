@@ -14,7 +14,7 @@
 ### END LICENSE
 
 # Desktop File
-xfce4-panel-profiles.desktop.in
+org.xfce.PanelProfiles.desktop.in
 
 # Glade Files
 [type: gettext/glade]xfce4-panel-profiles/xfce4-panel-profiles.glade
