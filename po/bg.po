@@ -119,6 +119,8 @@ msgid ""
 "Invalid configuration file!\n"
 "Please select a valid configuration file."
 msgstr ""
+"Невалиден конфигурационен файл!\n"
+"Моля, изберете валиден конфигурационен файл."
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:264
 msgid "OK"
@@ -138,10 +140,12 @@ msgid ""
 "Do you want to apply this configuration?\n"
 " The current configuration will be lost!"
 msgstr ""
+"Наистина ли искате да приложите тази конфигурация?\n"
+"Текущата конфигурация ще бъде изгубена!"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:395
 msgid "Make a backup of the current configuration"
-msgstr ""
+msgstr "Направете резервно копие на текущата конфигурация"
 
 #: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:1
 msgid "Application to manage different panel layouts in Xfce"
