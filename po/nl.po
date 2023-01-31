@@ -119,6 +119,8 @@ msgid ""
 "Invalid configuration file!\n"
 "Please select a valid configuration file."
 msgstr ""
+"Ongeldig instellingenbestand.\n"
+"Kies a.u.b. een geldig instellingenbestand."
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:264
 msgid "OK"
@@ -138,10 +140,12 @@ msgid ""
 "Do you want to apply this configuration?\n"
 " The current configuration will be lost!"
 msgstr ""
+"Wilt u deze instellingen gebruiken?\n"
+"De huidige instellingen zullen verloren gaan."
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:395
 msgid "Make a backup of the current configuration"
-msgstr ""
+msgstr "Maak een reservekopie van de huidige instellingen"
 
 #: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:1
 msgid "Application to manage different panel layouts in Xfce"
