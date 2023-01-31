@@ -118,6 +118,8 @@ msgid ""
 "Invalid configuration file!\n"
 "Please select a valid configuration file."
 msgstr ""
+"Kartelë formësimi e pavlefshme!\n"
+"Ju lutemi, përzgjidhni një kartelë formësimi të vlefshme."
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:264
 msgid "OK"
@@ -137,10 +139,12 @@ msgid ""
 "Do you want to apply this configuration?\n"
 " The current configuration will be lost!"
 msgstr ""
+"Doni të aplikohet ky formësim?\n"
+" Formësimi i tanishëm do të humbë!"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:395
 msgid "Make a backup of the current configuration"
-msgstr ""
+msgstr "Kryej një kopjeruajtje të formësimit të tanishëm"
 
 #: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:1
 msgid "Application to manage different panel layouts in Xfce"
