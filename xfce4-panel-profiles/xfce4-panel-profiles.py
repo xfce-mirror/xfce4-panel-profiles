@@ -208,7 +208,15 @@ class XfcePanelProfiles:
     def save_configuration(self, name, append=True):
         filename = name + ".tar.bz2"
         filename = os.path.join(self.save_location, filename)
-        PanelConfig.from_xfconf(self.xfconf).to_file(filename)
+
+        pc = PanelConfig.from_xfconf(self.xfconf)
+        if pc.has_errors():
+            dialog = PanelErrorDialog(self.window, pc.errors)
+            accept = dialog.run()
+            dialog.destroy()
+            if accept != Gtk.ResponseType.ACCEPT:
+                return
+        pc.to_file(filename)
         created = int(datetime.datetime.now().strftime('%s'))
         if append:
             self.tree_model.append([filename, name, created])
@@ -396,6 +404,36 @@ class PanelConfirmDialog(Gtk.MessageDialog):
 
         box = self.get_message_area()
         box.pack_start(self.backup, True, True, 0)
+        box.show_all()
+
+class PanelErrorDialog(Gtk.MessageDialog):
+    '''Ask to the user if he wants to apply a configuration, because the current
+    configuration will be lost.'''
+
+    def __init__(self, parent=None, messages=[]):
+        message = _("Errors occured while parsing the configuration.")
+
+        Gtk.MessageDialog.__init__(
+            self, transient_for=parent, modal=True,
+            message_type=Gtk.MessageType.QUESTION,
+            text=message)
+
+        self.add_buttons(
+            _("Cancel"), Gtk.ResponseType.CANCEL,
+            _("Continue"), Gtk.ResponseType.ACCEPT
+        )
+
+        self.set_default_icon_name("dialog-information")
+        self.set_default_response(Gtk.ResponseType.ACCEPT)
+
+        box = self.get_message_area()
+        for line in messages:
+            label = Gtk.Label.new(line)
+            box.pack_start(label, True, True, 0)
+
+        label = Gtk.Label.new(" Do you want to continue?")
+        box.pack_start(label, True, True, 0)
+
         box.show_all()
 
 if __name__ == "__main__":
