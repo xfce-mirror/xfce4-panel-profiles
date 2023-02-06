@@ -1,0 +1,58 @@
+/configver 2
+/panels [<1>, <2>]
+/panels/dark-mode true
+/panels/panel-1/icon-size uint32 22
+/panels/panel-1/length uint32 100
+/panels/panel-1/plugin-ids [<11>, <10>, <9>, <8>, <7>, <6>, <5>]
+/panels/panel-1/position 'p=6;x=0;y=0'
+/panels/panel-1/position-locked true
+/panels/panel-1/size uint32 24
+/panels/panel-2/background-rgba [<1.0>, <1.0>, <1.0>, <0.66669999999999996>]
+/panels/panel-2/background-style uint32 1
+/panels/panel-2/enter-opacity uint32 100
+/panels/panel-2/length uint32 97
+/panels/panel-2/length-adjust false
+/panels/panel-2/mode uint32 2
+/panels/panel-2/plugin-ids [<1>, <2>, <3>, <4>]
+/panels/panel-2/position 'p=8;x=33;y=396'
+/panels/panel-2/position-locked true
+/panels/panel-2/size uint32 64
+/plugins/plugin-1 'whiskermenu'
+/plugins/plugin-10 'appmenu'
+/plugins/plugin-10/plugins/plugin-10/bold-application-name true
+/plugins/plugin-10/plugins/plugin-10/compact-mode false
+/plugins/plugin-10/plugins/plugin-10/expand true
+/plugins/plugin-11 'wckbuttons'
+/plugins/plugin-2 'tasklist'
+/plugins/plugin-2/flat-buttons true
+/plugins/plugin-2/grouping uint32 1
+/plugins/plugin-2/middle-click uint32 1
+/plugins/plugin-2/show-handle false
+/plugins/plugin-2/show-labels false
+/plugins/plugin-2/show-wireframes false
+/plugins/plugin-3 'separator'
+/plugins/plugin-3/expand true
+/plugins/plugin-3/style uint32 0
+/plugins/plugin-4 'thunar-tpa'
+/plugins/plugin-5 'actions'
+/plugins/plugin-5/appearance uint32 1
+/plugins/plugin-5/button-title uint32 0
+/plugins/plugin-5/custom-title ''
+/plugins/plugin-6 'clock'
+/plugins/plugin-6/digital-format '%I:%M %p'
+/plugins/plugin-6/timezone 'P'
+/plugins/plugin-7 'pulseaudio'
+/plugins/plugin-7/enable-keyboard-shortcuts true
+/plugins/plugin-8 'xkb'
+/plugins/plugin-8/caps-lock-indicator false
+/plugins/plugin-8/display-name uint32 1
+/plugins/plugin-8/display-tooltip-icon false
+/plugins/plugin-8/display-type uint32 2
+/plugins/plugin-8/group-policy uint32 1
+/plugins/plugin-9 'systray'
+/plugins/plugin-9/hidden-legacy-items @av []
+/plugins/plugin-9/hide-new-items false
+/plugins/plugin-9/known-legacy-items [<'networkmanager applet'>, <'ethernet network connection “wired connection 1” active'>]
+/plugins/plugin-9/single-row true
+/plugins/plugin-9/square-icons true
+/plugins/plugin-9/symbolic-icons true
