@@ -407,11 +407,11 @@ class PanelConfirmDialog(Gtk.MessageDialog):
         box.show_all()
 
 class PanelErrorDialog(Gtk.MessageDialog):
-    '''Ask to the user if he wants to apply a configuration, because the current
+    '''Ask the user if he wants to apply a configuration, because the current
     configuration will be lost.'''
 
     def __init__(self, parent=None, messages=[]):
-        message = _("Errors occured while parsing the configuration.")
+        message = _("Errors occured while parsing the current configuration.")
 
         Gtk.MessageDialog.__init__(
             self, transient_for=parent, modal=True,
@@ -420,7 +420,7 @@ class PanelErrorDialog(Gtk.MessageDialog):
 
         self.add_buttons(
             _("Cancel"), Gtk.ResponseType.CANCEL,
-            _("Continue"), Gtk.ResponseType.ACCEPT
+            _("Save"), Gtk.ResponseType.ACCEPT
         )
 
         self.set_default_icon_name("dialog-information")
@@ -431,7 +431,8 @@ class PanelErrorDialog(Gtk.MessageDialog):
             label = Gtk.Label.new(line)
             box.pack_start(label, True, True, 0)
 
-        label = Gtk.Label.new(" Do you want to continue?")
+        label = Gtk.Label.new(_("Do you want to save despite the errors? "
+                                "Some configuration information could be missing."))
         box.pack_start(label, True, True, 0)
 
         box.show_all()
