@@ -44,6 +44,7 @@ class PanelConfig(object):
         self.properties = {}
         self.whiskermenu_data = ""
         self.source = None
+        self.errors = []
 
     @classmethod
     def from_xfconf(cls, xfconf):
@@ -129,14 +130,14 @@ class PanelConfig(object):
         # Check if binary exists
         keyfile = GLib.KeyFile.new()
         decoded = bytes.decode()
-        if keyfile.load_from_data(decoded, len(decoded),
-                                  GLib.KeyFileFlags.NONE):
-            try:
+        try:
+            if keyfile.load_from_data(decoded, len(decoded), GLib.KeyFileFlags.NONE):
                 exec_str = keyfile.get_string("Desktop Entry", "Exec")
                 if self.check_exec(exec_str):
                     return True
-            except GLib.Error:  # pylint: disable=E0712
-                pass #  https://bugzilla.xfce.org/show_bug.cgi?id=14597
+        except GLib.Error:  # pylint: disable=E0712
+            self.errors.append('Error parsing desktop file ' + path)
+            pass #  https://bugzilla.xfce.org/show_bug.cgi?id=14597
 
         return False
 
@@ -160,8 +161,11 @@ class PanelConfig(object):
                 number = path[2].split('-')[1]
                 if pv.get_type_string() == 's' and \
                         pv.get_string() == 'launcher':
-                    for d in self.properties['/plugins/plugin-' + number +
-                                             '/items'].unpack():
+                    prop_path = '/plugins/plugin-' + number + '/items'
+                    if prop_path not in self.properties:
+                        rem_keys.append('/plugins/plugin-' + number)
+                        continue
+                    for d in self.properties[prop_path].unpack():
                         desktop_path = 'launcher-' + number + '/' + d
                         if self.check_desktop(desktop_path):
                             self.desktops.append(desktop_path)
@@ -275,3 +279,6 @@ class PanelConfig(object):
             f = open(whiskermenu_path, 'wb')
             f.write(self.whiskermenu_data)
             f.close()
+
+    def has_errors(self):
+        return len(self.errors) > 0
