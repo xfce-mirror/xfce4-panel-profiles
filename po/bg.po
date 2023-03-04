@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-31 09:50+0100\n"
+"POT-Creation-Date: 2023-03-02 12:53+0100\n"
 "PO-Revision-Date: 2018-07-13 15:34+0000\n"
 "Last-Translator: Kiril Kirilov <cybercop_montana@abv.bg>, 2023\n"
 "Language-Team: Bulgarian (https://www.transifex.com/xfce/teams/16840/bg/)\n"
@@ -41,12 +41,12 @@ msgid "Date Modified"
 msgstr "Дата на промяна"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:5
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:388
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:396
 msgid "Apply Configuration"
 msgstr "Прилагане на настройките"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:6
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:345
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:353
 msgid "Save Configuration"
 msgstr "Запазване на настройките"
 
@@ -68,8 +68,9 @@ msgstr "Запазване на настройките като..."
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:11
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:115
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:344
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:387
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:352
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:395
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:422
 msgid "Cancel"
 msgstr "Отказ"
 
@@ -78,6 +79,7 @@ msgid "<b>Name the new panel configuration</b>"
 msgstr "<b>Име за новите настройки на панела</b>"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:108
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:423
 msgid "Save"
 msgstr "Запазване"
 
@@ -102,19 +104,19 @@ msgstr "Вчера"
 msgid "%s (Copy of %s)"
 msgstr "%s (Копиране на %s)"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:229
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:237
 msgid "Export configuration as..."
 msgstr "Изнасяне на настройките като..."
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:230
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:238
 msgid "Untitled"
 msgstr "Без име"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:242
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:250
 msgid "Import configuration file..."
 msgstr "Внасяне на файл с настройки..."
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:256
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:264
 msgid ""
 "Invalid configuration file!\n"
 "Please select a valid configuration file."
@@ -122,20 +124,20 @@ msgstr ""
 "Невалиден конфигурационен файл!\n"
 "Моля, изберете валиден конфигурационен файл."
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:264
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:272
 msgid "OK"
 msgstr "ОК"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:338
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:346
 msgid "Name the new panel configuration"
 msgstr "Име за новите настройки на панела"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:362
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:370
 #, python-format
 msgid "Backup_%s"
 msgstr "Резервно копие_%s"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:378
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:386
 msgid ""
 "Do you want to apply this configuration?\n"
 " The current configuration will be lost!"
@@ -143,9 +145,21 @@ msgstr ""
 "Наистина ли искате да приложите тази конфигурация?\n"
 "Текущата конфигурация ще бъде изгубена!"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:395
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:403
 msgid "Make a backup of the current configuration"
 msgstr "Направете резервно копие на текущата конфигурация"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:414
+msgid "Errors occured while parsing the current configuration."
+msgstr "Възникнаха грешки при анализа на текущата конфигурация."
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:434
+msgid ""
+"Do you want to save despite the errors? Some configuration information could"
+" be missing."
+msgstr ""
+"Искате ли да запазите въпреки грешките? Част от информацията за "
+"конфигурацията може да липсва."
 
 #: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:1
 msgid "Application to manage different panel layouts in Xfce"
