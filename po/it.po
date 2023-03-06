@@ -154,12 +154,15 @@ msgstr "Eseguire un backup della configurazione corrente"
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:414
 msgid "Errors occured while parsing the current configuration."
 msgstr ""
+"Sono avvenuti errori durante elaborazione della configurazione corrente."
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:434
 msgid ""
 "Do you want to save despite the errors? Some configuration information could"
 " be missing."
 msgstr ""
+"Salvare nonostante gli errori? Potrebbero mancare alcune informazioni di "
+"configurazione."
 
 #: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:1
 msgid "Application to manage different panel layouts in Xfce"
