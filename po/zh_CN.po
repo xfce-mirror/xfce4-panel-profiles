@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-31 09:50+0100\n"
+"POT-Creation-Date: 2023-03-02 12:53+0100\n"
 "PO-Revision-Date: 2018-07-13 15:34+0000\n"
 "Last-Translator: 玉堂白鹤 <yjwork@qq.com>, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/xfce/teams/16840/zh_CN/)\n"
@@ -42,12 +42,12 @@ msgid "Date Modified"
 msgstr "修改日期"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:5
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:388
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:396
 msgid "Apply Configuration"
 msgstr "应用配置"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:6
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:345
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:353
 msgid "Save Configuration"
 msgstr "保存配置"
 
@@ -69,8 +69,9 @@ msgstr "将配置文件另存为 ..."
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:11
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:115
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:344
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:387
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:352
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:395
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:422
 msgid "Cancel"
 msgstr "取消"
 
@@ -79,6 +80,7 @@ msgid "<b>Name the new panel configuration</b>"
 msgstr "<b>对新面板的配置文件进行命名</b>"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:108
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:423
 msgid "Save"
 msgstr "保存"
 
@@ -103,46 +105,60 @@ msgstr "昨天"
 msgid "%s (Copy of %s)"
 msgstr "%s (复制了 %s)"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:229
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:237
 msgid "Export configuration as..."
 msgstr "将配置文件导出为 ..."
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:230
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:238
 msgid "Untitled"
 msgstr "无标题"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:242
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:250
 msgid "Import configuration file..."
 msgstr "导入配置文件中..."
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:256
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:264
 msgid ""
 "Invalid configuration file!\n"
 "Please select a valid configuration file."
 msgstr ""
+"无效配置文件！\n"
+"请选择有效的配置文件。"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:264
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:272
 msgid "OK"
 msgstr "确定"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:338
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:346
 msgid "Name the new panel configuration"
 msgstr "对新面板配置进行命名"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:362
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:370
 #, python-format
 msgid "Backup_%s"
 msgstr "备份 %s (_B)"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:378
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:386
 msgid ""
 "Do you want to apply this configuration?\n"
 " The current configuration will be lost!"
 msgstr ""
+"是否要应用此配置？\n"
+"当前配置将丢失！"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:395
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:403
 msgid "Make a backup of the current configuration"
-msgstr ""
+msgstr "备份当前配置"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:414
+msgid "Errors occured while parsing the current configuration."
+msgstr "分析当前配置时出错。"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:434
+msgid ""
+"Do you want to save despite the errors? Some configuration information could"
+" be missing."
+msgstr "尽管有错误，您仍要保存吗？可能会丢失部分配置信息。"
 
 #: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:1
 msgid "Application to manage different panel layouts in Xfce"

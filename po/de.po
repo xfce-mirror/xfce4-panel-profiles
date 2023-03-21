@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-31 09:50+0100\n"
+"POT-Creation-Date: 2023-03-02 12:53+0100\n"
 "PO-Revision-Date: 2018-07-13 15:34+0000\n"
 "Last-Translator: Andreas Eitel <github-aneitel@online.de>, 2023\n"
 "Language-Team: German (https://www.transifex.com/xfce/teams/16840/de/)\n"
@@ -42,12 +42,12 @@ msgid "Date Modified"
 msgstr "Änderungsdatum"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:5
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:388
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:396
 msgid "Apply Configuration"
 msgstr "Konfiguration anwenden"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:6
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:345
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:353
 msgid "Save Configuration"
 msgstr "Konfiguration speichern"
 
@@ -69,8 +69,9 @@ msgstr "Leistenkonfiguration speichern unter …"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:11
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:115
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:344
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:387
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:352
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:395
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:422
 msgid "Cancel"
 msgstr "Abbrechen"
 
@@ -79,6 +80,7 @@ msgid "<b>Name the new panel configuration</b>"
 msgstr "<b>Die neue Leistenkonfiguration benennen</b>"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:108
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:423
 msgid "Save"
 msgstr "Speichern"
 
@@ -103,19 +105,19 @@ msgstr "Gestern"
 msgid "%s (Copy of %s)"
 msgstr "%s (Kopie von %s)"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:229
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:237
 msgid "Export configuration as..."
 msgstr "Konfiguration exportieren nach …"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:230
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:238
 msgid "Untitled"
 msgstr "Unbenannt"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:242
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:250
 msgid "Import configuration file..."
 msgstr "Konfigurationsdatei importieren …"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:256
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:264
 msgid ""
 "Invalid configuration file!\n"
 "Please select a valid configuration file."
@@ -123,20 +125,20 @@ msgstr ""
 "Ungültige Konfigurationsdatei!\n"
 "Bitte wählen Sie eine gültige Konfigurationsdatei aus."
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:264
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:272
 msgid "OK"
 msgstr "OK"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:338
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:346
 msgid "Name the new panel configuration"
 msgstr "Die neue Leistenkonfiguration benennen"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:362
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:370
 #, python-format
 msgid "Backup_%s"
 msgstr "Sicherung_%s"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:378
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:386
 msgid ""
 "Do you want to apply this configuration?\n"
 " The current configuration will be lost!"
@@ -144,9 +146,21 @@ msgstr ""
 "Möchten Sie diese Konfiguration übernehmen?\n"
 " Die aktuelle Konfiguration geht verloren!"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:395
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:403
 msgid "Make a backup of the current configuration"
 msgstr "Erstellen Sie eine Sicherungskopie der aktuellen Konfiguration"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:414
+msgid "Errors occured while parsing the current configuration."
+msgstr "Beim Parsen der aktuellen Konfiguration sind Fehler aufgetreten."
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:434
+msgid ""
+"Do you want to save despite the errors? Some configuration information could"
+" be missing."
+msgstr ""
+"Möchten Sie trotz der Fehler speichern? Einige Konfigurationsinformationen "
+"könnten fehlen."
 
 #: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:1
 msgid "Application to manage different panel layouts in Xfce"

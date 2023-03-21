@@ -44,6 +44,7 @@ class PanelConfig(object):
         self.properties = {}
         self.rc_files = []
         self.source = None
+        self.errors = []
 
     @classmethod
     def from_xfconf(cls, xfconf):
@@ -128,14 +129,14 @@ class PanelConfig(object):
         # Check if binary exists
         keyfile = GLib.KeyFile.new()
         decoded = bytes.decode()
-        if keyfile.load_from_data(decoded, len(decoded),
-                                  GLib.KeyFileFlags.NONE):
-            try:
+        try:
+            if keyfile.load_from_data(decoded, len(decoded), GLib.KeyFileFlags.NONE):
                 exec_str = keyfile.get_string("Desktop Entry", "Exec")
                 if self.check_exec(exec_str):
                     return True
-            except GLib.Error:  # pylint: disable=E0712
-                pass #  https://bugzilla.xfce.org/show_bug.cgi?id=14597
+        except GLib.Error:  # pylint: disable=E0712
+            self.errors.append('Error parsing desktop file ' + path)
+            pass #  https://bugzilla.xfce.org/show_bug.cgi?id=14597
 
         return False
 
@@ -149,8 +150,11 @@ class PanelConfig(object):
                 number = path[2].split('-')[1]
                 if pv.get_type_string() == 's' and \
                         pv.get_string() == 'launcher':
-                    for d in self.properties['/plugins/plugin-' + number +
-                                             '/items'].unpack():
+                    prop_path = '/plugins/plugin-' + number + '/items'
+                    if prop_path not in self.properties:
+                        rem_keys.append('/plugins/plugin-' + number)
+                        continue
+                    for d in self.properties[prop_path].unpack():
                         desktop_path = 'launcher-' + number + '/' + d
                         if self.check_desktop(desktop_path):
                             self.desktops.append(desktop_path)
@@ -193,7 +197,7 @@ class PanelConfig(object):
             for filename in filenames:
                 if filename.find('.rc') > -1:
                     self.rc_files.append(filename)
-    
+
 
     def remove_keys(self, rem_keys):
         keys = list(self.properties.keys())
@@ -236,7 +240,7 @@ class PanelConfig(object):
         for d in self.desktops:
             bytes = self.get_desktop_source_file(d).read()
             add_to_tar(t, bytes, d)
-        
+
         for rc in self.rc_files:
             bytes = self.get_rc_source_file(rc).read()
             add_to_tar(t, bytes, rc)
@@ -287,7 +291,7 @@ class PanelConfig(object):
                 f = open(desktop_dir + d, 'wb')
                 f.write(bytes)
                 f.close()
-            
+
             for rc in self.rc_files:
                 bytes = self.get_rc_source_file(rc).read()
                 f = open(os.path.join(desktop_dir, rc), 'wb')
@@ -298,5 +302,8 @@ class PanelConfig(object):
                 dbus_proxy.call_sync('Terminate', GLib.Variant('(b)', ('xfce4-panel',)), 0, -1, None)
             except GLib.GError:  # pylint: disable=E0712
                 pass
-        
-        
+
+
+
+    def has_errors(self):
+        return len(self.errors) > 0

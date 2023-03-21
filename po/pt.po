@@ -6,7 +6,6 @@
 # Translators:
 # Xfce Bot <transifex@xfce.org>, 2018
 # José Vieira <jvieira33@sapo.pt>, 2018
-# Nuno Miguel <nunomgue@gmail.com>, 2019
 # Hugo Carvalho <hugokarvalho@hotmail.com>, 2023
 # 
 #, fuzzy
@@ -14,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-31 09:50+0100\n"
+"POT-Creation-Date: 2023-03-02 12:53+0100\n"
 "PO-Revision-Date: 2018-07-13 15:34+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>, 2023\n"
 "Language-Team: Portuguese (https://www.transifex.com/xfce/teams/16840/pt/)\n"
@@ -43,12 +42,12 @@ msgid "Date Modified"
 msgstr "Data de modificação"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:5
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:388
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:396
 msgid "Apply Configuration"
 msgstr "Aplicar configuração"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:6
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:345
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:353
 msgid "Save Configuration"
 msgstr "Guardar configuração"
 
@@ -70,8 +69,9 @@ msgstr "Guardar configuração do painel como..."
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:11
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:115
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:344
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:387
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:352
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:395
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:422
 msgid "Cancel"
 msgstr "Cancelar"
 
@@ -80,6 +80,7 @@ msgid "<b>Name the new panel configuration</b>"
 msgstr "<b>Dar um nome à nova configuração do painel</b>"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:108
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:423
 msgid "Save"
 msgstr "Guardar"
 
@@ -102,21 +103,21 @@ msgstr "Ontem"
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:205
 #, python-format
 msgid "%s (Copy of %s)"
-msgstr "%s (Cópia de %s)"
+msgstr "%s (cópia de %s)"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:229
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:237
 msgid "Export configuration as..."
 msgstr "Exportar configuração como..."
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:230
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:238
 msgid "Untitled"
-msgstr "Sem nome"
+msgstr "Sem título"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:242
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:250
 msgid "Import configuration file..."
 msgstr "Importar ficheiro de configuração..."
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:256
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:264
 msgid ""
 "Invalid configuration file!\n"
 "Please select a valid configuration file."
@@ -124,20 +125,20 @@ msgstr ""
 "Ficheiro de configuração inválido!\n"
 "Selecione um ficheiro de configuração válido."
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:264
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:272
 msgid "OK"
 msgstr "Aceitar"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:338
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:346
 msgid "Name the new panel configuration"
 msgstr "Dar um nome à nova configuração do painel"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:362
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:370
 #, python-format
 msgid "Backup_%s"
 msgstr "Cópia de segurança_%s"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:378
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:386
 msgid ""
 "Do you want to apply this configuration?\n"
 " The current configuration will be lost!"
@@ -145,9 +146,21 @@ msgstr ""
 "Aplicar esta configuração?\n"
 " A configuração atual será perdida!"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:395
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:403
 msgid "Make a backup of the current configuration"
 msgstr "Faça uma cópia de segurança da configuração atual"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:414
+msgid "Errors occured while parsing the current configuration."
+msgstr "Ocorreram erros durante a análise da configuração atual."
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:434
+msgid ""
+"Do you want to save despite the errors? Some configuration information could"
+" be missing."
+msgstr ""
+"Quer guardar apesar dos erros? Algumas informações de configuração podem "
+"estar em falta."
 
 #: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:1
 msgid "Application to manage different panel layouts in Xfce"
@@ -159,7 +172,7 @@ msgid ""
 "enables managing different layouts with little effort. Xfpanel-switch makes "
 "it possible to backup, restore, import and export panel layouts."
 msgstr ""
-"Podem ser criados múltiplos esquemas de painel usando o painel do Xfce. Esta"
-" ferramenta permite gerir sem esforço diferentes esquemas. A ferramenta "
+"Podem ser criados vários esquemas de painel usando o painel do Xfce. Esta "
+"ferramenta permite gerir sem esforço diferentes esquemas. A ferramenta "
 "Xfpanel-switch permite guardar, restaurar, importar e exportar esquemas de "
 "painel."
