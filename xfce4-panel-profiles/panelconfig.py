@@ -20,7 +20,7 @@ import os
 # yes, python 3.2 has exist_ok, but it will still fail if the mode is different
 
 whiskermenu_file = 'whiskermenu-1.rc'
-whiskermenu_path = os.path.join(GLib.get_home_dir(), '.config/xfce4/panel/', whiskermenu_file)
+whiskermenu_path = os.path.join(GLib.get_user_config_dir(), 'xfce4/panel/', whiskermenu_file)
 
 def mkdir_p(path):
     try:
@@ -187,7 +187,7 @@ class PanelConfig(object):
     def get_desktop_source_file(self, desktop):
         if getattr(self, 'source', None) is None:
             path = os.path.join(
-                GLib.get_home_dir(), '.config/xfce4/panel/', desktop)
+                GLib.get_user_config_dir(), 'xfce4/panel/', desktop)
             return open(path, 'rb')
         else:
             return self.source.extractfile(desktop)
@@ -262,7 +262,7 @@ class PanelConfig(object):
                     '(ssv)', ('xfce4-panel', pp, pv)), 0, -1, None)
 
             panel_path = os.path.join(
-                GLib.get_home_dir(), '.config/xfce4/panel/')
+                GLib.get_user_config_dir(), 'xfce4/panel/')
             for d in self.desktops:
                 bytes = self.get_desktop_source_file(d).read()
                 mkdir_p(panel_path + os.path.dirname(d))
