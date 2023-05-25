@@ -192,10 +192,11 @@
                     <property name="margin_top">12</property>
                     <child>
                       <object class="GtkButton" id="help">
-                        <property name="label">Help</property>
+                        <property name="label" translatable="yes">_Help</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
+                        <property name="use_underline">True</property>
                         <signal name="clicked" handler="on_help_clicked" swapped="no"/>
                       </object>
                       <packing>
@@ -206,7 +207,7 @@
                     </child>
                     <child>
                       <object class="GtkButton" id="close">
-                        <property name="label">_Close</property>
+                        <property name="label" translatable="yes">_Close</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
