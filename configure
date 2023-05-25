@@ -27,16 +27,16 @@ while [ $# -gt 0 ]; do
             exit 0
             ;;
         --prefix=*)
-            PREFIX=`echo $1 | sed 's/--prefix=//'`
+            PREFIX=${1#--prefix=}
             ;;
         --python=*)
-            PYTHON=`echo $1 | sed 's/--python=//'`
+            PYTHON=${1#--python=}
             ;;
         --mandir=*)
-            MANDIR=`echo $1 | sed 's/--mandir=//'`
+            MANDIR=${1#--mandir=}
             ;;
         --docdir=*)
-            DOCDIR=`echo $1 | sed 's/--docdir=//'`
+            DOCDIR=${1#--docdir=}
             ;;
         *)
             echo "Unknown option $1"
