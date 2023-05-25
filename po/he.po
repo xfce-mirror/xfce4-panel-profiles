@@ -4,6 +4,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
+# Xfce Bot <transifex@xfce.org>, 2023
 # Elishai Eliyahu <elishai@mailfence.com>, 2023
 # 
 #, fuzzy
@@ -11,10 +12,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-02 12:53+0100\n"
+"POT-Creation-Date: 2023-05-25 12:49+0200\n"
 "PO-Revision-Date: 2018-07-13 15:34+0000\n"
 "Last-Translator: Elishai Eliyahu <elishai@mailfence.com>, 2023\n"
-"Language-Team: Hebrew (https://www.transifex.com/xfce/teams/16840/he/)\n"
+"Language-Team: Hebrew (https://app.transifex.com/xfce/teams/16840/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -40,12 +41,12 @@ msgid "Date Modified"
 msgstr "תאריך שינוי"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:5
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:396
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:392
 msgid "Apply Configuration"
 msgstr "יישם תצורה"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:6
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:353
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:349
 msgid "Save Configuration"
 msgstr "שמור תצורה"
 
@@ -62,60 +63,68 @@ msgid "Import"
 msgstr "ייבא"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:10
+msgid "_Help"
+msgstr "_עזרה"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:11
+msgid "_Close"
+msgstr "_סגור"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:12
 msgid "Save panel configuration as..."
 msgstr "שמור תצורת לוח בשם..."
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:11
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:115
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:352
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:395
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:422
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:13
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:111
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:348
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:391
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:418
 msgid "Cancel"
 msgstr "בטל"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:12
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:14
 msgid "<b>Name the new panel configuration</b>"
 msgstr "<b>תן שם לתצורת הלוח החדשה</b>"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:108
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:423
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:104
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:419
 msgid "Save"
 msgstr "שמור"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:110
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:106
 msgid "Open"
 msgstr "פתח"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:160
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:156
 msgid "Current Configuration"
 msgstr "תצורה נוכחית"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:178
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:174
 msgid "Today"
 msgstr "היום"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:180
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:176
 msgid "Yesterday"
 msgstr "אתמול"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:205
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:201
 #, python-format
 msgid "%s (Copy of %s)"
 msgstr "%s (העתק של %s)"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:237
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:233
 msgid "Export configuration as..."
 msgstr "ייצא תצורה בשם..."
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:238
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:234
 msgid "Untitled"
 msgstr "ללא שם"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:250
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:246
 msgid "Import configuration file..."
 msgstr "ייבא קובץ תצורה..."
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:264
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:260
 msgid ""
 "Invalid configuration file!\n"
 "Please select a valid configuration file."
@@ -123,20 +132,20 @@ msgstr ""
 "קובץ קונפיגורציה לא תקין!\n"
 "אנא בחר קובץ קונפיגורציה תקין."
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:272
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:268
 msgid "OK"
 msgstr "אישור"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:346
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:342
 msgid "Name the new panel configuration"
 msgstr "תן שם לתצורת הלוח החדשה"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:370
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:366
 #, python-format
 msgid "Backup_%s"
 msgstr "גיבוי_%s"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:386
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:382
 msgid ""
 "Do you want to apply this configuration?\n"
 " The current configuration will be lost!"
@@ -144,15 +153,15 @@ msgstr ""
 "האם אתה רוצה ליישם את הקונפיגורציה הזאת?\n"
 "הקונפיגורציה הנוכחית תלך לאיבוד!"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:403
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:399
 msgid "Make a backup of the current configuration"
 msgstr "בצע גיבוי של הקונפיגורציה הנוכחית"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:414
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:410
 msgid "Errors occured while parsing the current configuration."
 msgstr "אירעו שגיאות בעת ניתוח הקונפיגורציה הנוכחית."
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:434
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:430
 msgid ""
 "Do you want to save despite the errors? Some configuration information could"
 " be missing."
