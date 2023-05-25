@@ -4,20 +4,20 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Xfce Bot <transifex@xfce.org>, 2018
 # Ammuu5, 2018
-# Pasi Lallinaho <pasi@shimmerproject.org>, 2019
 # Jiri Grönroos <jiri.gronroos@iki.fi>, 2023
+# Xfce Bot <transifex@xfce.org>, 2023
+# Pasi Lallinaho <pasi@shimmerproject.org>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-31 09:50+0100\n"
+"POT-Creation-Date: 2023-05-25 12:49+0200\n"
 "PO-Revision-Date: 2018-07-13 15:34+0000\n"
-"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>, 2023\n"
-"Language-Team: Finnish (https://www.transifex.com/xfce/teams/16840/fi/)\n"
+"Last-Translator: Pasi Lallinaho <pasi@shimmerproject.org>, 2023\n"
+"Language-Team: Finnish (https://app.transifex.com/xfce/teams/16840/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -43,12 +43,12 @@ msgid "Date Modified"
 msgstr "Muokkauspäivämäärä"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:5
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:388
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:392
 msgid "Apply Configuration"
 msgstr "Ota asetukset käyttöön"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:6
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:345
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:349
 msgid "Save Configuration"
 msgstr "Tallenna asetukset"
 
@@ -65,84 +65,104 @@ msgid "Import"
 msgstr "Tuo"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:10
+msgid "_Help"
+msgstr "_Ohje"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:11
+msgid "_Close"
+msgstr "_Sulje"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:12
 msgid "Save panel configuration as..."
 msgstr "Tallenna paneelin asetukset nimellä..."
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:11
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:115
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:344
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:387
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:13
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:111
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:348
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:391
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:418
 msgid "Cancel"
 msgstr "Peru"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:12
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:14
 msgid "<b>Name the new panel configuration</b>"
 msgstr "<b>Nimeä uudet paneelin asetukset</b>"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:108
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:104
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:419
 msgid "Save"
 msgstr "Tallenna"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:110
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:106
 msgid "Open"
 msgstr "Avaa"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:160
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:156
 msgid "Current Configuration"
 msgstr "Nykyiset asetukset"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:178
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:174
 msgid "Today"
 msgstr "Tänään"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:180
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:176
 msgid "Yesterday"
 msgstr "Eilen"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:205
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:201
 #, python-format
 msgid "%s (Copy of %s)"
 msgstr "%s (kopio: %s)"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:229
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:233
 msgid "Export configuration as..."
 msgstr "Vie asetukset nimellä..."
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:230
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:234
 msgid "Untitled"
 msgstr "Nimetön"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:242
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:246
 msgid "Import configuration file..."
 msgstr "Tuo asetustiedosto..."
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:256
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:260
 msgid ""
 "Invalid configuration file!\n"
 "Please select a valid configuration file."
 msgstr ""
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:264
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:268
 msgid "OK"
 msgstr "OK"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:338
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:342
 msgid "Name the new panel configuration"
 msgstr "Nimeä uudet paneelin asetukset"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:362
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:366
 #, python-format
 msgid "Backup_%s"
 msgstr "Varmuuskopio_%s"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:378
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:382
 msgid ""
 "Do you want to apply this configuration?\n"
 " The current configuration will be lost!"
 msgstr ""
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:395
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:399
 msgid "Make a backup of the current configuration"
+msgstr ""
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:410
+msgid "Errors occured while parsing the current configuration."
+msgstr ""
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:430
+msgid ""
+"Do you want to save despite the errors? Some configuration information could"
+" be missing."
 msgstr ""
 
 #: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:1
