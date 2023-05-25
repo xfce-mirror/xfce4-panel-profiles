@@ -4,19 +4,19 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Nobuhiro Iwamatsu <iwamatsu@nigauri.org>, 2018
-# Xfce Bot <transifex@xfce.org>, 2023
 # UTUMI Hirosi <utuhiro78@yahoo.co.jp>, 2023
+# Xfce Bot <transifex@xfce.org>, 2023
+# Nobuhiro Iwamatsu <iwamatsu@nigauri.org>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-02 12:53+0100\n"
+"POT-Creation-Date: 2023-05-25 12:49+0200\n"
 "PO-Revision-Date: 2018-07-13 15:34+0000\n"
-"Last-Translator: UTUMI Hirosi <utuhiro78@yahoo.co.jp>, 2023\n"
-"Language-Team: Japanese (https://www.transifex.com/xfce/teams/16840/ja/)\n"
+"Last-Translator: Nobuhiro Iwamatsu <iwamatsu@nigauri.org>, 2023\n"
+"Language-Team: Japanese (https://app.transifex.com/xfce/teams/16840/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -42,12 +42,12 @@ msgid "Date Modified"
 msgstr "更新日"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:5
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:396
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:392
 msgid "Apply Configuration"
 msgstr "設定の適用"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:6
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:353
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:349
 msgid "Save Configuration"
 msgstr "設定の保存"
 
@@ -64,60 +64,68 @@ msgid "Import"
 msgstr "インポート"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:10
+msgid "_Help"
+msgstr "ヘルプ(_H)"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:11
+msgid "_Close"
+msgstr "閉じる(_C)"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:12
 msgid "Save panel configuration as..."
 msgstr "パネル設定を保存..."
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:11
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:115
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:352
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:395
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:422
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:13
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:111
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:348
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:391
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:418
 msgid "Cancel"
 msgstr "キャンセル"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:12
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:14
 msgid "<b>Name the new panel configuration</b>"
 msgstr "<b>新しいパネル設定の名前</b>"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:108
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:423
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:104
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:419
 msgid "Save"
 msgstr "保存"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:110
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:106
 msgid "Open"
 msgstr "開く"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:160
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:156
 msgid "Current Configuration"
 msgstr "現在の設定"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:178
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:174
 msgid "Today"
 msgstr "今日"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:180
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:176
 msgid "Yesterday"
 msgstr "昨日"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:205
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:201
 #, python-format
 msgid "%s (Copy of %s)"
 msgstr "%s (%s のコピー)"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:237
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:233
 msgid "Export configuration as..."
 msgstr "設定のエクスポート..."
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:238
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:234
 msgid "Untitled"
 msgstr "タイトルなし"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:250
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:246
 msgid "Import configuration file..."
 msgstr "設定ファイルのインポート..."
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:264
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:260
 msgid ""
 "Invalid configuration file!\n"
 "Please select a valid configuration file."
@@ -125,20 +133,20 @@ msgstr ""
 "無効な設定ファイルです！\n"
 "有効な設定ファイルを選択してください。"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:272
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:268
 msgid "OK"
 msgstr "OK"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:346
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:342
 msgid "Name the new panel configuration"
 msgstr "新しいパネル設定の名前"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:370
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:366
 #, python-format
 msgid "Backup_%s"
 msgstr "バックアップ_%s"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:386
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:382
 msgid ""
 "Do you want to apply this configuration?\n"
 " The current configuration will be lost!"
@@ -146,15 +154,15 @@ msgstr ""
 "この設定を適用しますか？\n"
 " 現在の設定は失われます。"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:403
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:399
 msgid "Make a backup of the current configuration"
 msgstr "現在の設定のバックアップを作成する"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:414
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:410
 msgid "Errors occured while parsing the current configuration."
 msgstr "現在の設定の解析中にエラーが発生しました。"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:434
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:430
 msgid ""
 "Do you want to save despite the errors? Some configuration information could"
 " be missing."
