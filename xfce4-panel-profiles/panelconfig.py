@@ -246,6 +246,7 @@ class PanelConfig(object):
         t.close()
 
     def check_exec(self, program):
+        program = program.strip()
         if len(program) == 0:
             return False
 
