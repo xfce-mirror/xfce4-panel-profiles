@@ -18,11 +18,7 @@
 
 import tarfile
 
-import gettext
-gettext.textdomain('xfce4-panel-profiles')
-
-from gettext import gettext as _
-from gettext import ngettext
+from locale import gettext as _
 
 import shlex
 import os
@@ -37,9 +33,11 @@ gi.require_version('Gtk', '3.0')
 try:
   gi.require_version('Libxfce4ui', '2.0')
   from gi.repository import Libxfce4ui as libxfce4ui
+  from gi.repository import Libxfce4util as libxfce4util
 except ValueError:
   gi.require_version('libxfce4ui', '2.0')
   from gi.repository import libxfce4ui
+  from gi.repository import libxfce4util
 
 from gi.repository import Gtk, GLib, Gio
 
@@ -439,6 +437,10 @@ if __name__ == "__main__":
     from_panel = False
 
     import sys
+
+    libxfce4util.textdomain('xfce4-panel-profiles',
+                            os.path.join(os.path.dirname(os.path.realpath(__file__)), '../../locale'),
+                            'UTF-8')
 
     session_bus = Gio.BusType.SESSION
     cancellable = None
