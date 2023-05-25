@@ -16,6 +16,7 @@ import tarfile
 import io
 import time
 import os
+import psutil
 
 # yes, python 3.2 has exist_ok, but it will still fail if the mode is different
 
@@ -294,6 +295,16 @@ class PanelConfig(object):
                 f = open(os.path.join(config_dir, rc), 'wb')
                 f.write(bytes)
                 f.close()
+
+                # Kill the plugin so that it reloads the config we just wrote and does
+                # not overwrite it with its current cache when the panel restarts below.
+                # Some plugins don't save their config when restarting the panel
+                # (e.g. whiskermenu) but others do (e.g. netload)
+                plugin_id = rc.replace('.', '-').split('-')[1]
+                proc_name_prefix = 'panel-' + plugin_id + '-'
+                for proc in psutil.process_iter():
+                    if proc.name().startswith(proc_name_prefix):
+                        proc.kill()
 
             try:
                 dbus_proxy.call_sync('Terminate', GLib.Variant('(b)', ('xfce4-panel',)), 0, -1, None)
