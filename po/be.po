@@ -4,6 +4,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
+# Xfce Bot <transifex@xfce.org>, 2023
 # Źmicier Turok <nashtlumach@gmail.com>, 2023
 # 
 #, fuzzy
@@ -11,10 +12,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-31 09:50+0100\n"
+"POT-Creation-Date: 2023-05-25 12:49+0200\n"
 "PO-Revision-Date: 2018-07-13 15:34+0000\n"
 "Last-Translator: Źmicier Turok <nashtlumach@gmail.com>, 2023\n"
-"Language-Team: Belarusian (https://www.transifex.com/xfce/teams/16840/be/)\n"
+"Language-Team: Belarusian (https://app.transifex.com/xfce/teams/16840/be/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -40,12 +41,12 @@ msgid "Date Modified"
 msgstr "Час змены"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:5
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:388
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:392
 msgid "Apply Configuration"
 msgstr "Ужыць канфігурацыю"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:6
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:345
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:349
 msgid "Save Configuration"
 msgstr "Захаваць канфігурацыю"
 
@@ -62,84 +63,104 @@ msgid "Import"
 msgstr "Імпарт"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:10
+msgid "_Help"
+msgstr "_Даведка"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:11
+msgid "_Close"
+msgstr "_Закрыць"
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:12
 msgid "Save panel configuration as..."
 msgstr "Захаваць канфігурацыю панэлі як..."
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:11
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:115
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:344
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:387
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:13
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:111
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:348
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:391
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:418
 msgid "Cancel"
 msgstr "Скасавана"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:12
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:14
 msgid "<b>Name the new panel configuration</b>"
 msgstr "<b>Назва новай канфігурацыі панэлі</b>"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:108
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:104
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:419
 msgid "Save"
 msgstr "Захаваць"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:110
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:106
 msgid "Open"
 msgstr "Адкрыць"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:160
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:156
 msgid "Current Configuration"
 msgstr "Бягучая канфігурацыя"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:178
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:174
 msgid "Today"
 msgstr "Сёння"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:180
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:176
 msgid "Yesterday"
 msgstr "Учора"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:205
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:201
 #, python-format
 msgid "%s (Copy of %s)"
 msgstr "%s (копія %s)"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:229
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:233
 msgid "Export configuration as..."
 msgstr "Экспартаваць канфігурацыю як..."
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:230
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:234
 msgid "Untitled"
 msgstr "Без назвы"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:242
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:246
 msgid "Import configuration file..."
 msgstr "Імпартаваць файл канфігурацыі..."
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:256
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:260
 msgid ""
 "Invalid configuration file!\n"
 "Please select a valid configuration file."
 msgstr ""
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:264
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:268
 msgid "OK"
 msgstr "ДОБРА"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:338
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:342
 msgid "Name the new panel configuration"
 msgstr "Назва новай канфігурацыі панэлі"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:362
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:366
 #, python-format
 msgid "Backup_%s"
 msgstr "Копія_%s"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:378
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:382
 msgid ""
 "Do you want to apply this configuration?\n"
 " The current configuration will be lost!"
 msgstr ""
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:395
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:399
 msgid "Make a backup of the current configuration"
+msgstr ""
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:410
+msgid "Errors occured while parsing the current configuration."
+msgstr ""
+
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:430
+msgid ""
+"Do you want to save despite the errors? Some configuration information could"
+" be missing."
 msgstr ""
 
 #: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:1
