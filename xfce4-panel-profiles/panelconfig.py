@@ -129,9 +129,8 @@ class PanelConfig(object):
 
         # Check if binary exists
         keyfile = GLib.KeyFile.new()
-        decoded = bytes.decode()
         try:
-            if keyfile.load_from_data(decoded, len(decoded), GLib.KeyFileFlags.NONE):
+            if keyfile.load_from_data(bytes.decode(), len(bytes), GLib.KeyFileFlags.NONE):
                 exec_str = keyfile.get_string("Desktop Entry", "Exec")
                 if self.check_exec(exec_str):
                     return True
