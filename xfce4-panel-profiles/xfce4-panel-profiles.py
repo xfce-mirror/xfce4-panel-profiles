@@ -311,8 +311,7 @@ class XfcePanelProfiles:
         apply.set_sensitive(False if filename == '' else True)
 
     def on_window_destroy(self, *args):
-        '''Exit the application when the window is closed.'''
-        Gtk.main_quit()
+        self.on_close_clicked(args)
 
     def on_close_clicked(self, *args):
         '''
