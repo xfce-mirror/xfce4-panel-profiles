@@ -157,8 +157,8 @@ class XfcePanelProfiles:
         for directory in self.get_data_dirs():
             for filename in os.listdir(directory):
                 name, ext = os.path.splitext(filename)
-                name = os.path.splitext(name)[0]
-                if ext in [".gz", ".bz2"]:
+                name, tar = os.path.splitext(name)
+                if ext in [".gz", ".bz2"] and tar == ".tar":
                     path = os.path.join(directory, filename)
                     t = int(os.path.getmtime(path))
                     results.append((path, name, int(t)))
