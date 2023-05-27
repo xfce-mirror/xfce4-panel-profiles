@@ -189,16 +189,14 @@ class XfcePanelProfiles:
         filename = values[0]
         return filename
 
-    def copy_configuration(self, row, new_name, append=True):
+    def copy_configuration(self, row, name, append=True):
         values = row[2]
         filename = values[0]
-        old_name = values[1]
         created = values[2]
-        new_filename = new_name + ".tar.bz2"
+        new_filename = name + ".tar.bz2"
         new_filename = os.path.join(self.save_location, new_filename)
         self._copy(filename, new_filename)
         if append:
-            name = _("%s (Copy of %s)") % (new_name, old_name)
             self.tree_model.append([new_filename, name, created])
 
     def save_configuration(self, name, append=True):
@@ -217,6 +215,16 @@ class XfcePanelProfiles:
         if append:
             self.tree_model.append([filename, name, created])
 
+    def make_name_unique(self, name):
+        iter = self.tree_model.get_iter_first()
+        while iter != None:
+            if self.tree_model.get_value(iter, 1) == name:
+                date = datetime.datetime.now().strftime("%x_%X")
+                date = date.replace(":", "-").replace("/", "-")
+                return name + '_' + date
+            iter = self.tree_model.iter_next(iter)
+        return name
+
     def on_save_clicked(self, widget):
         filename = self.get_selected_filename()
         dialog = PanelSaveDialog(self.window)
@@ -224,9 +232,13 @@ class XfcePanelProfiles:
             name = dialog.get_save_name()
             if len(name) > 0:
                 if filename == "": # Current configuration.
+                    name = self.make_name_unique(name)
                     self.save_configuration(name)
                 else:
-                    self.copy_configuration(self.get_selected(), name)
+                    row = self.get_selected()
+                    old_name = row[2][1]
+                    name = self.make_name_unique(_("%s (Copy of %s)") % (name, old_name))
+                    self.copy_configuration(row, name)
         dialog.destroy()
 
     def on_export_clicked(self, widget):
@@ -250,7 +262,7 @@ class XfcePanelProfiles:
             filename = dialog.get_filename()
             savedlg = PanelSaveDialog(self.window)
             if savedlg.run() == Gtk.ResponseType.ACCEPT:
-                name = savedlg.get_save_name()
+                name = self.make_name_unique(savedlg.get_save_name())
                 dst = os.path.join(self.save_location, name + ".tar.bz2")
                 try:
                     self._copy(filename, dst)
