@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-25 12:49+0200\n"
+"POT-Creation-Date: 2023-05-28 00:48+0200\n"
 "PO-Revision-Date: 2018-07-13 15:34+0000\n"
 "Last-Translator: Kiril Kirilov <cybercop_montana@abv.bg>, 2023\n"
 "Language-Team: Bulgarian (https://app.transifex.com/xfce/teams/16840/bg/)\n"
@@ -33,6 +33,13 @@ msgstr "Профили на панела"
 msgid "Backup and restore your panel configuration"
 msgstr "Съхраняване и възстановяване на вашите настройки на панела"
 
+#: ../org.xfce.PanelProfiles.desktop.in.h:3
+msgid ""
+"panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
+msgstr ""
+"панел;лента на задачи;подредба;прилагане;възстановяване;запазване;резервно "
+"копие;премахване;внасяне;изнасяне;"
+
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:3
 msgid "Filename"
 msgstr "Име на файл"
@@ -42,12 +49,12 @@ msgid "Date Modified"
 msgstr "Дата на промяна"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:5
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:392
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:403
 msgid "Apply Configuration"
 msgstr "Прилагане на настройките"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:6
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:349
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:360
 msgid "Save Configuration"
 msgstr "Запазване на настройките"
 
@@ -77,9 +84,9 @@ msgstr "Запазване на настройките като..."
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:13
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:111
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:348
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:391
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:418
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:359
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:402
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:429
 msgid "Cancel"
 msgstr "Отказ"
 
@@ -88,7 +95,7 @@ msgid "<b>Name the new panel configuration</b>"
 msgstr "<b>Име за новите настройки на панела</b>"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:104
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:419
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:430
 msgid "Save"
 msgstr "Запазване"
 
@@ -108,24 +115,24 @@ msgstr "Днес"
 msgid "Yesterday"
 msgstr "Вчера"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:201
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:240
 #, python-format
 msgid "%s (Copy of %s)"
 msgstr "%s (Копиране на %s)"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:233
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:245
 msgid "Export configuration as..."
 msgstr "Изнасяне на настройките като..."
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:234
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:246
 msgid "Untitled"
 msgstr "Без име"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:246
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:258
 msgid "Import configuration file..."
 msgstr "Внасяне на файл с настройки..."
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:260
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:272
 msgid ""
 "Invalid configuration file!\n"
 "Please select a valid configuration file."
@@ -133,20 +140,20 @@ msgstr ""
 "Невалиден конфигурационен файл!\n"
 "Моля, изберете валиден конфигурационен файл."
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:268
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:280
 msgid "OK"
 msgstr "ОК"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:342
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:353
 msgid "Name the new panel configuration"
 msgstr "Име за новите настройки на панела"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:366
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:377
 #, python-format
 msgid "Backup_%s"
 msgstr "Резервно копие_%s"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:382
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:393
 msgid ""
 "Do you want to apply this configuration?\n"
 " The current configuration will be lost!"
@@ -154,15 +161,15 @@ msgstr ""
 "Наистина ли искате да приложите тази конфигурация?\n"
 "Текущата конфигурация ще бъде изгубена!"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:399
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:410
 msgid "Make a backup of the current configuration"
 msgstr "Направете резервно копие на текущата конфигурация"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:410
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:421
 msgid "Errors occured while parsing the current configuration."
 msgstr "Възникнаха грешки при анализа на текущата конфигурация."
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:430
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:441
 msgid ""
 "Do you want to save despite the errors? Some configuration information could"
 " be missing."
