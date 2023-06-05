@@ -1,7 +1,7 @@
 #!/bin/sh
 
 APPNAME=xfce4-panel-profiles
-VERSION=1.0.13
+VERSION=1.0.14
 
 PYTHON=python3
 
