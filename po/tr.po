@@ -8,18 +8,18 @@
 # Serdar Sağlam <teknomobil@msn.com>, 2019
 # Emin Tufan Çetin <etcetin@gmail.com>, 2020
 # Sabri Ünal <libreajans@gmail.com>, 2023
-# Demiray Muhterem <mdemiray@msn.com>, 2023
 # Xfce Bot <transifex@xfce.org>, 2023
 # Necdet Yücel <necdetyucel@gmail.com>, 2023
+# Demiray Muhterem <mdemiray@msn.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-25 12:49+0200\n"
+"POT-Creation-Date: 2023-05-30 00:51+0200\n"
 "PO-Revision-Date: 2018-07-13 15:34+0000\n"
-"Last-Translator: Necdet Yücel <necdetyucel@gmail.com>, 2023\n"
+"Last-Translator: Demiray Muhterem <mdemiray@msn.com>, 2023\n"
 "Language-Team: Turkish (https://app.transifex.com/xfce/teams/16840/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -37,6 +37,12 @@ msgstr "Panel Profilleri"
 msgid "Backup and restore your panel configuration"
 msgstr "Panel yapılandırmalarını yedekle ve geri yükle"
 
+#: ../org.xfce.PanelProfiles.desktop.in.h:3
+msgid ""
+"panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
+msgstr ""
+"panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
+
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:3
 msgid "Filename"
 msgstr "Dosya Adı"
@@ -46,12 +52,12 @@ msgid "Date Modified"
 msgstr "Değiştirme Tarihi"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:5
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:392
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:403
 msgid "Apply Configuration"
 msgstr "Yapılandırmayı Uygula"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:6
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:349
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:360
 msgid "Save Configuration"
 msgstr "Yapılandırmayı Kaydet"
 
@@ -81,9 +87,9 @@ msgstr "Panel yapılandırmasını farklı kaydet..."
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:13
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:111
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:348
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:391
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:418
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:359
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:402
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:429
 msgid "Cancel"
 msgstr "İptal"
 
@@ -92,7 +98,7 @@ msgid "<b>Name the new panel configuration</b>"
 msgstr "<b>Yeni panel yapılandırma adı</b>"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:104
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:419
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:430
 msgid "Save"
 msgstr "Kaydet"
 
@@ -112,24 +118,24 @@ msgstr "Bugün"
 msgid "Yesterday"
 msgstr "Dün"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:201
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:240
 #, python-format
 msgid "%s (Copy of %s)"
 msgstr "%s (Kopyala %s)"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:233
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:245
 msgid "Export configuration as..."
 msgstr "Yapılandırmayı dışa aktar..."
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:234
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:246
 msgid "Untitled"
 msgstr "Başlıksız"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:246
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:258
 msgid "Import configuration file..."
 msgstr "Yapılandırmayı içe aktar..."
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:260
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:272
 msgid ""
 "Invalid configuration file!\n"
 "Please select a valid configuration file."
@@ -137,20 +143,20 @@ msgstr ""
 "Geçersiz yapılandırma dosyası! \n"
 "Lütfen geçerli bir yapılandırma dosyası seçin."
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:268
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:280
 msgid "OK"
 msgstr "Tamam"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:342
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:353
 msgid "Name the new panel configuration"
 msgstr "Yeni panel yapılandırma adı"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:366
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:377
 #, python-format
 msgid "Backup_%s"
 msgstr "Yedek_%s"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:382
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:393
 msgid ""
 "Do you want to apply this configuration?\n"
 " The current configuration will be lost!"
@@ -158,15 +164,15 @@ msgstr ""
 "Bu yapılandırmayı uygulamak istiyor musunuz? \n"
 " Geçerli yapılandırma kaybolacak!"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:399
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:410
 msgid "Make a backup of the current configuration"
 msgstr "Geçerli yapılandırmanın yedeğini alın"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:410
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:421
 msgid "Errors occured while parsing the current configuration."
 msgstr "Geçerli yapılandırma ayrıştırılırken hatalar oluştu."
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:430
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:441
 msgid ""
 "Do you want to save despite the errors? Some configuration information could"
 " be missing."
