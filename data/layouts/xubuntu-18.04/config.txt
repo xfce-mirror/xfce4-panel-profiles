@@ -16,7 +16,7 @@
 /panels/panel-0/size uint32 24
 /panels/panel-0/span-monitors false
 /plugins/plugin-1 'whiskermenu'
-/plugins/plugin-1/button-icon 'xfce4-panel-menu'
+/plugins/plugin-1/button-icon 'org.xfce.panel.applicationsmenu'
 /plugins/plugin-1/button-title 'Applications'
 /plugins/plugin-1/custom-menu false
 /plugins/plugin-1/show-button-title true

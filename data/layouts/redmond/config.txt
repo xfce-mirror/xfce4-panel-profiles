@@ -17,7 +17,7 @@
 /panels/panel-1/position-locked true
 /panels/panel-1/size uint32 30
 /plugins/plugin-1 'applicationsmenu'
-/plugins/plugin-1/button-icon 'xfce4-panel-menu'
+/plugins/plugin-1/button-icon 'org.xfce.panel.applicationsmenu'
 /plugins/plugin-1/button-title 'Start'
 /plugins/plugin-1/custom-menu false
 /plugins/plugin-1/show-button-title true
