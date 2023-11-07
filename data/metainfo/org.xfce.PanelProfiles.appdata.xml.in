@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
-  <id>xfce4-panel-profiles.desktop</id>
+  <id>org.xfce.PanelProfiles.desktop</id>
   <metadata_license>CC-BY-3.0</metadata_license>
   <project_license>GPL-3.0</project_license>
   <name>Xfce Panel Profiles</name>
-  <_summary>Application to manage different panel layouts in Xfce</_summary>
+  <summary>Application to manage different panel layouts in Xfce</summary>
+  <launchable type="desktop-id">org.xfce.PanelProfiles.desktop</launchable>
 
   <description>
-    <_p>Multitude of panel layouts can be created using Xfce panel.
+    <p>Multitude of panel layouts can be created using Xfce panel.
         This tool enables managing different layouts with little effort.
-        Xfpanel-switch makes it possible to backup, restore, import and export panel layouts.</_p>
+        Xfpanel-switch makes it possible to backup, restore, import and export panel layouts.</p>
   </description>
 
   <screenshots>
@@ -20,15 +21,45 @@
 
   ​<translation type="gettext">xfce4-panel-profiles</translation>
 
-  <url type="homepage">https://git.xfce.org/apps/xfce4-panel-profiles</url>
+  <url type="homepage">https://gitlab.xfce.org/apps/xfce4-panel-profiles</url>
   <url type="bugtracker">https://bugzilla.xfce.org/</url>
+  <url type="contact">https://docs.xfce.org/contribute/dev/start#communication_with_the_xfce_development_team</url>
 
-  <updatecontact>bluesabre@xfce.org</updatecontact>
-
+  <update_contact>bluesabre@xfce.org</update_contact>
   <project_group>XFCE</project_group>
 
   <provides>
     <binary>xfce4-panel-profiles</binary>
   </provides>
+
+  <content_rating type="oars-1.1">
+    <content_attribute id="violence-cartoon">none</content_attribute>
+    <content_attribute id="violence-fantasy">none</content_attribute>
+    <content_attribute id="violence-realistic">none</content_attribute>
+    <content_attribute id="violence-bloodshed">none</content_attribute>
+    <content_attribute id="violence-sexual">none</content_attribute>
+    <content_attribute id="violence-desecration">none</content_attribute>
+    <content_attribute id="violence-slavery">none</content_attribute>
+    <content_attribute id="violence-worship">none</content_attribute>
+    <content_attribute id="drugs-alcohol">none</content_attribute>
+    <content_attribute id="drugs-narcotics">none</content_attribute>
+    <content_attribute id="drugs-tobacco">none</content_attribute>
+    <content_attribute id="sex-nudity">none</content_attribute>
+    <content_attribute id="sex-themes">none</content_attribute>
+    <content_attribute id="sex-homosexuality">none</content_attribute>
+    <content_attribute id="sex-prostitution">none</content_attribute>
+    <content_attribute id="sex-adultery">none</content_attribute>
+    <content_attribute id="sex-appearance">none</content_attribute>
+    <content_attribute id="language-profanity">none</content_attribute>
+    <content_attribute id="language-humor">none</content_attribute>
+    <content_attribute id="language-discrimination">none</content_attribute>
+    <content_attribute id="social-chat">none</content_attribute>
+    <content_attribute id="social-info">none</content_attribute>
+    <content_attribute id="social-audio">none</content_attribute>
+    <content_attribute id="social-location">none</content_attribute>
+    <content_attribute id="social-contacts">none</content_attribute>
+    <content_attribute id="money-purchasing">none</content_attribute>
+    <content_attribute id="money-gambling">none</content_attribute>
+  </content_rating>
 
 </component>
