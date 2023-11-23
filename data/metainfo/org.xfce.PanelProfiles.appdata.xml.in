@@ -1,34 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<component type="desktop">
-  <id>xfce4-panel-profiles.desktop</id>
+<component type="desktop-application">
+  <id>org.xfce.PanelProfiles</id>
   <metadata_license>CC-BY-3.0</metadata_license>
-  <project_license>GPL-3.0</project_license>
+  <project_license>GPL-3.0-or-later</project_license>
   <name>Xfce Panel Profiles</name>
   <_summary>Application to manage different panel layouts in Xfce</_summary>
+  <launchable type="desktop-id">org.xfce.PanelProfiles.desktop</launchable>
 
   <description>
     <_p>Multitude of panel layouts can be created using Xfce panel.
         This tool enables managing different layouts with little effort.
-        Xfpanel-switch makes it possible to backup, restore, import and export panel layouts.</_p>
+        Xfce4-panel-profiles makes it possible to backup, restore, import and export panel layouts.</_p>
   </description>
 
   <screenshots>
     <screenshot type="default">
-      <image width="960" height="540">https://screenshots.bluesabre.org/xfce4-panel-profiles/xfce4-panel-profiles.png</image>
+      <image width="960" height="540">https://docs.xfce.org/_media/apps/xfce4-panel-profiles/xfce4-panel-profiles-window.png</image>
     </screenshot>
   </screenshots>
 
   ​<translation type="gettext">xfce4-panel-profiles</translation>
 
-  <url type="homepage">https://git.xfce.org/apps/xfce4-panel-profiles</url>
-  <url type="bugtracker">https://bugzilla.xfce.org/</url>
+  <url type="homepage">https://docs.xfce.org/apps/xfce4-panel-profiles/start</url>
+  <url type="bugtracker">https://gitlab.xfce.org/apps/xfce4-panel-profiles/</url>
+  <url type="contact">https://docs.xfce.org/contribute/dev/start#communication_with_the_xfce_development_team</url>
 
-  <updatecontact>bluesabre@xfce.org</updatecontact>
-
-  <project_group>XFCE</project_group>
+  <update_contact>xfce4-dev@xfce.org</update_contact>
+  <project_group>Xfce</project_group>
 
   <provides>
     <binary>xfce4-panel-profiles</binary>
   </provides>
+
+  <content_rating type="oars-1.1"/>
 
 </component>
