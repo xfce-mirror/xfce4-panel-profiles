@@ -5,7 +5,7 @@
 # 
 # Translators:
 # Levi Zhou <congzhou821@gmail.com>, 2018
-# Cally Mal <zhouxiaobo.500@gmail.com>, 2018
+# ccoc <zhouxiaobo.500@gmail.com>, 2018
 # Xfce Bot <transifex@xfce.org>, 2023
 # Mingcong Bai <jeffbai@aosc.xyz>, 2023
 # 玉堂白鹤 <yjwork@qq.com>, 2023
@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-28 00:48+0200\n"
+"POT-Creation-Date: 2023-11-24 12:51+0100\n"
 "PO-Revision-Date: 2018-07-13 15:34+0000\n"
 "Last-Translator: 玉堂白鹤 <yjwork@qq.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/xfce/teams/16840/zh_CN/)\n"
@@ -183,8 +183,6 @@ msgstr "使用 App 来管理不同的 Xfce 面板布局"
 #: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:2
 msgid ""
 "Multitude of panel layouts can be created using Xfce panel. This tool "
-"enables managing different layouts with little effort. Xfpanel-switch makes "
-"it possible to backup, restore, import and export panel layouts."
+"enables managing different layouts with little effort. Xfce4-panel-profiles "
+"makes it possible to backup, restore, import and export panel layouts."
 msgstr ""
-"Xfce 面板能创建出多个不同的布局配置。该小工具能使管理这些布局变得更加便捷。Xfpanel-switch "
-"使得备份，还原以及导入导出面板布局皆为可能。"
