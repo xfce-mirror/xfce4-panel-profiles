@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-25 12:49+0200\n"
+"POT-Creation-Date: 2023-11-24 12:51+0100\n"
 "PO-Revision-Date: 2018-07-13 15:34+0000\n"
 "Last-Translator: 1763f4a4329a2376c933c5e919a36cbc_341ca53 <1f851310383599d03339229d772e1290_119292>, 2023\n"
 "Language-Team: Korean (https://app.transifex.com/xfce/teams/16840/ko/)\n"
@@ -34,6 +34,11 @@ msgstr "패널 속성"
 msgid "Backup and restore your panel configuration"
 msgstr "사용자의 패널 설정을 백업하고 복구"
 
+#: ../org.xfce.PanelProfiles.desktop.in.h:3
+msgid ""
+"panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
+msgstr ""
+
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:3
 msgid "Filename"
 msgstr "파일명"
@@ -43,12 +48,12 @@ msgid "Date Modified"
 msgstr "수정된 날짜"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:5
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:392
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:403
 msgid "Apply Configuration"
 msgstr "설정 적용"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:6
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:349
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:360
 msgid "Save Configuration"
 msgstr "설정 저장"
 
@@ -78,9 +83,9 @@ msgstr "다른 이름으로 패널 설정 저장"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:13
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:111
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:348
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:391
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:418
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:359
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:402
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:429
 msgid "Cancel"
 msgstr "취소"
 
@@ -89,7 +94,7 @@ msgid "<b>Name the new panel configuration</b>"
 msgstr "<b>새로운 패널 설정 이름</b>"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:104
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:419
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:430
 msgid "Save"
 msgstr "저장"
 
@@ -109,24 +114,24 @@ msgstr "오늘"
 msgid "Yesterday"
 msgstr "어제"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:201
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:240
 #, python-format
 msgid "%s (Copy of %s)"
 msgstr "%s(%s로 복사)"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:233
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:245
 msgid "Export configuration as..."
 msgstr "다른 이름으로 설정 내보내기"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:234
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:246
 msgid "Untitled"
 msgstr "제목 없음"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:246
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:258
 msgid "Import configuration file..."
 msgstr "다른 이름으로 설정 불러오기"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:260
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:272
 msgid ""
 "Invalid configuration file!\n"
 "Please select a valid configuration file."
@@ -134,20 +139,20 @@ msgstr ""
 "부적절한 설정 파일입니다!\n"
 "올바른 설정 파일을 선택하십시오."
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:268
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:280
 msgid "OK"
 msgstr "확인"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:342
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:353
 msgid "Name the new panel configuration"
 msgstr "새로운 패널 설정 이름"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:366
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:377
 #, python-format
 msgid "Backup_%s"
 msgstr "백업...%s"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:382
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:393
 msgid ""
 "Do you want to apply this configuration?\n"
 " The current configuration will be lost!"
@@ -155,15 +160,15 @@ msgstr ""
 "이 설정을 적용하시렵니까?\n"
 "현재 설정을 잃게 됩니다!"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:399
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:410
 msgid "Make a backup of the current configuration"
 msgstr "현재 설정 백업 만들기"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:410
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:421
 msgid "Errors occured while parsing the current configuration."
 msgstr "현재 설정을 해석하는 중 오류가 나타났습니다"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:430
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:441
 msgid ""
 "Do you want to save despite the errors? Some configuration information could"
 " be missing."
@@ -176,8 +181,6 @@ msgstr "Xfce 의 다양한 패널 레이아웃 관리 프로그램"
 #: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:2
 msgid ""
 "Multitude of panel layouts can be created using Xfce panel. This tool "
-"enables managing different layouts with little effort. Xfpanel-switch makes "
-"it possible to backup, restore, import and export panel layouts."
+"enables managing different layouts with little effort. Xfce4-panel-profiles "
+"makes it possible to backup, restore, import and export panel layouts."
 msgstr ""
-"Xfce 패널을 사용하여 여러 패널 레이아웃을 만들 수 있습니다. 이 도구는 적은 노력으로 다양한 레이아웃을 만들 수 있습니다. "
-"Xfpanel-switch는 패널 레이아웃을 가져오고 내보내고 복구하고 백업할 수 있습니다."
