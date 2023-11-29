@@ -89,7 +89,7 @@ msgstr "Сохранить конфигурацию панели как..."
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:402
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:429
 msgid "Cancel"
-msgstr "Отменить"
+msgstr "Отмена"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:14
 msgid "<b>Name the new panel configuration</b>"
@@ -159,7 +159,7 @@ msgid ""
 "Do you want to apply this configuration?\n"
 " The current configuration will be lost!"
 msgstr ""
-"Вы хотите применить эту конфигурацию?\n"
+"Хотите применить эту конфигурацию?\n"
 " Текущая конфигурация будет потеряна!"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.py:410
@@ -188,3 +188,7 @@ msgid ""
 "enables managing different layouts with little effort. Xfce4-panel-profiles "
 "makes it possible to backup, restore, import and export panel layouts."
 msgstr ""
+"С помощью панели Xfce можно создавать множество макетов панелей. Этот "
+"инструмент позволяет управлять различными макетами без особых усилий. "
+"Xfce4-panel-profiles позволяет создавать резервные копии, восстанавливать, "
+"импортировать и экспортировать макеты панелей."
