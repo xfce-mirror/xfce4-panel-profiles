@@ -57,7 +57,7 @@ class XfcePanelProfiles:
     def __init__(self, from_panel=False):
         '''Initialize the Panel Profiles application.
 
-        If 'from_panel' is set to 'True' the application launches 'xfce4-panel
+        If 'from_panel' is set to 'True' the application launchs 'xfce4-panel
         --preferences' when the user closes this application.
         '''
         # Temporary fix: https://stackoverflow.com/a/44230815
@@ -326,11 +326,7 @@ class XfcePanelProfiles:
         self.on_close_clicked(args)
 
     def on_close_clicked(self, *args):
-        '''
-        Exit the application when the window is closed. Optionally launch
-        'xfce4-panel --preferences' if the application is launched with
-        '--from-profile' option.
-        '''
+        '''Exit the application when the window is closed.'''
         if self.from_panel:
             path = GLib.find_program_in_path('xfce4-panel')
 
