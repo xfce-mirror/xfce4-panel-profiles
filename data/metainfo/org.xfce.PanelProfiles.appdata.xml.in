@@ -4,13 +4,15 @@
   <metadata_license>CC-BY-3.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
   <name>Xfce Panel Profiles</name>
-  <_summary>Application to manage different panel layouts in Xfce</_summary>
+  <summary>Application to manage different panel layouts in Xfce</summary>
   <launchable type="desktop-id">org.xfce.PanelProfiles.desktop</launchable>
 
   <description>
-    <_p>Multitude of panel layouts can be created using Xfce panel.
-        This tool enables managing different layouts with little effort.
-        Xfce4-panel-profiles makes it possible to backup, restore, import and export panel layouts.</_p>
+    <p>
+      Multitude of panel layouts can be created using Xfce panel.
+      This tool enables managing different layouts with little effort.
+      Xfce4-panel-profiles makes it possible to backup, restore, import and export panel layouts.
+    </p>
   </description>
 
   <screenshots>
@@ -19,7 +21,7 @@
     </screenshot>
   </screenshots>
 
-  ​<translation type="gettext">xfce4-panel-profiles</translation>
+  <translation type="gettext">xfce4-panel-profiles</translation>
 
   <url type="homepage">https://docs.xfce.org/apps/xfce4-panel-profiles/start</url>
   <url type="bugtracker">https://gitlab.xfce.org/apps/xfce4-panel-profiles/</url>
