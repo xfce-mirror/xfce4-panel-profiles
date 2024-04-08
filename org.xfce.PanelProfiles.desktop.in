@@ -1,7 +1,7 @@
 [Desktop Entry]
-_Name=Panel Profiles
-_Comment=Backup and restore your panel configuration
-_Keywords=panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;
+Name=Panel Profiles
+Comment=Backup and restore your panel configuration
+Keywords=panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;
 Exec=xfce4-panel-profiles
 Terminal=false
 Type=Application

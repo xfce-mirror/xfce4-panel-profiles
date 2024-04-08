@@ -5,15 +5,14 @@ MANDIR=@mandir@
 DOCDIR=@docdir@
 PYTHON=`which @python@`
 LANGUAGE_FILES=$(patsubst po/%.po, locale/%/LC_MESSAGES/$(APPNAME).mo, $(wildcard po/*.po))
+DESKTOP_FILE = org.xfce.PanelProfiles.desktop
+METAINFO_NAME = org.xfce.PanelProfiles.appdata.xml
+METAINFO_FILE = data/metainfo/$(METAINFO_NAME)
 DESTDIR=
 
 GIT_BRANCH := $(shell git branch --show-current)
 
 all: $(LANGUAGE_FILES) layouts
-	intltool-merge -d po org.xfce.PanelProfiles.desktop.in org.xfce.PanelProfiles.desktop
-	intltool-merge -x po data/metainfo/org.xfce.PanelProfiles.appdata.xml.in \
-		data/metainfo/org.xfce.PanelProfiles.appdata.xml
-	chmod +x org.xfce.PanelProfiles.desktop
 	sed -e s,%prefix%,$(PREFIX), bin/$(APPNAME).in.in > bin/$(APPNAME).in
 	sed -e s,%python%,$(PYTHON), bin/$(APPNAME).in > bin/$(APPNAME)
 
@@ -22,12 +21,21 @@ all: $(LANGUAGE_FILES) layouts
 
 	chmod +x bin/$(APPNAME)
 
+all: $(DESKTOP_FILE)
+$(DESKTOP_FILE): $(DESKTOP_FILE).in
+	msgfmt --desktop --template $< -d po -o $@
+	chmod +x org.xfce.PanelProfiles.desktop
+
+all: $(METAINFO_FILE)
+$(METAINFO_FILE): $(METAINFO_FILE).in
+	msgfmt --xml --template $< -d po -o $@
+
 locale/%/LC_MESSAGES/$(APPNAME).mo: po/%.po
 	mkdir -p $(dir $@)
 	msgfmt $< -o $@
 
 pot:
-	cd po; intltool-update --pot --gettext-package=xfce4-panel-profiles
+	$(MAKE) -C po xfce4-panel-profiles.pot
 
 ifeq ($(shell tar --help|grep -o sort=),sort=)
   TAROPTS := --sort=name --format ustar
