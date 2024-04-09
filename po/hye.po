@@ -1,20 +1,20 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR Xfce
+# This file is distributed under the same license as the xfce-apps.xfce4-panel-profiles package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # Arman Harutyunyan <arman.harut468@gmail.com>, 2020
-# Real School <localization@ehayq.am>, 2023
+# Real School <localization@ehayq.am>, 2024
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: https://gitlab.xfce.org/apps/xfce4-panel-profiles\n"
-"POT-Creation-Date: 2024-04-09 00:50+0200\n"
+"Project-Id-Version: xfce-apps.xfce4-panel-profiles\n"
+"Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
+"POT-Creation-Date: 2024-04-09 12:49+0200\n"
 "PO-Revision-Date: 2018-07-13 15:34+0000\n"
-"Last-Translator: Real School <localization@ehayq.am>, 2023\n"
+"Last-Translator: Real School <localization@ehayq.am>, 2024\n"
 "Language-Team: Eastern Armenian (https://app.transifex.com/xfce/teams/16840/hye/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,141 +22,173 @@ msgstr ""
 "Language: hye\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:1
+#: org.xfce.PanelProfiles.desktop.in:3
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:18
 msgid "Panel Profiles"
 msgstr "Ընտրացանկի հաշիւ"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:2
+#: org.xfce.PanelProfiles.desktop.in:4
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:23
 msgid "Backup and restore your panel configuration"
 msgstr "Պահել եւ վերականգնել Ձեր ընտրացանկի կազմաձեւումը"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:3
+#: org.xfce.PanelProfiles.desktop.in:5
+msgid ""
+"panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
+msgstr ""
+
+#: org.xfce.PanelProfiles.desktop.in:12
+msgid "Configuration;User;"
+msgstr ""
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:68
 msgid "Filename"
 msgstr "Նշանուն"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:4
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:84
 msgid "Date Modified"
 msgstr "Ամսաթիւը փոփոխուած է"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:5
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:387
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:107
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:108
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:387
 msgid "Apply Configuration"
 msgstr "Կիրառել դասաւորութիւնը"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:6
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:344
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:122
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:123
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:278
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:344
 msgid "Save Configuration"
 msgstr "Պահել դասաւորութիւնը"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:7
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:137
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:138
 msgid "Remove Configuration"
 msgstr "Հեռացնել դասաւորութիւնը"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:8
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:152
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:153
 msgid "Export"
 msgstr "Արտածել"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:9
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:167
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:168
 msgid "Import"
 msgstr "Ներածել"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:10
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:195
 msgid "_Help"
 msgstr "_Աջակցութիւն"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:11
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:210
 msgid "_Close"
 msgstr "_Փակել"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:12
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:244
 msgid "Save panel configuration as..."
 msgstr "Պահել ընտրացանկի դասաւորութիւնը որպէս․․․"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:13
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:105
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:343
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:386
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:413
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:264
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:105
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:343
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:386
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:413
 msgid "Cancel"
 msgstr "Չեղարկել"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:14
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:324
 msgid "<b>Name the new panel configuration</b>"
 msgstr "<b>Անուանեք նոր ընտրացանկի կազմաձեւումը</b>"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:98
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:414
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:98
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:414
 msgid "Save"
 msgstr "Պահել"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:100
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:100
 msgid "Open"
 msgstr "Բացել"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:150
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:150
 msgid "Current Configuration"
 msgstr "Ընթացիկ դասաւորութիւնը"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:168
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:168
 msgid "Today"
 msgstr "Այսաւր"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:170
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:170
 msgid "Yesterday"
 msgstr "Երեկ"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:234
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:234
 #, python-format
 msgid "%s (Copy of %s)"
 msgstr "%s (Պատճէնել %s֊ից)"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:239
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:239
 msgid "Export configuration as..."
 msgstr "Ատրածել դասաւորութիւնը որպէս․․․"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:240
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:240
 msgid "Untitled"
 msgstr "Անանուն"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:252
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:252
 msgid "Import configuration file..."
 msgstr "Ներածել դասաւորութեան նիշ․․․"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:266
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:266
 msgid ""
 "Invalid configuration file!\n"
 "Please select a valid configuration file."
 msgstr ""
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:274
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:274
 msgid "OK"
 msgstr "OK"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:337
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:337
 msgid "Name the new panel configuration"
 msgstr "Անուանեք նոր ընտրացանկի կազմաձեւումը"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:361
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:361
 #, python-format
 msgid "Backup_%s"
 msgstr "Պահուստ_%s"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:377
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:377
 msgid ""
 "Do you want to apply this configuration?\n"
 " The current configuration will be lost!"
 msgstr ""
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:394
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:394
 msgid "Make a backup of the current configuration"
 msgstr ""
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:405
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:405
 msgid "Errors occured while parsing the current configuration."
 msgstr ""
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:425
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:425
 msgid ""
 "Do you want to save despite the errors? Some configuration information could"
 " be missing."
+msgstr ""
+
+#: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:6
+msgid "Xfce Panel Profiles"
+msgstr ""
+
+#: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:7
+msgid "Application to manage different panel layouts in Xfce"
+msgstr "Յաւելուած Xfce֊ում տարբեր ընտրացանկերի շարակարգերը կառավարելու համար։"
+
+#: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:11
+msgid ""
+"Multitude of panel layouts can be created using Xfce panel. This tool "
+"enables managing different layouts with little effort. Xfce4-panel-profiles "
+"makes it possible to backup, restore, import and export panel layouts."
 msgstr ""
