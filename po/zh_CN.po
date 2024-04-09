@@ -5,19 +5,19 @@
 # 
 # Translators:
 # Levi Zhou <congzhou821@gmail.com>, 2018
-# ccoc <zhouxiaobo.500@gmail.com>, 2018
+# Cally Mal <zhouxiaobo.500@gmail.com>, 2018
+# 玉堂白鹤 <yjwork@qq.com>, 2023
 # Xfce Bot <transifex@xfce.org>, 2023
 # Mingcong Bai <jeffbai@aosc.xyz>, 2023
-# 玉堂白鹤 <yjwork@qq.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-24 12:51+0100\n"
+"Report-Msgid-Bugs-To: https://gitlab.xfce.org/apps/xfce4-panel-profiles\n"
+"POT-Creation-Date: 2024-04-09 00:50+0200\n"
 "PO-Revision-Date: 2018-07-13 15:34+0000\n"
-"Last-Translator: 玉堂白鹤 <yjwork@qq.com>, 2023\n"
+"Last-Translator: Mingcong Bai <jeffbai@aosc.xyz>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/xfce/teams/16840/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,21 +25,13 @@ msgstr ""
 "Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../org.xfce.PanelProfiles.desktop.in.h:1
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:1
 msgid "Panel Profiles"
 msgstr "面板配置文件"
 
-#: ../org.xfce.PanelProfiles.desktop.in.h:2
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:2
 msgid "Backup and restore your panel configuration"
 msgstr "备份并还原您的面板配置文件"
-
-#: ../org.xfce.PanelProfiles.desktop.in.h:3
-msgid ""
-"panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
-msgstr ""
-"panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;面板;任务栏;布局;切换;应用;恢复;保存;备份;移除;导入;导出;"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:3
 msgid "Filename"
@@ -50,12 +42,12 @@ msgid "Date Modified"
 msgstr "修改日期"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:5
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:403
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:387
 msgid "Apply Configuration"
 msgstr "应用配置"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:6
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:360
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:344
 msgid "Save Configuration"
 msgstr "保存配置"
 
@@ -84,10 +76,10 @@ msgid "Save panel configuration as..."
 msgstr "将配置文件另存为 ..."
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:13
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:111
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:359
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:402
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:429
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:105
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:343
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:386
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:413
 msgid "Cancel"
 msgstr "取消"
 
@@ -95,45 +87,45 @@ msgstr "取消"
 msgid "<b>Name the new panel configuration</b>"
 msgstr "<b>对新面板的配置文件进行命名</b>"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:104
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:430
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:98
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:414
 msgid "Save"
 msgstr "保存"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:106
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:100
 msgid "Open"
 msgstr "打开"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:156
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:150
 msgid "Current Configuration"
 msgstr "当前配置"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:174
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:168
 msgid "Today"
 msgstr "今天"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:176
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:170
 msgid "Yesterday"
 msgstr "昨天"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:240
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:234
 #, python-format
 msgid "%s (Copy of %s)"
 msgstr "%s (复制了 %s)"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:245
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:239
 msgid "Export configuration as..."
 msgstr "将配置文件导出为 ..."
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:246
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:240
 msgid "Untitled"
 msgstr "无标题"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:258
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:252
 msgid "Import configuration file..."
 msgstr "导入配置文件中..."
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:272
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:266
 msgid ""
 "Invalid configuration file!\n"
 "Please select a valid configuration file."
@@ -141,20 +133,20 @@ msgstr ""
 "无效配置文件！\n"
 "请选择有效的配置文件。"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:280
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:274
 msgid "OK"
 msgstr "确定"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:353
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:337
 msgid "Name the new panel configuration"
 msgstr "对新面板配置进行命名"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:377
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:361
 #, python-format
 msgid "Backup_%s"
 msgstr "备份 %s (_B)"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:393
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:377
 msgid ""
 "Do you want to apply this configuration?\n"
 " The current configuration will be lost!"
@@ -162,29 +154,16 @@ msgstr ""
 "是否要应用此配置？\n"
 "当前配置将丢失！"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:410
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:394
 msgid "Make a backup of the current configuration"
 msgstr "备份当前配置"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:421
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:405
 msgid "Errors occured while parsing the current configuration."
 msgstr "分析当前配置时出错。"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:441
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:425
 msgid ""
 "Do you want to save despite the errors? Some configuration information could"
 " be missing."
 msgstr "尽管有错误，您仍要保存吗？可能会丢失部分配置信息。"
-
-#: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:1
-msgid "Application to manage different panel layouts in Xfce"
-msgstr "使用 App 来管理不同的 Xfce 面板布局"
-
-#: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:2
-msgid ""
-"Multitude of panel layouts can be created using Xfce panel. This tool "
-"enables managing different layouts with little effort. Xfce4-panel-profiles "
-"makes it possible to backup, restore, import and export panel layouts."
-msgstr ""
-"Xfce 面板能创建出多个不同的布局配置。该小工具能使管理这些布局变得更加便捷。Xfce4-panel-profiles "
-"使得备份，还原以及导入导出面板布局皆为可能。"
