@@ -4,7 +4,6 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Panagiotis Mantzios <pmantzios@hotmail.com>, 2018
 # Ioannis LM, 2023
 # Xfce Bot <transifex@xfce.org>, 2023
 # Ápo. <apostolos.papadimitriu@gmail.com>, 2024
@@ -13,8 +12,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-24 12:51+0100\n"
+"Report-Msgid-Bugs-To: https://gitlab.xfce.org/apps/xfce4-panel-profiles\n"
+"POT-Creation-Date: 2024-04-09 00:50+0200\n"
 "PO-Revision-Date: 2018-07-13 15:34+0000\n"
 "Last-Translator: Ápo. <apostolos.papadimitriu@gmail.com>, 2024\n"
 "Language-Team: Greek (https://app.transifex.com/xfce/teams/16840/el/)\n"
@@ -24,20 +23,13 @@ msgstr ""
 "Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../org.xfce.PanelProfiles.desktop.in.h:1
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:1
 msgid "Panel Profiles"
 msgstr "Προφίλ Ταμπλό"
 
-#: ../org.xfce.PanelProfiles.desktop.in.h:2
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:2
 msgid "Backup and restore your panel configuration"
 msgstr "Δημιουργία αντιγράφων και επαναφορά ρυθμίσεων των ταμπλό"
-
-#: ../org.xfce.PanelProfiles.desktop.in.h:3
-msgid ""
-"panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
-msgstr ""
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:3
 msgid "Filename"
@@ -48,12 +40,12 @@ msgid "Date Modified"
 msgstr "Ημερομηνία Τροποποίησης"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:5
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:403
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:387
 msgid "Apply Configuration"
 msgstr "Εφαρμογή Ρύθμισης"
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:6
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:360
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:344
 msgid "Save Configuration"
 msgstr "Αποθήκευση Ρύθμισης"
 
@@ -82,10 +74,10 @@ msgid "Save panel configuration as..."
 msgstr "Αποθήκευση  ρύθμισης ταμπλό ως..."
 
 #: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:13
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:111
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:359
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:402
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:429
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:105
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:343
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:386
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:413
 msgid "Cancel"
 msgstr "Aκύρωση"
 
@@ -93,45 +85,45 @@ msgstr "Aκύρωση"
 msgid "<b>Name the new panel configuration</b>"
 msgstr "<b>Ονομάστε τη νέα ρύθμιση ταμπλό</b>"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:104
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:430
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:98
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:414
 msgid "Save"
 msgstr "Αποθήκευση"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:106
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:100
 msgid "Open"
 msgstr "Άνοιγμα"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:156
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:150
 msgid "Current Configuration"
 msgstr "Τρέχουσα Ρύθμιση"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:174
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:168
 msgid "Today"
 msgstr "Σήμερα"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:176
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:170
 msgid "Yesterday"
 msgstr "Χθες"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:240
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:234
 #, python-format
 msgid "%s (Copy of %s)"
 msgstr "%s (Αντίγραφο του %s)"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:245
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:239
 msgid "Export configuration as..."
 msgstr "Εξαγωγή ρύθμισης ως..."
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:246
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:240
 msgid "Untitled"
 msgstr "Χωρίς τίτλο"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:258
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:252
 msgid "Import configuration file..."
 msgstr "Εισαγωγή αρχείου ρύθμισης"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:272
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:266
 msgid ""
 "Invalid configuration file!\n"
 "Please select a valid configuration file."
@@ -139,46 +131,35 @@ msgstr ""
 "Μη έγκυρο αρχείο ρυθμίσεων!\n"
 "Παρακαλώ επιλέξτε έγκυρο αρχείο ρυθμίσεων."
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:280
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:274
 msgid "OK"
 msgstr "Εντάξει"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:353
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:337
 msgid "Name the new panel configuration"
 msgstr "Ονομάστε τη νέα ρύθμιση ταμπλό"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:377
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:361
 #, python-format
 msgid "Backup_%s"
 msgstr "Αντίγραφο_%s"
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:393
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:377
 msgid ""
 "Do you want to apply this configuration?\n"
 " The current configuration will be lost!"
 msgstr ""
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:410
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:394
 msgid "Make a backup of the current configuration"
 msgstr "Δημιουργία αντιγράφου ασφαλείας του αρχείου ρυθμίσεων."
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:421
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:405
 msgid "Errors occured while parsing the current configuration."
 msgstr ""
 
-#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:441
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:425
 msgid ""
 "Do you want to save despite the errors? Some configuration information could"
 " be missing."
-msgstr ""
-
-#: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:1
-msgid "Application to manage different panel layouts in Xfce"
-msgstr "Εφαρμογή για τη διαχείριση διαφορετικών σχεδιαγραμμάτων σε Xfce"
-
-#: ../data/metainfo/org.xfce.PanelProfiles.appdata.xml.in.h:2
-msgid ""
-"Multitude of panel layouts can be created using Xfce panel. This tool "
-"enables managing different layouts with little effort. Xfce4-panel-profiles "
-"makes it possible to backup, restore, import and export panel layouts."
 msgstr ""
