@@ -40,7 +40,7 @@ msgstr ""
 
 #: org.xfce.PanelProfiles.desktop.in:12
 msgid "Configuration;User;"
-msgstr ""
+msgstr "Подешавање;Корисник;"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:68
 msgid "Filename"
@@ -187,7 +187,7 @@ msgstr ""
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:6
 msgid "Xfce Panel Profiles"
-msgstr ""
+msgstr "Пресеци полице Иксфцеа"
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:7
 msgid "Application to manage different panel layouts in Xfce"
