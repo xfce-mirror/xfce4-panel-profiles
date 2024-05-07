@@ -20,11 +20,12 @@ import tarfile
 
 from locale import gettext as _
 
-import shlex
 import os
 import datetime
 
 import warnings
+import argparse
+import textwrap
 
 import gi
 gi.require_version('Gtk', '3.0')
@@ -454,27 +455,37 @@ if __name__ == "__main__":
         interface,
         cancellable)
 
-    if len(sys.argv) > 1:
-        if sys.argv[1] in ['save', 'load']:
-            try:
-                if sys.argv[1] == 'save':
-                    PanelConfig.from_xfconf(xfconf).to_file(sys.argv[2])
-                elif sys.argv[1] == 'load':
-                    PanelConfig.from_file(sys.argv[2]).to_xfconf(xfconf)
-            except Exception as e:
-                print(repr(e))
-                exit(1)
+    parser = argparse.ArgumentParser(
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        description=textwrap.dedent(f"""\
+            Xfce Panel Profiles {info.version}
+
+            usage:
+              {info.appname}                  load graphical user interface
+              {info.appname} save <filename>  save current configuration
+              {info.appname} load <filename>  load configuration from file
+        """),
+        usage=argparse.SUPPRESS
+    )
+    parser.add_argument('--version', action='version', version=f"{info.appname} {info.version}")
+    subparsers = parser.add_subparsers(dest='subcommand', help=argparse.SUPPRESS)
+    save_parser = subparsers.add_parser('save')
+    save_parser.add_argument('filename', help='filename to save configuration')
+    load_parser = subparsers.add_parser('load')
+    load_parser.add_argument('filename', help='filename to load configuration')
+
+    args = parser.parse_args()
+
+    try:
+        if args.subcommand == 'save':
+            PanelConfig.from_xfconf(xfconf).to_file(args.filename)
             exit(0)
-        elif sys.argv[1] == '--version':
-            print(info.appname + ' ' + info.version)
+        elif args.subcommand == 'load':
+            PanelConfig.from_file(args.filename).to_xfconf(xfconf)
             exit(0)
-        else:
-            print('Xfce Panel Profiles - Usage:')
-            print(info.appname + ' : load graphical user interface.')
-            print(info.appname + ' save <filename> : save current configuration.')
-            print(info.appname + ' load <filename> : load configuration from file.')
-            print('')
-            exit(-1)
+    except Exception as e:
+        print(f"Error processing '{args.filename}': {repr(e)}")
+        exit(1)
 
     main = XfcePanelProfiles()
 
