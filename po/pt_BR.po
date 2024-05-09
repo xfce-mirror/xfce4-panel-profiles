@@ -6,9 +6,8 @@
 # Translators:
 # Xfce Bot <transifex@xfce.org>, 2023
 # Andre Miranda <andre@andreldm.com>, 2023
-# Michael Martins <michaelfm21@gmail.com>, 2024
 # The Cat, 2024
-# Marcelo Tobias <marcelo.tobbias@gmail.com>, 2024
+# Michael Martins <michaelfm21@gmail.com>, 2024
 # 
 #, fuzzy
 msgid ""
@@ -17,7 +16,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
 "POT-Creation-Date: 2024-04-09 12:49+0200\n"
 "PO-Revision-Date: 2018-07-13 15:34+0000\n"
-"Last-Translator: Marcelo Tobias <marcelo.tobbias@gmail.com>, 2024\n"
+"Last-Translator: Michael Martins <michaelfm21@gmail.com>, 2024\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/xfce/teams/16840/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -44,7 +43,7 @@ msgstr ""
 
 #: org.xfce.PanelProfiles.desktop.in:12
 msgid "Configuration;User;"
-msgstr ""
+msgstr "Configuração;Usuário;"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:68
 msgid "Filename"
@@ -191,11 +190,11 @@ msgstr ""
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:6
 msgid "Xfce Panel Profiles"
-msgstr ""
+msgstr "Perfis de Painel Xfce"
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:7
 msgid "Application to manage different panel layouts in Xfce"
-msgstr "Aplicação para gerenciar diferentes layoutes no painel do Xfce"
+msgstr "Aplicação para gerenciar diferentes layouts de painel no Xfce"
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:11
 msgid ""
