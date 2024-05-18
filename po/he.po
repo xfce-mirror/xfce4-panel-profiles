@@ -40,7 +40,7 @@ msgstr ""
 
 #: org.xfce.PanelProfiles.desktop.in:12
 msgid "Configuration;User;"
-msgstr ""
+msgstr "Configuration;User;"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:68
 msgid "Filename"
@@ -186,7 +186,7 @@ msgstr ""
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:6
 msgid "Xfce Panel Profiles"
-msgstr ""
+msgstr "פרופילי לוח Xfce "
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:7
 msgid "Application to manage different panel layouts in Xfce"
@@ -198,3 +198,6 @@ msgid ""
 "enables managing different layouts with little effort. Xfce4-panel-profiles "
 "makes it possible to backup, restore, import and export panel layouts."
 msgstr ""
+"מבחר סידורי לוח ניתנים ליצירה עם לוח Xfce. כלי זה מאפשר ניהול של סידורים "
+"שונים במאמץ מועט. Xfce4-panel-profiles מאפשר לגבות, לשחזר, לייבא ולייצא "
+"סידורי לוח."
