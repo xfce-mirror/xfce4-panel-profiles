@@ -36,10 +36,12 @@ msgstr "Панель баптауларын қорға көшіру және қ�
 msgid ""
 "panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
 msgstr ""
+"panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;панель;тапсырмалар;жайма;ауыстыру;іске"
+" асыру;қалпына келтіру;сақтау;қор көшірме;өшіру;импорт;экспорт;"
 
 #: org.xfce.PanelProfiles.desktop.in:12
 msgid "Configuration;User;"
-msgstr ""
+msgstr "Баптаулар;Пайдаланушы;"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:68
 msgid "Filename"
