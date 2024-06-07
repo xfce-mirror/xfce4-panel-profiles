@@ -146,6 +146,8 @@ msgid ""
 "Invalid configuration file!\n"
 "Please select a valid configuration file."
 msgstr ""
+"Конфигурация файлы жарамсыз!\n"
+"Жарамды конфигурация файлын таңдаңыз."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:274
 msgid "OK"
@@ -182,7 +184,7 @@ msgstr ""
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:6
 msgid "Xfce Panel Profiles"
-msgstr ""
+msgstr "Xfce панель профильдері"
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:7
 msgid "Application to manage different panel layouts in Xfce"
