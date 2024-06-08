@@ -167,20 +167,24 @@ msgid ""
 "Do you want to apply this configuration?\n"
 " The current configuration will be lost!"
 msgstr ""
+"Бұл конфигурацияны іске асырғыңыз келе ме?\n"
+" Ағымдағы конфигурация жоғалатын болады!"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:394
 msgid "Make a backup of the current configuration"
-msgstr ""
+msgstr "Ағымдағы конфигурацияның қор көшірмесін жасау"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:405
 msgid "Errors occured while parsing the current configuration."
-msgstr ""
+msgstr "Ағымдағы конфигурацияны талдау кезінде қате орын алды."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:425
 msgid ""
 "Do you want to save despite the errors? Some configuration information could"
 " be missing."
 msgstr ""
+"Қателерге қарамай сақтауды қалайсыз ба? Конфигурацияның кейбір ақпараты жоқ "
+"болуы мүмкін."
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:6
 msgid "Xfce Panel Profiles"
@@ -197,3 +201,7 @@ msgid ""
 "enables managing different layouts with little effort. Xfce4-panel-profiles "
 "makes it possible to backup, restore, import and export panel layouts."
 msgstr ""
+"Xfce панелі көмегімен көптеген панель жаймаларын жасауға болады. Бұл құрал "
+"әр түрлі жаймаларды оңай басқаруға мүмкіндік береді. Xfce4-panel-profiles "
+"көмегімен панель жаймаларының қор көшірмесін жасау, қалпына келтіру, "
+"импорттау және экспорттауға болады."
