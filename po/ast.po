@@ -1,0 +1,206 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Xfce
+# This file is distributed under the same license as the xfce-apps.xfce4-panel-profiles package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Xfce Bot <transifex@xfce.org>, 2023
+# enolp <enolp@softastur.org>, 2023
+# Ḥavi Margallo, 2024
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xfce-apps.xfce4-panel-profiles\n"
+"Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
+"POT-Creation-Date: 2024-04-09 12:49+0200\n"
+"PO-Revision-Date: 2018-07-13 15:34+0000\n"
+"Last-Translator: Ḥavi Margallo, 2024\n"
+"Language-Team: Asturian (https://app.transifex.com/xfce/teams/16840/ast/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ast\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: org.xfce.PanelProfiles.desktop.in:3
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:18
+msgid "Panel Profiles"
+msgstr "Pefiles de panel"
+
+#: org.xfce.PanelProfiles.desktop.in:4
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:23
+msgid "Backup and restore your panel configuration"
+msgstr "Respaldar ya restaurar los tos axustes de panel"
+
+#: org.xfce.PanelProfiles.desktop.in:5
+msgid ""
+"panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
+msgstr ""
+"panel;barra de "
+"tarees;diseñu;alternar;restaurar;guardar;respaldu;desaniciar;importar;esportar;"
+
+#: org.xfce.PanelProfiles.desktop.in:12
+msgid "Configuration;User;"
+msgstr "Axustes;Usuariu;"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:68
+msgid "Filename"
+msgstr "Nome de ficheru"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:84
+msgid "Date Modified"
+msgstr "Data de modificación"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:107
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:108
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:387
+msgid "Apply Configuration"
+msgstr "Aplicar axustes"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:122
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:123
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:278
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:344
+msgid "Save Configuration"
+msgstr "Guardar axustes"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:137
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:138
+msgid "Remove Configuration"
+msgstr "Desaniciar axustes"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:152
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:153
+msgid "Export"
+msgstr "Esportar"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:167
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:168
+msgid "Import"
+msgstr "Importar"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:195
+msgid "_Help"
+msgstr "A_yuda"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:210
+msgid "_Close"
+msgstr "_Zarrar"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:244
+msgid "Save panel configuration as..."
+msgstr "Guardar axustes de panel comu..."
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:264
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:105
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:343
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:386
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:413
+msgid "Cancel"
+msgstr "Encaboxar"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:324
+msgid "<b>Name the new panel configuration</b>"
+msgstr "<b>Da-y un nome a la configuración del nueu panel</b>"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:98
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:414
+msgid "Save"
+msgstr "Guardar"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:100
+msgid "Open"
+msgstr "Abrir"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:150
+msgid "Current Configuration"
+msgstr "Configuración actual"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:168
+msgid "Today"
+msgstr "Güei"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:170
+msgid "Yesterday"
+msgstr "Ayeri"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:234
+#, python-format
+msgid "%s (Copy of %s)"
+msgstr "%s (copia de %s)"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:239
+msgid "Export configuration as..."
+msgstr "Esportar configuración comu..."
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:240
+msgid "Untitled"
+msgstr "Ensin títulu"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:252
+msgid "Import configuration file..."
+msgstr "Importar ficheru de configuración..."
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:266
+msgid ""
+"Invalid configuration file!\n"
+"Please select a valid configuration file."
+msgstr ""
+"¡Archivu de configuración non válidu!\n"
+"Por favor, escueyi un ficheru válidu."
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:274
+msgid "OK"
+msgstr "OK"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:337
+msgid "Name the new panel configuration"
+msgstr "Pon-y nome al nueu panel de configuración"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:361
+#, python-format
+msgid "Backup_%s"
+msgstr "Facer respaldu de %s"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:377
+msgid ""
+"Do you want to apply this configuration?\n"
+" The current configuration will be lost!"
+msgstr ""
+"¿Quies afitar estos axustes?\n"
+"¡La configuración d'anguañu desaniciarase!"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:394
+msgid "Make a backup of the current configuration"
+msgstr "Facer un respaldu de los axustes d'anguañu"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:405
+msgid "Errors occured while parsing the current configuration."
+msgstr "Hebu dellos erros al facer l'analís de la configuración d'anguañu."
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:425
+msgid ""
+"Do you want to save despite the errors? Some configuration information could"
+" be missing."
+msgstr ""
+"¿Quies guardar anque haya fallos? Podría baraxase dalguna información de "
+"configuración."
+
+#: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:6
+msgid "Xfce Panel Profiles"
+msgstr "Perfiles de panel Xfce"
+
+#: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:7
+msgid "Application to manage different panel layouts in Xfce"
+msgstr "Aplicación pa xestionar l'aspeutu de los paneles en Xfce"
+
+#: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:11
+msgid ""
+"Multitude of panel layouts can be created using Xfce panel. This tool "
+"enables managing different layouts with little effort. Xfce4-panel-profiles "
+"makes it possible to backup, restore, import and export panel layouts."
+msgstr ""
+"Col panel de Xfce pueden facese diseños de panel a esgaya ya ensin munchu "
+"esfuerciu. Xfce4-panel-profiles fae posible el respaldar, el restaurar, "
+"l'importar ya l'esportar los diseños de panel."
