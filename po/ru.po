@@ -37,9 +37,9 @@ msgstr "Сохранение и восстановление настроек п
 
 #: org.xfce.PanelProfiles.desktop.in:5
 msgid ""
-"panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
+"panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;Configuration;User;"
 msgstr ""
-"panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
+"panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;Configuration;User;Настройки;Пользователь;"
 
 #: org.xfce.PanelProfiles.desktop.in:12
 msgid "Configuration;User;"

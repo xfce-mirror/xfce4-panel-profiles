@@ -34,9 +34,9 @@ msgstr "Прави умножак поставки полице за чувањ�
 
 #: org.xfce.PanelProfiles.desktop.in:5
 msgid ""
-"panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
+"panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;Configuration;User;"
 msgstr ""
-"полица;распоред;прекидач;примени;поврати;сачувај;резерва;уклони;увези;извези;панел;трака;"
+"полица;распоред;прекидач;примени;поврати;сачувај;резерва;уклони;увези;извези;панел;трака;Подешавање;Корисник;"
 
 #: org.xfce.PanelProfiles.desktop.in:12
 msgid "Configuration;User;"

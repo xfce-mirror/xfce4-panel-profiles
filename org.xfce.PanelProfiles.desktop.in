@@ -1,12 +1,11 @@
 [Desktop Entry]
 Name=Panel Profiles
 Comment=Backup and restore your panel configuration
-Keywords=panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;
+Keywords=panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;Configuration;User;
 Exec=xfce4-panel-profiles
 Terminal=false
 Type=Application
 StartupNotify=true
 Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings;
 OnlyShowIn=XFCE;
-Keywords=Configuration;User;
 Icon=org.xfce.PanelProfiles

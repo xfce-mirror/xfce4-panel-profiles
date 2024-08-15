@@ -38,9 +38,9 @@ msgstr "备份并还原您的面板配置文件"
 
 #: org.xfce.PanelProfiles.desktop.in:5
 msgid ""
-"panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
+"panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;Configuration;User;"
 msgstr ""
-"panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;面板;任务栏;布局;切换;应用;恢复;保存;备份;移除;导入;导出;"
+"panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;面板;任务栏;布局;切换;应用;恢复;保存;备份;移除;导入;导出;配置;用户;"
 
 #: org.xfce.PanelProfiles.desktop.in:12
 msgid "Configuration;User;"

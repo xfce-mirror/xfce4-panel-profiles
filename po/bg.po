@@ -35,10 +35,10 @@ msgstr "Съхраняване и възстановяване на вашите
 
 #: org.xfce.PanelProfiles.desktop.in:5
 msgid ""
-"panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
+"panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;Configuration;User;"
 msgstr ""
 "панел;лента на задачи;подредба;прилагане;възстановяване;запазване;резервно "
-"копие;премахване;внасяне;изнасяне;"
+"копие;премахване;внасяне;изнасяне;Конфигурация;Потребител;"
 
 #: org.xfce.PanelProfiles.desktop.in:12
 msgid "Configuration;User;"

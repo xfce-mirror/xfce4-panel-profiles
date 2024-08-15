@@ -37,9 +37,9 @@ msgstr "Reservekopier og gjenopprett paneloppsettet ditt"
 
 #: org.xfce.PanelProfiles.desktop.in:5
 msgid ""
-"panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
+"panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;Configuration;User;"
 msgstr ""
-"panel;oppgavelinje;utforming;layout;bytte;bytt;ta;i;bruk;gjenopprett;lagre;reservekopi;fjern;import;eksport;importer;eksporter;"
+"panel;oppgavelinje;utforming;layout;bytte;bytt;ta;i;bruk;gjenopprett;lagre;reservekopi;fjern;import;eksport;importer;eksporter;Konfigurasjoner;bruker;"
 
 #: org.xfce.PanelProfiles.desktop.in:12
 msgid "Configuration;User;"

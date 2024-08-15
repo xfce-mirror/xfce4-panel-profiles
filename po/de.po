@@ -36,9 +36,9 @@ msgstr "Ihre Leistenkonfiguration sichern und wiederherstellen"
 
 #: org.xfce.PanelProfiles.desktop.in:5
 msgid ""
-"panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
+"panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;Configuration;User;"
 msgstr ""
-"Panel;Taskleiste;Layout;Schalter;Anwenden;Wiederherstellen;Speichern;Backup;Entfernen;Importieren;Exportieren;"
+"Panel;Taskleiste;Layout;Schalter;Anwenden;Wiederherstellen;Speichern;Backup;Entfernen;Importieren;Exportieren;Konfiguration;Benutzer;"
 
 #: org.xfce.PanelProfiles.desktop.in:12
 msgid "Configuration;User;"

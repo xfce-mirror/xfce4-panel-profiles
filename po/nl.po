@@ -34,9 +34,9 @@ msgstr "Maak een reservekopie van uw werkbalkinstellingen en herstel ze"
 
 #: org.xfce.PanelProfiles.desktop.in:5
 msgid ""
-"panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
+"panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;Configuration;User;"
 msgstr ""
-"werkbalk;taakbalk;vormgeving;wisselen;toepassen;terugzetten;opslaan;reservekopie;verwijderen;importeren;exporteren;"
+"werkbalk;taakbalk;vormgeving;wisselen;toepassen;terugzetten;opslaan;reservekopie;verwijderen;importeren;exporteren;Configuratie;Gebruiker;"
 
 #: org.xfce.PanelProfiles.desktop.in:12
 msgid "Configuration;User;"

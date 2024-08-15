@@ -39,10 +39,10 @@ msgstr "Sauvegarde et restaure votre configuration du tableau de bord"
 
 #: org.xfce.PanelProfiles.desktop.in:5
 msgid ""
-"panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
+"panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;Configuration;User;"
 msgstr ""
 "tableau de bord;barre des "
-"tâches;disposition;commutateur;appliquer;restaurer;enregistrer;sauvegarder;supprimer;importer;exporter;"
+"tâches;disposition;commutateur;appliquer;restaurer;enregistrer;sauvegarder;supprimer;importer;exporter;Configuration;User;utilisateur;utilisatrice;"
 
 #: org.xfce.PanelProfiles.desktop.in:12
 msgid "Configuration;User;"

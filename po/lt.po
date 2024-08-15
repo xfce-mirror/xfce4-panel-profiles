@@ -34,12 +34,12 @@ msgstr "Daryti ir atkurti skydelio konfigūracijos atsarginę kopiją"
 
 #: org.xfce.PanelProfiles.desktop.in:5
 msgid ""
-"panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
+"panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;Configuration;User;"
 msgstr ""
 "skydelis;užduočių juosta;uzduociu "
 "juosta;išdėstymas;isdestymas;perjungti;taikyti;atkurti;atstatyti;įrašyti;irasyti;išsaugoti;issaugoti;atsarginė"
 " kopija;atsargine kopija;daryti atsarginę kopiją;daryti atsargine "
-"kopija;šalinti;salinti;ištrinti;istrinti;imporuoti;importas;importavimas;eksportuoti;eksportas;eksportavimas;"
+"kopija;šalinti;salinti;ištrinti;istrinti;imporuoti;importas;importavimas;eksportuoti;eksportas;eksportavimas;Konfigūracija;Naudotojas;"
 
 #: org.xfce.PanelProfiles.desktop.in:12
 msgid "Configuration;User;"
