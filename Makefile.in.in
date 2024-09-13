@@ -45,15 +45,16 @@ endif
 layouts:
 	cd data/layouts/cupertino; tar $(TAROPTS) -cvjf "../Cupertino.tar.bz2" *
 	cd data/layouts/gnome2; tar $(TAROPTS) -cvjf "../GNOME 2.tar.bz2" *
+	cd data/layouts/openSUSE-Leap-15.x; tar $(TAROPTS) -cvjf "../openSUSE Leap 15.x.tar.bz2" *
 	cd data/layouts/redmond; tar $(TAROPTS) -cvjf "../Redmond.tar.bz2" *
 	cd data/layouts/redmond7; tar $(TAROPTS) -cvjf "../Redmond 7.tar.bz2" *
+	cd data/layouts/unity; tar $(TAROPTS) -cvjf "../Unity.tar.bz2" *
 	cd data/layouts/xfce-4.12; tar $(TAROPTS) -cvjf "../Xfce 4.12.tar.bz2" *
 	cd data/layouts/xfce-4.14; tar $(TAROPTS) -cvjf "../Xfce 4.14.tar.bz2" *
 	cd data/layouts/xfce-4.16; tar $(TAROPTS) -cvjf "../Xfce 4.16.tar.bz2" *
 	cd data/layouts/xubuntu-12.04; tar $(TAROPTS) -cvjf "../Xubuntu 12.04 (Precise).tar.bz2" *
 	cd data/layouts/xubuntu-14.04; tar $(TAROPTS) -cvjf "../Xubuntu 14.04 (Trusty).tar.bz2" *
 	cd data/layouts/xubuntu-18.04; tar $(TAROPTS) -cvjf "../Xubuntu 18.04 (Bionic).tar.bz2" *
-	cd data/layouts/openSUSE-Leap-15.x; tar $(TAROPTS) -cvjf "../openSUSE Leap 15.x.tar.bz2" *
 
 install: all xfce4-panel-profiles.1
 	install -d $(DESTDIR)/$(PREFIX)/bin
