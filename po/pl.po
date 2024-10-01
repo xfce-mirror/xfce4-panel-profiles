@@ -193,7 +193,7 @@ msgstr "Profile paneli Xfce"
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:7
 msgid "Application to manage different panel layouts in Xfce"
-msgstr "Aplikacja do zarządzania różnymi układami paneli w Xfce"
+msgstr "Program do zarządzania różnymi układami paneli w Xfce"
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:11
 msgid ""
