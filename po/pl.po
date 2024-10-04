@@ -56,7 +56,7 @@ msgstr "Data modyfikacji"
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:108
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:387
 msgid "Apply Configuration"
-msgstr "Wprowadza konfigurację"
+msgstr "Stosuje konfigurację"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:122
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:123
