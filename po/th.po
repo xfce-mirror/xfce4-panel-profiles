@@ -36,10 +36,11 @@ msgstr "สำรองและกู้คืนค่าตั้งพาเ
 msgid ""
 "panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
 msgstr ""
+"พาเนล;แถบงาน;ผัง;สับเปลี่ยน;เริ่มใช้;กู้คืน;บันทึก;สำรอง;ลบ;นำเข้า;ส่งออก;"
 
 #: org.xfce.PanelProfiles.desktop.in:12
 msgid "Configuration;User;"
-msgstr ""
+msgstr "ค่าตั้ง;ผู้ใช้;"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:68
 msgid "Filename"
@@ -144,6 +145,8 @@ msgid ""
 "Invalid configuration file!\n"
 "Please select a valid configuration file."
 msgstr ""
+"แฟ้มค่าตั้งไม่ถูกต้อง!\n"
+"กรุณาเลือกแฟ้มค่าตั้งที่ถูกต้องตามรูปแบบ"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:274
 msgid "OK"
@@ -163,24 +166,28 @@ msgid ""
 "Do you want to apply this configuration?\n"
 " The current configuration will be lost!"
 msgstr ""
+"คุณต้องการเริ่มใช้ค่าตั้งนี้หรือไม่?\n"
+" เมื่อใช้แล้ว ค่าตั้งปัจจุบันก็จะสูญหายไป!"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:394
 msgid "Make a backup of the current configuration"
-msgstr ""
+msgstr "สำรองค่าตั้งปัจจุบัน"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:405
 msgid "Errors occured while parsing the current configuration."
-msgstr ""
+msgstr "เกิดข้อผิดพลาดขณะแจงอ่านค่าตั้งปัจจุบัน"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:425
 msgid ""
 "Do you want to save despite the errors? Some configuration information could"
 " be missing."
 msgstr ""
+"คุณต้องการบันทึกทั้งที่มีข้อผิดพลาดเหล่านี้หรือไม่? "
+"ข้อมูลค่าตั้งบางส่วนอาจสูญหายไปบ้าง"
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:6
 msgid "Xfce Panel Profiles"
-msgstr ""
+msgstr "โพรไฟล์ของพาเนลของ Xfce"
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:7
 msgid "Application to manage different panel layouts in Xfce"
@@ -192,3 +199,6 @@ msgid ""
 "enables managing different layouts with little effort. Xfce4-panel-profiles "
 "makes it possible to backup, restore, import and export panel layouts."
 msgstr ""
+"พาเนลของ Xfce สามารถสร้างผังได้หลากหลายรูปแบบมาก "
+"เครื่องมือนี้จะช่วยให้คุณจัดการผังต่างๆ โดยไม่ต้องออกแรงมาก  Xfce4-panel-"
+"profiles ช่วยให้คุณสามารถสำรอง, กู้คืน, นำเข้า และส่งออกผังต่างๆ ของพาเนลได้"
