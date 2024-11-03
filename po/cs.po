@@ -37,10 +37,12 @@ msgstr "Záloha a obnova nastavení panelu"
 msgid ""
 "panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
 msgstr ""
+"panel;panel "
+"úloh;rozvržení;přepnout;použít;obnovit;uložit;zálohovat;odstranit;importovat;exportovat"
 
 #: org.xfce.PanelProfiles.desktop.in:12
 msgid "Configuration;User;"
-msgstr ""
+msgstr "konfigurace;uživatel;"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:68
 msgid "Filename"
@@ -145,6 +147,8 @@ msgid ""
 "Invalid configuration file!\n"
 "Please select a valid configuration file."
 msgstr ""
+"Neplatný soubor s konfigurací!\n"
+"Vyberte platný soubor s konfigurací."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:274
 msgid "OK"
@@ -164,24 +168,28 @@ msgid ""
 "Do you want to apply this configuration?\n"
 " The current configuration will be lost!"
 msgstr ""
+"Chcete použít tuto konfiguraci?\n"
+"  Aktuální konfigurace bude ztracena!"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:394
 msgid "Make a backup of the current configuration"
-msgstr ""
+msgstr "Vytvořit zálohu aktuální konfigurace"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:405
 msgid "Errors occured while parsing the current configuration."
-msgstr ""
+msgstr "Při zpracování aktuální konfigurace došlo k chybě."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:425
 msgid ""
 "Do you want to save despite the errors? Some configuration information could"
 " be missing."
 msgstr ""
+"Chcete uložit, přestože došlo k chybám? Některé informace v konfigurace "
+"mohou chybět."
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:6
 msgid "Xfce Panel Profiles"
-msgstr ""
+msgstr "Profily panelu Xfce"
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:7
 msgid "Application to manage different panel layouts in Xfce"
@@ -193,3 +201,7 @@ msgid ""
 "enables managing different layouts with little effort. Xfce4-panel-profiles "
 "makes it possible to backup, restore, import and export panel layouts."
 msgstr ""
+"Při používání panelu Xfce je možné vytvořit jeho různá rozvržení. Tento "
+"nástroj vám umožňuje spravovat různá rozvržení s minimálním úsilím. "
+"Xfce4-panel-profiles umožňuje rozvržení panelu zálohovat, obnovovat, "
+"importovat a exportovat."
