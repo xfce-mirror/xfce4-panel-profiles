@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-apps.xfce4-panel-profiles\n"
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2024-04-09 12:49+0200\n"
+"POT-Creation-Date: 2024-11-10 12:49+0100\n"
 "PO-Revision-Date: 2018-07-13 15:34+0000\n"
 "Last-Translator: Gordon Freeman, 2024\n"
 "Language-Team: Ukrainian (https://app.transifex.com/xfce/teams/16840/uk/)\n"
@@ -53,14 +53,14 @@ msgstr "Дата зміни"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:107
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:108
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:387
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:388
 msgid "Apply Configuration"
 msgstr "Застосувати конфігурацію"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:122
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:123
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:278
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:344
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:345
 msgid "Save Configuration"
 msgstr "Зберегти конфігурацію"
 
@@ -92,10 +92,10 @@ msgid "Save panel configuration as..."
 msgstr "Зберегти конфігурацію панелі як..."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:264
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:105
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:343
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:386
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:413
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:106
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:344
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:387
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:414
 msgid "Cancel"
 msgstr "Скасувати"
 
@@ -103,45 +103,45 @@ msgstr "Скасувати"
 msgid "<b>Name the new panel configuration</b>"
 msgstr "<b>Назва нової конфігурації панелі</b>"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:98
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:414
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:99
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:415
 msgid "Save"
 msgstr "Зберегти"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:100
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:101
 msgid "Open"
 msgstr "Відкрити"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:150
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:151
 msgid "Current Configuration"
 msgstr "Поточна конфігурація"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:168
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:169
 msgid "Today"
 msgstr "Сьогодні"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:170
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:171
 msgid "Yesterday"
 msgstr "Вчора"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:234
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:235
 #, python-format
 msgid "%s (Copy of %s)"
 msgstr "%s (Копія %s)"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:239
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:240
 msgid "Export configuration as..."
 msgstr "Експортувати конфігурацію як..."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:240
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:241
 msgid "Untitled"
 msgstr "Без назви"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:252
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:253
 msgid "Import configuration file..."
 msgstr "Імпорт файлу конфігурації... "
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:266
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:267
 msgid ""
 "Invalid configuration file!\n"
 "Please select a valid configuration file."
@@ -149,20 +149,20 @@ msgstr ""
 "Недійсний файл конфігурації!\n"
 "Будь ласка, виберіть дійсний конфігураційний файл."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:274
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:275
 msgid "OK"
 msgstr "OK"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:337
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:338
 msgid "Name the new panel configuration"
 msgstr "Назва нової конфігурації панелі"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:361
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:362
 #, python-format
 msgid "Backup_%s"
 msgstr "Запасна копія_%s"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:377
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:378
 msgid ""
 "Do you want to apply this configuration?\n"
 " The current configuration will be lost!"
@@ -170,15 +170,15 @@ msgstr ""
 "Бажаєте застосувати цю конфігурацію?\n"
 "Поточна конфігурація буде втрачена!"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:394
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:395
 msgid "Make a backup of the current configuration"
 msgstr "Створити резервну копію поточної конфігурації"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:405
-msgid "Errors occured while parsing the current configuration."
-msgstr "Під час розбору поточної конфігурації виникли помилки."
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:406
+msgid "Errors occurred while parsing the current configuration."
+msgstr ""
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:425
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:426
 msgid ""
 "Do you want to save despite the errors? Some configuration information could"
 " be missing."
