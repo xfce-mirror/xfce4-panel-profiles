@@ -403,7 +403,7 @@ class PanelErrorDialog(Gtk.MessageDialog):
     configuration will be lost.'''
 
     def __init__(self, parent=None, messages=[]):
-        message = _("Errors occured while parsing the current configuration.")
+        message = _("Errors occurred while parsing the current configuration.")
 
         Gtk.MessageDialog.__init__(
             self, transient_for=parent, modal=True,
