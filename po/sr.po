@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-apps.xfce4-panel-profiles\n"
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2024-04-09 12:49+0200\n"
+"POT-Creation-Date: 2024-11-10 12:49+0100\n"
 "PO-Revision-Date: 2018-07-13 15:34+0000\n"
 "Last-Translator: Саша Петровић <salepetronije@gmail.com>, 2024\n"
 "Language-Team: Serbian (https://app.transifex.com/xfce/teams/16840/sr/)\n"
@@ -52,14 +52,14 @@ msgstr "Дан измене"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:107
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:108
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:387
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:388
 msgid "Apply Configuration"
 msgstr "Примени поставке"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:122
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:123
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:278
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:344
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:345
 msgid "Save Configuration"
 msgstr "Сачувај поставке"
 
@@ -91,10 +91,10 @@ msgid "Save panel configuration as..."
 msgstr "Сачувај поставке полице као..."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:264
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:105
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:343
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:386
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:413
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:106
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:344
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:387
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:414
 msgid "Cancel"
 msgstr "Откажи"
 
@@ -102,45 +102,45 @@ msgstr "Откажи"
 msgid "<b>Name the new panel configuration</b>"
 msgstr "<b>Име нових поставки полице</b>"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:98
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:414
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:99
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:415
 msgid "Save"
 msgstr "Сачувај"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:100
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:101
 msgid "Open"
 msgstr "Отвори"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:150
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:151
 msgid "Current Configuration"
 msgstr "Тренутне поставке"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:168
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:169
 msgid "Today"
 msgstr "Данас"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:170
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:171
 msgid "Yesterday"
 msgstr "Јуче"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:234
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:235
 #, python-format
 msgid "%s (Copy of %s)"
 msgstr "%s (Умножак %s)"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:239
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:240
 msgid "Export configuration as..."
 msgstr "Извези поставке као..."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:240
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:241
 msgid "Untitled"
 msgstr "Безимено"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:252
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:253
 msgid "Import configuration file..."
 msgstr "Увези датотеку поставки..."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:266
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:267
 msgid ""
 "Invalid configuration file!\n"
 "Please select a valid configuration file."
@@ -148,20 +148,20 @@ msgstr ""
 "Неисправна датотека поставки!\n"
 "Молим, означите исправну датотеку поставки."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:274
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:275
 msgid "OK"
 msgstr "У реду"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:337
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:338
 msgid "Name the new panel configuration"
 msgstr "Име нових поставки полице"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:361
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:362
 #, python-format
 msgid "Backup_%s"
 msgstr "Умножак за чување_%s"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:377
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:378
 msgid ""
 "Do you want to apply this configuration?\n"
 " The current configuration will be lost!"
@@ -169,15 +169,15 @@ msgstr ""
 "Да ли желите да примените ове поставке?\n"
 "Тренутне поставке ће бити изгубљене!"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:394
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:395
 msgid "Make a backup of the current configuration"
 msgstr "Направи складиште тренутних поставки"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:405
-msgid "Errors occured while parsing the current configuration."
-msgstr "Десиле су се грешке приликом рашчлањивања тренутне поставке."
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:406
+msgid "Errors occurred while parsing the current configuration."
+msgstr "Десила се је грешка при рашчлањивању тренутне поставке."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:425
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:426
 msgid ""
 "Do you want to save despite the errors? Some configuration information could"
 " be missing."
