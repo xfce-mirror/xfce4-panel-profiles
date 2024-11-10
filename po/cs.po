@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-apps.xfce4-panel-profiles\n"
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2024-04-09 12:49+0200\n"
+"POT-Creation-Date: 2024-11-10 12:49+0100\n"
 "PO-Revision-Date: 2018-07-13 15:34+0000\n"
 "Last-Translator: Michal Várady <miko.vaji@gmail.com>, 2024\n"
 "Language-Team: Czech (https://app.transifex.com/xfce/teams/16840/cs/)\n"
@@ -42,7 +42,7 @@ msgstr ""
 
 #: org.xfce.PanelProfiles.desktop.in:12
 msgid "Configuration;User;"
-msgstr "konfigurace;uživatel;"
+msgstr "konfigurace;nastavení;uživatel;"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:68
 msgid "Filename"
@@ -54,14 +54,14 @@ msgstr "Datum změny"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:107
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:108
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:387
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:388
 msgid "Apply Configuration"
 msgstr "Použít nastavení"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:122
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:123
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:278
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:344
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:345
 msgid "Save Configuration"
 msgstr "Uložit nastavení"
 
@@ -93,10 +93,10 @@ msgid "Save panel configuration as..."
 msgstr "Uložit nastavení panelu jako..."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:264
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:105
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:343
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:386
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:413
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:106
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:344
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:387
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:414
 msgid "Cancel"
 msgstr "Storno"
 
@@ -104,88 +104,88 @@ msgstr "Storno"
 msgid "<b>Name the new panel configuration</b>"
 msgstr "</b>Název nového nastavení panelu</b>"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:98
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:414
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:99
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:415
 msgid "Save"
 msgstr "Uložit"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:100
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:101
 msgid "Open"
 msgstr "Otevřít"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:150
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:151
 msgid "Current Configuration"
 msgstr "Aktuální nastavení"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:168
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:169
 msgid "Today"
 msgstr "Dnes"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:170
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:171
 msgid "Yesterday"
 msgstr "Včera"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:234
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:235
 #, python-format
 msgid "%s (Copy of %s)"
 msgstr "%s (Kopie z %s)"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:239
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:240
 msgid "Export configuration as..."
 msgstr "Exportovat nastavení jako..."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:240
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:241
 msgid "Untitled"
 msgstr "Bez názvu"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:252
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:253
 msgid "Import configuration file..."
 msgstr "Importovat soubor nastavení..."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:266
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:267
 msgid ""
 "Invalid configuration file!\n"
 "Please select a valid configuration file."
 msgstr ""
-"Neplatný soubor s konfigurací!\n"
-"Vyberte platný soubor s konfigurací."
+"Neplatný soubor s nastavením!\n"
+"Vyberte platný soubor s nastavením."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:274
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:275
 msgid "OK"
 msgstr "OK"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:337
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:338
 msgid "Name the new panel configuration"
 msgstr "Název nového nastavení panelu"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:361
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:362
 #, python-format
 msgid "Backup_%s"
 msgstr "Záloha_%s"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:377
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:378
 msgid ""
 "Do you want to apply this configuration?\n"
 " The current configuration will be lost!"
 msgstr ""
-"Chcete použít tuto konfiguraci?\n"
-"  Aktuální konfigurace bude ztracena!"
+"Chcete použít toto nastavení?\n"
+"  Aktuální nastavení bude ztraceno!"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:394
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:395
 msgid "Make a backup of the current configuration"
-msgstr "Vytvořit zálohu aktuální konfigurace"
+msgstr "Vytvořit zálohu aktuálního nastavení"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:405
-msgid "Errors occured while parsing the current configuration."
-msgstr "Při zpracování aktuální konfigurace došlo k chybě."
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:406
+msgid "Errors occurred while parsing the current configuration."
+msgstr "Při zpracování aktuálního nastavení došlo k chybě."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:425
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:426
 msgid ""
 "Do you want to save despite the errors? Some configuration information could"
 " be missing."
 msgstr ""
-"Chcete uložit, přestože došlo k chybám? Některé informace v konfigurace "
-"mohou chybět."
+"Chcete uložit, přestože došlo k chybám? Některé informace v nastavení mohou "
+"chybět."
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:6
 msgid "Xfce Panel Profiles"
