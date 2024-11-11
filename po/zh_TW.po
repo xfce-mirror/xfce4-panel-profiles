@@ -175,7 +175,7 @@ msgstr "備份目前設定"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:406
 msgid "Errors occurred while parsing the current configuration."
-msgstr ""
+msgstr "解析目前組態時發生錯誤。"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:426
 msgid ""
