@@ -175,7 +175,7 @@ msgstr "現在の設定のバックアップを作成する"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:406
 msgid "Errors occurred while parsing the current configuration."
-msgstr ""
+msgstr "現在の設定を解析中にエラーが発生しました。"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:426
 msgid ""
