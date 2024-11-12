@@ -178,7 +178,7 @@ msgstr "Padaryti dabartinės konfigūracijos atsarginę kopiją"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:406
 msgid "Errors occurred while parsing the current configuration."
-msgstr ""
+msgstr "Nagrinėjant dabartinę konfigūraciją įvyko klaidos."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:426
 msgid ""
