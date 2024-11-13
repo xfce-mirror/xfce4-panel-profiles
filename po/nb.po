@@ -43,7 +43,7 @@ msgstr ""
 
 #: org.xfce.PanelProfiles.desktop.in:12
 msgid "Configuration;User;"
-msgstr ""
+msgstr "Oppsett;Bruker;"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:68
 msgid "Filename"
@@ -178,7 +178,7 @@ msgstr "Reservekopier gjeldende oppsett"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:406
 msgid "Errors occurred while parsing the current configuration."
-msgstr ""
+msgstr "Det oppstod feil ved fortolkning av gjeldende oppsett."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:426
 msgid ""
@@ -188,7 +188,7 @@ msgstr "Vil du lagre til tross for feilene? Noe av oppsettet kan mangle."
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:6
 msgid "Xfce Panel Profiles"
-msgstr ""
+msgstr "Xfce Panelprofiler"
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:7
 msgid "Application to manage different panel layouts in Xfce"
