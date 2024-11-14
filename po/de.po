@@ -177,7 +177,7 @@ msgstr "Erstellen Sie eine Sicherungskopie der aktuellen Konfiguration"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:406
 msgid "Errors occurred while parsing the current configuration."
-msgstr ""
+msgstr "Beim Parsen der aktuellen Konfiguration sind Fehler aufgetreten."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:426
 msgid ""
