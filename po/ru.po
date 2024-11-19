@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-apps.xfce4-panel-profiles\n"
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2024-11-10 12:49+0100\n"
+"POT-Creation-Date: 2024-11-19 12:48+0100\n"
 "PO-Revision-Date: 2018-07-13 15:34+0000\n"
 "Last-Translator: Andrei Stepanov, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/xfce/teams/16840/ru/)\n"
@@ -61,7 +61,6 @@ msgstr "Применить конфигурацию"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:122
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:123
-#: xfce4-panel-profiles/xfce4-panel-profiles.glade:278
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:345
 msgid "Save Configuration"
 msgstr "Сохранить конфигурацию"
@@ -89,22 +88,6 @@ msgstr "_Справка"
 msgid "_Close"
 msgstr "_Закрыть"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.glade:244
-msgid "Save panel configuration as..."
-msgstr "Сохранить конфигурацию панели как..."
-
-#: xfce4-panel-profiles/xfce4-panel-profiles.glade:264
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:106
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:344
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:387
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:414
-msgid "Cancel"
-msgstr "Отмена"
-
-#: xfce4-panel-profiles/xfce4-panel-profiles.glade:324
-msgid "<b>Name the new panel configuration</b>"
-msgstr "<b>Имя для новой конфигурации панели</b>"
-
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:99
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:415
 msgid "Save"
@@ -113,6 +96,13 @@ msgstr "Сохранить"
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:101
 msgid "Open"
 msgstr "Открыть"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:106
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:344
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:387
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:414
+msgid "Cancel"
+msgstr "Отмена"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:151
 msgid "Current Configuration"
