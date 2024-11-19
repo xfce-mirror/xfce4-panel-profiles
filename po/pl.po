@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-apps.xfce4-panel-profiles\n"
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2024-11-10 12:49+0100\n"
+"POT-Creation-Date: 2024-11-19 12:48+0100\n"
 "PO-Revision-Date: 2018-07-13 15:34+0000\n"
 "Last-Translator: Marek Adamski, 2024\n"
 "Language-Team: Polish (https://app.transifex.com/xfce/teams/16840/pl/)\n"
@@ -56,29 +56,28 @@ msgstr "Data modyfikacji"
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:108
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:388
 msgid "Apply Configuration"
-msgstr "Stosuje konfigurację"
+msgstr "Zastosuj konfigurację"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:122
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:123
-#: xfce4-panel-profiles/xfce4-panel-profiles.glade:278
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:345
 msgid "Save Configuration"
-msgstr "Zapisuje konfigurację"
+msgstr "Zapisz konfigurację"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:137
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:138
 msgid "Remove Configuration"
-msgstr "Usuwa konfigurację"
+msgstr "Usuń konfigurację"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:152
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:153
 msgid "Export"
-msgstr "Eksportuje konfigurację"
+msgstr "Eksportuj konfigurację"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:167
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:168
 msgid "Import"
-msgstr "Importuje konfigurację"
+msgstr "Importuj konfigurację"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:195
 msgid "_Help"
@@ -87,22 +86,6 @@ msgstr "Pomo_c"
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:210
 msgid "_Close"
 msgstr "Za_mknij"
-
-#: xfce4-panel-profiles/xfce4-panel-profiles.glade:244
-msgid "Save panel configuration as..."
-msgstr "Zapisywanie pliku konfiguracji"
-
-#: xfce4-panel-profiles/xfce4-panel-profiles.glade:264
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:106
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:344
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:387
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:414
-msgid "Cancel"
-msgstr "Anuluj"
-
-#: xfce4-panel-profiles/xfce4-panel-profiles.glade:324
-msgid "<b>Name the new panel configuration</b>"
-msgstr "<b>Nazwa nowej konfiguracji panelu</b>"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:99
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:415
@@ -113,9 +96,16 @@ msgstr "Zapisz"
 msgid "Open"
 msgstr "Otwórz"
 
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:106
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:344
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:387
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:414
+msgid "Cancel"
+msgstr "Anuluj"
+
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:151
 msgid "Current Configuration"
-msgstr "Aktualna konfiguracja"
+msgstr "Bieżąca konfiguracja"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:169
 msgid "Today"
@@ -132,7 +122,7 @@ msgstr "%s (kopia %s)"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:240
 msgid "Export configuration as..."
-msgstr "Eksportowanie pliku konfiguracji"
+msgstr "Eksportuj plik konfiguracji..."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:241
 msgid "Untitled"
@@ -140,7 +130,7 @@ msgstr "Bez nazwy"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:253
 msgid "Import configuration file..."
-msgstr "Importowanie pliku konfiguracji"
+msgstr "Importuj plik konfiguracji..."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:267
 msgid ""
@@ -156,12 +146,12 @@ msgstr "OK"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:338
 msgid "Name the new panel configuration"
-msgstr "Nazwa nowej konfiguracji panelu"
+msgstr "Nazwa nowej konfiguracji paneli"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:362
 #, python-format
 msgid "Backup_%s"
-msgstr "Kopia zapasowa %s"
+msgstr "Kopia_zapasowa_%s"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:378
 msgid ""
@@ -203,5 +193,5 @@ msgid ""
 msgstr ""
 "Mnogość układów paneli można tworzyć za pomocą panelu Xfce. To narzędzie "
 "umożliwia zarządzanie różnymi układami przy niewielkim wysiłku. Xfce4-panel-"
-"profiles umożliwia tworzenie kopii zapasowych, przywracanie, importowanie i "
-"eksportowanie układów paneli."
+"profiles umożliwia tworzenie kopii zapasowych, przywracanie, importowanie "
+"i eksportowanie układów paneli."
