@@ -8,7 +8,7 @@
 # Balázs Meskó <meskobalazs@mailbox.org>, 2018
 # Xfce Bot <transifex@xfce.org>, 2023
 # Gábor P., 2023
-# user14 <nleknh@gmail.com>, 2024
+# ef06d5cbf35386ff2203d186eeff7923_fc5bdc4 <3b4340729d39520cef20e48ccdc2f16a_153038>, 2024
 # saskadaniel, 2024
 # 
 #, fuzzy
@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-apps.xfce4-panel-profiles\n"
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2024-04-09 12:49+0200\n"
+"POT-Creation-Date: 2024-11-19 12:48+0100\n"
 "PO-Revision-Date: 2018-07-13 15:34+0000\n"
 "Last-Translator: saskadaniel, 2024\n"
 "Language-Team: Hungarian (https://app.transifex.com/xfce/teams/16840/hu/)\n"
@@ -55,14 +55,13 @@ msgstr "Módosítás dátuma"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:107
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:108
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:387
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:388
 msgid "Apply Configuration"
 msgstr "Beállítások alkalmazása"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:122
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:123
-#: xfce4-panel-profiles/xfce4-panel-profiles.glade:278
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:344
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:345
 msgid "Save Configuration"
 msgstr "Beállítások mentése"
 
@@ -89,94 +88,85 @@ msgstr "_Súgó"
 msgid "_Close"
 msgstr "_Bezárás"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.glade:244
-msgid "Save panel configuration as..."
-msgstr "Panelbeállítások mentése mint..."
-
-#: xfce4-panel-profiles/xfce4-panel-profiles.glade:264
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:105
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:343
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:386
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:413
-msgid "Cancel"
-msgstr "Mégsem"
-
-#: xfce4-panel-profiles/xfce4-panel-profiles.glade:324
-msgid "<b>Name the new panel configuration</b>"
-msgstr "<b>Az új panelbeállítások neve"
-
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:98
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:414
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:99
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:415
 msgid "Save"
 msgstr "Mentés"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:100
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:101
 msgid "Open"
 msgstr "Megnyitás"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:150
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:106
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:344
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:387
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:414
+msgid "Cancel"
+msgstr "Mégsem"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:151
 msgid "Current Configuration"
 msgstr "Jelenlegi beállítások"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:168
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:169
 msgid "Today"
 msgstr "Ma"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:170
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:171
 msgid "Yesterday"
 msgstr "Tegnap"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:234
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:235
 #, python-format
 msgid "%s (Copy of %s)"
 msgstr "%s (Másolat a %s -ből)"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:239
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:240
 msgid "Export configuration as..."
 msgstr "Beállítások exportálása mint..."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:240
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:241
 msgid "Untitled"
 msgstr "Névtelen"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:252
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:253
 msgid "Import configuration file..."
 msgstr "Beállítások fájl importálása mint..."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:266
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:267
 msgid ""
 "Invalid configuration file!\n"
 "Please select a valid configuration file."
 msgstr ""
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:274
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:275
 msgid "OK"
 msgstr "OK"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:337
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:338
 msgid "Name the new panel configuration"
 msgstr "Az új panelbeállítások neve"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:361
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:362
 #, python-format
 msgid "Backup_%s"
 msgstr "Mentés_%s"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:377
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:378
 msgid ""
 "Do you want to apply this configuration?\n"
 " The current configuration will be lost!"
 msgstr ""
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:394
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:395
 msgid "Make a backup of the current configuration"
 msgstr ""
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:405
-msgid "Errors occured while parsing the current configuration."
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:406
+msgid "Errors occurred while parsing the current configuration."
 msgstr ""
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:425
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:426
 msgid ""
 "Do you want to save despite the errors? Some configuration information could"
 " be missing."
