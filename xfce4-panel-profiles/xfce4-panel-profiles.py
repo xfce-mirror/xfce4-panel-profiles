@@ -225,10 +225,28 @@ class XfcePanelProfiles:
         if response == Gtk.ResponseType.ACCEPT:
             selected = self.get_selected_filename()
             # The `.bar.bz2` suffix will be added in `{save,copy}_configuration`.
-            filename = os.path.join(dialog.file_chooser_button.get_filename(), dialog.entry_filename.get_text())
-            if selected == "": # Current configuration.
+            dest_name = dialog.entry_filename.get_text()
+            dest_dir = dialog.file_chooser_button.get_filename()
+            filename = os.path.join(dest_dir, dest_name)
+
+            can_export = True
+            if os.path.exists(filename + ".tar.bz2"):
+                confirm_overwrite = Gtk.MessageDialog(transient_for=dialog, message_type=Gtk.MessageType.QUESTION)
+
+                message = _('<b>A file named "%s" already exists. Do you want to replace it?</b>\n\n'
+                            'The file already exists in "%s", replacing it will overwrite its contents.') % (
+                            (dest_name + ".tar.bz2"), dest_dir)
+                confirm_overwrite.set_markup(message)
+                confirm_overwrite.add_buttons(_("Cancel"), Gtk.ResponseType.CANCEL,
+                                              _("Replace"), Gtk.ResponseType.OK)
+
+                if confirm_overwrite.run() != Gtk.ResponseType.OK:
+                    can_export = False
+                confirm_overwrite.destroy()
+
+            if can_export and selected == "": # Current configuration.
                 self.save_configuration(filename, False)
-            else:
+            elif can_export:
                 self.copy_configuration(self.get_selected(), filename, False)
         dialog.destroy()
 
