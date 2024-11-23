@@ -447,10 +447,44 @@ class PanelExportDialog(Gtk.Dialog):
         self.file_chooser_button.set_current_folder(os.path.expanduser("~"))
         box.pack_start(self.file_chooser_button, False, False, 0)
 
-        self.add_buttons(_("Cancel"), Gtk.ResponseType.CANCEL,
-                         _("Save"), Gtk.ResponseType.ACCEPT)
-        self.set_default_response(Gtk.ResponseType.ACCEPT)
+        button_box = Gtk.ButtonBox.new(Gtk.Orientation.HORIZONTAL)
+        button_box.set_spacing(6)
+        button_box.set_layout(Gtk.ButtonBoxStyle.END)
+
+        button_cancel = Gtk.Button(label=_("Cancel"))
+        button_cancel.connect("clicked", self.on_cancel_clicked)
+        button_box.add(button_cancel)
+
+        button_save = Gtk.Button(label=_("Save"))
+        button_save.connect("clicked", self.on_save_clicked)
+        button_box.add(button_save)
+
+        box.pack_end(button_box, False, True, 0)
         self.show_all()
+
+    def on_cancel_clicked(self, widget):
+        self.response(Gtk.ResponseType.CANCEL)
+
+    def on_save_clicked(self, widget):
+        dest_dir = self.file_chooser_button.get_filename()
+        dest_name = self.entry_filename.get_text() + ".tar.bz2"
+        filename = os.path.join(dest_dir, dest_name)
+
+        can_export = True
+        if os.path.exists(filename):
+            confirm_overwrite = Gtk.MessageDialog(transient_for=self, message_type=Gtk.MessageType.QUESTION)
+
+            confirm_overwrite.set_markup(_('<b>A file named "%s" already exists. Do you want to replace it?</b>') % dest_name)
+            confirm_overwrite.format_secondary_text(_('The file already exists in "%s", replacing it will overwrite its contents.') % dest_dir)
+            confirm_overwrite.add_buttons(_("Cancel"), Gtk.ResponseType.CANCEL,
+                                          _("Replace"), Gtk.ResponseType.OK)
+
+            if confirm_overwrite.run() != Gtk.ResponseType.OK:
+                can_export = False
+            confirm_overwrite.destroy()
+
+        if can_export == True:
+            self.response(Gtk.ResponseType.ACCEPT)
 
 if __name__ == "__main__":
     import sys
