@@ -94,23 +94,6 @@ class XfcePanelProfiles:
     def _copy(self, src, dst):
         PanelConfig.from_file(src).to_file(dst)
 
-    def _filedlg(self, title, action, default=None):
-        if action == Gtk.FileChooserAction.SAVE:
-            button = _("Save")
-        else:
-            button = _("Open")
-        dialog = Gtk.FileChooserDialog(title=title,
-                                       transient_for=self.window,
-                                       action=action)
-        dialog.add_buttons(
-            _("Cancel"), Gtk.ResponseType.CANCEL,
-            button, Gtk.ResponseType.ACCEPT
-        )
-        dialog.set_default_response(Gtk.ResponseType.ACCEPT)
-        if default:
-            dialog.set_current_name(default)
-        return dialog
-
     def load_xfconf(self):
         session_bus = Gio.BusType.SESSION
         cancellable = None
@@ -250,8 +233,12 @@ class XfcePanelProfiles:
         dialog.destroy()
 
     def on_import_clicked(self, widget):
-        dialog = self._filedlg(_("Import configuration file..."),
-                               Gtk.FileChooserAction.OPEN)
+        dialog = Gtk.FileChooserDialog(title=_("Import configuration file..."),
+                                       transient_for=self.window,
+                                       action=Gtk.FileChooserAction.OPEN)
+        dialog.add_buttons(_("Cancel"), Gtk.ResponseType.CANCEL,
+                           _("Open"), Gtk.ResponseType.ACCEPT)
+        dialog.set_default_response(Gtk.ResponseType.ACCEPT)
         response = dialog.run()
         if response == Gtk.ResponseType.ACCEPT:
             filename = dialog.get_filename()
