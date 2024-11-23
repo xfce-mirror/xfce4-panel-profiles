@@ -237,12 +237,12 @@ class XfcePanelProfiles:
         dialog.destroy()
 
     def on_export_clicked(self, widget):
-        dialog = self._filedlg(_("Export configuration as..."),
-                               Gtk.FileChooserAction.SAVE, _("Untitled"))
+        dialog = PanelExportDialog(self.window)
         response = dialog.run()
         if response == Gtk.ResponseType.ACCEPT:
             selected = self.get_selected_filename()
-            filename = dialog.get_filename()
+            # The `.bar.bz2` suffix will be added in `{save,copy}_configuration`.
+            filename = os.path.join(dialog.file_chooser_button.get_filename(), dialog.entry_filename.get_text())
             if selected == "": # Current configuration.
                 self.save_configuration(filename, False)
             else:
@@ -428,6 +428,42 @@ class PanelErrorDialog(Gtk.MessageDialog):
         box.pack_start(label, True, True, 0)
 
         box.show_all()
+
+class PanelExportDialog(Gtk.Dialog):
+    def __init__(self, parent=None):
+        Gtk.Dialog.__init__(self, title=_("Export configuration as..."), transient_for=parent)
+        self.set_default_size(400, 150)
+
+        box = self.get_content_area()
+        box.set_spacing(6)
+
+        label_filename = Gtk.Label(label=_("Filename"))
+        label_filename.set_xalign(0)
+        box.pack_start(label_filename, False, False, 0)
+
+        box_filename = Gtk.Box(spacing=6)
+        self.entry_filename = Gtk.Entry()
+        self.entry_filename.set_text(_("Untitled"))
+
+        label_extension = Gtk.Label(label=".tar.bz2")
+
+        box_filename.pack_start(self.entry_filename, True, True, 0)
+        box_filename.pack_start(label_extension, False, False, 0)
+        box.pack_start(box_filename, False, False, 0)
+
+        label_location = Gtk.Label(label=_("Location"))
+        label_location.set_xalign(0)
+        box.pack_start(label_location, False, False, 0)
+
+        self.file_chooser_button = Gtk.FileChooserButton(title=_("Select a Folder"))
+        self.file_chooser_button.set_action(Gtk.FileChooserAction.SELECT_FOLDER)
+        self.file_chooser_button.set_current_folder(os.path.expanduser("~"))
+        box.pack_start(self.file_chooser_button, False, False, 0)
+
+        self.add_buttons(_("Cancel"), Gtk.ResponseType.CANCEL,
+                         _("Save"), Gtk.ResponseType.ACCEPT)
+        self.set_default_response(Gtk.ResponseType.ACCEPT)
+        self.show_all()
 
 if __name__ == "__main__":
     import sys
