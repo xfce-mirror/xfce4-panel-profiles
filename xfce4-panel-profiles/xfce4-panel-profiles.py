@@ -94,23 +94,6 @@ class XfcePanelProfiles:
     def _copy(self, src, dst):
         PanelConfig.from_file(src).to_file(dst)
 
-    def _filedlg(self, title, action, default=None):
-        if action == Gtk.FileChooserAction.SAVE:
-            button = _("Save")
-        else:
-            button = _("Open")
-        dialog = Gtk.FileChooserDialog(title=title,
-                                       transient_for=self.window,
-                                       action=action)
-        dialog.add_buttons(
-            _("Cancel"), Gtk.ResponseType.CANCEL,
-            button, Gtk.ResponseType.ACCEPT
-        )
-        dialog.set_default_response(Gtk.ResponseType.ACCEPT)
-        if default:
-            dialog.set_current_name(default)
-        return dialog
-
     def load_xfconf(self):
         session_bus = Gio.BusType.SESSION
         cancellable = None
@@ -237,12 +220,12 @@ class XfcePanelProfiles:
         dialog.destroy()
 
     def on_export_clicked(self, widget):
-        dialog = self._filedlg(_("Export configuration as..."),
-                               Gtk.FileChooserAction.SAVE, _("Untitled"))
+        dialog = PanelExportDialog(self.window)
         response = dialog.run()
         if response == Gtk.ResponseType.ACCEPT:
             selected = self.get_selected_filename()
-            filename = dialog.get_filename()
+            # The `.tar.bz2` suffix will be added in `{save,copy}_configuration`.
+            filename = os.path.join(dialog.file_chooser_button.get_filename(), dialog.entry_filename.get_text())
             if selected == "": # Current configuration.
                 self.save_configuration(filename, False)
             else:
@@ -250,8 +233,12 @@ class XfcePanelProfiles:
         dialog.destroy()
 
     def on_import_clicked(self, widget):
-        dialog = self._filedlg(_("Import configuration file..."),
-                               Gtk.FileChooserAction.OPEN)
+        dialog = Gtk.FileChooserDialog(title=_("Import configuration file..."),
+                                       transient_for=self.window,
+                                       action=Gtk.FileChooserAction.OPEN)
+        dialog.add_buttons(_("Cancel"), Gtk.ResponseType.CANCEL,
+                           _("Open"), Gtk.ResponseType.ACCEPT)
+        dialog.set_default_response(Gtk.ResponseType.ACCEPT)
         response = dialog.run()
         if response == Gtk.ResponseType.ACCEPT:
             filename = dialog.get_filename()
@@ -428,6 +415,76 @@ class PanelErrorDialog(Gtk.MessageDialog):
         box.pack_start(label, True, True, 0)
 
         box.show_all()
+
+class PanelExportDialog(Gtk.Dialog):
+    def __init__(self, parent=None):
+        Gtk.Dialog.__init__(self, title=_("Export configuration as..."), transient_for=parent)
+        self.set_default_size(400, 150)
+
+        box = self.get_content_area()
+        box.set_spacing(6)
+
+        label_filename = Gtk.Label(label=_("Filename"))
+        label_filename.set_xalign(0)
+        box.pack_start(label_filename, False, False, 0)
+
+        box_filename = Gtk.Box(spacing=6)
+        self.entry_filename = Gtk.Entry()
+        self.entry_filename.set_text(_("Untitled"))
+
+        label_extension = Gtk.Label(label=".tar.bz2")
+
+        box_filename.pack_start(self.entry_filename, True, True, 0)
+        box_filename.pack_start(label_extension, False, False, 0)
+        box.pack_start(box_filename, False, False, 0)
+
+        label_location = Gtk.Label(label=_("Location"))
+        label_location.set_xalign(0)
+        box.pack_start(label_location, False, False, 0)
+
+        self.file_chooser_button = Gtk.FileChooserButton(title=_("Select a Folder"))
+        self.file_chooser_button.set_action(Gtk.FileChooserAction.SELECT_FOLDER)
+        self.file_chooser_button.set_current_folder(os.path.expanduser("~"))
+        box.pack_start(self.file_chooser_button, False, False, 0)
+
+        button_box = Gtk.ButtonBox.new(Gtk.Orientation.HORIZONTAL)
+        button_box.set_spacing(6)
+        button_box.set_layout(Gtk.ButtonBoxStyle.END)
+
+        button_cancel = Gtk.Button(label=_("Cancel"))
+        button_cancel.connect("clicked", self.on_cancel_clicked)
+        button_box.add(button_cancel)
+
+        button_save = Gtk.Button(label=_("Save"))
+        button_save.connect("clicked", self.on_save_clicked)
+        button_box.add(button_save)
+
+        box.pack_end(button_box, False, False, 0)
+        self.show_all()
+
+    def on_cancel_clicked(self, widget):
+        self.response(Gtk.ResponseType.CANCEL)
+
+    def on_save_clicked(self, widget):
+        dest_dir = self.file_chooser_button.get_filename()
+        dest_name = self.entry_filename.get_text() + ".tar.bz2"
+        filename = os.path.join(dest_dir, dest_name)
+
+        can_export = True
+        if os.path.exists(filename):
+            confirm_overwrite = Gtk.MessageDialog(transient_for=self, message_type=Gtk.MessageType.QUESTION)
+
+            confirm_overwrite.set_markup(_('<b>A file named "%s" already exists. Do you want to replace it?</b>') % dest_name)
+            confirm_overwrite.format_secondary_text(_('The file already exists in "%s", replacing it will overwrite its contents.') % dest_dir)
+            confirm_overwrite.add_buttons(_("Cancel"), Gtk.ResponseType.CANCEL,
+                                          _("Replace"), Gtk.ResponseType.OK)
+
+            if confirm_overwrite.run() != Gtk.ResponseType.OK:
+                can_export = False
+            confirm_overwrite.destroy()
+
+        if can_export == True:
+            self.response(Gtk.ResponseType.ACCEPT)
 
 if __name__ == "__main__":
     import sys
