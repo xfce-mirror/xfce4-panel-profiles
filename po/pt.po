@@ -4,8 +4,9 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Xfce Bot <transifex@xfce.org>, 2018
 # José Vieira <jvieira33@sapo.pt>, 2024
+# Nick Schermer <nick@xfce.org>, 2024
+# Xfce Bot <transifex@xfce.org>, 2024
 # Hugo Carvalho <hugokarvalho@hotmail.com>, 2024
 # 
 #, fuzzy
@@ -13,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-apps.xfce4-panel-profiles\n"
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2024-11-19 12:48+0100\n"
+"POT-Creation-Date: 2024-11-26 00:49+0100\n"
 "PO-Revision-Date: 2018-07-13 15:34+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>, 2024\n"
 "Language-Team: Portuguese (https://app.transifex.com/xfce/teams/16840/pt/)\n"
@@ -46,6 +47,7 @@ msgid "Configuration;User;"
 msgstr "Configuração;Utilizador;"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:68
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:427
 msgid "Filename"
 msgstr "Nome do ficheiro"
 
@@ -55,13 +57,13 @@ msgstr "Data de modificação"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:107
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:108
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:388
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:375
 msgid "Apply Configuration"
 msgstr "Aplicar configuração"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:122
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:123
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:345
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:332
 msgid "Save Configuration"
 msgstr "Guardar configuração"
 
@@ -88,52 +90,41 @@ msgstr "A_juda"
 msgid "_Close"
 msgstr "Fe_char"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:99
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:415
-msgid "Save"
-msgstr "Guardar"
-
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:101
-msgid "Open"
-msgstr "Abrir"
-
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:106
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:344
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:387
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:414
-msgid "Cancel"
-msgstr "Cancelar"
-
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:151
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:134
 msgid "Current Configuration"
 msgstr "Configuração atual"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:169
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:152
 msgid "Today"
 msgstr "Hoje"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:171
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:154
 msgid "Yesterday"
 msgstr "Ontem"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:235
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:218
 #, python-format
 msgid "%s (Copy of %s)"
 msgstr "%s (cópia de %s)"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:240
-msgid "Export configuration as..."
-msgstr "Exportar configuração como..."
-
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:241
-msgid "Untitled"
-msgstr "Sem título"
-
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:253
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:236
 msgid "Import configuration file..."
 msgstr "Importar ficheiro de configuração..."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:267
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:239
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:331
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:374
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:401
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:454
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:479
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:240
+msgid "Open"
+msgstr "Abrir"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:254
 msgid ""
 "Invalid configuration file!\n"
 "Please select a valid configuration file."
@@ -141,20 +132,20 @@ msgstr ""
 "Ficheiro de configuração inválido!\n"
 "Selecione um ficheiro de configuração válido."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:275
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:262
 msgid "OK"
 msgstr "Aceitar"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:338
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:325
 msgid "Name the new panel configuration"
 msgstr "Dar um nome à nova configuração do painel"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:362
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:349
 #, python-format
 msgid "Backup_%s"
 msgstr "Cópia de segurança_%s"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:378
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:365
 msgid ""
 "Do you want to apply this configuration?\n"
 " The current configuration will be lost!"
@@ -162,21 +153,57 @@ msgstr ""
 "Aplicar esta configuração?\n"
 " A configuração atual será perdida!"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:395
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:382
 msgid "Make a backup of the current configuration"
 msgstr "Faça uma cópia de segurança da configuração atual"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:406
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:393
 msgid "Errors occurred while parsing the current configuration."
 msgstr "Ocorreram erros durante a análise da configuração atual."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:426
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:402
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:458
+msgid "Save"
+msgstr "Guardar"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:413
 msgid ""
 "Do you want to save despite the errors? Some configuration information could"
 " be missing."
 msgstr ""
 "Quer guardar apesar dos erros? Algumas informações de configuração podem "
 "estar em falta."
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:421
+msgid "Export configuration as..."
+msgstr "Exportar configuração como..."
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:433
+msgid "Untitled"
+msgstr "Sem título"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:441
+msgid "Location"
+msgstr "Localização"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:445
+msgid "Select a Folder"
+msgstr "Selecione um pasta"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:477
+#, python-format
+msgid "<b>A file named \"%s\" already exists. Do you want to replace it?</b>"
+msgstr ""
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:478
+#, python-format
+msgid ""
+"The file already exists in \"%s\", replacing it will overwrite its contents."
+msgstr ""
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:480
+msgid "Replace"
+msgstr "Substituir"
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:6
 msgid "Xfce Panel Profiles"
