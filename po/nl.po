@@ -4,7 +4,8 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Xfce Bot <transifex@xfce.org>, 2023
+# Nick Schermer <nick@xfce.org>, 2024
+# Xfce Bot <transifex@xfce.org>, 2024
 # Pjotr <pjotrvertaalt@gmail.com>, 2024
 # 
 #, fuzzy
@@ -12,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce-apps.xfce4-panel-profiles\n"
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2024-11-19 12:48+0100\n"
+"POT-Creation-Date: 2024-11-26 00:49+0100\n"
 "PO-Revision-Date: 2018-07-13 15:34+0000\n"
 "Last-Translator: Pjotr <pjotrvertaalt@gmail.com>, 2024\n"
 "Language-Team: Dutch (https://app.transifex.com/xfce/teams/16840/nl/)\n"
@@ -43,6 +44,7 @@ msgid "Configuration;User;"
 msgstr "Configuratie;Gebruiker;"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:68
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:427
 msgid "Filename"
 msgstr "Bestandnaam"
 
@@ -52,13 +54,13 @@ msgstr "Bijgewerkt op"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:107
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:108
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:388
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:375
 msgid "Apply Configuration"
 msgstr "Instellingen toepassen"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:122
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:123
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:345
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:332
 msgid "Save Configuration"
 msgstr "Instellingen opslaan"
 
@@ -85,52 +87,41 @@ msgstr "_Hulp"
 msgid "_Close"
 msgstr "_Sluiten"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:99
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:415
-msgid "Save"
-msgstr "Opslaan"
-
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:101
-msgid "Open"
-msgstr "Openen"
-
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:106
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:344
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:387
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:414
-msgid "Cancel"
-msgstr "Annuleren"
-
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:151
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:134
 msgid "Current Configuration"
 msgstr "Huidige instellingen"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:169
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:152
 msgid "Today"
 msgstr "Vandaag"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:171
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:154
 msgid "Yesterday"
 msgstr "Gisteren"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:235
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:218
 #, python-format
 msgid "%s (Copy of %s)"
 msgstr "%s (Kopie van %s)"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:240
-msgid "Export configuration as..."
-msgstr "Instellingen exporteren als..."
-
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:241
-msgid "Untitled"
-msgstr "Naamloos"
-
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:253
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:236
 msgid "Import configuration file..."
 msgstr "Instellingenbestand importeren..."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:267
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:239
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:331
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:374
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:401
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:454
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:479
+msgid "Cancel"
+msgstr "Annuleren"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:240
+msgid "Open"
+msgstr "Openen"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:254
 msgid ""
 "Invalid configuration file!\n"
 "Please select a valid configuration file."
@@ -138,20 +129,20 @@ msgstr ""
 "Ongeldig instellingenbestand.\n"
 "Kies a.u.b. een geldig instellingenbestand."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:275
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:262
 msgid "OK"
 msgstr "Oké"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:338
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:325
 msgid "Name the new panel configuration"
 msgstr "Geef de nieuwe werkbalkinstellingen een naam"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:362
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:349
 #, python-format
 msgid "Backup_%s"
 msgstr "Reservekopie_%s"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:378
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:365
 msgid ""
 "Do you want to apply this configuration?\n"
 " The current configuration will be lost!"
@@ -159,22 +150,58 @@ msgstr ""
 "Wilt u deze instellingen gebruiken?\n"
 "De huidige instellingen zullen verloren gaan."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:395
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:382
 msgid "Make a backup of the current configuration"
 msgstr "Maak een reservekopie van de huidige instellingen"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:406
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:393
 msgid "Errors occurred while parsing the current configuration."
 msgstr ""
 "Er zijn fouten opgetreden tijdens het inlezen van de huidige instellingen."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:426
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:402
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:458
+msgid "Save"
+msgstr "Opslaan"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:413
 msgid ""
 "Do you want to save despite the errors? Some configuration information could"
 " be missing."
 msgstr ""
 "Wilt u toch opslaan ondanks de fouten? Een deel van de "
 "instellingeninformatie zou kunnen ontbreken."
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:421
+msgid "Export configuration as..."
+msgstr "Instellingen exporteren als..."
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:433
+msgid "Untitled"
+msgstr "Naamloos"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:441
+msgid "Location"
+msgstr "Locatie"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:445
+msgid "Select a Folder"
+msgstr "Kies een map"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:477
+#, python-format
+msgid "<b>A file named \"%s\" already exists. Do you want to replace it?</b>"
+msgstr ""
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:478
+#, python-format
+msgid ""
+"The file already exists in \"%s\", replacing it will overwrite its contents."
+msgstr ""
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:480
+msgid "Replace"
+msgstr "Vervangen"
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:6
 msgid "Xfce Panel Profiles"
