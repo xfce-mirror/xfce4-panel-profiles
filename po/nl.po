@@ -191,13 +191,15 @@ msgstr "Kies een map"
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:477
 #, python-format
 msgid "<b>A file named \"%s\" already exists. Do you want to replace it?</b>"
-msgstr ""
+msgstr "<b>Een bestand genaamd '%s' bestaat reeds. Wilt u het vervangen?</b>"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:478
 #, python-format
 msgid ""
 "The file already exists in \"%s\", replacing it will overwrite its contents."
 msgstr ""
+"Het bestand is reeds aanwezig in '%s', vervanging zal zijn bestaande inhoud "
+"overschrijven."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:480
 msgid "Replace"
