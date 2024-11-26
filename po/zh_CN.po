@@ -5,20 +5,21 @@
 # 
 # Translators:
 # Levi Zhou <congzhou821@gmail.com>, 2018
-# Xfce Bot <transifex@xfce.org>, 2023
 # Mingcong Bai <jeffbai@aosc.xyz>, 2023
-# Cally Mal <zhouxiaobo.500@gmail.com>, 2024
 # No Body, 2024
 # 玉堂白鹤 <yjwork@qq.com>, 2024
+# Nick Schermer <nick@xfce.org>, 2024
+# Xfce Bot <transifex@xfce.org>, 2024
+# Cally Mal <zhouxiaobo.500@gmail.com>, 2024
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-apps.xfce4-panel-profiles\n"
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2024-11-19 12:48+0100\n"
+"POT-Creation-Date: 2024-11-26 00:49+0100\n"
 "PO-Revision-Date: 2018-07-13 15:34+0000\n"
-"Last-Translator: 玉堂白鹤 <yjwork@qq.com>, 2024\n"
+"Last-Translator: Cally Mal <zhouxiaobo.500@gmail.com>, 2024\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/xfce/teams/16840/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -47,6 +48,7 @@ msgid "Configuration;User;"
 msgstr "配置;用户;"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:68
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:427
 msgid "Filename"
 msgstr "文件名"
 
@@ -56,13 +58,13 @@ msgstr "修改日期"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:107
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:108
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:388
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:375
 msgid "Apply Configuration"
 msgstr "应用配置"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:122
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:123
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:345
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:332
 msgid "Save Configuration"
 msgstr "保存配置"
 
@@ -89,52 +91,41 @@ msgstr "帮助(_H)"
 msgid "_Close"
 msgstr "关闭(_C)"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:99
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:415
-msgid "Save"
-msgstr "保存"
-
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:101
-msgid "Open"
-msgstr "打开"
-
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:106
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:344
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:387
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:414
-msgid "Cancel"
-msgstr "取消"
-
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:151
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:134
 msgid "Current Configuration"
 msgstr "当前配置"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:169
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:152
 msgid "Today"
 msgstr "今天"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:171
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:154
 msgid "Yesterday"
 msgstr "昨天"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:235
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:218
 #, python-format
 msgid "%s (Copy of %s)"
 msgstr "%s (复制了 %s)"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:240
-msgid "Export configuration as..."
-msgstr "将配置文件导出为 ..."
-
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:241
-msgid "Untitled"
-msgstr "无标题"
-
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:253
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:236
 msgid "Import configuration file..."
 msgstr "导入配置文件中..."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:267
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:239
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:331
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:374
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:401
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:454
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:479
+msgid "Cancel"
+msgstr "取消"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:240
+msgid "Open"
+msgstr "打开"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:254
 msgid ""
 "Invalid configuration file!\n"
 "Please select a valid configuration file."
@@ -142,20 +133,20 @@ msgstr ""
 "无效配置文件！\n"
 "请选择有效的配置文件。"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:275
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:262
 msgid "OK"
 msgstr "确定"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:338
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:325
 msgid "Name the new panel configuration"
 msgstr "对新面板配置进行命名"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:362
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:349
 #, python-format
 msgid "Backup_%s"
 msgstr "备份 %s (_B)"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:378
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:365
 msgid ""
 "Do you want to apply this configuration?\n"
 " The current configuration will be lost!"
@@ -163,19 +154,55 @@ msgstr ""
 "是否要应用此配置？\n"
 "当前配置将丢失！"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:395
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:382
 msgid "Make a backup of the current configuration"
 msgstr "备份当前配置"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:406
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:393
 msgid "Errors occurred while parsing the current configuration."
 msgstr "分析当前配置时出错。"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:426
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:402
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:458
+msgid "Save"
+msgstr "保存"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:413
 msgid ""
 "Do you want to save despite the errors? Some configuration information could"
 " be missing."
 msgstr "尽管有错误，您仍要保存吗？可能会丢失部分配置信息。"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:421
+msgid "Export configuration as..."
+msgstr "将配置文件导出为 ..."
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:433
+msgid "Untitled"
+msgstr "无标题"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:441
+msgid "Location"
+msgstr "位置"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:445
+msgid "Select a Folder"
+msgstr "选择一个文件夹"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:477
+#, python-format
+msgid "<b>A file named \"%s\" already exists. Do you want to replace it?</b>"
+msgstr ""
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:478
+#, python-format
+msgid ""
+"The file already exists in \"%s\", replacing it will overwrite its contents."
+msgstr ""
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:480
+msgid "Replace"
+msgstr "替换"
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:6
 msgid "Xfce Panel Profiles"
