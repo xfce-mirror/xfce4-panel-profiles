@@ -190,13 +190,15 @@ msgstr "Välj en mapp"
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:477
 #, python-format
 msgid "<b>A file named \"%s\" already exists. Do you want to replace it?</b>"
-msgstr ""
+msgstr "<b>En fil med namnet \"%s\" existerar redan. Vill du ersätta den? </b>"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:478
 #, python-format
 msgid ""
 "The file already exists in \"%s\", replacing it will overwrite its contents."
 msgstr ""
+"Filen existerar redan i \"%s\", om du ersätter den kommer dess innehåll att "
+"skrivas över."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:480
 msgid "Replace"
