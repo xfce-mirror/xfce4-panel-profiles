@@ -193,12 +193,16 @@ msgstr "Wählen Sie einen Ordner"
 #, python-format
 msgid "<b>A file named \"%s\" already exists. Do you want to replace it?</b>"
 msgstr ""
+"<b> Eine Datei mit dem Namen \"%s\" existiert bereits. Möchten Sie sie "
+"ersetzen?</b>"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:478
 #, python-format
 msgid ""
 "The file already exists in \"%s\", replacing it will overwrite its contents."
 msgstr ""
+"Die Datei existiert bereits in \"%s\", das Ersetzen überschreibt ihren "
+"Inhalt."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:480
 msgid "Replace"
