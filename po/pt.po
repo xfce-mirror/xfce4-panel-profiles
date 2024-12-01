@@ -39,8 +39,8 @@ msgid ""
 "panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
 msgstr ""
 "painel;barra de "
-"tarefas;layout;interruptor;aplicar;restaurar;guardar;backup;cópia de "
-"segurança;remover;importar;exportar;"
+"tarefas;esquema;disposição;interruptor;aplicar;restaurar;guardar;gravar;backup;cópia"
+" de segurança;remover;importar;exportar;"
 
 #: org.xfce.PanelProfiles.desktop.in:12
 msgid "Configuration;User;"
@@ -193,13 +193,15 @@ msgstr "Selecione um pasta"
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:477
 #, python-format
 msgid "<b>A file named \"%s\" already exists. Do you want to replace it?</b>"
-msgstr ""
+msgstr "<b>Já existe um ficheiro chamado \"%s\". Quer substituí-lo?</b>"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:478
 #, python-format
 msgid ""
 "The file already exists in \"%s\", replacing it will overwrite its contents."
 msgstr ""
+"O ficheiro já existe em \"%s\". Substituí-lo irá sobrescrever o seu "
+"conteúdo."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:480
 msgid "Replace"
@@ -219,7 +221,7 @@ msgid ""
 "enables managing different layouts with little effort. Xfce4-panel-profiles "
 "makes it possible to backup, restore, import and export panel layouts."
 msgstr ""
-"Podem ser criados vários esquemas de painel usando o painel do Xfce. Esta "
-"ferramenta permite gerir sem esforço diferentes esquemas. O Xfce4-panel-"
-"profiles permite efetuar cópias de segurança, restaurar, importar e exportar"
-" esquemas de painéis."
+"Podem ser criados vários esquemas de painel utilizando o painel do Xfce. "
+"Esta ferramenta permite gerir sem esforço diferentes esquemas. O "
+"Xfce4-panel-profiles permite efetuar cópias de segurança, restaurar, "
+"importar e exportar esquemas de painéis."
