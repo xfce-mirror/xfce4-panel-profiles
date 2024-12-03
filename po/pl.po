@@ -31,7 +31,7 @@ msgstr "Profile paneli"
 #: org.xfce.PanelProfiles.desktop.in:4
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:23
 msgid "Backup and restore your panel configuration"
-msgstr "Tworzy i przywraca kopie zapasowe konfiguracji paneli"
+msgstr "Tworzy i przywraca kopie zapasowe konfiguracji paneli"
 
 #: org.xfce.PanelProfiles.desktop.in:5
 msgid ""
@@ -212,7 +212,7 @@ msgstr "Profile paneli Xfce"
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:7
 msgid "Application to manage different panel layouts in Xfce"
-msgstr "Program do zarządzania różnymi układami paneli w Xfce"
+msgstr "Program do zarządzania różnymi układami paneli w Xfce"
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:11
 msgid ""
