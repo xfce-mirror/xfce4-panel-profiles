@@ -156,7 +156,7 @@ msgstr "בצע גיבוי של הקונפיגורציה הנוכחית"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:393
 msgid "Errors occurred while parsing the current configuration."
-msgstr ""
+msgstr "אירעו שגיאות בעת ניתוח הקונפיגורציה הנוכחית."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:402
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:458
@@ -189,13 +189,13 @@ msgstr "בחר תיקייה"
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:477
 #, python-format
 msgid "<b>A file named \"%s\" already exists. Do you want to replace it?</b>"
-msgstr ""
+msgstr "<b>קובץ בשם \"%s\" כבר קיים. האם אתה רוצה להחליף אותו?</b>"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:478
 #, python-format
 msgid ""
 "The file already exists in \"%s\", replacing it will overwrite its contents."
-msgstr ""
+msgstr "הקובץ כבר קיים ב \"%s\", החלפתו תשכתב את התכולה."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:480
 msgid "Replace"
