@@ -156,7 +156,7 @@ msgstr "Lav en sikkerhedskopiering af den nuværende konfiguration"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:393
 msgid "Errors occurred while parsing the current configuration."
-msgstr ""
+msgstr "Der opstod fejl under tolkning af den nuværende konfiguration."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:402
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:458
@@ -190,13 +190,14 @@ msgstr "Vælg en mappe"
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:477
 #, python-format
 msgid "<b>A file named \"%s\" already exists. Do you want to replace it?</b>"
-msgstr ""
+msgstr "<b>Der findes allerede en fil kaldet \"%s\". Vil du erstatte den?</b>"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:478
 #, python-format
 msgid ""
 "The file already exists in \"%s\", replacing it will overwrite its contents."
 msgstr ""
+"Filen findes allerede i \"%s\". Hvis den erstattes overskrives dens indhold."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:480
 msgid "Replace"
