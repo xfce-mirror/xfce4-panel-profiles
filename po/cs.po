@@ -192,13 +192,13 @@ msgstr "Vyberte složku"
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:477
 #, python-format
 msgid "<b>A file named \"%s\" already exists. Do you want to replace it?</b>"
-msgstr ""
+msgstr "<b>Soubor s názvem „%s“ již existuje. Chcete jej nahradit?</b>"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:478
 #, python-format
 msgid ""
 "The file already exists in \"%s\", replacing it will overwrite its contents."
-msgstr ""
+msgstr "Tento soubor již v „%s“ existuje, nahrazením se přepíše jeho obsah."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:480
 msgid "Replace"
