@@ -1,3 +1,34 @@
+1.0.15 (2024-12-25)
+======
+- export: Warn when the file already exists
+- filedlg: Remove dead code
+- export: Make filename extension obvious
+- xfce4-panel-profiles.glade: Remove unused save_dialog
+- Fix translated string
+- ci: Update references for autotools/meson split
+- Install Unity layout
+- I18n: Update po/LINGUAS list
+- Improve CLI help messages
+- I18n: Update po/LINGUAS list
+- Update bug report address in manpage
+- build: Get rid of intltool
+- Revert "Open xfce4-panel on close button (bug #16505)"
+- Revert "Fix typos in comments."
+- data/metadata: Refresh appstream metainfo
+- Remove generated xfce4-panel-profiles.pot
+- Update application menu name in layout configs
+- Translation Updates:
+  Albanian, Armenian (Armenia), Asturian, Basque, Belarusian,
+  Bulgarian, Catalan, Chinese (China), Chinese (Hong Kong), Chinese
+  (Taiwan), Croatian, Czech, Danish, Dutch, Eastern Armenian, English
+  (Australia), English (United Kingdom), Estonian, Finnish, French,
+  Galician, German, Greek, Hebrew, Hindi, Hungarian, Icelandic,
+  Indonesian, Interlingue, Italian, Japanese, Kazakh, Korean,
+  Lithuanian, Malay, Norwegian Bokmål, Occitan (post 1500), Persian
+  (Iran), Polish, Portuguese, Portuguese (Brazil), Romanian, Russian,
+  Serbian, Slovak, Slovenian, Spanish, Swedish, Thai, Turkish,
+  Ukrainian
+
 1.0.14 (2023-06-05)
 ======
 - Save and restore rc-files
