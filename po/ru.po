@@ -11,6 +11,7 @@
 # Nick Schermer <nick@xfce.org>, 2024
 # Xfce Bot <transifex@xfce.org>, 2024
 # Темак, 2024
+# vladiruzz, 2025
 # 
 #, fuzzy
 msgid ""
@@ -19,7 +20,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
 "POT-Creation-Date: 2024-11-26 00:49+0100\n"
 "PO-Revision-Date: 2018-07-13 15:34+0000\n"
-"Last-Translator: Темак, 2024\n"
+"Last-Translator: vladiruzz, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/xfce/teams/16840/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -160,7 +161,7 @@ msgstr "Сделать резервную копию текущей конфиг
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:393
 msgid "Errors occurred while parsing the current configuration."
-msgstr ""
+msgstr "Произошли ошибки при анализе текущей конфигурации."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:402
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:458
@@ -194,13 +195,13 @@ msgstr "Выбор папки"
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:477
 #, python-format
 msgid "<b>A file named \"%s\" already exists. Do you want to replace it?</b>"
-msgstr ""
+msgstr "<b>Файл \"%s\" уже существует. Вы хотите заменить его?</b>"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:478
 #, python-format
 msgid ""
 "The file already exists in \"%s\", replacing it will overwrite its contents."
-msgstr ""
+msgstr "Файл уже существует в \"%s\", замена его изменит его содержимое."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:480
 msgid "Replace"
