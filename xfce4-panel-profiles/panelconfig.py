@@ -118,30 +118,7 @@ class PanelConfig(object):
 
         self.remove_keys(rem_keys)
 
-    def check_desktop(self, path):
-        try:
-            f = self.get_desktop_source_file(path)
-            bytes = f.read()
-            f.close()
-        except (KeyError, FileNotFoundError):
-            return False
-
-        # Check if binary exists
-        keyfile = GLib.KeyFile.new()
-        try:
-            if keyfile.load_from_data(bytes.decode(), len(bytes), GLib.KeyFileFlags.NONE):
-                exec_str = keyfile.get_string("Desktop Entry", "Exec")
-                if self.check_exec(exec_str):
-                    return True
-        except GLib.Error:  # pylint: disable=E0712
-            self.errors.append('Error parsing desktop file ' + path)
-            pass #  https://bugzilla.xfce.org/show_bug.cgi?id=14597
-
-        return False
-
     def find_desktops(self):
-        rem_keys = []
-
         for pp, pv in self.properties.items():
             path = pp.split('/')
             if len(path) == 3 and path[0] == '' and path[1] == 'plugins' and \
@@ -151,16 +128,10 @@ class PanelConfig(object):
                         pv.get_string() == 'launcher':
                     prop_path = '/plugins/plugin-' + number + '/items'
                     if prop_path not in self.properties:
-                        rem_keys.append('/plugins/plugin-' + number)
                         continue
                     for d in self.properties[prop_path].unpack():
                         desktop_path = 'launcher-' + number + '/' + d
-                        if self.check_desktop(desktop_path):
-                            self.desktops.append(desktop_path)
-                        else:
-                            rem_keys.append('/plugins/plugin-' + number)
-
-        self.remove_keys(rem_keys)
+                        self.desktops.append(desktop_path)
 
     def find_rc_files(self):
         if self.source_not_file():
