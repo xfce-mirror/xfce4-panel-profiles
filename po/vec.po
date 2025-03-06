@@ -1,0 +1,222 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Xfce
+# This file is distributed under the same license as the xfce-apps.xfce4-panel-profiles package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Fiero Veneto, 2025
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xfce-apps.xfce4-panel-profiles\n"
+"Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
+"POT-Creation-Date: 2024-11-26 00:49+0100\n"
+"PO-Revision-Date: 2018-07-13 15:34+0000\n"
+"Last-Translator: Fiero Veneto, 2025\n"
+"Language-Team: Venetian (https://app.transifex.com/xfce/teams/16840/vec/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: vec\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: org.xfce.PanelProfiles.desktop.in:3
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:18
+msgid "Panel Profiles"
+msgstr "Profiłi del paneło"
+
+#: org.xfce.PanelProfiles.desktop.in:4
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:23
+msgid "Backup and restore your panel configuration"
+msgstr "Backup e restaurasion de ła configurasion dei panełi"
+
+#: org.xfce.PanelProfiles.desktop.in:5
+msgid ""
+"panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
+msgstr ""
+"paneło;baradeaplicasion;dispozision;canbiar;aplicar;restaurar;salvar;backup;ełiminar;inportar;esportar;"
+
+#: org.xfce.PanelProfiles.desktop.in:12
+msgid "Configuration;User;"
+msgstr "Configurasion;Utente;"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:68
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:427
+msgid "Filename"
+msgstr "Nome del file"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:84
+msgid "Date Modified"
+msgstr "Data de l'ùltema modìfega"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:107
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:108
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:375
+msgid "Apply Configuration"
+msgstr "Aplicar ła configurasion"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:122
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:123
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:332
+msgid "Save Configuration"
+msgstr "Salvar ła configurasion"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:137
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:138
+msgid "Remove Configuration"
+msgstr "Ełiminar ła configurasion"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:152
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:153
+msgid "Export"
+msgstr "Esportar"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:167
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:168
+msgid "Import"
+msgstr "Inportar"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:195
+msgid "_Help"
+msgstr "_Juto"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:210
+msgid "_Close"
+msgstr "_Sarar"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:134
+msgid "Current Configuration"
+msgstr "Configurasion atuałe"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:152
+msgid "Today"
+msgstr "Uncó"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:154
+msgid "Yesterday"
+msgstr "Ieri"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:218
+#, python-format
+msgid "%s (Copy of %s)"
+msgstr "%s (còpia de %s)"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:236
+msgid "Import configuration file..."
+msgstr "Inportar un file de configurasion..."
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:239
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:331
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:374
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:401
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:454
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:479
+msgid "Cancel"
+msgstr "Anułar"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:240
+msgid "Open"
+msgstr "Vèrzar"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:254
+msgid ""
+"Invalid configuration file!\n"
+"Please select a valid configuration file."
+msgstr ""
+"El file de configurasion no el ze vàłido.\n"
+"Ełèzar un file de configurasion vàłido."
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:262
+msgid "OK"
+msgstr "Acetar"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:325
+msgid "Name the new panel configuration"
+msgstr "Nome de ła nova configurasion"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:349
+#, python-format
+msgid "Backup_%s"
+msgstr "Còpia_de_seguresa_%s"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:365
+msgid ""
+"Do you want to apply this configuration?\n"
+" The current configuration will be lost!"
+msgstr ""
+"Se vołe aplicar sta configurasion?\n"
+"Ła vegnarà perdesta ła configurasion atuałe."
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:382
+msgid "Make a backup of the current configuration"
+msgstr "Far na còpia de seguresa (backup) de ła configurasion atuałe"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:393
+msgid "Errors occurred while parsing the current configuration."
+msgstr "Ghe ze sta erori co se anałizava ła configurasion atuałe"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:402
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:458
+msgid "Save"
+msgstr "Salvar "
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:413
+msgid ""
+"Do you want to save despite the errors? Some configuration information could"
+" be missing."
+msgstr ""
+"Se vołe salvar no-ostante i erori? Ze pusìbiłe che pose mancar racuante "
+"informasion de configurasion."
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:421
+msgid "Export configuration as..."
+msgstr "Esportar ła configurasion cofà..."
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:433
+msgid "Untitled"
+msgstr "Sensa tìtuło"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:441
+msgid "Location"
+msgstr "Pozision"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:445
+msgid "Select a Folder"
+msgstr "Ełèzar na carteła"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:477
+#, python-format
+msgid "<b>A file named \"%s\" already exists. Do you want to replace it?</b>"
+msgstr "<b>Za ghe ze un file ciamà \"%s\". Se vołe renpiasarlo?</b>"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:478
+#, python-format
+msgid ""
+"The file already exists in \"%s\", replacing it will overwrite its contents."
+msgstr ""
+"El file che za ghe ze adentro de «%s», renpiasàndoło vengarà sorascrito el "
+"so contegnuo."
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:480
+msgid "Replace"
+msgstr "Renpiasar"
+
+#: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:6
+msgid "Xfce Panel Profiles"
+msgstr "Profiłi del paneło Xfce"
+
+#: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:7
+msgid "Application to manage different panel layouts in Xfce"
+msgstr "Aplicasion par zestionar difarenti distribusion dei panełi in Xfce"
+
+#: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:11
+msgid ""
+"Multitude of panel layouts can be created using Xfce panel. This tool "
+"enables managing different layouts with little effort. Xfce4-panel-profiles "
+"makes it possible to backup, restore, import and export panel layouts."
+msgstr ""
+"Se połe crear vari dizegni de panełi doparando el paneło Xfce. Sto "
+"instrumento el permete de zestionar difarenti dizegni co poco sforso. "
+"Xfce4-panel-profiles el permete far còpie de seguresa (backup), restaurar, "
+"inportar e esportar dizegni dei panełi."
