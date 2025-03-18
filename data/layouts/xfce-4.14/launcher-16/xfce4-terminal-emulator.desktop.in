@@ -1,9 +1,9 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Exec=exo-open --launch TerminalEmulator
+Exec=@open_cmd@ --launch TerminalEmulator
 Icon=utilities-terminal
-StartupNotify=false
+StartupNotify=true
 Terminal=false
 Categories=Utility;X-XFCE;X-Xfce-Toplevel;
 OnlyShowIn=XFCE;
