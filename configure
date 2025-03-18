@@ -49,6 +49,8 @@ done
 
 DOCDIR=${DOCDIR:-"$PREFIX/share/doc/$APPNAME"}
 MANDIR=${MANDIR:-"$PREFIX/share/man"}
+OPEN_CMD='xfce-open'
+type "$OPEN_CMD" >/dev/null 2>&1 || OPEN_CMD='exo-open'
 
 echo "Creating Makefile..."
 sed -e s,@prefix@,$PREFIX, Makefile.in.in > Makefile.in
@@ -58,6 +60,7 @@ sed \
   -e s,@mandir@,$MANDIR,g \
   -e s,@docdir@,$DOCDIR,g \
   -e s,@python@,$PYTHON,g \
+  -e s,@open_cmd@,$OPEN_CMD,g \
   Makefile.in > Makefile
 echo "Installation prefix is $PREFIX"
 echo "Installation mandir is $MANDIR"

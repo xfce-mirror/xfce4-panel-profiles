@@ -1,8 +1,8 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Exec=exo-open --launch FileManager %u
-Icon=system-file-manager
+Exec=@open_cmd@ --launch FileManager %u
+Icon=org.xfce.filemanager
 StartupNotify=true
 Terminal=false
 Categories=Utility;X-XFCE;X-Xfce-Toplevel;
