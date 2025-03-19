@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Exec=@open_cmd@ --launch WebBrowser %u
+Exec=exo-open --launch WebBrowser %u
 Icon=web-browser
 StartupNotify=true
 Terminal=false

@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Exec=@open_cmd@ --launch TerminalEmulator
+Exec=exo-open --launch TerminalEmulator
 Icon=utilities-terminal
 StartupNotify=true
 Terminal=false

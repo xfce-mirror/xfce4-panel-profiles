@@ -1,33 +1,35 @@
-favorites=xfce4-web-browser.desktop,xfce4-mail-reader.desktop,xfce4-file-manager.desktop,libreoffice-writer.desktop,libreoffice-calc.desktop,pidgin.desktop,org.gnome.Software.desktop,xfce4-terminal-emulator.desktop,xfhelp4.desktop
-recent=
-button-icon=xubuntu-logo-menu
-button-single-row=false
+favorites=xfce4-web-browser.desktop,xfce4-mail-reader.desktop,xfce4-file-manager.desktop,xfce4-terminal-emulator.desktop
+recent=xfce-wm-settings.desktop
+button-icon=org.xfce.panel.whiskermenu
+button-single-row=true
 show-button-title=false
 show-button-icon=true
 launcher-show-name=true
-launcher-show-description=false
+launcher-show-description=true
 launcher-show-tooltip=true
-item-icon-size=1
+launcher-icon-size=4
 hover-switch-category=false
 category-show-name=true
-category-icon-size=0
-load-hierarchy=true
-view-as-icons=false
+category-icon-size=1
+sort-categories=true
+view-mode=0
 default-category=0
-recent-items-max=10
+recent-items-max=45
 favorites-in-recent=true
 position-search-alternate=true
-position-commands-alternate=false
+position-commands-alternate=true
 position-categories-alternate=false
+position-categories-horizontal=true
 stay-on-focus-out=false
+profile-shape=2
 confirm-session-command=true
-menu-width=450
-menu-height=500
+menu-width=1301
+menu-height=743
 menu-opacity=100
 command-settings=xfce4-settings-manager
-show-command-settings=true
+show-command-settings=false
 command-lockscreen=xflock4
-show-command-lockscreen=true
+show-command-lockscreen=false
 command-switchuser=dm-tool switch-to-greeter
 show-command-switchuser=false
 command-logoutuser=xfce4-session-logout --logout --fast
@@ -41,40 +43,46 @@ show-command-suspend=false
 command-hibernate=xfce4-session-logout --hibernate
 show-command-hibernate=false
 command-logout=xfce4-session-logout
-show-command-logout=true
+show-command-logout=false
 command-menueditor=menulibre
-show-command-menueditor=true
+show-command-menueditor=false
 command-profile=mugshot
-show-command-profile=true
-search-actions=5
+show-command-profile=false
+search-actions=6
 
 [action0]
 name=Man Pages
 pattern=#
-command=@open_cmd@ --launch TerminalEmulator man %s
+command=exo-open --launch TerminalEmulator man %s
 regex=false
 
 [action1]
-name=Wikipedia
-pattern=!w
-command=@open_cmd@ --launch WebBrowser https://en.wikipedia.org/wiki/%u
+name=Search the Web
+pattern=?
+command=exo-open --launch WebBrowser https://duckduckgo.com/?q=%u
 regex=false
 
 [action2]
-name=Run in Terminal
-pattern=!
-command=@open_cmd@ --launch TerminalEmulator %s
-regex=false
-
-[action3]
-name=Open URI
-pattern=^(file|http|https):\\/\\/(.*)$
-command=@open_cmd@ \\0
-regex=true
-
-[action4]
-name=Search for files
+name=Search for Files
 pattern=-
 command=catfish --path=~ --start %s
 regex=false
+
+[action3]
+name=Wikipedia
+pattern=!w
+command=exo-open --launch WebBrowser https://en.wikipedia.org/wiki/%u
+regex=false
+
+[action4]
+name=Run in Terminal
+pattern=!
+command=exo-open --launch TerminalEmulator %s
+regex=false
+
+[action5]
+name=Open URI
+pattern=^(file|http|https):\\/\\/(.*)$
+command=exo-open \\0
+regex=true
 

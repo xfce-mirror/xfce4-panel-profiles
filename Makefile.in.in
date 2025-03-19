@@ -8,30 +8,6 @@ LANGUAGE_FILES=$(patsubst po/%.po, locale/%/LC_MESSAGES/$(APPNAME).mo, $(wildcar
 DESKTOP_FILE = org.xfce.PanelProfiles.desktop
 METAINFO_NAME = org.xfce.PanelProfiles.appdata.xml
 METAINFO_FILE = data/metainfo/$(METAINFO_NAME)
-OPEN_CMD_FILES = \
-	data/layouts/cupertino/launcher-16/xfce4-file-manager.desktop \
-	data/layouts/cupertino/launcher-17/xfce4-web-browser.desktop \
-	data/layouts/gnome2/launcher-5/xfce4-web-browser.desktop \
-	data/layouts/gnome2/launcher-6/xfce4-mail-reader.desktop \
-	data/layouts/redmond7/launcher-3/xfce4-web-browser.desktop \
-	data/layouts/redmond7/launcher-4/xfce4-file-manager.desktop \
-	data/layouts/redmond7/whiskermenu-1.rc \
-	data/layouts/unity/whiskermenu-1.rc \
-	data/layouts/xfce-4.12/launcher-10/xfce4-terminal-emulator.desktop \
-	data/layouts/xfce-4.12/launcher-11/xfce4-file-manager.desktop \
-	data/layouts/xfce-4.12/launcher-12/xfce4-web-browser.desktop \
-	data/layouts/xfce-4.14/launcher-16/xfce4-terminal-emulator.desktop \
-	data/layouts/xfce-4.14/launcher-17/xfce4-file-manager.desktop \
-	data/layouts/xfce-4.14/launcher-18/xfce4-web-browser.desktop \
-	data/layouts/xfce-4.16/launcher-16/xfce4-terminal-emulator.desktop \
-	data/layouts/xfce-4.16/launcher-17/xfce4-file-manager.desktop \
-	data/layouts/xfce-4.16/launcher-18/xfce4-web-browser.desktop \
-	data/layouts/xubuntu-12.04/launcher-15/xfce4-web-browser.desktop \
-	data/layouts/xubuntu-12.04/launcher-16/xfce4-mail-reader.desktop \
-	data/layouts/xubuntu-12.04/launcher-17/xfce4-terminal-emulator.desktop \
-	data/layouts/xubuntu-14.04/whiskermenu-1.rc \
-	data/layouts/xubuntu-18.04/whiskermenu-1.rc \
-	$(NULL)
 DESTDIR=
 
 GIT_BRANCH := $(shell git branch --show-current)
@@ -54,10 +30,6 @@ all: $(METAINFO_FILE)
 $(METAINFO_FILE): $(METAINFO_FILE).in
 	msgfmt --xml --template $< -d po -o $@
 
-all: $(OPEN_CMD_FILES)
-data/layouts/%: data/layouts/%.in
-	sed -e "s,\@open_cmd\@,@open_cmd@,g" $< >$@
-
 locale/%/LC_MESSAGES/$(APPNAME).mo: po/%.po
 	mkdir -p $(dir $@)
 	msgfmt $< -o $@
@@ -69,7 +41,6 @@ ifeq ($(shell tar --help|grep -o sort=),sort=)
   TAROPTS := --sort=name --format ustar
   TAROPTS += --owner=0 --group=0 --numeric-owner
   TAROPTS += --mode=u=wrX,og=
-  TAROPTS += --exclude='*.in'
 endif
 layouts:
 	cd data/layouts/cupertino; tar $(TAROPTS) -cvjf "../Cupertino.tar.bz2" *
@@ -163,4 +134,3 @@ clean:
 	rm -f Makefile
 	rm -f xfce4-panel-profiles/info.py
 	rm -f xfce4-panel-profiles/info.py.in
-	rm -f $(OPEN_CMD_FILES)
