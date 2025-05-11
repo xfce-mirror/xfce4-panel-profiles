@@ -1,2 +1,2 @@
-appname = '%appname%'
-version = '%version%'
+appname = '@appname@'
+version = '@version@-@revision@' if '-dev' in '@version@' else '@version@'
