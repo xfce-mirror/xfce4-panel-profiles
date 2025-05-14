@@ -4,6 +4,7 @@ info_py_in = configure_file(
   configuration: {
     'appname': meson.project_name(),
     'version': meson.project_version(),
+    'copyright_year': copyright_year,
     'revision': '@REVISION@',
   },
   install: false,

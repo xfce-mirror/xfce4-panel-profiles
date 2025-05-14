@@ -6,6 +6,7 @@ project(
 )
 
 pkgdatadir = get_option('prefix') / get_option('datadir') / meson.project_name()
+copyright_year = '2025'
 
 pkgconfig = import('pkgconfig')
 python = import('python')
