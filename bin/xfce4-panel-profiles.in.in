@@ -1,2 +1,0 @@
-#!/bin/sh
-%python% %prefix%/share/xfce4-panel-profiles/xfce4-panel-profiles/xfce4-panel-profiles.py "$@"

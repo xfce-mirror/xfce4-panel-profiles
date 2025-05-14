@@ -29,17 +29,9 @@ import textwrap
 
 import gi
 gi.require_version('Gtk', '3.0')
-# Try to import the new Libxfce4ui gir name (since 4.15.7)
-# if it does not exists, try the old libxfce4ui
-try:
-  gi.require_version('Libxfce4ui', '2.0')
-  from gi.repository import Libxfce4ui as libxfce4ui
-  from gi.repository import Libxfce4util as libxfce4util
-except ValueError:
-  gi.require_version('libxfce4ui', '2.0')
-  from gi.repository import libxfce4ui
-  from gi.repository import libxfce4util
-
+gi.require_version('Libxfce4ui', '2.0')
+from gi.repository import Libxfce4ui as libxfce4ui
+from gi.repository import Libxfce4util as libxfce4util
 from gi.repository import Gtk, GLib, Gio
 
 from panelconfig import PanelConfig
@@ -317,6 +309,25 @@ class XfcePanelProfiles:
                                     component='xfce4-panel-profiles',
                                     page='xfce4-panel-profiles',
                                     offset=None)
+
+    def on_about_clicked(self, *args):
+        '''Shows the about dialog.'''
+        authors = [
+            "Alistair Buxton <a.j.buxton@gmail.com>",
+            "Sean Davis <bluesabre@xfce.org>",
+        ]
+
+        about = Gtk.AboutDialog(parent=self.window,
+                                program_name=info.appname,
+                                logo_icon_name="org.xfce.PanelProfiles",
+                                comments=_("Backup and restore your panel configuration"),
+                                website="https://docs.xfce.org/apps/xfce4-panel-profiles/start",
+                                version=info.version,
+                                license=libxfce4util.get_license_text(libxfce4util.LicenseTextType.GPL),
+                                copyright=f"Copyright © 2013-{info.copyright_year} The Xfce development team",
+                                authors=authors)
+        about.run()
+        about.destroy()
 
 
 class PanelSaveDialog(Gtk.MessageDialog):
