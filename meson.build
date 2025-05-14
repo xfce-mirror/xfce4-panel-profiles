@@ -21,7 +21,7 @@ python3 = python.find_installation(
 dependency_versions = {
   'glib': '>= 2.50.0',
   'gtk': '>= 3.22.0',
-  'xfce4': '>= 4.12.0',
+  'xfce4': '>= 4.16.0',
 }
 
 # Declare runtime dependency versions here to make packaging more obvious
