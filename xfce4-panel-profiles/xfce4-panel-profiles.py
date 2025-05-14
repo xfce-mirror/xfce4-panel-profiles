@@ -318,6 +318,25 @@ class XfcePanelProfiles:
                                     page='xfce4-panel-profiles',
                                     offset=None)
 
+    def on_about_clicked(self, *args):
+        '''Shows the about dialog.'''
+        authors = [
+            "Alistair Buxton <a.j.buxton@gmail.com>",
+            "Sean Davis <bluesabre@xfce.org>",
+        ]
+
+        about = Gtk.AboutDialog(parent=self.window,
+                                program_name=info.appname,
+                                logo_icon_name="org.xfce.PanelProfiles",
+                                comments=_("Backup and restore your panel configuration"),
+                                website="https://docs.xfce.org/apps/xfce4-panel-profiles/start",
+                                version=info.version,
+                                license=libxfce4util.get_license_text(libxfce4util.LicenseTextType.GPL),
+                                copyright="Copyright © 2013-2025 The Xfce development team",
+                                authors=authors)
+        about.run()
+        about.destroy()
+
 
 class PanelSaveDialog(Gtk.MessageDialog):
 
