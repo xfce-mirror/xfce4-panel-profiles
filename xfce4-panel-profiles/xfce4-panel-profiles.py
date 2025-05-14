@@ -324,7 +324,7 @@ class XfcePanelProfiles:
                                 website="https://docs.xfce.org/apps/xfce4-panel-profiles/start",
                                 version=info.version,
                                 license=libxfce4util.get_license_text(libxfce4util.LicenseTextType.GPL),
-                                copyright="Copyright © 2013-2025 The Xfce development team",
+                                copyright=f"Copyright © 2013-{info.copyright_year} The Xfce development team",
                                 authors=authors)
         about.run()
         about.destroy()
