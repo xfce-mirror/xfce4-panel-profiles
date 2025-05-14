@@ -13,11 +13,13 @@ DESTDIR=
 GIT_BRANCH := $(shell git branch --show-current)
 
 all: $(LANGUAGE_FILES) layouts
-	sed -e s,%prefix%,$(PREFIX), bin/$(APPNAME).in.in > bin/$(APPNAME).in
-	sed -e s,%python%,$(PYTHON), bin/$(APPNAME).in > bin/$(APPNAME)
+	sed -e s,\@pkgdatadir\@,$(PREFIX)/share/xfce4-panel-profiles, -e s,\@python\@,$(PYTHON), bin/$(APPNAME).in > bin/$(APPNAME)
 
-	sed -e s,%appname%,$(APPNAME), xfce4-panel-profiles/info.py.in.in > xfce4-panel-profiles/info.py.in
-	sed -e s,%version%,$(VERSION), xfce4-panel-profiles/info.py.in > xfce4-panel-profiles/info.py
+	sed -e s,\@appname\@,$(APPNAME), \
+		-e s,\@version\@,$(VERSION),g \
+		-e s,\@revision\@,UNKNOWN, \
+		-e s,\@copyright_year\@,2025, \
+		xfce4-panel-profiles/info.py.in.in > xfce4-panel-profiles/info.py
 
 	chmod +x bin/$(APPNAME)
 
