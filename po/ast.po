@@ -4,18 +4,18 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# enolp <enolp@softastur.org>, 2023
 # Xfce Bot <transifex@xfce.org>, 2024
 # Ḥavi Margallo, 2024
+# enolp <enolp@softastur.org>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-apps.xfce4-panel-profiles\n"
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2024-11-26 00:49+0100\n"
+"POT-Creation-Date: 2025-05-15 12:49+0200\n"
 "PO-Revision-Date: 2018-07-13 15:34+0000\n"
-"Last-Translator: Ḥavi Margallo, 2024\n"
+"Last-Translator: enolp <enolp@softastur.org>, 2025\n"
 "Language-Team: Asturian (https://app.transifex.com/xfce/teams/16840/ast/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -30,22 +30,17 @@ msgstr "Pefiles de panel"
 
 #: org.xfce.PanelProfiles.desktop.in:4
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:23
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:323
 msgid "Backup and restore your panel configuration"
 msgstr "Respaldar ya restaurar los tos axustes de panel"
 
-#: org.xfce.PanelProfiles.desktop.in:5
+#: org.xfce.PanelProfiles.desktop.in:11
 msgid ""
-"panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
+"Configuration;User;panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
 msgstr ""
-"panel;barra de "
-"tarees;diseñu;alternar;restaurar;guardar;respaldu;desaniciar;importar;esportar;"
-
-#: org.xfce.PanelProfiles.desktop.in:12
-msgid "Configuration;User;"
-msgstr "Axustes;Usuariu;"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:68
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:427
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:438
 msgid "Filename"
 msgstr "Nome de ficheru"
 
@@ -55,13 +50,13 @@ msgstr "Data de modificación"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:107
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:108
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:375
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:386
 msgid "Apply Configuration"
 msgstr "Aplicar axustes"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:122
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:123
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:332
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:343
 msgid "Save Configuration"
 msgstr "Guardar axustes"
 
@@ -80,49 +75,53 @@ msgstr "Esportar"
 msgid "Import"
 msgstr "Importar"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.glade:195
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:197
 msgid "_Help"
 msgstr "A_yuda"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.glade:210
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:212
+msgid "_About"
+msgstr "_Tocante a"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:227
 msgid "_Close"
 msgstr "_Zarrar"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:134
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:126
 msgid "Current Configuration"
 msgstr "Configuración actual"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:152
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:144
 msgid "Today"
 msgstr "Güei"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:154
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:146
 msgid "Yesterday"
 msgstr "Ayeri"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:218
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:210
 #, python-format
 msgid "%s (Copy of %s)"
 msgstr "%s (copia de %s)"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:236
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:228
 msgid "Import configuration file..."
 msgstr "Importar ficheru de configuración..."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:239
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:331
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:374
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:401
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:454
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:479
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:231
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:342
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:385
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:412
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:465
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:490
 msgid "Cancel"
 msgstr "Encaboxar"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:240
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:232
 msgid "Open"
 msgstr "Abrir"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:254
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:246
 msgid ""
 "Invalid configuration file!\n"
 "Please select a valid configuration file."
@@ -130,20 +129,20 @@ msgstr ""
 "¡Archivu de configuración non válidu!\n"
 "Por favor, escueyi un ficheru válidu."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:262
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:254
 msgid "OK"
 msgstr "OK"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:325
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:336
 msgid "Name the new panel configuration"
 msgstr "Pon-y nome al nueu panel de configuración"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:349
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:360
 #, python-format
 msgid "Backup_%s"
 msgstr "Facer respaldu de %s"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:365
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:376
 msgid ""
 "Do you want to apply this configuration?\n"
 " The current configuration will be lost!"
@@ -151,20 +150,20 @@ msgstr ""
 "¿Quies afitar estos axustes?\n"
 "¡La configuración d'anguañu desaniciarase!"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:382
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:393
 msgid "Make a backup of the current configuration"
 msgstr "Facer un respaldu de los axustes d'anguañu"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:393
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:404
 msgid "Errors occurred while parsing the current configuration."
 msgstr ""
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:402
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:458
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:413
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:469
 msgid "Save"
 msgstr "Guardar"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:413
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:424
 msgid ""
 "Do you want to save despite the errors? Some configuration information could"
 " be missing."
@@ -172,34 +171,34 @@ msgstr ""
 "¿Quies guardar anque haya fallos? Podría baraxase dalguna información de "
 "configuración."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:421
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:432
 msgid "Export configuration as..."
 msgstr "Esportar configuración comu..."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:433
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:444
 msgid "Untitled"
 msgstr "Ensin títulu"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:441
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:452
 msgid "Location"
 msgstr "Allugamientu"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:445
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:456
 msgid "Select a Folder"
 msgstr "Seleicionar un direutoriu"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:477
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:488
 #, python-format
 msgid "<b>A file named \"%s\" already exists. Do you want to replace it?</b>"
 msgstr ""
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:478
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:489
 #, python-format
 msgid ""
 "The file already exists in \"%s\", replacing it will overwrite its contents."
 msgstr ""
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:480
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:491
 msgid "Replace"
 msgstr ""
 
