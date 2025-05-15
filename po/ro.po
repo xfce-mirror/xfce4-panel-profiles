@@ -5,18 +5,18 @@
 # 
 # Translators:
 # Marius Ghita, 2022
-# Nick Schermer <nick@xfce.org>, 2024
 # Xfce Bot <transifex@xfce.org>, 2024
-# Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>, 2024
+# Nick Schermer <nick@xfce.org>, 2025
+# Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-apps.xfce4-panel-profiles\n"
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2024-11-26 00:49+0100\n"
+"POT-Creation-Date: 2025-05-15 12:49+0200\n"
 "PO-Revision-Date: 2018-07-13 15:34+0000\n"
-"Last-Translator: Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>, 2024\n"
+"Last-Translator: Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>, 2025\n"
 "Language-Team: Romanian (https://app.transifex.com/xfce/teams/16840/ro/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,22 +31,20 @@ msgstr "Profiluri panou"
 
 #: org.xfce.PanelProfiles.desktop.in:4
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:23
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:323
 msgid "Backup and restore your panel configuration"
 msgstr "Faceți o copie de rezervă și restaurați configurația panoului dvs."
 
-#: org.xfce.PanelProfiles.desktop.in:5
+#: org.xfce.PanelProfiles.desktop.in:11
 msgid ""
-"panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
+"Configuration;User;panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
 msgstr ""
-"panou;bara de activități;aspect;comutator;aplicare;restaurare; salvare;copie"
-" de rezervă;eliminare;import;export;"
-
-#: org.xfce.PanelProfiles.desktop.in:12
-msgid "Configuration;User;"
-msgstr "Configurație;Utilizator;"
+"Configurare;Utilizator;panou;bara de "
+"activități;aranjament;comutator;aplicare;restaurare;salvare;copie de "
+"rezervă;eliminare;import;export;"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:68
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:427
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:438
 msgid "Filename"
 msgstr "Nume fișier"
 
@@ -56,13 +54,13 @@ msgstr "Data modificării"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:107
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:108
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:375
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:386
 msgid "Apply Configuration"
 msgstr "Aplicați configurația"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:122
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:123
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:332
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:343
 msgid "Save Configuration"
 msgstr "Salvați configurația"
 
@@ -81,49 +79,53 @@ msgstr "Export"
 msgid "Import"
 msgstr "Import"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.glade:195
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:197
 msgid "_Help"
 msgstr "_Ajutor"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.glade:210
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:212
+msgid "_About"
+msgstr "_Despre"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:227
 msgid "_Close"
 msgstr "În_chide"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:134
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:126
 msgid "Current Configuration"
 msgstr "Configurația curentă"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:152
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:144
 msgid "Today"
 msgstr "Azi"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:154
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:146
 msgid "Yesterday"
 msgstr "Ieri"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:218
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:210
 #, python-format
 msgid "%s (Copy of %s)"
 msgstr "%s(Copie a %s)"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:236
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:228
 msgid "Import configuration file..."
 msgstr "Importați fișierul de configurare..."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:239
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:331
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:374
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:401
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:454
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:479
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:231
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:342
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:385
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:412
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:465
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:490
 msgid "Cancel"
 msgstr "Anulați"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:240
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:232
 msgid "Open"
 msgstr "Deschide"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:254
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:246
 msgid ""
 "Invalid configuration file!\n"
 "Please select a valid configuration file."
@@ -131,20 +133,20 @@ msgstr ""
 "Fișier de configurare nevalid!\n"
 "Selectați un fișier de configurare valid."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:262
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:254
 msgid "OK"
 msgstr "Ok"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:325
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:336
 msgid "Name the new panel configuration"
 msgstr "Denumiți noua configurație a panoului"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:349
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:360
 #, python-format
 msgid "Backup_%s"
 msgstr "Copie de rezervă_%s"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:365
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:376
 msgid ""
 "Do you want to apply this configuration?\n"
 " The current configuration will be lost!"
@@ -152,20 +154,20 @@ msgstr ""
 "Doriți să aplicați această configurație?\n"
 " Configurația curentă va fi pierdută!"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:382
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:393
 msgid "Make a backup of the current configuration"
 msgstr "Faceți o copie de rezervă a configurației curente"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:393
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:404
 msgid "Errors occurred while parsing the current configuration."
 msgstr "Au apărut erori în timpul analizării configurației curente."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:402
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:458
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:413
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:469
 msgid "Save"
 msgstr "Salvează"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:413
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:424
 msgid ""
 "Do you want to save despite the errors? Some configuration information could"
 " be missing."
@@ -173,28 +175,28 @@ msgstr ""
 "Doriți să salvați în ciuda erorilor? Unele informații de configurare ar "
 "putea lipsi."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:421
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:432
 msgid "Export configuration as..."
 msgstr "Exportați configurația ca..."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:433
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:444
 msgid "Untitled"
 msgstr "Fără titlu"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:441
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:452
 msgid "Location"
 msgstr "Locație"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:445
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:456
 msgid "Select a Folder"
 msgstr "Selectați un dosar"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:477
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:488
 #, python-format
 msgid "<b>A file named \"%s\" already exists. Do you want to replace it?</b>"
 msgstr "<b>Un fișier numit „%s” există deja. Doriți să îl înlocuiți?</b>"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:478
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:489
 #, python-format
 msgid ""
 "The file already exists in \"%s\", replacing it will overwrite its contents."
@@ -202,7 +204,7 @@ msgstr ""
 "Fișierul există deja în „%s”, înlocuirea acestuia îi va suprascrie "
 "conținutul."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:480
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:491
 msgid "Replace"
 msgstr "Înlocuire"
 
