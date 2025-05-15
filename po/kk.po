@@ -5,16 +5,16 @@
 # 
 # Translators:
 # Xfce Bot <transifex@xfce.org>, 2024
-# Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2024
+# Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce-apps.xfce4-panel-profiles\n"
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2024-11-26 00:49+0100\n"
+"POT-Creation-Date: 2025-05-15 12:49+0200\n"
 "PO-Revision-Date: 2018-07-13 15:34+0000\n"
-"Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2024\n"
+"Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2025\n"
 "Language-Team: Kazakh (https://app.transifex.com/xfce/teams/16840/kk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,22 +29,17 @@ msgstr "Панель профильдері"
 
 #: org.xfce.PanelProfiles.desktop.in:4
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:23
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:323
 msgid "Backup and restore your panel configuration"
 msgstr "Панель баптауларын қорға көшіру және қалпына келтіру"
 
-#: org.xfce.PanelProfiles.desktop.in:5
+#: org.xfce.PanelProfiles.desktop.in:11
 msgid ""
-"panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
+"Configuration;User;panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
 msgstr ""
-"panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;панель;тапсырмалар;жайма;ауыстыру;іске"
-" асыру;қалпына келтіру;сақтау;қор көшірме;өшіру;импорт;экспорт;"
-
-#: org.xfce.PanelProfiles.desktop.in:12
-msgid "Configuration;User;"
-msgstr "Баптаулар;Пайдаланушы;"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:68
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:427
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:438
 msgid "Filename"
 msgstr "Файл аты"
 
@@ -54,13 +49,13 @@ msgstr "Өзгертілген күні"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:107
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:108
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:375
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:386
 msgid "Apply Configuration"
 msgstr "Баптауларды іске асыру"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:122
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:123
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:332
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:343
 msgid "Save Configuration"
 msgstr "Баптауларды сақтау"
 
@@ -79,49 +74,53 @@ msgstr "Экспорттау"
 msgid "Import"
 msgstr "Импорттау"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.glade:195
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:197
 msgid "_Help"
 msgstr "Кө_мек"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.glade:210
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:212
+msgid "_About"
+msgstr "Осы т_уралы"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:227
 msgid "_Close"
 msgstr "_Жабу"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:134
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:126
 msgid "Current Configuration"
 msgstr "Ағымдағы баптаулар"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:152
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:144
 msgid "Today"
 msgstr "Бүгін"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:154
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:146
 msgid "Yesterday"
 msgstr "Кеше"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:218
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:210
 #, python-format
 msgid "%s (Copy of %s)"
 msgstr "%s (%s көшірмесі)"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:236
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:228
 msgid "Import configuration file..."
 msgstr "Баптаулар файлын импорттау..."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:239
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:331
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:374
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:401
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:454
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:479
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:231
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:342
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:385
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:412
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:465
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:490
 msgid "Cancel"
 msgstr "Бас тарту"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:240
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:232
 msgid "Open"
 msgstr "Ашу"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:254
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:246
 msgid ""
 "Invalid configuration file!\n"
 "Please select a valid configuration file."
@@ -129,20 +128,20 @@ msgstr ""
 "Конфигурация файлы жарамсыз!\n"
 "Жарамды конфигурация файлын таңдаңыз."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:262
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:254
 msgid "OK"
 msgstr "ОК"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:325
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:336
 msgid "Name the new panel configuration"
 msgstr "Жаңа панель баптауларын атау"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:349
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:360
 #, python-format
 msgid "Backup_%s"
 msgstr "Қор_көшірме_%s"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:365
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:376
 msgid ""
 "Do you want to apply this configuration?\n"
 " The current configuration will be lost!"
@@ -150,20 +149,20 @@ msgstr ""
 "Бұл конфигурацияны іске асырғыңыз келе ме?\n"
 " Ағымдағы конфигурация жоғалатын болады!"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:382
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:393
 msgid "Make a backup of the current configuration"
 msgstr "Ағымдағы конфигурацияның қор көшірмесін жасау"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:393
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:404
 msgid "Errors occurred while parsing the current configuration."
 msgstr ""
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:402
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:458
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:413
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:469
 msgid "Save"
 msgstr "Сақтау"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:413
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:424
 msgid ""
 "Do you want to save despite the errors? Some configuration information could"
 " be missing."
@@ -171,34 +170,34 @@ msgstr ""
 "Қателерге қарамай сақтауды қалайсыз ба? Конфигурацияның кейбір ақпараты жоқ "
 "болуы мүмкін."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:421
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:432
 msgid "Export configuration as..."
 msgstr "Баптауларды қалайша экспорттау..."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:433
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:444
 msgid "Untitled"
 msgstr "Атаусыз"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:441
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:452
 msgid "Location"
 msgstr "Орналасуы"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:445
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:456
 msgid "Select a Folder"
 msgstr "Буманы таңдау"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:477
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:488
 #, python-format
 msgid "<b>A file named \"%s\" already exists. Do you want to replace it?</b>"
 msgstr ""
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:478
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:489
 #, python-format
 msgid ""
 "The file already exists in \"%s\", replacing it will overwrite its contents."
 msgstr ""
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:480
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:491
 msgid "Replace"
 msgstr "Алмастыру"
 
