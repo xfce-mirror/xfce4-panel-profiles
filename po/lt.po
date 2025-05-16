@@ -38,6 +38,10 @@ msgstr "Daryti ir atkurti skydelio konfigūracijos atsarginę kopiją"
 msgid ""
 "Configuration;User;panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
 msgstr ""
+"Konfigūracija;konfiguracija;naudotojas;skydelis;užduočių juosta;uzduociu "
+"juosta;išdėstymas;isdestymas;išdėstymą;isdestyma;perjungti;taikyti;pritaikyti;atkurti;atstatyti;įrašyti;irasyti;išsaugoti;issaugoti;atsarginė"
+" kopija;atsargine kopija;daryti atsarginę kopiją;daryti atsargine "
+"kopija;šalinti;salinti;pašalinti;pasalinti;ištrinti;istrinti;importuoti;importavimas;eksportuoti;eksportavimas;"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:68
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:438
