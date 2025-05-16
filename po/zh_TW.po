@@ -38,6 +38,7 @@ msgstr "備份並還原您的面板設定"
 msgid ""
 "Configuration;User;panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
 msgstr ""
+"Configuration;User;panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:68
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:438
