@@ -4,10 +4,10 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
+# Xfce Bot <transifex@xfce.org>, 2023
 # Andre Miranda <andre@andreldm.com>, 2023
 # The Cat, 2023
 # Nick Schermer <nick@xfce.org>, 2024
-# Xfce Bot <transifex@xfce.org>, 2024
 # Michael Martins, 2025
 # 
 #, fuzzy
@@ -28,18 +28,20 @@ msgstr ""
 #: org.xfce.PanelProfiles.desktop.in:3
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:18
 msgid "Panel Profiles"
-msgstr "Perfis do Painel"
+msgstr "Perfis do painel"
 
 #: org.xfce.PanelProfiles.desktop.in:4
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:23
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:323
 msgid "Backup and restore your panel configuration"
-msgstr "Salve e restaure a configuração do seu painel"
+msgstr "Faça backup e restaure a configuração do seu painel"
 
 #: org.xfce.PanelProfiles.desktop.in:11
 msgid ""
 "Configuration;User;panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
 msgstr ""
+"Configuração; Painel; Barra de tarefas; Layout; Alternar; Aplicar; "
+"Restaurar; Salvar; Backup; Remover; Importar; Exportar;"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:68
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:438
@@ -54,18 +56,18 @@ msgstr "Data da modificação"
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:108
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:386
 msgid "Apply Configuration"
-msgstr "Aplicar Configuração"
+msgstr "Aplicar configuração"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:122
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:123
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:343
 msgid "Save Configuration"
-msgstr "Salvar Configuração"
+msgstr "Salvar configuração"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:137
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:138
 msgid "Remove Configuration"
-msgstr "Remover Configuração"
+msgstr "Remover configuração"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:152
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:153
@@ -137,28 +139,28 @@ msgstr "OK"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:336
 msgid "Name the new panel configuration"
-msgstr "Nome da nova configuração do painel"
+msgstr "Nomeie a nova configuração do painel"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:360
 #, python-format
 msgid "Backup_%s"
-msgstr "Salvar_%s"
+msgstr "Backup_%s"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:376
 msgid ""
 "Do you want to apply this configuration?\n"
 " The current configuration will be lost!"
 msgstr ""
-"Aplicar esta configuração?\n"
+"Deseja aplicar esta configuração?\n"
 " A configuração atual será perdida!"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:393
 msgid "Make a backup of the current configuration"
-msgstr "Fazer uma cópia de segurança da configuração atual"
+msgstr "Faça um backup da configuração atual"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:404
 msgid "Errors occurred while parsing the current configuration."
-msgstr "Ocorreram erros ao processar a configuração atual."
+msgstr "Ocorreram erros ao analisar a configuração atual."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:413
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:469
@@ -183,11 +185,11 @@ msgstr "Sem título"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:452
 msgid "Location"
-msgstr "Local"
+msgstr "Localização"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:456
 msgid "Select a Folder"
-msgstr "Selecione uma Pasta"
+msgstr "Selecione uma pasta"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:488
 #, python-format
@@ -198,7 +200,7 @@ msgstr "<b>Já existe um arquivo chamado \"%s\". Deseja substituí-lo?</b>"
 #, python-format
 msgid ""
 "The file already exists in \"%s\", replacing it will overwrite its contents."
-msgstr "O arquivo já existe em \"%s\". Substituí-lo irá sobrescrever seu conteúdo"
+msgstr "O arquivo já existe em \"%s\", substituí-lo substituirá seu conteúdo."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:491
 msgid "Replace"
@@ -206,11 +208,11 @@ msgstr "Substituir"
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:6
 msgid "Xfce Panel Profiles"
-msgstr "Perfis de Painel Xfce"
+msgstr "Perfis do painel Xfce"
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:7
 msgid "Application to manage different panel layouts in Xfce"
-msgstr "Aplicação para gerenciar diferentes layouts de painel no Xfce"
+msgstr "Aplicativo para gerenciar diferentes layouts de painel no Xfce"
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:11
 msgid ""
@@ -218,7 +220,7 @@ msgid ""
 "enables managing different layouts with little effort. Xfce4-panel-profiles "
 "makes it possible to backup, restore, import and export panel layouts."
 msgstr ""
-"Podem ser criados vários esquemas de painel usando o painel do Xfce. Esta "
-"ferramenta permite gerenciar esquemas diferentes com pouco esforço. O "
-"Xfce4-panel-profiles permite efetuar cópias de segurança, restaurar, "
-"importar e exportar esquemas de painéis."
+"É possível criar diversos layouts de painel usando o painel do Xfce. Esta "
+"ferramenta permite gerenciar diferentes layouts com pouco esforço. O "
+"xfce4-panel-profiles permite fazer backup, restaurar, importar e exportar "
+"layouts de painel."
