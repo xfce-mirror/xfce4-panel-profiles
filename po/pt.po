@@ -39,6 +39,9 @@ msgstr "Guardar e restaurar a configuração do painel"
 msgid ""
 "Configuration;User;panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
 msgstr ""
+"Configuração;Utilizador;painel;barra de "
+"tarefas;disposição;esquema;alternar;trocar;aplicar;restaurar;guardar;gravar;backup;cópia"
+" de segurança;remover;importar;exportar;"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:68
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:438
