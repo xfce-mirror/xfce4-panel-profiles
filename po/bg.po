@@ -39,6 +39,9 @@ msgstr "Съхраняване и възстановяване на вашите
 msgid ""
 "Configuration;User;panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
 msgstr ""
+"Конфигурация;Потребител;панел;лента на "
+"задачите;подредби;превключвател;прилагане;възстановяване;запазване;резервно "
+"копие;премахване;импортиране;експортиране;"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:68
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:438
