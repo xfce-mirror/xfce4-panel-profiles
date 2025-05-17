@@ -38,6 +38,7 @@ msgstr "Sikkerhedskopiér og gendan din panelkonfiguration"
 msgid ""
 "Configuration;User;panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
 msgstr ""
+"Konfiguration;Bruger;panel;opgavelinje;layout;skift;anvend;gendan;gem;sikkerhedskopiér;fjern;importér;eksportér;"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:68
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:438
