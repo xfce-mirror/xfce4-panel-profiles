@@ -1,5 +1,5 @@
 .\" Man page written by Emanuele Petriglia for xfce4-panel-profiles.
-.TH XFCE4-PANEL-PROFILES "1" "December 2024" "xfce4-panel-profiles 1.0.15" "User Commands"
+.TH XFCE4-PANEL-PROFILES "1" "@COPYRIGHT_YEAR@" "xfce4-panel-profiles @VERSION@" "User Commands"
 
 .SH Name
 xfce4-panel-profiles - A simple application to manage Xfce panel layouts
