@@ -2,6 +2,7 @@
 
 APPNAME=xfce4-panel-profiles
 VERSION=1.1.0
+COPYRIGHT_YEAR=2025
 
 PYTHON=python3
 
@@ -59,6 +60,10 @@ sed \
   -e s,@docdir@,$DOCDIR,g \
   -e s,@python@,$PYTHON,g \
   Makefile.in > Makefile
+sed \
+  -e s,@VERSION@,$VERSION,g \
+  -e s,@COPYRIGHT_YEAR@,$COPYRIGHT_YEAR,g \
+  xfce4-panel-profiles.1.in > xfce4-panel-profiles.1
 echo "Installation prefix is $PREFIX"
 echo "Installation mandir is $MANDIR"
 echo "Installation docdir is $DOCDIR"

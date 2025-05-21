@@ -52,7 +52,16 @@ install_data(
   install_dir: get_option('prefix') / get_option('datadir') / 'doc' / meson.project_name(),
 )
 
-install_man('xfce4-panel-profiles.1')
+configure_file(
+  input: 'xfce4-panel-profiles.1.in',
+  output: 'xfce4-panel-profiles.1',
+  configuration: {
+    'VERSION': meson.project_version(),
+    'COPYRIGHT_YEAR': copyright_year,
+  },
+  install: true,
+  install_dir: get_option('prefix') / get_option('mandir') / 'man1',
+)
 
 subdir('bin')
 subdir('data')

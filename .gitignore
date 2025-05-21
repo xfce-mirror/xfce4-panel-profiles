@@ -10,3 +10,4 @@ locale
 bin/xfce4-panel-profiles
 po/xfce4-panel-profiles.pot
 xfce4-panel-profiles/info.py
+xfce4-panel-profiles.1
