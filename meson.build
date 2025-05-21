@@ -1,9 +1,4 @@
-project(
-  'xfce4-panel-profiles',
-  version: '1.0.15-dev',
-  license: 'GPL-3.0-or-later',
-  meson_version: '>= 0.56.0',
-)
+project('xfce4-panel-profiles', version : '1.1.0', license : 'GPL-3.0-or-later', meson_version : '>= 0.56.0')
 
 pkgdatadir = get_option('prefix') / get_option('datadir') / meson.project_name()
 copyright_year = '2025'
