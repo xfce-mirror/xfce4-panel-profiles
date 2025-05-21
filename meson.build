@@ -9,10 +9,17 @@ i18n = import('i18n')
 
 python3_required_modules = ['gi', 'psutil']
 
-python3 = python.find_installation(
-  'python3',
-  modules: python3_required_modules,
-)
+python3_path = ''
+if get_option('check-runtime-dependencies')
+  python3 = python.find_installation('python3', modules: python3_required_modules)
+  python3_path = python3.full_path()
+endif
+if get_option('python-path') != ''
+  python3_path = get_option('python-path')
+endif
+if python3_path == ''
+  python3_path = 'python3'
+endif
 
 dependency_versions = {
   'glib': '>= 2.50.0',
@@ -20,11 +27,13 @@ dependency_versions = {
   'xfce4': '>= 4.16.0',
 }
 
-# Declare runtime dependency versions here to make packaging more obvious
-dependency('glib-2.0', version: dependency_versions['glib'])
-dependency('gtk+-3.0', version: dependency_versions['gtk'])
-dependency('libxfce4ui-2', version: dependency_versions['xfce4'])
-dependency('libxfce4util-1.0', version: dependency_versions['xfce4'])
+if get_option('check-runtime-dependencies')
+  # Declare runtime dependency versions here to make packaging more obvious
+  dependency('glib-2.0', version: dependency_versions['glib'])
+  dependency('gtk+-3.0', version: dependency_versions['gtk'])
+  dependency('libxfce4ui-2', version: dependency_versions['xfce4'])
+  dependency('libxfce4util-1.0', version: dependency_versions['xfce4'])
+endif
 
 ls = find_program('ls')
 tar = find_program('tar')

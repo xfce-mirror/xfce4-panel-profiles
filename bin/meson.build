@@ -2,7 +2,7 @@ configure_file(
   input: 'xfce4-panel-profiles.in',
   output: 'xfce4-panel-profiles',
   configuration: {
-    'python': python3.full_path(),
+    'python': python3_path,
     'pkgdatadir': pkgdatadir,
   },
   install: true,
