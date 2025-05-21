@@ -1,0 +1,13 @@
+option(
+  'python-path',
+  type: 'string',
+  value: '',
+  description: 'Path to the python executable (default: autodetect)',
+)
+
+option(
+  'check-runtime-dependencies',
+  type: 'boolean',
+  value: true,
+  description: 'Whether to check runtime dependencies during build time',
+)
