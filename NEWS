@@ -1,3 +1,9 @@
+1.1.1 (2025-05-22)
+=====
+- build: Allow skip checking runtime dependencies
+- Parameterize version and copyright year in man page
+- Bump version in configure
+
 1.1.0 (2025-05-21)
 =====
 Meson has been added as a build system in this release, and the
