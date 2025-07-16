@@ -1,24 +1,3 @@
 include:
   - project: 'xfce/xfce4-dev-tools'
     file: '/ci/build_project.yml'
-
-build-gcc-autotools:
-  rules:
-    - when: never
-
-build-clang-autotools:
-  rules:
-    - when: never
-
-build-autotools:
-  extends: .build-autotools
-
-.configure-autotools:
-  script:
-    - ./configure
-  rules:
-    - !reference [.no-translation, rules]
-      # Otherwise, run if previous stage didn't fail
-    - exists:
-        - configure
-      when: on_success
