@@ -1,22 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR Xfce
-# This file is distributed under the same license as the xfce-apps.xfce4-panel-profiles package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # Xfce Bot <transifex@xfce.org>, 2024
 # Oscar Perez <oscarpc@gmail.com>, 2024
-# Robert Antoni Buj i Gelonch <rbuj@fedoraproject.org>, 2025
 # Davidmp <medipas@gmail.com>, 2025
+# Robert Antoni Buj i Gelonch <rbuj@fedoraproject.org>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce-apps.xfce4-panel-profiles\n"
-"Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2025-05-15 12:49+0200\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-17 12:50+0200\n"
 "PO-Revision-Date: 2018-07-13 15:34+0000\n"
-"Last-Translator: Davidmp <medipas@gmail.com>, 2025\n"
+"Last-Translator: Robert Antoni Buj i Gelonch <rbuj@fedoraproject.org>, 2025\n"
 "Language-Team: Catalan (https://app.transifex.com/xfce/teams/16840/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,108 +24,93 @@ msgstr ""
 "Language: ca\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: org.xfce.PanelProfiles.desktop.in:3
-#: xfce4-panel-profiles/xfce4-panel-profiles.glade:18
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:1
 msgid "Panel Profiles"
 msgstr "Perfils de taulers"
 
-#: org.xfce.PanelProfiles.desktop.in:4
-#: xfce4-panel-profiles/xfce4-panel-profiles.glade:23
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:323
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:2
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:323
 msgid "Backup and restore your panel configuration"
 msgstr "Feu una còpia de seguretat i restaureu la configuració del tauler"
 
-#: org.xfce.PanelProfiles.desktop.in:11
-msgid ""
-"Configuration;User;panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
-msgstr ""
-"Configuració;Usuari;tauler;plafó;barra de "
-"tasques;disseny;disposició;canviar; aplica;restaura;desa;còpia de "
-"seguretat;suprimeix;importa;exporta;"
-
-#: xfce4-panel-profiles/xfce4-panel-profiles.glade:68
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:438
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:3
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:438
 msgid "Filename"
 msgstr "Nom del fitxer"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.glade:84
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:4
 msgid "Date Modified"
 msgstr "Data de modificació"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.glade:107
-#: xfce4-panel-profiles/xfce4-panel-profiles.glade:108
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:386
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:5
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:386
 msgid "Apply Configuration"
 msgstr "Aplica la configuració"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.glade:122
-#: xfce4-panel-profiles/xfce4-panel-profiles.glade:123
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:343
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:6
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:343
 msgid "Save Configuration"
 msgstr "Desa la configuració"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.glade:137
-#: xfce4-panel-profiles/xfce4-panel-profiles.glade:138
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:7
 msgid "Remove Configuration"
 msgstr "Suprimeix la configuració"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.glade:152
-#: xfce4-panel-profiles/xfce4-panel-profiles.glade:153
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:8
 msgid "Export"
 msgstr "Exporta"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.glade:167
-#: xfce4-panel-profiles/xfce4-panel-profiles.glade:168
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:9
 msgid "Import"
 msgstr "Importa"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.glade:197
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:10
 msgid "_Help"
 msgstr "A_juda"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.glade:212
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:11
 msgid "_About"
 msgstr "_Quant a"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.glade:227
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.glade.h:12
 msgid "_Close"
 msgstr "Tan_ca"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:126
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:126
 msgid "Current Configuration"
 msgstr "Configuració actual"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:144
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:144
 msgid "Today"
 msgstr "avui"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:146
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:146
 msgid "Yesterday"
 msgstr "ahir"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:210
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:210
 #, python-format
 msgid "%s (Copy of %s)"
 msgstr "%s (còpia de %s)"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:228
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:228
 msgid "Import configuration file..."
 msgstr "Importa el fitxer de configuració..."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:231
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:342
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:385
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:412
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:465
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:490
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:231
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:342
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:385
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:412
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:465
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:490
 msgid "Cancel"
 msgstr "Cancel·la"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:232
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:232
 msgid "Open"
 msgstr "Obre"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:246
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:246
 msgid ""
 "Invalid configuration file!\n"
 "Please select a valid configuration file."
@@ -133,20 +118,20 @@ msgstr ""
 "Arxiu de configuració invàlid!\n"
 "Seleccioneu un arxiu de configuració vàlid, si us plau."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:254
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:254
 msgid "OK"
 msgstr "D'acord"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:336
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:336
 msgid "Name the new panel configuration"
 msgstr "Anomeneu la nova configuració del tauler"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:360
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:360
 #, python-format
 msgid "Backup_%s"
 msgstr "Còpia_de_seguretat_%s"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:376
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:376
 msgid ""
 "Do you want to apply this configuration?\n"
 " The current configuration will be lost!"
@@ -154,20 +139,20 @@ msgstr ""
 "Voleu aplicar aquesta configuració?\n"
 " Es perdrà la configuració actual!"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:393
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:393
 msgid "Make a backup of the current configuration"
 msgstr "Fes una còpia de seguretat de la configuració actual"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:404
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:404
 msgid "Errors occurred while parsing the current configuration."
 msgstr "S'han produït errors en analitzar la configuració actual."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:413
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:469
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:413
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:469
 msgid "Save"
 msgstr "Desa"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:424
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:424
 msgid ""
 "Do you want to save despite the errors? Some configuration information could"
 " be missing."
@@ -175,53 +160,34 @@ msgstr ""
 "Voleu desar tot i els errors? Podrien perdre's algunes informacions de "
 "configuració."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:432
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:432
 msgid "Export configuration as..."
 msgstr "Exporta la configuració com a..."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:444
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:444
 msgid "Untitled"
 msgstr "Sense nom"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:452
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:452
 msgid "Location"
 msgstr "Ubicació"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:456
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:456
 msgid "Select a Folder"
 msgstr "Seleccioneu una carpeta"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:488
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:488
 #, python-format
 msgid "<b>A file named \"%s\" already exists. Do you want to replace it?</b>"
 msgstr "<b>Ja existeix un fitxer anomenat \"%s\". Voleu substituir-lo?</b>"
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:489
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:489
 #, python-format
 msgid ""
 "The file already exists in \"%s\", replacing it will overwrite its contents."
 msgstr ""
 "El fitxer ja existeix a %s. Substituir-lo en sobreescriurà el contingut."
 
-#: xfce4-panel-profiles/xfce4-panel-profiles.py:491
+#: ../xfce4-panel-profiles/xfce4-panel-profiles.py:491
 msgid "Replace"
 msgstr "Substitueix"
-
-#: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:6
-msgid "Xfce Panel Profiles"
-msgstr "Perfils del taulell de l'Xfce"
-
-#: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:7
-msgid "Application to manage different panel layouts in Xfce"
-msgstr "Aplicació per gestionar els diferents dissenys de taulers a Xfce"
-
-#: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:11
-msgid ""
-"Multitude of panel layouts can be created using Xfce panel. This tool "
-"enables managing different layouts with little effort. Xfce4-panel-profiles "
-"makes it possible to backup, restore, import and export panel layouts."
-msgstr ""
-"Es pot crear multitud de dissenys de taulers mitjançant el tauler de Xfce. "
-"Aquesta eina permet gestionar diferents dissenys amb poc esforç. "
-"Xfce4-panel-profiles permet realitzar còpies de seguretat, restaurar, "
-"importar i exportar els dissenys dels taulers."
