@@ -48,19 +48,6 @@ i18n.merge_file(
   install_dir: get_option('prefix') / get_option('datadir') / 'applications',
 )
 
-doc_files = [
-  'AUTHORS',
-  'COPYING',
-  'INSTALL',
-  'NEWS',
-  'README.md',
-]
-
-install_data(
-  doc_files,
-  install_dir: get_option('prefix') / get_option('datadir') / 'doc' / meson.project_name(),
-)
-
 configure_file(
   input: 'xfce4-panel-profiles.1.in',
   output: 'xfce4-panel-profiles.1',
