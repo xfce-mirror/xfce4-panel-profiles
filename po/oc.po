@@ -38,6 +38,7 @@ msgstr "Salvagardar e restaurar las configuracions de panèl"
 msgid ""
 "Configuration;User;panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
 msgstr ""
+"configuracion;utilizaire;panèl;barra;prètzfach;disposicion;agençament;restaurar;salvagardar;salvagarda;suprimir;importar;exportar;"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:68
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:438
