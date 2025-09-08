@@ -208,11 +208,11 @@ msgstr "Substituir"
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:6
 msgid "Xfce Panel Profiles"
-msgstr "Perfis do painel Xfce"
+msgstr "Perfis de painel do Xfce"
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:7
 msgid "Application to manage different panel layouts in Xfce"
-msgstr "Aplicativo para gerenciar diferentes layouts de painel no Xfce"
+msgstr "Aplicação para gerenciar diferentes layouts de painel no Xfce"
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:11
 msgid ""
