@@ -158,7 +158,7 @@ msgstr "Realizar una salvagarda de la configuracion actuala"
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:404
 msgid "Errors occurred while parsing the current configuration."
 msgstr ""
-"D'errors se son produchas al moment de l'analisi de la configuracion "
+"D'errors se son produitas al moment de l'analisi de la configuracion "
 "actuala."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:413
