@@ -5,7 +5,7 @@
 # 
 # Translators:
 # Xfce Bot <transifex@xfce.org>, 2024
-# Oscar Perez <oscarpc@gmail.com>, 2025
+# Oscar Perez <oscarpc@gmail.com>, 2024
 # Robert Antoni Buj i Gelonch <rbuj@fedoraproject.org>, 2025
 # Davidmp <medipas@gmail.com>, 2025
 # 
@@ -27,19 +27,19 @@ msgstr ""
 #: org.xfce.PanelProfiles.desktop.in:3
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:18
 msgid "Panel Profiles"
-msgstr "Perfils de taulers"
+msgstr "Perfils dels panells"
 
 #: org.xfce.PanelProfiles.desktop.in:4
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:23
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:323
 msgid "Backup and restore your panel configuration"
-msgstr "Feu una còpia de seguretat i restaureu la configuració del tauler"
+msgstr "Feu una còpia de seguretat i restaureu la configuració del panell"
 
 #: org.xfce.PanelProfiles.desktop.in:11
 msgid ""
 "Configuration;User;panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
 msgstr ""
-"Configuració;Usuari;tauler;plafó;barra de "
+"Configuració;Usuari;panell;panell;barra de "
 "tasques;disseny;disposició;canviar; aplica;restaura;desa;còpia de "
 "seguretat;suprimeix;importa;exporta;"
 
@@ -139,7 +139,7 @@ msgstr "D'acord"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:336
 msgid "Name the new panel configuration"
-msgstr "Anomeneu la nova configuració del tauler"
+msgstr "Anomeneu la nova configuració del panell"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:360
 #, python-format
@@ -213,7 +213,7 @@ msgstr "Perfils del taulell de l'Xfce"
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:7
 msgid "Application to manage different panel layouts in Xfce"
-msgstr "Aplicació per gestionar els diferents dissenys de taulers a Xfce"
+msgstr "Aplicació per gestionar els diferents dissenys de panells a Xfce"
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:11
 msgid ""
@@ -221,7 +221,7 @@ msgid ""
 "enables managing different layouts with little effort. Xfce4-panel-profiles "
 "makes it possible to backup, restore, import and export panel layouts."
 msgstr ""
-"Es pot crear multitud de dissenys de taulers mitjançant el tauler de Xfce. "
-"Aquesta eina permet gestionar diferents dissenys amb poc esforç. "
+"Es pot crear multitud de dissenys de panells mitjançant el panell de l'Xfce."
+" Aquesta eina permet gestionar diferents dissenys amb poc esforç. "
 "Xfce4-panel-profiles permet realitzar còpies de seguretat, restaurar, "
-"importar i exportar els dissenys dels taulers."
+"importar i exportar els dissenys dels panells."
