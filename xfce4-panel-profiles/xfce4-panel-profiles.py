@@ -555,6 +555,8 @@ if __name__ == "__main__":
         print(f"Error processing '{args.filename}': {repr(e)}")
         exit(1)
 
+    GLib.set_prgname('org.xfce.PanelProfiles')
+
     main = XfcePanelProfiles()
 
     try:
