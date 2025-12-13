@@ -1,0 +1,223 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Xfce
+# This file is distributed under the same license as the xfce-apps.xfce4-panel-profiles package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Duy Truong Nguyen <truongap.ars@gmail.com>, 2018
+# Xfce Bot <transifex@xfce.org>, 2024
+# Nick Schermer <nick@xfce.org>, 2025
+# Loc Huynh, 2025
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xfce-apps.xfce4-panel-profiles\n"
+"Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
+"POT-Creation-Date: 2025-07-18 11:04+0200\n"
+"PO-Revision-Date: 2018-07-13 15:34+0000\n"
+"Last-Translator: Loc Huynh, 2025\n"
+"Language-Team: Vietnamese (https://app.transifex.com/xfce/teams/16840/vi/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: vi\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: org.xfce.PanelProfiles.desktop.in:3
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:18
+msgid "Panel Profiles"
+msgstr "Hồ sơ bảng điều khiển"
+
+#: org.xfce.PanelProfiles.desktop.in:4
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:23
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:323
+msgid "Backup and restore your panel configuration"
+msgstr "Sao lưu và khôi phục cấu hình bảng điều khiển của bạn"
+
+#: org.xfce.PanelProfiles.desktop.in:11
+msgid ""
+"Configuration;User;panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
+msgstr ""
+"Cấu hình;Người dùng;bảng điều khiển;thanh tác vụ;bố cục;chuyển đổi;áp "
+"dụng;khôi phục;lưu;sao lưu;xóa;nhập;xuất;"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:68
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:438
+msgid "Filename"
+msgstr "Tên tập tin"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:84
+msgid "Date Modified"
+msgstr "Ngày sửa đổi"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:107
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:108
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:386
+msgid "Apply Configuration"
+msgstr "Áp dụng cấu hình"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:122
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:123
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:343
+msgid "Save Configuration"
+msgstr "Lưu cấu hình"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:137
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:138
+msgid "Remove Configuration"
+msgstr "Xóa cấu hình"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:152
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:153
+msgid "Export"
+msgstr "Xuất"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:167
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:168
+msgid "Import"
+msgstr "Nhập"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:197
+msgid "_Help"
+msgstr "Trợ _giúp"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:212
+msgid "_About"
+msgstr "_Giới thiệu"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:227
+msgid "_Close"
+msgstr "Đón_g"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:126
+msgid "Current Configuration"
+msgstr "Cấu hình hiện tại"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:144
+msgid "Today"
+msgstr "Hôm nay"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:146
+msgid "Yesterday"
+msgstr "Hôm qua"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:210
+#, python-format
+msgid "%s (Copy of %s)"
+msgstr "%s (Bản sao của %s)"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:228
+msgid "Import configuration file..."
+msgstr "Nhập tập tin cấu hình…"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:231
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:342
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:385
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:412
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:465
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:490
+msgid "Cancel"
+msgstr "Hủy bỏ"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:232
+msgid "Open"
+msgstr "Mở"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:246
+msgid ""
+"Invalid configuration file!\n"
+"Please select a valid configuration file."
+msgstr ""
+"Tập tin cấu hình không hợp lệ!\n"
+"Vui lòng chọn một tập tin cấu hình hợp lệ."
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:254
+msgid "OK"
+msgstr "OK"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:336
+msgid "Name the new panel configuration"
+msgstr "Đặt tên cho cấu hình bảng điều khiển mới"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:360
+#, python-format
+msgid "Backup_%s"
+msgstr "Sao lưu_%s"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:376
+msgid ""
+"Do you want to apply this configuration?\n"
+" The current configuration will be lost!"
+msgstr ""
+"Bạn có muốn áp dụng cấu hình này không?\n"
+"Cấu hình hiện tại sẽ bị mất!"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:393
+msgid "Make a backup of the current configuration"
+msgstr "Tạo bản sao lưu của cấu hình hiện tại"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:404
+msgid "Errors occurred while parsing the current configuration."
+msgstr "Có lỗi xảy ra khi phân tích cấu hình hiện tại."
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:413
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:469
+msgid "Save"
+msgstr "Lưu"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:424
+msgid ""
+"Do you want to save despite the errors? Some configuration information could"
+" be missing."
+msgstr ""
+"Bạn có muốn lưu dù có lỗi không? Một số thông tin cấu hình có thể bị mất."
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:432
+msgid "Export configuration as..."
+msgstr "Xuất cấu hình dưới dạng…"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:444
+msgid "Untitled"
+msgstr "Chưa có tiêu đề"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:452
+msgid "Location"
+msgstr "Vị trí"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:456
+msgid "Select a Folder"
+msgstr "Chọn thư mục"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:488
+#, python-format
+msgid "<b>A file named \"%s\" already exists. Do you want to replace it?</b>"
+msgstr "<b>Tập tin tên \"%s\" đã tồn tại. Bạn có muốn ghi đè không?</b>"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:489
+#, python-format
+msgid ""
+"The file already exists in \"%s\", replacing it will overwrite its contents."
+msgstr "Tập tin đã tồn tại trong \"%s\", việc ghi đè sẽ xóa nội dung hiện tại."
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:491
+msgid "Replace"
+msgstr "Thay thế"
+
+#: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:6
+msgid "Xfce Panel Profiles"
+msgstr "Hồ sơ bảng điều khiển Xfce"
+
+#: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:7
+msgid "Application to manage different panel layouts in Xfce"
+msgstr "Ứng dụng quản lý các bố cục bảng điều khiển khác nhau trong Xfce"
+
+#: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:11
+msgid ""
+"Multitude of panel layouts can be created using Xfce panel. This tool "
+"enables managing different layouts with little effort. Xfce4-panel-profiles "
+"makes it possible to backup, restore, import and export panel layouts."
+msgstr ""
+"Xfce cho phép tạo rất nhiều bố cục bảng điều khiển khác nhau. Công cụ này "
+"giúp quản lý các bố cục đó một cách dễ dàng. Xfce4-panel-profiles cho phép "
+"sao lưu, khôi phục, nhập và xuất các bố cục bảng điều khiển."
