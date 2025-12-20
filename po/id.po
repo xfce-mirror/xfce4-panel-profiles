@@ -10,6 +10,7 @@
 # Xfce Bot <transifex@xfce.org>, 2024
 # Faisal Rachmadin <frachmadin@gmail.com>, 2024
 # Triyan W. Nugroho <triyan.wn@gmail.com>, 2025
+# Arif Budiman <arifpedia@gmail.com>, 2025
 # 
 #, fuzzy
 msgid ""
@@ -18,7 +19,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
 "POT-Creation-Date: 2025-07-18 11:04+0200\n"
 "PO-Revision-Date: 2018-07-13 15:34+0000\n"
-"Last-Translator: Triyan W. Nugroho <triyan.wn@gmail.com>, 2025\n"
+"Last-Translator: Arif Budiman <arifpedia@gmail.com>, 2025\n"
 "Language-Team: Indonesian (https://app.transifex.com/xfce/teams/16840/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -41,6 +42,8 @@ msgstr "Cadangkan dan pulihkan konfigurasi panel Anda"
 msgid ""
 "Configuration;User;panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
 msgstr ""
+"Konfigurasi;Pengguna;panel;bilah tugas;tata "
+"letak;beralih;terapkan;pulihkan;simpan;cadangkan;hapus;impor;ekspor;"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:68
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:438
@@ -129,6 +132,8 @@ msgid ""
 "Invalid configuration file!\n"
 "Please select a valid configuration file."
 msgstr ""
+"Berkas konfigurasi tidak valid!\\nSilakan pilih berkas konfigurasi yang "
+"valid."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:254
 msgid "OK"
@@ -148,14 +153,16 @@ msgid ""
 "Do you want to apply this configuration?\n"
 " The current configuration will be lost!"
 msgstr ""
+"Apakah Anda ingin menerapkan konfigurasi ini?\\n Konfigurasi saat ini akan "
+"hilang!"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:393
 msgid "Make a backup of the current configuration"
-msgstr ""
+msgstr "Buat cadangan dari konfigurasi saat ini"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:404
 msgid "Errors occurred while parsing the current configuration."
-msgstr ""
+msgstr "Terjadi kesalahan saat mengurai konfigurasi saat ini."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:413
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:469
@@ -167,6 +174,8 @@ msgid ""
 "Do you want to save despite the errors? Some configuration information could"
 " be missing."
 msgstr ""
+"Apakah Anda ingin menyimpan meskipun ada kesalahan? Beberapa informasi "
+"konfigurasi mungkin hilang."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:432
 msgid "Export configuration as..."
@@ -188,12 +197,14 @@ msgstr "Pilih Folder"
 #, python-format
 msgid "<b>A file named \"%s\" already exists. Do you want to replace it?</b>"
 msgstr ""
+"<b>Sebuah berkas bernama \\\"%s\\\" sudah ada. Apakah Anda ingin "
+"menggantinya?</b>"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:489
 #, python-format
 msgid ""
 "The file already exists in \"%s\", replacing it will overwrite its contents."
-msgstr ""
+msgstr "Berkas tersebut sudah ada di \\\"%s\\\", menggantinya akan menimpa isinya."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:491
 msgid "Replace"
@@ -201,7 +212,7 @@ msgstr "Ganti"
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:6
 msgid "Xfce Panel Profiles"
-msgstr ""
+msgstr "Profil Panel Xfce"
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:7
 msgid "Application to manage different panel layouts in Xfce"
@@ -213,3 +224,7 @@ msgid ""
 "enables managing different layouts with little effort. Xfce4-panel-profiles "
 "makes it possible to backup, restore, import and export panel layouts."
 msgstr ""
+"Banyak tata letak panel dapat dibuat menggunakan panel Xfce. Alat ini "
+"memungkinkan pengelolaan tata letak yang berbeda dengan sedikit usaha. "
+"Xfce4-panel-profiles memungkinkan untuk mencadangkan, memulihkan, mengimpor,"
+" dan mengekspor tata letak panel."
