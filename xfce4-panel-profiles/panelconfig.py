@@ -60,10 +60,6 @@ class PanelConfig(object):
             p = props.get_child_value(n)
             pp = p.get_child_value(0).get_string()
             pv = p.get_child_value(1).get_variant()
-
-            pn = GLib.Variant.parse(None, str(pv), None, None)
-            assert(pv == pn)
-
             pc.properties[pp] = pv
 
         pc.remove_orphans()
