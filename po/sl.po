@@ -7,7 +7,7 @@
 # Xfce Bot <transifex@xfce.org>, 2018
 # 8b03701f910565d01acaec9ce3f558ab_e9f0fee <b5b06e8f85fb8288fe43ad0bc2422d94_32848>, 2025
 # Arnold Marko <arnold.marko@gmail.com>, 2025
-# Dejweed, 2025
+# Dejweed, 2026
 # 
 #, fuzzy
 msgid ""
@@ -16,7 +16,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
 "POT-Creation-Date: 2025-07-18 11:04+0200\n"
 "PO-Revision-Date: 2018-07-13 15:34+0000\n"
-"Last-Translator: Dejweed, 2025\n"
+"Last-Translator: Dejweed, 2026\n"
 "Language-Team: Slovenian (https://app.transifex.com/xfce/teams/16840/sl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -39,6 +39,9 @@ msgstr "Shranite in obnovite vaše nastavitve panojev"
 msgid ""
 "Configuration;User;panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
 msgstr ""
+"Nastavitve;konfiguracija;uporabnik;pult;pano;opravilna "
+"vrstica;postavitev;spremeni;zamenjaj;uporabi;obnovi;shrani;varnostna "
+"kopija;odstrani;uvozi;izvozi;"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:68
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:438
@@ -69,12 +72,12 @@ msgstr "Odstrani nastavitve"
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:152
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:153
 msgid "Export"
-msgstr "Izvoz"
+msgstr "Izvozi"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:167
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:168
 msgid "Import"
-msgstr "Uvoz"
+msgstr "Uvozi"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:197
 msgid "_Help"
@@ -141,7 +144,7 @@ msgstr "Poimenujte novo razporeditev panojev"
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:360
 #, python-format
 msgid "Backup_%s"
-msgstr "Arhiva_%s"
+msgstr "Arhiv_%s"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:376
 msgid ""
