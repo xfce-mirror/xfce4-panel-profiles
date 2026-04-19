@@ -1,6 +1,6 @@
 favorites=mousepad.desktop,xfce4-terminal-emulator.desktop,xfce4-taskmanager.desktop,xfce4-screenshooter.desktop,xfce-settings-manager.desktop,xfce-ui-settings.desktop,xfce-display-settings.desktop,xfhelp4.desktop,xfce4-about.desktop
 recent=
-button-icon=xubuntu-logo-menu
+button-icon=org.xfce.panel.whiskermenu
 button-single-row=false
 show-button-title=false
 show-button-icon=true
