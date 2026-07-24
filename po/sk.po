@@ -4,11 +4,11 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Slavko <linux@slavino.sk>, 2023
 # Nick Schermer <nick@xfce.org>, 2024
 # Xfce Bot <transifex@xfce.org>, 2024
 # 785411ef824cced88d3e197f5af1b61a_da6a977 <e5fae5b35c0c625157d991b31e113de3_956341>, 2024
 # Dušan Kazik <prescott66@gmail.com>, 2025
+# Slavko <linux@slavino.sk>, 2026
 # 
 #, fuzzy
 msgid ""
@@ -17,7 +17,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
 "POT-Creation-Date: 2025-07-18 11:04+0200\n"
 "PO-Revision-Date: 2018-07-13 15:34+0000\n"
-"Last-Translator: Dušan Kazik <prescott66@gmail.com>, 2025\n"
+"Last-Translator: Slavko <linux@slavino.sk>, 2026\n"
 "Language-Team: Slovak (https://app.transifex.com/xfce/teams/16840/sk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -40,6 +40,7 @@ msgstr "Zálohuje a obnovuje konfiguráciu vášho panela"
 msgid ""
 "Configuration;User;panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
 msgstr ""
+"Configuration;User;panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:68
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:438
@@ -128,6 +129,8 @@ msgid ""
 "Invalid configuration file!\n"
 "Please select a valid configuration file."
 msgstr ""
+"Neplatný konfiguračný súbor!\n"
+"Prosím, zvoľte platný konfiguračný súbor."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:254
 msgid "OK"
@@ -147,14 +150,16 @@ msgid ""
 "Do you want to apply this configuration?\n"
 " The current configuration will be lost!"
 msgstr ""
+"Chcete použiť toto nastavenie?\n"
+" Aktuálne nastavenie bude stratené!"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:393
 msgid "Make a backup of the current configuration"
-msgstr ""
+msgstr "Zálohovať aktuálne nastavenie"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:404
 msgid "Errors occurred while parsing the current configuration."
-msgstr ""
+msgstr "Nastala chyba pri spracovaní aktuálneho nastavenia."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:413
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:469
@@ -166,6 +171,7 @@ msgid ""
 "Do you want to save despite the errors? Some configuration information could"
 " be missing."
 msgstr ""
+"Chcete uložiť napriek chybám? Niektoré informácie nastavenia môžu chýbať."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:432
 msgid "Export configuration as..."
@@ -186,13 +192,13 @@ msgstr "Vyberte priečinok"
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:488
 #, python-format
 msgid "<b>A file named \"%s\" already exists. Do you want to replace it?</b>"
-msgstr ""
+msgstr "<b>Súbor s menom „%s” už existuje. Chcete ho nahradiť?</b>"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:489
 #, python-format
 msgid ""
 "The file already exists in \"%s\", replacing it will overwrite its contents."
-msgstr ""
+msgstr "Súbor už v „%s” existuje, jeho nahradenie prepíše jeho obsah."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:491
 msgid "Replace"
@@ -200,7 +206,7 @@ msgstr "Nahradiť"
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:6
 msgid "Xfce Panel Profiles"
-msgstr ""
+msgstr "Profily panelov XFCE"
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:7
 msgid "Application to manage different panel layouts in Xfce"
@@ -212,3 +218,6 @@ msgid ""
 "enables managing different layouts with little effort. Xfce4-panel-profiles "
 "makes it possible to backup, restore, import and export panel layouts."
 msgstr ""
+"Pre panely XFCE možno vytvoriť viacero rozložení. Tento nástroj dovoľuje "
+"spravovať rôzne rozloženia s minimálnou námahou. Xfce4-panel-profiles "
+"dovoľuje zálohovanie, obnovenie, import a export rozložení panela."
