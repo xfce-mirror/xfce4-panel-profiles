@@ -1,0 +1,221 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Xfce
+# This file is distributed under the same license as the xfce-apps.xfce4-panel-profiles package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# ზურაბი დავითაშვილი <zurabi@tuta.io>, 2023
+# Temuri Doghonadze <temuri.doghonadze@gmail.com>, 2026
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xfce-apps.xfce4-panel-profiles\n"
+"Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
+"POT-Creation-Date: 2025-07-18 11:04+0200\n"
+"PO-Revision-Date: 2018-07-13 15:34+0000\n"
+"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>, 2026\n"
+"Language-Team: Georgian (https://app.transifex.com/xfce/teams/16840/ka/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ka\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: org.xfce.PanelProfiles.desktop.in:3
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:18
+msgid "Panel Profiles"
+msgstr "პანელის პროფილები"
+
+#: org.xfce.PanelProfiles.desktop.in:4
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:23
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:323
+msgid "Backup and restore your panel configuration"
+msgstr "დაამარქაფეთ და აღადგინეთ თქვენი პანელის კონფიგურაცია"
+
+#: org.xfce.PanelProfiles.desktop.in:11
+msgid ""
+"Configuration;User;panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
+msgstr ""
+"Configuration;User;panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;მორგება;მომხარებელი;პანელი;განლაგება;გატანა;შემოტანა;მარქაფი;აღდგენა;"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:68
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:438
+msgid "Filename"
+msgstr "ფაილის სახელი"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:84
+msgid "Date Modified"
+msgstr "ცვლილების თარიღით"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:107
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:108
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:386
+msgid "Apply Configuration"
+msgstr "კონფიგურაციის გადატარება"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:122
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:123
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:343
+msgid "Save Configuration"
+msgstr "კონფიგურაციი შენახვა"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:137
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:138
+msgid "Remove Configuration"
+msgstr "კონფიგურაციის წაშლა"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:152
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:153
+msgid "Export"
+msgstr "გატანა"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:167
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:168
+msgid "Import"
+msgstr "შემოტანა"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:197
+msgid "_Help"
+msgstr "დახმარება"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:212
+msgid "_About"
+msgstr "_შესახებ"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.glade:227
+msgid "_Close"
+msgstr "დახურვა"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:126
+msgid "Current Configuration"
+msgstr "მიმდინარე კონფიგურაცია"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:144
+msgid "Today"
+msgstr "დღეს"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:146
+msgid "Yesterday"
+msgstr "გუშინ"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:210
+#, python-format
+msgid "%s (Copy of %s)"
+msgstr "%s (%s-ის ასლი)"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:228
+msgid "Import configuration file..."
+msgstr "კონფიგურაციის ფაილის შემოტანა..."
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:231
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:342
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:385
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:412
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:465
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:490
+msgid "Cancel"
+msgstr "გაუქმება"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:232
+msgid "Open"
+msgstr "გახსნა"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:246
+msgid ""
+"Invalid configuration file!\n"
+"Please select a valid configuration file."
+msgstr ""
+"არასწორი კონფიგურაციის ფაილი!\n"
+"აირჩიეთ სწორი კონფიგურაციის ფაილი."
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:254
+msgid "OK"
+msgstr "დიახ"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:336
+msgid "Name the new panel configuration"
+msgstr "ახალი პანელის კონფიგურაციის სახელი"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:360
+#, python-format
+msgid "Backup_%s"
+msgstr "მარქაფი_%s"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:376
+msgid ""
+"Do you want to apply this configuration?\n"
+" The current configuration will be lost!"
+msgstr ""
+"გნებავთ ამ კონფიგურაციის გადატარება?\n"
+"მიმდინარე კონფიგურაცია დაიკარგება!"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:393
+msgid "Make a backup of the current configuration"
+msgstr "მიმდინარე კონფიგურაციის მარქაფის აღება"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:404
+msgid "Errors occurred while parsing the current configuration."
+msgstr "მიმდინარე კონფიგურაციის დამუშავებისას აღმოჩენილია შეცდომები."
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:413
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:469
+msgid "Save"
+msgstr "შენახვა"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:424
+msgid ""
+"Do you want to save despite the errors? Some configuration information could"
+" be missing."
+msgstr ""
+"გნებავთ შენახვა შეცდომების მიუხედავად? შეიძლება, ზოგიერთი კონფიგურაციის "
+"ინფორმაციის შენახვა არ მოხდეს."
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:432
+msgid "Export configuration as..."
+msgstr "კონფიგურაციის გატანა, როგორც..."
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:444
+msgid "Untitled"
+msgstr "უსახელო"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:452
+msgid "Location"
+msgstr "მდებარეობა"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:456
+msgid "Select a Folder"
+msgstr "აირჩიეთ საქაღალდე"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:488
+#, python-format
+msgid "<b>A file named \"%s\" already exists. Do you want to replace it?</b>"
+msgstr "<b>ფაილი სახელით \"%s\" უკვე არსებობს. გნებავთ მისი ჩანაცვლება?</b>"
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:489
+#, python-format
+msgid ""
+"The file already exists in \"%s\", replacing it will overwrite its contents."
+msgstr "\"%s\"-ში ფაილი უკვე არსებობს. მისი ჩანაცვლება შემცველობას ზედ გადააწერს."
+
+#: xfce4-panel-profiles/xfce4-panel-profiles.py:491
+msgid "Replace"
+msgstr "ჩანაცვლება"
+
+#: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:6
+msgid "Xfce Panel Profiles"
+msgstr "Xfce-ის პანელის პროფილები"
+
+#: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:7
+msgid "Application to manage different panel layouts in Xfce"
+msgstr "აპლიკაცია სხვადასხვა პანელების განლაგების სამართავად Xfce-ში"
+
+#: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:11
+msgid ""
+"Multitude of panel layouts can be created using Xfce panel. This tool "
+"enables managing different layouts with little effort. Xfce4-panel-profiles "
+"makes it possible to backup, restore, import and export panel layouts."
+msgstr ""
+"Xfce-ის პანელით მრავალი განლაგების შექმნა შეგიძლიათ. ეს ხელსაწყო საშუალებას "
+"გაძლევთ, სხვადასხვა განლაგება მართოთ. Xfce4-panel-profiles საშუალებას "
+"გაძლევთ, დაამარქაფოთ, აღადგინოთ, შემოიტანოთ და გაიტანოთ პანელის განლაგებები."
