@@ -7,8 +7,8 @@
 # Piarres Beobide <pi@beobide.net>, 2023
 # Nick Schermer <nick@xfce.org>, 2024
 # Xfce Bot <transifex@xfce.org>, 2024
-# Eder Etxebarria Rojo, 2025
 # beriain, 2025
+# Eder Etxebarria Rojo, 2026
 # 
 #, fuzzy
 msgid ""
@@ -17,7 +17,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
 "POT-Creation-Date: 2025-07-18 11:04+0200\n"
 "PO-Revision-Date: 2018-07-13 15:34+0000\n"
-"Last-Translator: beriain, 2025\n"
+"Last-Translator: Eder Etxebarria Rojo, 2026\n"
 "Language-Team: Basque (https://app.transifex.com/xfce/teams/16840/eu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,18 +28,20 @@ msgstr ""
 #: org.xfce.PanelProfiles.desktop.in:3
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:18
 msgid "Panel Profiles"
-msgstr "Panel profilak"
+msgstr "Panel-profilak"
 
 #: org.xfce.PanelProfiles.desktop.in:4
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:23
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:323
 msgid "Backup and restore your panel configuration"
-msgstr "Zure panelen konfigurazioaren babeskopiak egin eta berrezarri"
+msgstr "Egin zure panelen konfigurazioaren babeskopiak eta leheneratu"
 
 #: org.xfce.PanelProfiles.desktop.in:11
 msgid ""
 "Configuration;User;panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;"
 msgstr ""
+"Configuration;User;panel;taskbar;layout;switch;apply;restore;save;backup;remove;import;export;Konfigurazioa;Erabiltzailea;panela;ataza-"
+"barra;diseinua;aldatu;aplikatu;leheneratu;gorde;babeskopia;kendu;inportatu;esportatu;"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:68
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:438
@@ -48,24 +50,24 @@ msgstr "Fitxategi-izena"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:84
 msgid "Date Modified"
-msgstr "Aldatze data"
+msgstr "Aldaketa-data"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:107
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:108
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:386
 msgid "Apply Configuration"
-msgstr "Konfigurazioa ezarri"
+msgstr "Aplikatu konfigurazioa"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:122
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:123
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:343
 msgid "Save Configuration"
-msgstr "Konfigurazioa gorde"
+msgstr "Gorde konfigurazioa"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:137
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:138
 msgid "Remove Configuration"
-msgstr "Konfigurazioa kendu"
+msgstr "Kendu konfigurazioa"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:152
 #: xfce4-panel-profiles/xfce4-panel-profiles.glade:153
@@ -91,7 +93,7 @@ msgstr "It_xi"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:126
 msgid "Current Configuration"
-msgstr "Oraingo konfigurazioa"
+msgstr "Uneko konfigurazioa"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:144
 msgid "Today"
@@ -108,7 +110,7 @@ msgstr "%s (%s(r)en kopia)"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:228
 msgid "Import configuration file..."
-msgstr "Inportatu konfigurazio fitxategia..."
+msgstr "Inportatu konfigurazio-fitxategia..."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:231
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:342
@@ -128,8 +130,8 @@ msgid ""
 "Invalid configuration file!\n"
 "Please select a valid configuration file."
 msgstr ""
-"Konfigurazio fitxategi ez balioduna.\n"
-"Mesedez hautatu konfigurazio fitxategi baliodun bat."
+"Konfigurazio-fitxategi baliogabea!\n"
+"Hautatu baliozko konfigurazio-fitxategi bat."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:254
 msgid "OK"
@@ -137,12 +139,12 @@ msgstr "Ados"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:336
 msgid "Name the new panel configuration"
-msgstr "Izen bat eman panel konfigurazio berriari"
+msgstr "Eman izen bat panel-konfigurazio berriari"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:360
 #, python-format
 msgid "Backup_%s"
-msgstr "%s_babeskopia"
+msgstr "Babeskopia_%s"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:376
 msgid ""
@@ -150,15 +152,15 @@ msgid ""
 " The current configuration will be lost!"
 msgstr ""
 "Konfigurazio hau aplikatu nahi duzu?\n"
-"Oraingo konfigurazioa galduko da."
+" Uneko konfigurazioa galdu egingo da!"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:393
 msgid "Make a backup of the current configuration"
-msgstr "Oraingo konfigurazioaren babes-kopia egin"
+msgstr "Egin uneko konfigurazioaren babeskopia"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:404
 msgid "Errors occurred while parsing the current configuration."
-msgstr "Erroreak gertatu dira uneko konfigurazioa ikertzean."
+msgstr "Erroreak gertatu dira uneko konfigurazioa analizatzean."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:413
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:469
@@ -170,8 +172,8 @@ msgid ""
 "Do you want to save despite the errors? Some configuration information could"
 " be missing."
 msgstr ""
-"Gorde nahi al duzu nahiz eta erroreak egon? Baliteke konfigurazio "
-"informazioren bat faltan egotea."
+"Erroreak egon arren gorde nahi duzu? Baliteke konfigurazio-informazioren bat"
+" falta izatea."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:432
 msgid "Export configuration as..."
@@ -187,22 +189,20 @@ msgstr "Kokalekua"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:456
 msgid "Select a Folder"
-msgstr "Karpeta bat hautatu"
+msgstr "Hautatu karpeta bat"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:488
 #, python-format
 msgid "<b>A file named \"%s\" already exists. Do you want to replace it?</b>"
-msgstr ""
-"<b>\"%s\" izena duen fitxategi bat existitzen da jada. Ordeztu nahi al "
-"duzu?</b>"
+msgstr "<b>Badago dagoeneko \"%s\" izeneko fitxategi bat. Ordeztu nahi duzu?</b>"
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:489
 #, python-format
 msgid ""
 "The file already exists in \"%s\", replacing it will overwrite its contents."
 msgstr ""
-"Fitxategia jada existitzen da \"%s\"-n, azken hau ordeztuz gero edukiak "
-"gainidatziko dira"
+"Fitxategia badago dagoeneko \"%s\" karpetan; ordezten baduzu, haren edukia "
+"gainidatziko da."
 
 #: xfce4-panel-profiles/xfce4-panel-profiles.py:491
 msgid "Replace"
@@ -210,11 +210,11 @@ msgstr "Ordeztu"
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:6
 msgid "Xfce Panel Profiles"
-msgstr "Xfce Panel Profilak"
+msgstr "Xfce panel-profilak"
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:7
 msgid "Application to manage different panel layouts in Xfce"
-msgstr "Xfcen panel diseinu ezberdinak kudeatzeko aplikazioa"
+msgstr "Xfce-n panelen diseinu desberdinak kudeatzeko aplikazioa"
 
 #: data/metainfo/org.xfce.PanelProfiles.appdata.xml.in:11
 msgid ""
@@ -222,7 +222,7 @@ msgid ""
 "enables managing different layouts with little effort. Xfce4-panel-profiles "
 "makes it possible to backup, restore, import and export panel layouts."
 msgstr ""
-"Panelen diseinu ugari sor daitezke Xfce panela erabiliz. Tresna honek "
-"diseinu desberdinak kudeatzea ahalbidetzen du esfortzu gutxirekin. "
-"Xfce4-panel-profiles-ek panelen diseinuak babeskopiak egin, leheneratu, "
-"inportatu eta esportatzeko aukera ematen du."
+"Xfce panelarekin panel-diseinu ugari sor daitezke. Tresna honek diseinu "
+"desberdinak ahalegin handirik gabe kudeatzeko aukera ematen du. Xfce4-panel-"
+"profiles-ekin panelen diseinuen babeskopiak egin, leheneratu, inportatu eta "
+"esportatu daitezke."
